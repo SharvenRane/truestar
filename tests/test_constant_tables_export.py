@@ -51,13 +51,16 @@ def _float_tables_declared(prog):
 
 @pytest.mark.parametrize("m,shape", CASES, ids=["bilinear", "bicubic", "antialias", "fold", "erfinv"])
 def test_float32_import_with_a_constant_table_exports(m, shape):
+    torch.manual_seed(0)
     x = torch.randn(*shape)
     prog = ir.import_module(m.eval(), (x,))
     _float_tables_declared(prog)
     art = serialize.loads(serialize.dumps(prog))      # refused before: float64 data, float32 value
     got = iref.run(art.program, x)[0]
     want = m(x)
-    assert torch.allclose(got.float(), want, rtol=1e-5, atol=1e-6)
+    # float32 rounding of a weighted sum is relative to the inputs, not to an output that cancels
+    # to near zero, so the absolute bar scales with the input size
+    assert torch.allclose(got.float(), want, rtol=1e-5, atol=1e-5 * float(x.abs().max()))
 
 
 def test_float64_import_keeps_exact_tables():
