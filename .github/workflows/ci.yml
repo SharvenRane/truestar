@@ -92,8 +92,9 @@ jobs:
       matrix:
         os: ${{ fromJSON(inputs.macos && '["ubuntu-latest","windows-latest","macos-15"]' || '["ubuntu-latest","windows-latest"]') }}
         python: ["3.10", "3.12"]
+        group: [1, 2, 3, 4]       # the suite split four ways (pytest-split), each slice on its own runner
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 60
+    timeout-minutes: 40
     defaults:
       run:
         shell: bash
@@ -158,10 +159,10 @@ jobs:
       - name: Test dependencies
         run: |
           "$VPY" -m pip install --index-url "$TORCH_INDEX" "torch==$TORCH_VERSION" "torchvision==$TORCHVISION_VERSION"
-          "$VPY" -m pip install pytest pytest-xdist pytest-timeout "numba>=0.60"
+          "$VPY" -m pip install pytest pytest-xdist pytest-timeout pytest-split "numba>=0.60"
       - name: CPU test suite against the installed wheel
         run: |
-          "$VPY" -m pytest -q -p no:cacheprovider -n auto --dist loadfile --timeout 600 -rfE -rs --junitxml="$RUNNER_TEMP/junit.xml" tests
+          "$VPY" -m pytest -q -p no:cacheprovider --splits 4 --group ${{ matrix.group }} -n auto --dist loadfile --timeout 600 -rfE -rs --junitxml="$RUNNER_TEMP/junit.xml" tests
       - name: Record numbers
         if: always()
         run: |
@@ -174,7 +175,7 @@ jobs:
               s = r if r.tag == "testsuite" else r.find("testsuite")
               t, f, e, k = (int(s.get(x, 0)) for x in ("tests", "failures", "errors", "skipped"))
               counts = f"{t - f - e - k} passed, {f} failed, {e} errors, {k} skipped"
-          line = (f"| ${{ matrix.os }} | ${{ matrix.python }} | torch {os.environ.get('TORCH_INSTALL_S', '?')} s "
+          line = (f"| ${{ matrix.os }} | ${{ matrix.python }} | slice ${{ matrix.group }}/4 | torch {os.environ.get('TORCH_INSTALL_S', '?')} s "
                   f"| truestar {os.environ.get('TRUESTAR_INSTALL_S', '?')} s | check {os.environ.get('CHECK_S', '?')} s | {counts} |")
           print(line)
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
