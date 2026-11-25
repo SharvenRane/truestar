@@ -2,6 +2,8 @@
   <img alt="Truestar" src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/banner.png" width="100%">
 </p>
 
+<p align="center"><b>Truestar runs your PyTorch model on every backend you have, compares each against float64, and names the exact layer where results drift.</b></p>
+
 <p align="center">
   <a href="https://pypi.org/project/truestar/"><img alt="PyPI" src="https://img.shields.io/pypi/v/truestar?color=8A8F98&label=pypi&style=flat-square"></a>
   <a href="https://pypi.org/project/truestar/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/truestar?color=2B2F36&style=flat-square"></a>
