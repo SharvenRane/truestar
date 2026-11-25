@@ -6,8 +6,9 @@ TS1125 nothing reached an NPU, TS1124 part of the graph did, TS1126 an AOT compi
 partitions read from the file. This PC has no NPU, so the real run must give TS1125; the AOT and
 partial cases are built from files and logs.
 """
-import flatbuffers
 import pytest
+
+flatbuffers = pytest.importorskip("flatbuffers")
 import torch
 from torch import nn
 
