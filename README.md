@@ -29,7 +29,7 @@ the ATen op where it starts, and writes a repro script that runs on stock PyTorc
 unmodified model on every backend on the machine (CPU, CUDA, MPS) and compares each one with a
 float64 CPU reference.
 
-Version 0.1.0, the first public release. Every number on this page was measured in 2026-11 and
+Version 0.1.1. 0.1.0 was the first public release. Every number on this page was measured in 2026-11 and
 links to the doc or result file it comes from. Losses are listed next to the wins.
 
 ## Install
