@@ -1,0 +1,252 @@
+{
+ "id": "KB-L1-deepseek-r1-10",
+ "set": "KB",
+ "level": 1,
+ "problem": "10_3D_tensor_matrix_multiplication.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/10_3D_tensor_matrix_multiplication.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_10.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5513270302741549,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5294423327451301,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5322956034455046,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=1025 (was 1024)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.49446331501178703,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=1023 (was 1024)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5702046223128987,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d2=2049 (was 2048)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5308593081990743,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d2=2047 (was 2048)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5394147204579783,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d3=769 (was 768)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.6468314284239998,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d3=767 (was 768)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.6342589498693743,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=1025, d2=2049, d3=769",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5943544861929168,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7, d3=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.09744146726931607,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.662491321523679,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.4804128134161892,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5513270302741549,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5284979549213619,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5513270302768777,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 12582749 of 12582912 elements beyond the derived bound; worst at [3, 685, 763]: 135.012 vs float64 -15.4203 (error 363, 1002127.9x its bound, 105243982706798 ulp of float32); output: overall error is 460481.5x what a correct f",
+   "ratio": 1002127.9486474466,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 12582912 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (12582912 of 12582912, 100.0%). Not reordering noise. Policy: float32 results, float3",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS204"
+ ],
+ "first_failure": {
+  "name": "non contiguous inputs: transposed storage",
+  "code": "TS204",
+  "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 12582749 of 12582912 elements beyond the derived bound; worst at [3, 685, 763]: 135.012 vs float64 -15.4203 (error 363, 1002127.9x its bound, 105243982706798 ulp of float32); output: overall error is 460481.5x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (12582749 of 12582912, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutio"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 4.11,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 187.43
+}

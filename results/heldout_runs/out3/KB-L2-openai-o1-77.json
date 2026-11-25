@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-77",
+ "set": "KB",
+ "level": 2,
+ "problem": "77_ConvTranspose3d_Scale_BatchNorm_GlobalAvgPool.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/77_ConvTranspose3d_Scale_BatchNorm_Globa.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_77.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "timeout",
+ "seconds": 300.4
+}

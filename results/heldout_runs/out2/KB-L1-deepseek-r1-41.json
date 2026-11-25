@@ -1,0 +1,233 @@
+{
+ "id": "KB-L1-deepseek-r1-41",
+ "set": "KB",
+ "level": 1,
+ "problem": "41_Max_Pooling_1D.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/41_Max_Pooling_1D.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_41.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=65 (was 64)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=63 (was 64)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d2=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d2=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=65, d2=129",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "warn",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 1 places where the float64 reference has none, or the other way round; output: bad elements only at index 8 of dim 0 (size 16); only at index 0 of dim 1 (size 64); only at index 1 of dim 2 (size 62); on diagonal offset 1 of the last two dims (a mask edge?) (1 of 63488, 0.0",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "ok",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: Input tensor must be contiguous",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: Input tensor must be contiguous",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS202",
+  "TS201"
+ ],
+ "first_failure": {
+  "name": "non contiguous inputs: transposed storage",
+  "code": "TS201",
+  "message": "the candidate raised where the reference runs: RuntimeError: Input tensor must be contiguous"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 2.49,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 5.31
+}

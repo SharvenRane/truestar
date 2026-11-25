@@ -1,0 +1,23 @@
+{
+ "id": "KB-L1-openai-o1-70",
+ "set": "KB",
+ "level": 1,
+ "problem": "70_conv_transposed_3D__asymmetric_input__square_kernel.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/70_conv_transposed_3D_asymmetric_input_s.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_70.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "load_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "error": "AcceleratorError: CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+ "seconds": 0.8
+}

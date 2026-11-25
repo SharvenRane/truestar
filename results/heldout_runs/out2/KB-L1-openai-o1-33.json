@@ -1,0 +1,37 @@
+{
+ "id": "KB-L1-openai-o1-33",
+ "set": "KB",
+ "level": 1,
+ "problem": "33_BatchNorm.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/33_BatchNorm.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_33.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.2991011159537584,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.92,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.12 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.85 GiB is free. Process 1 has 20.22 GiB memory in use. Process 1 has 20.22 GiB memory in use. Of the allocated memory 10.53 GiB is allocated by PyTorch, and 3.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+ "trace": "^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/scripts/bench_heldout.py\", line 208, in judge\n    res, rep = orig_judge(ref_fn, cand_fn, v, device, report, base_ok, **kw)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/kernelcheck.py\", line 418, in _judge\n    rep = tol.check(out, explain=True, fn=reference, inputs=before)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 584, in check\n    return _check(self, out, explain, fn, inputs, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 884, in _check\n    reports.append(_check_one(i, o, ref, tol))\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 936, in _check_one\n    num = float(err[use].pow(2).mean().sqrt())\n                ~~~^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.12 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.85 GiB is free. Process 1 has 20.22 GiB memory in use. Process 1 has 20.22 GiB memory in use. Of the allocated memory 10.53 GiB is allocated by PyTorch, and 3.03 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 18.83
+}

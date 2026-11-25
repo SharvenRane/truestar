@@ -1,0 +1,48 @@
+{
+ "id": "KB-L1-openai-o1-60",
+ "set": "KB",
+ "level": 1,
+ "problem": "60_conv_standard_3D__square_input__asymmetric_kernel.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/60_conv_standard_3D_square_input_asymmet.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_60.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.65 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.61 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.75 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.61 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.32,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 1.54 GiB. GPU 0 has a total capacity of 22.06 GiB of which 58.06 MiB is free. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Of the allocated memory 1.74 GiB is allocated by PyTorch, and 765.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/",
+ "trace": " 32, in forward\n    return self.conv3d(x)\n           ^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 723, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 718, in _conv_forward\n    return F.conv3d(\n           ^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.54 GiB. GPU 0 has a total capacity of 22.06 GiB of which 58.06 MiB is free. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Process 1 has 21.98 GiB memory in use. Of the allocated memory 1.74 GiB is allocated by PyTorch, and 765.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 6.16
+}

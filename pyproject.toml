@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=77"]  # SPDX license expression (PEP 639)
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "truestar"
+dynamic = ["version"]  # from truestar.__version__ in src/truestar/__init__.py
+description = "The same answer on every chip: find where an ML model's results diverge across backends."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+authors = [{ name = "Sharven Rane" }]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["pytorch", "numerics", "debugging", "cuda", "mps", "rocm", "compiler", "verification"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Compilers",
+    "Topic :: Software Development :: Debuggers",
+    "Topic :: Software Development :: Testing",
+]
+# numpy: the kernel layer's float64 reference and verification (torch does not require it)
+# torch: oldest tested 2.11 (development), 2.14.1 in ci.yml, newest tested 2.15.0 (full CPU suite);
+# the exclusive upper bound is the next minor after the newest tested. Raise it once the suite
+# passes on 2.16.
+# sympy: symbolic shapes, imported when truestar loads (torch also requires it).
+dependencies = ["torch>=2.11,<2.16", "numpy>=1.22", "sympy>=1.12"]
+
+[project.urls]
+Homepage = "https://github.com/SharvenRane/truestar"
+Repository = "https://github.com/SharvenRane/truestar"
+Documentation = "https://github.com/SharvenRane/truestar/tree/main/docs"
+Issues = "https://github.com/SharvenRane/truestar/issues"
+Changelog = "https://github.com/SharvenRane/truestar/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+# Optional: `truestar mcp` uses the official SDK when present, else a builtin server.
+# Both SDK server APIs are served: 1.x decorators and 2.x on_list_tools/on_call_tool handlers.
+mcp = ["mcp>=1.10"]
+# Optional: CPU kernels for the kernel layer, the compiled executor and custom ops. Without numba,
+# custom ops fall back to the float64 reference interpreter with a SlowPathWarning; the kernel
+# layer and the compiled executor on "cpu" raise MissingDependencyError (TS022) naming this extra.
+# GPU kernels use triton.
+cpu-kernels = ["numba>=0.60"]
+# Optional: `truestar export --to onnx|litert|executorch` (docs/EXPORT.md, Deploy targets). The
+# writers and runtimes are imported only when that target is asked for. Core ML needs nothing:
+# Truestar writes its protobuf itself. ExecuTorch must match the installed torch (1.2 for torch 2.11).
+onnx = ["onnx>=1.15", "onnxruntime>=1.17"]
+litert = ["ai-edge-litert>=1.2"]
+executorch = ["executorch"]
+
+[project.scripts]
+truestar = "truestar.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "truestar.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"truestar.intref" = ["data/*.json"]
+"truestar.webnn" = ["page.js"]
+"truestar.conform" = ["llamacpp_driver.cpp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

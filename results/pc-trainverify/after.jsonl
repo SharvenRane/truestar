@@ -1,0 +1,18 @@
+{"config": "mlp:adamw:plain", "first_call_s": 65.7485074000142, "passed": true, "derived_accepts": 0, "auto_graph_replays": 2, "truestar_ms": 4.1966400146484375, "eager_ms": 3.598975896835327}
+{"config": "mlp:adamw:graph", "first_call_s": 68.0637032000086, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 4.134880065917969, "eager_ms": 3.5939838886260986}
+{"config": "mlp:adamw:off", "first_call_s": 66.06924599999911, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 4.439487934112549, "eager_ms": 3.605151891708374}
+{"config": "mlp:sgd:plain", "first_call_s": 67.38989059999585, "passed": true, "derived_accepts": 0, "auto_graph_replays": 2, "truestar_ms": 4.003104209899902, "eager_ms": 3.3259520530700684}
+{"config": "mlp:sgd:graph", "first_call_s": 65.21697080000013, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 3.979423999786377, "eager_ms": 3.3289599418640137}
+{"config": "mlp:sgd:off", "first_call_s": 69.53396060000523, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 4.1617279052734375, "eager_ms": 3.3295679092407227}
+{"config": "tel:adamw:plain", "first_call_s": 25.95989319999353, "passed": true, "derived_accepts": 0, "auto_graph_replays": 2, "truestar_ms": 9.419327735900879, "eager_ms": 9.080096244812012}
+{"config": "tel:adamw:graph", "first_call_s": 24.413305300011416, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 9.367839813232422, "eager_ms": 9.01580810546875}
+{"config": "tel:adamw:off", "first_call_s": 26.835670400003437, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 9.844672203063965, "eager_ms": 8.997504234313965}
+{"config": "tel:sgd:plain", "first_call_s": 24.399061400006758, "passed": true, "derived_accepts": 0, "auto_graph_replays": 2, "truestar_ms": 9.320832252502441, "eager_ms": 8.938688278198242}
+{"config": "tel:sgd:graph", "first_call_s": 25.09532670000044, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 9.318304061889648, "eager_ms": 8.95689582824707}
+{"config": "tel:sgd:off", "first_call_s": 25.061348799994448, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 9.767904281616211, "eager_ms": 8.943679809570312}
+{"config": "llama:adamw:plain", "passed": false, "refusal": "crashed: RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!"}
+{"config": "llama:adamw:graph", "passed": false, "refusal": "HostSyncError: [TS800] graphed(): a step of 'train_step_llama_train' syncs with the host and cannot be recorded in a CUDA graph: Cannot copy between CPU and CUDA tensors during CUDA graph capture unless the CPU tensor is pinned. Please use tensor.pin_memory() or allocate the tensor with pin_memory=True."}
+{"config": "llama:adamw:off", "first_call_s": 49.50334819999989, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 29.337663650512695, "eager_ms": 8.25875186920166}
+{"config": "llama:sgd:plain", "first_call_s": 53.620346999989124, "passed": true, "derived_accepts": 0, "auto_graph_replays": 0, "truestar_ms": 32.2239990234375, "eager_ms": 7.821407794952393}
+{"config": "resnet18:adamw:plain", "first_call_s": 1325.8776655999973, "passed": true, "derived_accepts": 6, "auto_graph_replays": 2, "truestar_ms": 44.566017150878906, "eager_ms": 38.882080078125}
+{"config": "resnet18:adamw:graph", "first_call_s": 1339.0543865000072, "passed": true, "derived_accepts": 6, "derivation_s": 1319.9573049000028, "auto_graph_replays": 0, "truestar_ms": 38.6025276184082, "eager_ms": 51.92399978637695}

@@ -1,0 +1,116 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "sm_count": 70,
+    "capability": "12.0",
+    "driver_cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "cudnn": 91900,
+    "truestar": "0.1.0",
+    "python": "3.10.20",
+    "cpu": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "triton": "3.7.1"
+  },
+  "results": [
+    {
+      "case": "mlp",
+      "input_shape": [
+        4,
+        256
+      ],
+      "weights_sha256": "4c3765cb06dc3d49761ae19cc39938d7db129dccf722235dae180c5a4c96320e",
+      "input_sha256": "283ed22d2bdfbc85ec03374c106e30566f262681224583408cad838069716d00",
+      "eager_cpu": [
+        "7d6bd6ec971446746cf233ffd8a6097d5c07edaacb9a8e1fe4c97d5514318da2"
+      ],
+      "eager_cuda": [
+        "7e6834dbcdcd5d77b53fe4e550d9e331f1f280b9cb8911e8b470a21f1beef664"
+      ],
+      "eager_cuda_again": [
+        "7e6834dbcdcd5d77b53fe4e550d9e331f1f280b9cb8911e8b470a21f1beef664"
+      ],
+      "compile_and_first_call_s": 2.875,
+      "compiled_cuda": [
+        "0045ade06d6e3ca6a0c40841be77a96d8fd6f2bd6c4b5ace5c8078de850eb1db"
+      ],
+      "compiled_cuda_again": [
+        "0045ade06d6e3ca6a0c40841be77a96d8fd6f2bd6c4b5ace5c8078de850eb1db"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 5.793990590486586e-07,
+      "compiled_vs_eager_cuda_max_abs": [
+        1.1920928955078125e-07
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "transformer",
+      "input_shape": [
+        4,
+        32,
+        128
+      ],
+      "weights_sha256": "dfb2dfb18aed0c1cff59daa36a3306ebb76017363ac086ba152e083ff926220f",
+      "input_sha256": "6aa7938ea32f74cb781c0cc2799d6d8a9cdfa05b5681abfd7db2b1d87f9e1eaa",
+      "eager_cpu": [
+        "9b9b190d8d3f66a7dc5a8d60a71dc1b8ae9874e082cd7fc18fb87f3354c2ed96"
+      ],
+      "eager_cuda": [
+        "bb3a9fca1d37054d2531953ad0e73e4ac114c30fe6b7bdbb9c9df98d02366ff2"
+      ],
+      "eager_cuda_again": [
+        "bb3a9fca1d37054d2531953ad0e73e4ac114c30fe6b7bdbb9c9df98d02366ff2"
+      ],
+      "compile_and_first_call_s": 3.961,
+      "compiled_cuda": [
+        "36adb88d5d720275ba7c6a368881e29721a8b3e26542b19de9ecce19d5c29313"
+      ],
+      "compiled_cuda_again": [
+        "36adb88d5d720275ba7c6a368881e29721a8b3e26542b19de9ecce19d5c29313"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 1.8568166735366775e-07,
+      "compiled_vs_eager_cuda_max_abs": [
+        7.152557373046875e-07
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "resnet18",
+      "input_shape": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "weights_sha256": "4bfa9b20d0e84dc22bdb778c719c0d8d4d80c6beddd669b7a5f1554226aefdea",
+      "input_sha256": "7965675169132b787278ee7b44f748297ca2f0552c5fd1817a4ebb65b61ad3c0",
+      "eager_cpu": [
+        "bd92e2821dbd990aa6ac64fb3a9cc6c1f6b94de62a3f4dfad2b6e1ed5594fe4e"
+      ],
+      "eager_cuda": [
+        "3d786df3d6acf24b0f788a8299a2c1bd26baad5dc8ffadee372bcd5c222292b8"
+      ],
+      "eager_cuda_again": [
+        "3d786df3d6acf24b0f788a8299a2c1bd26baad5dc8ffadee372bcd5c222292b8"
+      ],
+      "compile_and_first_call_s": 2.32,
+      "compiled_cuda": [
+        "c83acd13165eca57c91937b4fd02d83797d91950dae8260ad5509ec432ccf205"
+      ],
+      "compiled_cuda_again": [
+        "c83acd13165eca57c91937b4fd02d83797d91950dae8260ad5509ec432ccf205"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 3.0064218229272524e-06,
+      "compiled_vs_eager_cuda_max_abs": [
+        1.0848045349121094e-05
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    }
+  ]
+}

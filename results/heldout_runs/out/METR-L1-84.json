@@ -1,0 +1,251 @@
+{
+ "id": "METR-L1-84",
+ "set": "METR",
+ "level": 1,
+ "problem": "84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+ "ref": "results/heldout_metr/tasks/level_1/84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_84.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00026412793330657256,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00022121984930781617,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.000198147110436062,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=4 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=3, weight of size [3, 1, 3, 3], expected input[16, 4, 128, 256] to have 3 channels, but got 4 channels inst)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=2 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=3, weight of size [3, 1, 3, 3], expected input[16, 2, 128, 256] to have 3 channels, but got 2 channels inst)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0002201884977152802,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d2=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0002760102826229254,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d3=257 (was 256)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00022988449831295982,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d3=255 (was 256)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00023844815540156227,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=5, d2=129, d3=257",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=3, weight of size [3, 1, 3, 3], expected input[17, 5, 129, 257] to have 3 channels, but got 5 channels inst)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=3, d2=7, d3=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 8.414087633566642e-05,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0002050395401045418,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00018566031454833,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00026412793330657256,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 4.893516164631606e-05,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0002641279333065674,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 1533013 of 1536192 elements beyond the derived bound; worst at [3, 0, 106, 150]: -1.89376 vs float64 0.175 (error 3.89, 5774.8x its bound, 4751507859965 ulp of float32); output: overall error is 1828.1x what a correct float32 ",
+   "ratio": 5774.7621222205025,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 1536192 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (1536192 of 1536192, 100.0%). Not reordering noise. Policy: float32 results, float32 a",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS204"
+ ],
+ "first_failure": {
+  "name": "non contiguous inputs: transposed storage",
+  "code": "TS204",
+  "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 1533013 of 1536192 elements beyond the derived bound; worst at [3, 0, 106, 150]: -1.89376 vs float64 0.175 (error 3.89, 5774.8x its bound, 4751507859965 ulp of float32); output: overall error is 1828.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (1533013 of 1536192, 99.8%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.39,
+ "truestar_status": "divergent",
+ "notes": [
+  "3 variant(s) skipped because the reference rejects them (first: d1=4 (was 3): the reference rejects it (RuntimeError: Given groups=3, weight of size [3, 1, 3, 3], expected input[16, 4, 128, 256] to have 3 channels, but got 4 channels inst))"
+ ],
+ "seconds": 6.71
+}

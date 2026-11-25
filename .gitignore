@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+truestar_repro/
+.pytest_cache/
+site/
+
+# agent brief and report files kept in worktrees
+.api_brief_*.md
+.api_agent_*_report.md
+
+# raw run output and local scratch, never published
+results/heldout_metr/
+0

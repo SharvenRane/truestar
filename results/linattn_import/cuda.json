@@ -1,0 +1,75 @@
+{
+ "meta": {
+  "transformers": "5.24.0",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "tf32": false
+ },
+ "rows": {
+  "mamba2": {
+   "before": "refused TS942",
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cuda",
+    "eager_ms": 2.6027999992948025,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 5.373943559466831e-07,
+    "truestar_ms": 2.2064000004320405,
+    "speedup": 1.1796591727633892
+   }
+  },
+  "falcon_h1": {
+   "before": "refused TS942",
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cuda",
+    "eager_ms": 17.52325000052224,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 4.7608311459014514e-07,
+    "truestar_ms": 24.966749999293825,
+    "speedup": 0.7018634784670763
+   }
+  },
+  "qwen3_5": {
+   "before": "refused TS941",
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cuda",
+    "eager_ms": 3.6663499995484017,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 2.5939602100770554e-07,
+    "truestar_ms": 7.137050000892486,
+    "speedup": 0.5137066433736523
+   }
+  },
+  "bamba": {
+   "before": "refused TS942",
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cuda",
+    "eager_ms": 2.871400003641611,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 3.392373523664485e-07,
+    "truestar_ms": 6.244100000913022,
+    "speedup": 0.45985810656808035
+   }
+  },
+  "zamba2": {
+   "before": "refused TS942",
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cuda",
+    "eager_ms": 3.608649996749591,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 4.3674448637042916e-07,
+    "truestar_ms": 8.032550005736994,
+    "speedup": 0.44925334970491654
+   }
+  }
+ }
+}

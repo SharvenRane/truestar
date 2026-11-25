@@ -1,0 +1,202 @@
+{
+ "id": "KB-L1-deepseek-r1-4",
+ "set": "KB",
+ "level": 1,
+ "problem": "4_Matrix_vector_multiplication_.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/4_Matrix_vector_multiplication_.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_4.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.020726388281528563,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=257 (was 256)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.022768358462886325,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=255 (was 256)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.025192093052830326,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=131073 (was 131072)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.02644019741490036,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=131071 (was 131072)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.025231951775918075,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=257, d1=131073",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.018871742419550554,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.007919350980333329,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.028051263408505167,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.010909521532166169,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.020726388281528563,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0064462233656789525,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.02072638818227819,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.02072638832969833,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.020726388281528563,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 3.02,
+ "truestar_status": "ok",
+ "notes": [],
+ "seconds": 19.46
+}

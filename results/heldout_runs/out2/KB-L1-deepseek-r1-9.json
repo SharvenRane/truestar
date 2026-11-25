@@ -1,0 +1,25 @@
+{
+ "id": "KB-L1-deepseek-r1-9",
+ "set": "KB",
+ "level": 1,
+ "problem": "9_Tall_skinny_matrix_multiplication_.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/9_Tall_skinny_matrix_multiplication_.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_9.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "check_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.71,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 22.06 GiB of which 68.06 MiB is free. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Of the allocated memory 1.04 GiB is allocated by PyTorch, and 1.02 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cu",
+ "trace": "735, in derive\n    ref = _run(f64, a64, k64)\n          ^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 694, in _run\n    return [t for t in flatten_tensors(fn(*args, **kwargs))]\n                                       ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/tests/data/heldout/kernelbench/problems/level1/9_Tall_skinny_matrix_multiplication_.py\", line 22, in forward\n    return torch.matmul(A, B)\n           ^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 22.06 GiB of which 68.06 MiB is free. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Process 1 has 21.97 GiB memory in use. Of the allocated memory 1.04 GiB is allocated by PyTorch, and 1.02 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 1.67
+}

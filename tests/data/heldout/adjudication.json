@@ -1,0 +1,872 @@
+{
+ "KB-L1-deepseek-r1-1": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4194253 of 4194304 elements beyond the derived bound; worst at [279, 1521]: 110.168 vs"
+ },
+ "KB-L1-deepseek-r1-10": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 12582749 of 12582912 elements beyond the derived bound; worst at [3, 685, 763]: 135.01"
+ },
+ "KB-L1-deepseek-r1-12": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 16772991 of 16777216 elements beyond the derived bound; worst at [2724, 2429]: 1.93579"
+ },
+ "KB-L1-deepseek-r1-14": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: 8386221 of 16777216 elements beyond the derived bound; worst at [79, 123]: 647.485 vs float64 -103.198 (error 9.41e+03, 312657.1x its bound, 71556770948"
+ },
+ "KB-L1-deepseek-r1-15": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: 8386220 of 16777216 elements beyond the derived bound; worst at [3393, 3242]: 616.493 vs float64 -1097.41 (error 1.06e+04, 560642.1x its bound, 16069156"
+ },
+ "KB-L1-deepseek-r1-16": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097123 of 2097152 elements beyond the derived bound; worst at [460, 154]: 185.653 vs "
+ },
+ "KB-L1-deepseek-r1-17": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097124 of 2097152 elements beyond the derived bound; worst at [1023, 1170]: 165.753 v"
+ },
+ "KB-L1-deepseek-r1-18": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097130 of 2097152 elements beyond the derived bound; worst at [264, 63]: -143.73 vs f"
+ },
+ "KB-L1-deepseek-r1-19": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 163692 of 262144 elements beyond the derived bound; worst at [7, 7094]: 2.17492 vs flo"
+ },
+ "KB-L1-deepseek-r1-2": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=4097 (was 4096): output: 2079804 of 2097152 elements beyond the derived bound; worst at [461, 219]: 9.93938 vs float64 2.01278 (error 14.7, 21225.8x its bound, 241681693776 ulp "
+ },
+ "KB-L1-deepseek-r1-20": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-21": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-22": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-23": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 261029 of 262144 elements beyond the derived bound; worst at [9, 1412]: 2.22441e-05 vs"
+ },
+ "KB-L1-deepseek-r1-24": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=16385 (was 16384): output: 24 of 262160 elements beyond the derived bound; worst at [10, 16384]: 3.68935e+19 vs float64 -9.89583 (error 3.69e+19, 48149578148444624650240.0x its bo"
+ },
+ "KB-L1-deepseek-r1-25": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-26": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L1-deepseek-r1-28": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 261947 of 262144 elements beyond the derived bound; worst at [1, 11076]: 0.800459 vs f"
+ },
+ "KB-L1-deepseek-r1-29": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-3": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 8388539 of 8388608 elements beyond the derived bound; worst at [24, 127, 85]: -62.218 "
+ },
+ "KB-L1-deepseek-r1-30": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-deepseek-r1-31": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp "
+ },
+ "KB-L1-deepseek-r1-32": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 234469 of 262144 elements beyond the derived bound; worst at [14, 5333]: -1 vs float64"
+ },
+ "KB-L1-deepseek-r1-37": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 66846715 of 67108864 elements beyond the derived bound; worst at [9, 48, 64, 0]: 0.000744441 vs float64 0.000139717 (error 0.00275, 1000.0x its bound, 7"
+ },
+ "KB-L1-deepseek-r1-38": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 261120 of 262144 elements beyond the derived bound; worst at [8, 6980]: 6.43674e-05 vs"
+ },
+ "KB-L1-deepseek-r1-39": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 262144 of 262144 elements beyond the derived bound; worst at [8, 8507]: -0.00592737 vs"
+ },
+ "KB-L1-deepseek-r1-41": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: RuntimeError: Input tensor must be contiguous"
+ },
+ "KB-L1-deepseek-r1-42": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: RuntimeError: input must be contiguous"
+ },
+ "KB-L1-deepseek-r1-43": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: RuntimeError: Input tensor must be contiguous"
+ },
+ "KB-L1-deepseek-r1-44": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -7.12126e-05 vs float64 -7.12415e-05 (error 1.64e-07, 140.4x its bound, 3968 ulp o"
+ },
+ "KB-L1-deepseek-r1-45": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 42453 of 7398400 elements beyond the derived bound; worst at [11, 47, 74, 8]: 2.54313e-06 vs float64 2.56631e-06 (error 2.77e-07, 869.2x its bound, 9320"
+ },
+ "KB-L1-deepseek-r1-46": {
+  "label": "wrong",
+  "label_strict": "correct",
+  "reason": "example inputs: output: 178189 of 16777216 elements beyond the derived bound; worst at [11, 30, 20, 4, 13]: -5.07743e-07 vs float64 -5.44479e-07 (error 2.75e-07, 2846.1x its bo"
+ },
+ "KB-L1-deepseek-r1-47": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4096 of 4096 elements beyond the derived bound; worst at [14, 0, 202]: 55.8482 vs floa"
+ },
+ "KB-L1-deepseek-r1-49": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4088 of 4096 elements beyond the derived bound; worst at [5, 197]: 3.15511 vs float64 "
+ },
+ "KB-L1-deepseek-r1-62": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 65397580 of 65544192 elements beyond the derived bound; worst at [15, 43, 75, 120]: 1."
+ },
+ "KB-L1-deepseek-r1-76": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 84805 of 84992 elements beyond the derived bound; worst at [12, 9, 23]: 1.91896 vs flo"
+ },
+ "KB-L1-deepseek-r1-78": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 33474695 of 33554432 elements beyond the derived bound; worst at [11, 49, 124, 102]: -"
+ },
+ "KB-L1-deepseek-r1-79": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 130744 of 263168 elements beyond the derived bound; worst at [3, 61, 5]: 0.969671 vs f"
+ },
+ "KB-L1-deepseek-r1-80": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 66435450 of 66584576 elements beyond the derived bound; worst at [14, 8, 34, 162]: 1.5"
+ },
+ "KB-L1-deepseek-r1-85": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 1520756 of 1524096 elements beyond the derived bound; worst at [8, 0, 61, 245]: 2.0298"
+ },
+ "KB-L1-deepseek-r1-86": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 65875680 of 66064384 elements beyond the derived bound; worst at [6, 57, 54, 195]: -0."
+ },
+ "KB-L1-deepseek-r1-90": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: NaN or infinity at 5 places where the float64 reference has none, or the other way round; output: bad elements only in indices 37 to 41 of dim 1 (size 4"
+ },
+ "KB-L1-deepseek-r1-91": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511682 of 512000 elements beyond the derived bound; worst at [69, 3999]: -14.0641 vs f"
+ },
+ "KB-L1-deepseek-r1-93": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511790 of 512000 elements beyond the derived bound; worst at [60, 2]: 21.0544 vs float"
+ },
+ "KB-L1-deepseek-r1-96": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: RuntimeError: Predictions must be contiguous"
+ },
+ "KB-L1-openai-o1-1": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4194253 of 4194304 elements beyond the derived bound; worst at [279, 1521]: 110.168 vs"
+ },
+ "KB-L1-openai-o1-12": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 16772995 of 16777216 elements beyond the derived bound; worst at [3834, 1063]: 1.84076"
+ },
+ "KB-L1-openai-o1-16": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097123 of 2097152 elements beyond the derived bound; worst at [460, 154]: 185.653 vs "
+ },
+ "KB-L1-openai-o1-17": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097124 of 2097152 elements beyond the derived bound; worst at [1023, 1170]: 165.753 v"
+ },
+ "KB-L1-openai-o1-18": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097130 of 2097152 elements beyond the derived bound; worst at [264, 63]: -143.73 vs f"
+ },
+ "KB-L1-openai-o1-19": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 163692 of 262144 elements beyond the derived bound; worst at [7, 7094]: 2.17492 vs flo"
+ },
+ "KB-L1-openai-o1-2": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2097129 of 2097152 elements beyond the derived bound; worst at [504, 1372]: 156.812 vs"
+ },
+ "KB-L1-openai-o1-20": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-21": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-22": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-23": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 261029 of 262144 elements beyond the derived bound; worst at [9, 1412]: 2.22441e-05 vs"
+ },
+ "KB-L1-openai-o1-24": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 246301 of 262144 elements beyond the derived bound; worst at [1, 11820]: -7.95176 vs f"
+ },
+ "KB-L1-openai-o1-25": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-26": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-27": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 967 of 262144 elements beyond the derived bound; worst at [8, 10062]: -3.51049e-05 vs float64 -3.51503e-05 (error 3.52e-07, 275.3x its bound, 16153 ulp "
+ },
+ "KB-L1-openai-o1-28": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 261947 of 262144 elements beyond the derived bound; worst at [1, 11076]: 0.800459 vs f"
+ },
+ "KB-L1-openai-o1-29": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: NaN or infinity at 7 places where the float64 reference has none, or the other way round; output: bad elements in the tail of dim 0 (indices 2 to 15 of "
+ },
+ "KB-L1-openai-o1-3": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 8388539 of 8388608 elements beyond the derived bound; worst at [24, 127, 85]: -62.218 "
+ },
+ "KB-L1-openai-o1-30": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-31": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp "
+ },
+ "KB-L1-openai-o1-32": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "KB-L1-openai-o1-35": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): output: NaN or infinity at 67108864 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (67108864 o"
+ },
+ "KB-L1-openai-o1-38": {
+  "label": "shape_limited",
+  "label_strict": "correct",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 261120 of 262144 elements beyond the derived bound; worst at [8, 6980]: 6.43674e-05 vs"
+ },
+ "KB-L1-openai-o1-39": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 262144 of 262144 elements beyond the derived bound; worst at [8, 8507]: -0.00592737 vs"
+ },
+ "KB-L1-openai-o1-4": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 256 of 256 elements beyond the derived bound; worst at [184, 0]: 1054.16 vs float64 -1"
+ },
+ "KB-L1-openai-o1-40": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans acros"
+ },
+ "KB-L1-openai-o1-41": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 63478 of 63488 elements beyond the derived bound; worst at [2, 23, 4]: 2.32812 vs floa"
+ },
+ "KB-L1-openai-o1-42": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2064382 of 2097152 elements beyond the derived bound; worst at [1, 25, 0, 20]: 2.72296"
+ },
+ "KB-L1-openai-o1-48": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4096 of 4096 elements beyond the derived bound; worst at [14, 202]: 0.218157 vs float6"
+ },
+ "KB-L1-openai-o1-53": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4090 of 4096 elements beyond the derived bound; worst at [4, 42]: -4.58308 vs float64 "
+ },
+ "KB-L1-openai-o1-8": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 48581149 of 48581805 elements beyond the derived bound; worst at [4575, 499]: 121.231 "
+ },
+ "KB-L1-openai-o1-88": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 2000000 places where the float64 reference has none, or the other w"
+ },
+ "KB-L1-openai-o1-89": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511708 of 512000 elements beyond the derived bound; worst at [32, 0]: 6.89283 vs float"
+ },
+ "KB-L1-openai-o1-90": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: NaN or infinity at 5 places where the float64 reference has none, or the other way round; output: bad elements only in indices 37 to 41 of dim 1 (size 4"
+ },
+ "KB-L1-openai-o1-91": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511682 of 512000 elements beyond the derived bound; worst at [69, 3999]: -14.0641 vs f"
+ },
+ "KB-L1-openai-o1-93": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511790 of 512000 elements beyond the derived bound; worst at [60, 2]: 21.0544 vs float"
+ },
+ "KB-L1-openai-o1-98": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=129 (was 128): output: NaN or infinity at 1 places where the float64 reference has none, or the other way round. Not reordering noise. Policy: float32 results, float32 accumul"
+ },
+ "KB-L2-deepseek-r1-14": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 128 of 128 elements beyond the derived bound; worst at [18, 0]: 11.4423 vs float64 -15"
+ },
+ "KB-L2-deepseek-r1-18": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 128 of 128 elements beyond the derived bound; worst at [30, 0]: 4.12097 vs float64 0.7"
+ },
+ "KB-L2-deepseek-r1-29": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 2560 of 2560 elements beyond the derived bound; worst at [117, 5]: 1.20678 vs float64 "
+ },
+ "KB-L2-deepseek-r1-51": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 130047 of 131072 elements beyond the derived bound; worst at [76, 552]: 0.675028 vs fl"
+ },
+ "KB-L2-deepseek-r1-53": {
+  "label": "wrong",
+  "label_strict": "correct",
+  "reason": "example inputs: output: 18839 of 65536 elements beyond the derived bound; worst at [123, 100]: -0.14742 vs float64 -0.147228 (error 0.000213, 158.6x its bound, 3544907 ulp of f"
+ },
+ "KB-L2-deepseek-r1-59": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 65536 of 65536 elements beyond the derived bound; worst at [1, 105]: 1.88581 vs float6"
+ },
+ "KB-L2-deepseek-r1-63": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 49045 of 65536 elements beyond the derived bound; worst at [61, 154]: 1.19927 vs float"
+ },
+ "KB-L2-deepseek-r1-64": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-deepseek-r1-80": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-deepseek-r1-93": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-deepseek-r1-98": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-openai-o1-14": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 128 of 128 elements beyond the derived bound; worst at [18, 0]: 11.4423 vs float64 -15"
+ },
+ "KB-L2-openai-o1-33": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 65536 of 65536 elements beyond the derived bound; worst at [92, 411]: -1.30995 vs floa"
+ },
+ "KB-L2-openai-o1-40": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 16384 of 16384 elements beyond the derived bound; worst at [122, 32]: 2.73212 vs float"
+ },
+ "KB-L2-openai-o1-41": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-openai-o1-44": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: shape (128, 16, 1, 1) vs float64 reference (). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "KB-L2-openai-o1-63": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 49045 of 65536 elements beyond the derived bound; worst at [61, 154]: 1.19927 vs float"
+ },
+ "KB-L2-openai-o1-86": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-openai-o1-93": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "KB-L2-openai-o1-94": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 131070 of 131072 elements beyond the derived bound; worst at [21, 395]: 1.87682 vs flo"
+ },
+ "METR-L1-15": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: 8386560 of 16777216 elements beyond the derived bound; worst at [0, 363]: 9864.45 vs float64 0 (error 9.86e+03, 61727536500.4x its bound, 165497962496 u"
+ },
+ "METR-L1-16": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=4097 (was 4096): output: 1914480 of 2097152 elements beyond the derived bound; worst at [683, 24]: -17.0502 vs float64 6.48098 (error 39.9, 84853.1x its bound, 991548519468 ulp "
+ },
+ "METR-L1-18": {
+  "label": "precision_shedding",
+  "label_strict": "precision_shedding",
+  "reason": "the source computes in tf32"
+ },
+ "METR-L1-19": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 163692 of 262144 elements beyond the derived bound; worst at [7, 7094]: 2.17492 vs flo"
+ },
+ "METR-L1-2": {
+  "label": "precision_shedding",
+  "label_strict": "precision_shedding",
+  "reason": "the source computes in tf32"
+ },
+ "METR-L1-20": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "METR-L1-21": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: AssertionError: Input tensor must be contiguous"
+ },
+ "METR-L1-22": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 2030 of 262144 elements beyond the derived bound; worst at [14, 5333]: 1.84175e-05 vs float64 1.83894e-05 (error 1.32e-07, 340.0x its bound, 15447 ulp o"
+ },
+ "METR-L1-24": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=16385 (was 16384): output: 24 of 262160 elements beyond the derived bound; worst at [10, 16384]: 3.68935e+19 vs float64 -9.89583 (error 3.69e+19, 48149578148444624650240.0x its bo"
+ },
+ "METR-L1-25": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=16385 (was 16384): the candidate raised where the reference runs: AssertionError: n_elements must be divisible by BLOCK_SIZE"
+ },
+ "METR-L1-26": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "METR-L1-27": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 1227 of 262144 elements beyond the derived bound; worst at [8, 10062]: -3.51049e-05 vs float64 -3.51503e-05 (error 3.52e-07, 275.3x its bound, 16153 ulp"
+ },
+ "METR-L1-28": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 131072 places where the float64 reference has none, or the other wa"
+ },
+ "METR-L1-29": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: NaN or infinity at 7 places where the float64 reference has none, or the other way round; output: bad elements in the tail of dim 0 (indices 2 to 15 of "
+ },
+ "METR-L1-30": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: the candidate raised where the reference runs: AssertionError: Input tensor must be contiguous"
+ },
+ "METR-L1-31": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 986 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 1.08e-07, 209.5x its bound, 18376 ulp "
+ },
+ "METR-L1-32": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: 234469 of 262144 elements beyond the derived bound; worst at [14, 5333]: -1 vs float64"
+ },
+ "METR-L1-38": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=16385 (was 16384): output: 163987 of 262160 elements beyond the derived bound; worst at [10, 16384]: 3.68935e+19 vs float64 0.387643 (error 3.69e+19, 3992090357369924174741504.0x "
+ },
+ "METR-L1-41": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 63478 of 63488 elements beyond the derived bound; worst at [2, 23, 4]: 2.32812 vs floa"
+ },
+ "METR-L1-42": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=17 (was 16): the candidate raised where the reference runs: AssertionError: This specialized Model expects input shape (16, 32, 128, 128)"
+ },
+ "METR-L1-44": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -7.12126e-05 vs float64 -7.12415e-05 (error 1.64e-07, 140.4x its bound, 3968 ulp o"
+ },
+ "METR-L1-47": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=257 (was 256): the candidate raised where the reference runs: CompilationError: at 26:8: [source excerpt removed: METR task code is not redistributed]"
+ },
+ "METR-L1-48": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=257 (was 256): output elements were never written (the NaN the allocator was filled with shows through): output: NaN or infinity at 16 places where the float64 reference has n"
+ },
+ "METR-L1-49": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4088 of 4096 elements beyond the derived bound; worst at [5, 197]: 3.15511 vs float64 "
+ },
+ "METR-L1-51": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=17 (was 16): the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)"
+ },
+ "METR-L1-53": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 4090 of 4096 elements beyond the derived bound; worst at [4, 42]: -4.58308 vs float64 "
+ },
+ "METR-L1-67": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 521191 of 522240 elements beyond the derived bound; worst at [3, 46, 376]: -1.37422 vs"
+ },
+ "METR-L1-79": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: the candidate raised where the reference runs: CompilationError: at 10:29: [source excerpt removed: METR task code is not redistributed]"
+ },
+ "METR-L1-82": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: the candidate raised where the reference runs: ValueError: Pointer argument (at 1) cannot be accessed from Triton (cpu tensor?)"
+ },
+ "METR-L1-83": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 3116267 of 3121152 elements beyond the derived bound; worst at [10, 0, 233, 97]: 1.162"
+ },
+ "METR-L1-84": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 1533013 of 1536192 elements beyond the derived bound; worst at [3, 0, 106, 150]: -1.89"
+ },
+ "METR-L1-85": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 1520756 of 1524096 elements beyond the derived bound; worst at [8, 0, 61, 245]: 2.0298"
+ },
+ "METR-L1-86": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: the candidate raised where the reference runs: RuntimeError: shape '[64, 3, 3, 3]' is invalid for input of size 5184"
+ },
+ "METR-L1-87": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=17 (was 16): output: 4186538 of 71303168 elements beyond the derived bound; worst at [16, 52, 213, 26]: 2.36943e-38 vs float64 0.392674 (error 3.91, 2659.4x its bound, 16777"
+ },
+ "METR-L1-88": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: sliced storage (step 2): wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 2000000 places where the float64 reference has none, or the other w"
+ },
+ "METR-L1-89": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d1=4001 (was 4000): the candidate raised where the reference runs: RuntimeError: cumsum_cuda: ncols must be divisible by 16 for optimized kernel"
+ },
+ "METR-L1-93": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 511790 of 512000 elements beyond the derived bound; worst at [60, 2]: 21.0544 vs float"
+ },
+ "METR-L1-98": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "all sizes small d0=7, d1=7: output: NaN or infinity at 1 places where the float64 reference has none, or the other way round. Not reordering noise. Policy: float32 results, float32 accumul"
+ },
+ "METR-L2-10": {
+  "label": "precision_shedding",
+  "label_strict": "precision_shedding",
+  "reason": "the source computes in tf32"
+ },
+ "METR-L2-14": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 128 of 128 elements beyond the derived bound; worst at [18, 0]: 11.4423 vs float64 -15"
+ },
+ "METR-L2-17": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 1839089 of 1843200 elements beyond the derived bound; worst at [43, 0, 17, 7]: 1.87104"
+ },
+ "METR-L2-19": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "METR-L2-25": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 114653 of 115200 elements beyond the derived bound; worst at [13, 0, 0, 24]: -0.619596"
+ },
+ "METR-L2-28": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: wrong on non contiguous inputs while contiguous inputs are right: output: 16384 of 16384 elements beyond the derived bound; worst at [119, 62]: 8.09056 vs float"
+ },
+ "METR-L2-29": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "non contiguous inputs: transposed storage: output: 2559 of 2560 elements beyond the derived bound; worst at [117, 5]: 1.20678 vs float64 -0.0839177 (error 2.03, 3541744.0x its bound, 80282610097 ulp of f"
+ },
+ "METR-L2-33": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 65536 of 65536 elements beyond the derived bound; worst at [56, 244]: 0.189801 vs float64 0.000576291 (error 13.2, 43648806.4x its bound, 2207202864639 "
+ },
+ "METR-L2-35": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 460789 of 460800 elements beyond the derived bound; worst at [102, 8, 0, 4]: 0.198435 vs float64 -0 (error 0.728, 3328604.1x its bound, 56716486756114 u"
+ },
+ "METR-L2-39": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 65536 of 65536 elements beyond the derived bound; worst at [56, 244]: 0.189801 vs float64 0.000576291 (error 13.2, 43648792.6x its bound, 2207203913215 "
+ },
+ "METR-L2-4": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: NaN or infinity at 277 places where the float64 reference has none, or the other way round; output: bad elements only at index 14 of dim 1 (size 16) (27"
+ },
+ "METR-L2-40": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 16186 of 16384 elements beyond the derived bound; worst at [21, 75]: -1.23681 vs float64 -1.23813 (error 0.00378, 245.4x its bound, 17516432 ulp of floa"
+ },
+ "METR-L2-43": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: NaN or infinity at 262144 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (262144 of 26"
+ },
+ "METR-L2-47": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d2=31 (was 32): the candidate raised where the reference runs: AcceleratorError: CUDA error: unspecified launch failure [source excerpt removed: METR task code is not redistributed]"
+ },
+ "METR-L2-5": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: 1328801 of 2230272 elements beyond the derived bound; worst at [105, 4, 29, 6]: -1.52842 vs float64 -1 (error 0.809, 585103.5x its bound, 6783471 ulp of"
+ },
+ "METR-L2-52": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: NaN or infinity at 501 places where the float64 reference has none, or the other way round; output: 126 of 1843200 elements beyond the derived bound; wo"
+ },
+ "METR-L2-53": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 65534 of 65536 elements beyond the derived bound; worst at [114, 436]: 1.14111 vs float64 0.468569 (error 1.1, 360784.1x its bound, 23990664 ulp of floa"
+ },
+ "METR-L2-54": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ },
+ "METR-L2-59": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 64379 of 65536 elements beyond the derived bound; worst at [54, 49]: 1.58545 vs float64 1.58718 (error 0.00397, 259.1x its bound, 843567537 ulp of float"
+ },
+ "METR-L2-6": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large offset (x + 64 rms): output: 18813 of 301056 elements beyond the derived bound; worst at [106, 4, 2, 1, 0]: 0 vs float64 1 (error 1, 151949.2x its bound, 16777157 ulp of float32); o"
+ },
+ "METR-L2-61": {
+  "label": "precision_shedding",
+  "label_strict": "precision_shedding",
+  "reason": "the source computes in low_precision"
+ },
+ "METR-L2-63": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 32759 of 65536 elements beyond the derived bound; worst at [112, 327]: 1.40628 vs float64 0.703139 (error 1.2, 284297.8x its bound, 16776479 ulp of floa"
+ },
+ "METR-L2-65": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: 127 of 128 elements beyond the derived bound; worst at [42]: 1811.6 vs float64 1860.06 (error 48.5, 493.1x its bound, 396998 ulp of float32); output: ov"
+ },
+ "METR-L2-67": {
+  "label": "wrong",
+  "label_strict": "shape_limited",
+  "reason": "example inputs: output: 2048 of 2048 elements beyond the derived bound; worst at [109, 0]: 0.199573 vs float64 0.202225 (error 0.00475, 173.4x its bound, 144107842 ulp of float"
+ },
+ "METR-L2-68": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 640 of 640 elements beyond the derived bound; worst at [112, 0]: 0 vs float64 -1.78438 (error 2, 2037699.2x its bound, 16774592 ulp of float32); output:"
+ },
+ "METR-L2-69": {
+  "label": "shape_limited",
+  "label_strict": "shape_limited",
+  "reason": "d0=129 (was 128): output: shape (128, 16, 30, 30) vs float64 reference (129, 16, 30, 30). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "METR-L2-7": {
+  "label": "wrong",
+  "label_strict": "precision_shedding",
+  "reason": "example inputs: output: 14240333 of 25804800 elements beyond the derived bound; worst at [34, 10, 10, 6, 29]: 1.16992 vs float64 1.16929 (error 0.00156, 2103.6x its bound, 1166"
+ },
+ "METR-L2-73": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 1843200 of 1843200 elements beyond the derived bound; worst at [26, 9, 0, 9]: -0.417966 vs float64 -0.791957 (error 0.374, 642.0x its bound, 57472469732"
+ },
+ "METR-L2-79": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 1004857 of 1612800 elements beyond the derived bound; worst at [32, 2, 20, 16]: 1.49316 vs float64 1.49449 (error 0.00332, 2456.5x its bound, 73756757 u"
+ },
+ "METR-L2-82": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: 137 of 460800 elements beyond the derived bound; worst at [70, 13, 2, 10]: -0.428325 vs float64 3.57167 (error 4, 1744898.2x its bound, 67108542 ulp of "
+ },
+ "METR-L2-86": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 129747 of 131072 elements beyond the derived bound; worst at [104, 104]: -0.137883 vs float64 -0.141587 (error 0.006, 8521.4x its bound, 347976504 ulp o"
+ },
+ "METR-L2-87": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "large values (max |x| = 100): output: 394516 of 1843200 elements beyond the derived bound; worst at [51, 12, 4, 4]: 123.639 vs float64 56.5765 (error 110, 2437.0x its bound, 22016885 ulp of "
+ },
+ "METR-L2-95": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "example inputs: output: 65536 of 65536 elements beyond the derived bound; worst at [93, 73]: 0.490872 vs float64 -0.104564 (error 0.921, 2105497.8x its bound, 230570955276 ulp "
+ },
+ "METR-L2-98": {
+  "label": "wrong",
+  "label_strict": "wrong",
+  "reason": "the source uses the tanh approximation of GELU; the task's is erf"
+ }
+}

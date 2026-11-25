@@ -1,0 +1,205 @@
+{
+ "id": "KB-L1-deepseek-r1-99",
+ "set": "KB",
+ "level": 1,
+ "problem": "99_TripletMarginLoss.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/99_TripletMarginLoss.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_99.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0015875123889700362,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0012954713726637899,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0004330152378475929,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=4097 (was 4096)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0026106322080959765,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=4095 (was 4096)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 7.11938912181813e-05,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=4097",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.000961899277399298,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.057826738677125775,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0012618624673397868,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0007215781662565252,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0005006259481914093,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 4.189844689857427e-06,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 1 places where the float64 reference has none, or the other way round. Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.001587512395245679,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0015875123889700362,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "NaN in one element",
+  "code": "TS202",
+  "message": "output: NaN or infinity at 1 places where the float64 reference has none, or the other way round. Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 2.57,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 6.06
+}

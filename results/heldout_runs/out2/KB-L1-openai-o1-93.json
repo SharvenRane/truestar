@@ -1,0 +1,210 @@
+{
+ "id": "KB-L1-openai-o1-93",
+ "set": "KB",
+ "level": 1,
+ "problem": "93_masked_cumsum.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/93_masked_cumsum.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_93.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.012260273861960082,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.014384695887408074,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.015626402121585475,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=4001 (was 4000)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.02137157201447572,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=3999 (was 4000)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.013507719562595928,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=4001",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.017912241804731412,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.04734811082669313,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.011132620874225362,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.23655482419039325,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.012260273861960082,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 2981 of 512000 elements beyond the derived bound; worst at [35, 3827]: -4.7617 vs float64 -4.76179 (error 9.44e-05, 3.1x its bound, 240 ulp of float32); output: overall error is 3.4x what a correct float32 implementation shows (limit 2x); output: bad elements in the tail of dim 1 (indices 23",
+   "ratio": 3.0574066438080023,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "warn",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 4000 places where the float64 reference has none, or the other way round; output: bad elements only at index 64 of dim 0 (size 128) (4000 of 512000, 0.8%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.012260273842473177,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 511790 of 512000 elements beyond the derived bound; worst at [60, 2]: 21.0544 vs float64 0 (error 225, 343096070.6x its bound, 448188113351680 ulp of float32); output: overall error is 12663.8x what a correct float32 implement",
+   "ratio": 343096070.5646265,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 511704 of 512000 elements beyond the derived bound; worst at [7, 0]: -3.81822 vs float64 0 (error 149, 62220748.3x its bound, 59055037608960 ulp of float32); output: overall error is 10887.2x what a correct float32 implementat",
+   "ratio": 62220748.29456753,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS202",
+  "TS204"
+ ],
+ "first_failure": {
+  "name": "constant tensor (ties)",
+  "code": "TS200",
+  "message": "output: 2981 of 512000 elements beyond the derived bound; worst at [35, 3827]: -4.7617 vs float64 -4.76179 (error 9.44e-05, 3.1x its bound, 240 ulp of float32); output: overall error is 3.4x what a correct float32 implementation shows (limit 2x); output: bad elements in the tail of dim 1 (indices 2356 to 3999 of 4000) (2981 of 512000, 0.6%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.69,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 5.56
+}

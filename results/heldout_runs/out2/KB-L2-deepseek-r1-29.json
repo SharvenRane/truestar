@@ -1,0 +1,210 @@
+{
+ "id": "KB-L2-deepseek-r1-29",
+ "set": "KB",
+ "level": 2,
+ "problem": "29_Matmul_Mish_Mish.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/29_Matmul_Mish_Mish.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_29.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.06275700626172843,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.084436422192053,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.06524460001348542,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=11 (was 10)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x11 and 10x20))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=9 (was 10)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x9 and 10x20))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=11",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (129x11 and 10x20))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 10x20))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.07465836633071438,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.06427512682911368,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.10100040319552041,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.08138779595004086,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.06275699818344979,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok",
+   "assert_close#num": "ok",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 2560 of 2560 elements beyond the derived bound; worst at [117, 5]: 1.20678 vs float64 -0.0839177 (error 2.03, 3541755.5x its bound, 80282421681 ulp of float32); output: overall error is 1089968.1x what a correct float32 implem",
+   "ratio": 3541755.4600472613,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS204",
+   "message": "wrong on non contiguous inputs while contiguous inputs are right: output: NaN or infinity at 2560 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (2560 of 2560, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulati",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS204"
+ ],
+ "first_failure": {
+  "name": "non contiguous inputs: transposed storage",
+  "code": "TS204",
+  "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 2560 of 2560 elements beyond the derived bound; worst at [117, 5]: 1.20678 vs float64 -0.0839177 (error 2.03, 3541755.5x its bound, 80282421681 ulp of float32); output: overall error is 1089968.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (2560 of 2560, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.69,
+ "truestar_status": "divergent",
+ "notes": [
+  "4 variant(s) skipped because the reference rejects them (first: d1=11 (was 10): the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x11 and 10x20)))"
+ ],
+ "seconds": 4.59
+}

@@ -1,0 +1,177 @@
+{
+ "id": "METR-L1-1",
+ "set": "METR",
+ "level": 1,
+ "problem": "1_Square_matrix_multiplication_.py",
+ "ref": "results/heldout_metr/tasks/level_1/1_Square_matrix_multiplication_.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_1.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.31265564162804843,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=2049 (was 2048)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.3216732234076713,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=2047 (was 2048)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.317757130286888,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=2049",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.3730122964882458,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.03392895821682557,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.40042079140708225,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.3336074349767961,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.31265564162804843,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.2561220327941541,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.3126556416523057,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.31265564162804843,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.31265564162804843,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.36,
+ "truestar_status": "ok",
+ "notes": [],
+ "seconds": 16.86
+}

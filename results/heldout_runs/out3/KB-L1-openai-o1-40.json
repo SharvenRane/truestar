@@ -1,0 +1,242 @@
+{
+ "id": "KB-L1-openai-o1-40",
+ "set": "KB",
+ "level": 1,
+ "problem": "40_LayerNorm.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/40_LayerNorm.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_40.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 40742262 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.49018 vs float64 -2.48559 (error 0.0103, 45.1x its bound, 11074129 ulp of float32); output: overall error is 14.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 45.10778611938947,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 43323754 of 71303168 elements beyond the derived bound; worst at [1, 58, 118, 43]: -2.72134 vs float64 -2.71634 (error 0.0108, 44.0x its bound, 6104467 ulp of float32); output: overall error is 15.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the",
+   "ratio": 44.00913342947697,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 38223236 of 62914560 elements beyond the derived bound; worst at [9, 59, 78, 245]: 2.11878 vs float64 2.11491 (error 0.0101, 44.1x its bound, 50713588 ulp of float32); output: overall error is 15.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 44.13936310179835,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=65 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 65, 256, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=63 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 63, 256, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=257 (was 256)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 64, 257, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=255 (was 256)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 64, 255, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=65, d2=257",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[17, 65, 257, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[7, 7, 7, 7])",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 45286702 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.49115 vs float64 -2.4856 (error 0.0126, 54.5x its bound, 15684676 ulp of float32); output: overall error is 18.4x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the t",
+   "ratio": 54.4972268012372,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 27084715 of 67108864 elements beyond the derived bound; worst at [12, 57, 112, 179]: -3.05797 vs float64 -2.70369 (error 0.737, 39.5x its bound, 824569593927 ulp of float32); output: overall error is 10.5x what a correct float32 implementation shows (limit 2x); output: bad elements spread ov",
+   "ratio": 39.49789623738457,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 34934775 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.30768 vs float64 -2.30403 (error 0.00822, 35.9x its bound, 4243938 ulp of float32); output: overall error is 11.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 35.893558368172165,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 38210057 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.49018 vs float64 -2.48559 (error 0.0103, 45.1x its bound, 7949507 ulp of float32); output: overall error is 15.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the t",
+   "ratio": 45.12886228900575,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: view size is not compatible with input tensor's size and stride (at least one dimension spans across two contiguous subspaces). Use .reshape(...) instead.",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 67108864 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (67108864 of 67108864, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "example inputs, run 2 times",
+   "kind": "repeat",
+   "truestar": "warn",
+   "code": "TS203",
+   "message": "the same inputs give different bits from run to run (a race or an order that depends on timing)"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS201",
+  "TS203"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 40742262 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.49018 vs float64 -2.48559 (error 0.0103, 45.1x its bound, 11074129 ulp of float32); output: overall error is 14.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (40742262 of 67108864, 60.7%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.76,
+ "truestar_status": "divergent",
+ "notes": [
+  "6 variant(s) skipped because the reference rejects them (first: d1=65 (was 64): the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 65, 256, 2))"
+ ],
+ "seconds": 64.53
+}

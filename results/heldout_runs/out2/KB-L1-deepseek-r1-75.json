@@ -1,0 +1,114 @@
+{
+ "id": "KB-L1-deepseek-r1-75",
+ "set": "KB",
+ "level": 1,
+ "problem": "75_conv_transposed_2D_asymmetric_input_asymmetric_kernel_strided__grouped____padded____dilated__.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/75_conv_transposed_2D_asymmetric_input_a.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_75.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.07 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.60 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.06 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.41 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.06 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=33 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 16, 3, 5], expected input[16, 33, 128, 256] to have 32 channels, but got 33 chan)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=31 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 16, 3, 5], expected input[16, 31, 128, 256] to have 32 channels, but got 31 chan)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=129 (was 128)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.51 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.06 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=127 (was 128)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.49 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.06 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d3=257 (was 256)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.51 GiB. GPU 0 has a total capacity of 22.06 GiB of which 1.07 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.82,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 22.06 GiB of which 74.06 MiB is free. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 710.94 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/",
+ "trace": "^^^^^^^^^^^^^^^^^^\n  File \"/w/tests/data/heldout/kernelbench/problems/level1/75_conv_transposed_2D_asymmetric_input_a.py\", line 33, in forward\n    return self.conv_transpose2d(x)\n           ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/torch/nn/modules/conv.py\", line 1186, in forward\n    return F.conv_transpose2d(\n           ^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.50 GiB. GPU 0 has a total capacity of 22.06 GiB of which 74.06 MiB is free. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Process 1 has 21.96 GiB memory in use. Of the allocated memory 2.13 GiB is allocated by PyTorch, and 710.94 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 7.09
+}

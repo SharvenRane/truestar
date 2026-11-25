@@ -1,0 +1,606 @@
+[
+ {
+  "workload": "mlp",
+  "cold": {
+   "workload": "mlp",
+   "device": "cuda",
+   "import_torch_s": 1.3030713999978616,
+   "import_truestar_s": 0.4462141999974847,
+   "export_s": 1.1515512999976636,
+   "first_compile_s": 0.03525660000013886,
+   "first_first_call_s": 2.2541557000004104,
+   "first_first_result_s": 2.2894123000005493,
+   "first_verify_s": 0.3923854000022402,
+   "first_cache": {
+    "verify": "stored",
+    "key": "454490585d30cda81e80e33f9c1eafc593128eb1"
+   },
+   "first_out_sha256": "8731acbfa3655db370002f6eb3decb99c63f8d4a12cf35549eb48b7eefb255b3",
+   "process_to_first_result_s": 5.381260100002692,
+   "tune_s": 0.0,
+   "again_compile_s": 0.010131900002306793,
+   "again_first_call_s": 0.013583199994172901,
+   "again_first_result_s": 0.023715099996479694,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "454490585d30cda81e80e33f9c1eafc593128eb1",
+    "code": "TS1350"
+   },
+   "again_out_sha256": "8731acbfa3655db370002f6eb3decb99c63f8d4a12cf35549eb48b7eefb255b3",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_z0psxwue",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_mlp_z0psxwue\\triton\\bin",
+    "bytes": 36962075,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 7,
+      "bytes": 33405128
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1312
+     },
+     "triton binaries": {
+      "count": 7,
+      "bytes": 3555155
+     },
+     "tuned configs": {
+      "count": 1,
+      "bytes": 480
+     }
+    }
+   },
+   "wall_s": 6.07125609999639
+  },
+  "warm": {
+   "workload": "mlp",
+   "device": "cuda",
+   "import_torch_s": 1.3038222000031965,
+   "import_truestar_s": 0.45616400000290014,
+   "export_s": 1.1561673000032897,
+   "first_compile_s": 0.030272800002421718,
+   "first_first_call_s": 0.23121169999649283,
+   "first_first_result_s": 0.26148449999891454,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "454490585d30cda81e80e33f9c1eafc593128eb1",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "8731acbfa3655db370002f6eb3decb99c63f8d4a12cf35549eb48b7eefb255b3",
+   "process_to_first_result_s": 3.269957999997132,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_z0psxwue",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_mlp_z0psxwue\\triton\\bin",
+    "bytes": 36963599,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 8,
+      "bytes": 33406652
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1312
+     },
+     "triton binaries": {
+      "count": 7,
+      "bytes": 3555155
+     },
+     "tuned configs": {
+      "count": 1,
+      "bytes": 480
+     }
+    }
+   },
+   "wall_s": 3.847708099994634
+  },
+  "warm_tsx": {
+   "workload": "mlp",
+   "device": "cuda",
+   "import_torch_s": 1.3670666999969399,
+   "import_truestar_s": 0.3568373000016436,
+   "export_s": 0.05317780000041239,
+   "first_compile_s": 0.1513342999969609,
+   "first_first_call_s": 0.1526358999981312,
+   "first_first_result_s": 0.3039701999950921,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "454490585d30cda81e80e33f9c1eafc593128eb1",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "8731acbfa3655db370002f6eb3decb99c63f8d4a12cf35549eb48b7eefb255b3",
+   "process_to_first_result_s": 2.200588499996229,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_z0psxwue",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_mlp_z0psxwue\\triton\\bin",
+    "bytes": 36964760,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 9,
+      "bytes": 33407813
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1312
+     },
+     "triton binaries": {
+      "count": 7,
+      "bytes": 3555155
+     },
+     "tuned configs": {
+      "count": 1,
+      "bytes": 480
+     }
+    }
+   },
+   "wall_s": 2.604798500004108
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "encoder",
+  "cold": {
+   "workload": "encoder",
+   "device": "cuda",
+   "import_torch_s": 1.303663200000301,
+   "import_truestar_s": 0.3615961999967112,
+   "export_s": 1.1565622999987681,
+   "first_compile_s": 0.05821809999906691,
+   "first_first_call_s": 3.8657256000005873,
+   "first_first_result_s": 3.923943699999654,
+   "first_verify_s": 0.25662489999376703,
+   "first_cache": {
+    "verify": "stored",
+    "key": "fee29382e971bbb74bfa043b91aa6e63670f7486"
+   },
+   "first_out_sha256": "ac72cf231fb956dc6ed03329bc8ee14067d87fbdced83400a353c1bf745c1721",
+   "process_to_first_result_s": 6.814965100005793,
+   "tune_s": 0.0,
+   "again_compile_s": 0.024652799998875707,
+   "again_first_call_s": 0.0312567000000854,
+   "again_first_result_s": 0.05590949999896111,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "fee29382e971bbb74bfa043b91aa6e63670f7486",
+    "code": "TS1350"
+   },
+   "again_out_sha256": "ac72cf231fb956dc6ed03329bc8ee14067d87fbdced83400a353c1bf745c1721",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_kz9akzx2",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_encoder_kz9akzx2\\triton\\bin",
+    "bytes": 8237352,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 15,
+      "bytes": 3232219
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 2028
+     },
+     "triton binaries": {
+      "count": 8,
+      "bytes": 5001178
+     },
+     "tuned configs": {
+      "count": 4,
+      "bytes": 1927
+     }
+    }
+   },
+   "wall_s": 7.626293499997701
+  },
+  "warm": {
+   "workload": "encoder",
+   "device": "cuda",
+   "import_torch_s": 1.2784141000011005,
+   "import_truestar_s": 0.3594998000044143,
+   "export_s": 1.163042599997425,
+   "first_compile_s": 0.07179309999628458,
+   "first_first_call_s": 0.3258507999998983,
+   "first_first_result_s": 0.3976438999961829,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "fee29382e971bbb74bfa043b91aa6e63670f7486",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "ac72cf231fb956dc6ed03329bc8ee14067d87fbdced83400a353c1bf745c1721",
+   "process_to_first_result_s": 3.2605441999985487,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_kz9akzx2",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_encoder_kz9akzx2\\triton\\bin",
+    "bytes": 8238884,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 16,
+      "bytes": 3233751
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 2028
+     },
+     "triton binaries": {
+      "count": 8,
+      "bytes": 5001178
+     },
+     "tuned configs": {
+      "count": 4,
+      "bytes": 1927
+     }
+    }
+   },
+   "wall_s": 3.956458600005135
+  },
+  "warm_tsx": {
+   "workload": "encoder",
+   "device": "cuda",
+   "import_torch_s": 1.2705000999994809,
+   "import_truestar_s": 0.36020799999823794,
+   "export_s": 0.00989050000498537,
+   "first_compile_s": 0.18051410000043688,
+   "first_first_call_s": 0.21150569999736035,
+   "first_first_result_s": 0.39201979999779724,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "fee29382e971bbb74bfa043b91aa6e63670f7486",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "ac72cf231fb956dc6ed03329bc8ee14067d87fbdced83400a353c1bf745c1721",
+   "process_to_first_result_s": 2.1117496999941068,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_kz9akzx2",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_encoder_kz9akzx2\\triton\\bin",
+    "bytes": 8240053,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 17,
+      "bytes": 3234920
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 2028
+     },
+     "triton binaries": {
+      "count": 8,
+      "bytes": 5001178
+     },
+     "tuned configs": {
+      "count": 4,
+      "bytes": 1927
+     }
+    }
+   },
+   "wall_s": 2.533494299997983
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "resnet18",
+  "cold": {
+   "workload": "resnet18",
+   "device": "cuda",
+   "import_torch_s": 1.273779299997841,
+   "import_truestar_s": 0.35669729999790434,
+   "export_s": 0.6456003000057535,
+   "first_compile_s": 0.2886456999985967,
+   "first_first_call_s": 27.185398800000257,
+   "first_first_result_s": 27.474044499998854,
+   "first_verify_s": 0.8867155999905663,
+   "first_cache": {
+    "verify": "stored",
+    "key": "f9f357e4cee1ff745d26df2cba95b98a7f77900e"
+   },
+   "first_out_sha256": "b64f650dddf22750f50221096dadea00757e94a0b1e7c6e72b5d7536941fd73c",
+   "process_to_first_result_s": 30.764643399998022,
+   "tune_s": 23.648656399993342,
+   "again_compile_s": 0.06346099999791477,
+   "again_first_call_s": 0.14471010000124807,
+   "again_first_result_s": 0.20817109999916283,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "f9f357e4cee1ff745d26df2cba95b98a7f77900e",
+    "code": "TS1350"
+   },
+   "again_out_sha256": "b64f650dddf22750f50221096dadea00757e94a0b1e7c6e72b5d7536941fd73c",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_2fkcoxck",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_resnet18_2fkcoxck\\triton\\bin",
+    "bytes": 122697658,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 43,
+      "bytes": 46943839
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 7234
+     },
+     "triton binaries": {
+      "count": 113,
+      "bytes": 75719853
+     },
+     "tuned configs": {
+      "count": 16,
+      "bytes": 26732
+     }
+    }
+   },
+   "wall_s": 31.684909799994784
+  },
+  "warm": {
+   "workload": "resnet18",
+   "device": "cuda",
+   "import_torch_s": 1.257928400002129,
+   "import_truestar_s": 0.3513989999992191,
+   "export_s": 0.6546402000021772,
+   "first_compile_s": 0.16671149999456247,
+   "first_first_call_s": 0.3381966000015382,
+   "first_first_result_s": 0.5049080999961006,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "f9f357e4cee1ff745d26df2cba95b98a7f77900e",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "b64f650dddf22750f50221096dadea00757e94a0b1e7c6e72b5d7536941fd73c",
+   "process_to_first_result_s": 3.728894100000616,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_2fkcoxck",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_resnet18_2fkcoxck\\triton\\bin",
+    "bytes": 122699217,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 44,
+      "bytes": 46945398
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 7234
+     },
+     "triton binaries": {
+      "count": 113,
+      "bytes": 75719853
+     },
+     "tuned configs": {
+      "count": 16,
+      "bytes": 26732
+     }
+    }
+   },
+   "wall_s": 4.378298399999039
+  },
+  "warm_tsx": {
+   "workload": "resnet18",
+   "device": "cuda",
+   "import_torch_s": 1.2444596999994246,
+   "import_truestar_s": 0.33372619999863673,
+   "export_s": 0.07524649999686517,
+   "first_compile_s": 0.16844539999874542,
+   "first_first_call_s": 0.25761639999836916,
+   "first_first_result_s": 0.4260617999971146,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "f9f357e4cee1ff745d26df2cba95b98a7f77900e",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "b64f650dddf22750f50221096dadea00757e94a0b1e7c6e72b5d7536941fd73c",
+   "process_to_first_result_s": 2.9915274000013596,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_2fkcoxck",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_resnet18_2fkcoxck\\triton\\bin",
+    "bytes": 122700396,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 45,
+      "bytes": 46946577
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 7234
+     },
+     "triton binaries": {
+      "count": 113,
+      "bytes": 75719853
+     },
+     "tuned configs": {
+      "count": 16,
+      "bytes": 26732
+     }
+    }
+   },
+   "wall_s": 3.5066644999969867
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "decode",
+  "cold": {
+   "workload": "decode",
+   "device": "cuda",
+   "import_torch_s": 1.2387250999963726,
+   "import_truestar_s": 0.35035290000087116,
+   "export_s": 1.0982583000004524,
+   "first_compile_s": 0.08943670000007842,
+   "first_first_call_s": 5.51974020000489,
+   "first_first_result_s": 5.609176900004968,
+   "first_verify_s": 0.24110539998218883,
+   "first_cache": {
+    "verify": "stored",
+    "key": "fa9bff2468d88c152e434ec2d366df2d3f307ac7"
+   },
+   "first_out_sha256": "2e075b0078d475797680658fe4b19730e85265fe8bd77db904de213dede791f0",
+   "process_to_first_result_s": 8.386487099996884,
+   "tune_s": 0.0,
+   "again_compile_s": 0.01978860000235727,
+   "again_first_call_s": 0.027962899999693036,
+   "again_first_result_s": 0.04775150000205031,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "fa9bff2468d88c152e434ec2d366df2d3f307ac7",
+    "code": "TS1350"
+   },
+   "again_out_sha256": "2e075b0078d475797680658fe4b19730e85265fe8bd77db904de213dede791f0",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_3amin_tf",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_decode_3amin_tf\\triton\\bin",
+    "bytes": 17023444,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 29,
+      "bytes": 11381614
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 3485
+     },
+     "triton binaries": {
+      "count": 21,
+      "bytes": 5635931
+     },
+     "tuned configs": {
+      "count": 5,
+      "bytes": 2414
+     }
+    }
+   },
+   "wall_s": 9.067051699996227
+  },
+  "warm": {
+   "workload": "decode",
+   "device": "cuda",
+   "import_torch_s": 1.4159680999946431,
+   "import_truestar_s": 0.43538770000304794,
+   "export_s": 1.40303340000537,
+   "first_compile_s": 0.10213599999406142,
+   "first_first_call_s": 0.5074559000058798,
+   "first_first_result_s": 0.6095918999999412,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "fa9bff2468d88c152e434ec2d366df2d3f307ac7",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "2e075b0078d475797680658fe4b19730e85265fe8bd77db904de213dede791f0",
+   "process_to_first_result_s": 3.9438429000001634,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_3amin_tf",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_decode_3amin_tf\\triton\\bin",
+    "bytes": 17024977,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 30,
+      "bytes": 11383147
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 3485
+     },
+     "triton binaries": {
+      "count": 21,
+      "bytes": 5635931
+     },
+     "tuned configs": {
+      "count": 5,
+      "bytes": 2414
+     }
+    }
+   },
+   "wall_s": 4.669880800000101
+  },
+  "warm_tsx": {
+   "workload": "decode",
+   "device": "cuda",
+   "import_torch_s": 1.3887677999955486,
+   "import_truestar_s": 0.3652776000017184,
+   "export_s": 0.0234615000008489,
+   "first_compile_s": 0.20352740000089398,
+   "first_first_call_s": 0.2764935999948648,
+   "first_first_result_s": 0.48002099999575876,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "fa9bff2468d88c152e434ec2d366df2d3f307ac7",
+    "code": "TS1350"
+   },
+   "first_out_sha256": "2e075b0078d475797680658fe4b19730e85265fe8bd77db904de213dede791f0",
+   "process_to_first_result_s": 2.3374283999946783,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_3amin_tf",
+    "enabled": true,
+    "triton_binaries": "<tmp>\\tscc_decode_3amin_tf\\triton\\bin",
+    "bytes": 17026146,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 31,
+      "bytes": 11384316
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 3485
+     },
+     "triton binaries": {
+      "count": 21,
+      "bytes": 5635931
+     },
+     "tuned configs": {
+      "count": 5,
+      "bytes": 2414
+     }
+    }
+   },
+   "wall_s": 2.7973949999941397
+  },
+  "bitwise_equal": true
+ }
+]

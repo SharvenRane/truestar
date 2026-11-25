@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-54",
+ "set": "KB",
+ "level": 2,
+ "problem": "54_Conv2d_Multiply_LeakyReLU_GELU.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/54_Conv2d_Multiply_LeakyReLU_GELU.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_54.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "timeout",
+ "seconds": 300.1
+}

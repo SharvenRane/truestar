@@ -1,0 +1,122 @@
+[
+ {
+  "config": "128x256x16 w8 s3",
+  "kind": "spills",
+  "gpu_filled": false,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6503.0
+ },
+ {
+  "config": "128x256x16 w8 s3",
+  "kind": "spills",
+  "gpu_filled": false,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6921.0
+ },
+ {
+  "config": "128x256x16 w8 s3",
+  "kind": "spills",
+  "gpu_filled": true,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ },
+ {
+  "config": "128x256x16 w8 s3",
+  "kind": "spills",
+  "gpu_filled": true,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ },
+ {
+  "config": "128x128x16 w4 s3",
+  "kind": "spills",
+  "gpu_filled": false,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6503.0
+ },
+ {
+  "config": "128x128x16 w4 s3",
+  "kind": "spills",
+  "gpu_filled": false,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6921.0
+ },
+ {
+  "config": "128x128x16 w4 s3",
+  "kind": "spills",
+  "gpu_filled": true,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ },
+ {
+  "config": "128x128x16 w4 s3",
+  "kind": "spills",
+  "gpu_filled": true,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ },
+ {
+  "config": "64x128x16 w4 s3",
+  "kind": "no spill",
+  "gpu_filled": false,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6503.0
+ },
+ {
+  "config": "64x128x16 w4 s3",
+  "kind": "no spill",
+  "gpu_filled": false,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 6921.0
+ },
+ {
+  "config": "64x128x16 w4 s3",
+  "kind": "no spill",
+  "gpu_filled": true,
+  "cuda_graph": false,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ },
+ {
+  "config": "64x128x16 w4 s3",
+  "kind": "no spill",
+  "gpu_filled": true,
+  "cuda_graph": true,
+  "ok": true,
+  "exit": 0,
+  "error": "",
+  "free_mb_at_launch": 0.0
+ }
+]

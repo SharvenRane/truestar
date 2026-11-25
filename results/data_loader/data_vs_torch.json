@@ -1,0 +1,105 @@
+{
+ "machine": {
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.20",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.2.6",
+  "cpu_count": 24,
+  "torch_threads": 4
+ },
+ "batch_size": 256,
+ "samples": 50000,
+ "throughput": [
+  {
+   "loader": "truestar",
+   "case": "plain",
+   "workers": 0,
+   "mode": "-",
+   "samples_per_s": 563807
+  },
+  {
+   "loader": "torch",
+   "case": "plain",
+   "workers": 0,
+   "mode": "-",
+   "samples_per_s": 226270
+  },
+  {
+   "loader": "truestar",
+   "case": "augment",
+   "workers": 0,
+   "mode": "-",
+   "samples_per_s": 117934
+  },
+  {
+   "loader": "truestar",
+   "case": "augment",
+   "workers": 4,
+   "mode": "thread",
+   "samples_per_s": 144143
+  },
+  {
+   "loader": "truestar",
+   "case": "augment",
+   "workers": 4,
+   "mode": "process",
+   "samples_per_s": 124680
+  },
+  {
+   "loader": "torch",
+   "case": "augment",
+   "workers": 0,
+   "mode": "-",
+   "samples_per_s": 76936
+  },
+  {
+   "loader": "torch",
+   "case": "augment",
+   "workers": 4,
+   "mode": "process",
+   "samples_per_s": 211137
+  },
+  {
+   "loader": "truestar",
+   "case": "augment_per_sample",
+   "workers": 0,
+   "mode": "-",
+   "samples_per_s": 102620
+  },
+  {
+   "loader": "truestar",
+   "case": "augment_per_sample",
+   "workers": 4,
+   "mode": "thread",
+   "samples_per_s": 52134
+  },
+  {
+   "loader": "truestar",
+   "case": "augment_per_sample",
+   "workers": 4,
+   "mode": "process",
+   "samples_per_s": 127382
+  }
+ ],
+ "determinism": {
+  "samples": 8192,
+  "truestar": {
+   "threadx0": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+   "threadx1": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+   "threadx2": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+   "threadx4": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+   "processx2": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+   "processx4": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7"
+  },
+  "truestar_second_process": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+  "truestar_all_equal": true,
+  "torch": {
+   "workers0": "c19e51c653d90d36f04c85af34d82fbe03ff167dba63c7b3ab7012db3ee5ccdc",
+   "workers2": "386594e9832686e505c5db3306650d2fcbc7ee074c4f2ce43fb97239bd2b617d",
+   "workers4": "e91ed947ac573c3209e30138609651c90d558eb4452ed898408f0f5cc93af402"
+  },
+  "torch_distinct_digests": 3,
+  "truestar_linux_modal_digest": "dcd3b6da624d56ac2f3f5ea8d49c6cd17ffbccc017f4ff11c1d1b8b0ef0b8aa7",
+  "truestar_linux_equals_windows": true
+ }
+}

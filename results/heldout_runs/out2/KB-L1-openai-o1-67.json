@@ -1,0 +1,232 @@
+{
+ "id": "KB-L1-openai-o1-67",
+ "set": "KB",
+ "level": 1,
+ "problem": "67_conv_standard_1D.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/67_conv_standard_1D.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_67.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521958 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -5.72817 vs float64 -0.00214526 (error 24.4, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7645.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread ove",
+   "ratio": 27400.04551584371,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 554581 of 554880 elements beyond the derived bound; worst at [13, 23, 65]: -6.42435 vs float64 0.367498 (error 21.8, 26467.7x its bound, 14934262117217 ulp of float32); output: overall error is 7633.6x what a correct float32 implementation shows (limit 2x); output: bad elements spread over t",
+   "ratio": 26467.72613106347,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 489306 of 489600 elements beyond the derived bound; worst at [14, 56, 11]: 7.87994 vs float64 -0.11756 (error 21.6, 19777.3x its bound, 10097506146143 ulp of float32); output: overall error is 7636.7x what a correct float32 implementation shows (limit 2x); output: bad elements spread over th",
+   "ratio": 19777.298514919643,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=4 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3], expected input[16, 4, 512] to have 3 channels, but got 4 channels instead)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=2 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3], expected input[16, 2, 512] to have 3 channels, but got 2 channels instead)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=513 (was 512)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 522973 of 523264 elements beyond the derived bound; worst at [1, 23, 375]: 7.23759 vs float64 -0.216927 (error 20.3, 24587.1x its bound, 6525082681760 ulp of float32); output: overall error is 7638.6x what a correct float32 implementation shows (limit 2x); output: bad elements spread over th",
+   "ratio": 24587.075509204013,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d2=511 (was 512)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 520916 of 521216 elements beyond the derived bound; worst at [11, 59, 398]: -10.6276 vs float64 1.02163 (error 21.1, 19605.6x its bound, 197655756145373 ulp of float32); output: overall error is 7622.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over ",
+   "ratio": 19605.603622835217,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=5, d2=513",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3], expected input[17, 5, 513] to have 3 channels, but got 5 channels instead)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=3, d2=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 2240 of 2240 elements beyond the derived bound; worst at [3, 63, 1]: 6.67819 vs float64 -1.52507 (error 15.5, 10013.6x its bound, 48391435802 ulp of float32); output: overall error is 7507.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor ",
+   "ratio": 10013.576669726188,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521959 of 522240 elements beyond the derived bound; worst at [7, 38, 353]: -284.865 vs float64 17.002 (error 561, 28472.2x its bound, 55641747422400 ulp of float32); output: overall error is 7645.5x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 28472.23955706714,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 522101 of 522240 elements beyond the derived bound; worst at [8, 56, 23]: -402.723 vs float64 24.7297 (error 442, 16539.6x its bound, 39608235412592 ulp of float32); output: overall error is 6996.8x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 16539.572283035843,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521958 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -0.0447513 vs float64 -1.67599e-05 (error 0.19, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7645.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread ",
+   "ratio": 27400.04551584371,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 522240 of 522240 elements beyond the derived bound; worst at [14, 56, 11]: 0.0530756 vs float64 -0.00317839 (error 0.0563, 18578.8x its bound, 10565112077 ulp of float32); output: overall error is 7710.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread ove",
+   "ratio": 18578.802347400695,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521894 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -5.72817 vs float64 -0.00214526 (error 24.4, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7644.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread ove",
+   "ratio": 27400.045515953883,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "fail",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521958 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -5.72817 vs float64 -0.00214526 (error 24.4, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7645.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread ove",
+   "ratio": 27400.04551584371,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 521958 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -5.72817 vs float64 -0.00214526 (error 24.4, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7645.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread ove",
+   "ratio": 27400.04551584371,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 521958 of 522240 elements beyond the derived bound; worst at [5, 23, 454]: -5.72817 vs float64 -0.00214526 (error 24.4, 27400.0x its bound, 77333668174565 ulp of float32); output: overall error is 7645.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (521958 of 522240, 99.9%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.47,
+ "truestar_status": "divergent",
+ "notes": [
+  "3 variant(s) skipped because the reference rejects them (first: d1=4 (was 3): the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3], expected input[16, 4, 512] to have 3 channels, but got 4 channels instead))"
+ ],
+ "seconds": 4.87
+}

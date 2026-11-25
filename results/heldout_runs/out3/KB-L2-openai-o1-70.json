@@ -1,0 +1,210 @@
+{
+ "id": "KB-L2-openai-o1-70",
+ "set": "KB",
+ "level": 2,
+ "problem": "70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_70.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65534 of 65536 elements beyond the derived bound; worst at [114, 114]: -12.7516 vs float64 -6.3678 (error 7.77, 300820.2x its bound, 17417806609413 ulp of float32); output: overall error is 358691.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the",
+   "ratio": 300820.2092986297,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 66048 of 66048 elements beyond the derived bound; worst at [22, 10]: 4.40502 vs float64 2.83408 (error 2.78, 322556.8x its bound, 500866811386 ulp of float32); output: overall error is 340985.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tens",
+   "ratio": 322556.7883570973,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65024 of 65024 elements beyond the derived bound; worst at [3, 437]: -2.48686 vs float64 -0.875566 (error 2.67, 286290.4x its bound, 252010393561 ulp of float32); output: overall error is 340268.5x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the t",
+   "ratio": 286290.3636621913,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=1025 (was 1024)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x1025 and 1024x512))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=1023 (was 1024)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x1023 and 1024x512))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=1025",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (129x1025 and 1024x512))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 1024x512))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65534 of 65536 elements beyond the derived bound; worst at [54, 49]: 49.2843 vs float64 25.6302 (error 171, 326555.6x its bound, 34268202918 ulp of float32); output: overall error is 394276.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor",
+   "ratio": 326555.58621860424,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65535 of 65536 elements beyond the derived bound; worst at [116, 171]: 111.006 vs float64 56.4976 (error 104, 363933.0x its bound, 16779586323 ulp of float32); output: overall error is 328699.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tens",
+   "ratio": 363933.0336519103,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65534 of 65536 elements beyond the derived bound; worst at [24, 24]: 0.851365 vs float64 0.96184 (error 0.122, 173582.5x its bound, 2049434 ulp of float32); output: overall error is 86481.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (",
+   "ratio": 173582.54232789003,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65536 of 65536 elements beyond the derived bound; worst at [82, 227]: 0.999549 vs float64 0.95971 (error 0.0519, 83032.9x its bound, 839801 ulp of float32); output: overall error is 82892.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (",
+   "ratio": 83032.87274015094,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65022 of 65536 elements beyond the derived bound; worst at [114, 114]: -12.7516 vs float64 -6.3678 (error 7.77, 300820.2x its bound, 17417806609413 ulp of float32); output: overall error is 358550.2x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the",
+   "ratio": 300820.2096764108,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "fail",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 65536 of 65536 elements beyond the derived bound; worst at [99, 184]: -3.12401 vs float64 0.96686 (error 11.5, 973660.2x its bound, 30111421367291 ulp of float32); output: overall error is 810263.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 973660.2487785179,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 65536 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (65536 of 65536, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 65534 of 65536 elements beyond the derived bound; worst at [114, 114]: -12.7516 vs float64 -6.3678 (error 7.77, 300820.2x its bound, 17417806609413 ulp of float32); output: overall error is 358691.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (65534 of 65536, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.95,
+ "truestar_status": "divergent",
+ "notes": [
+  "4 variant(s) skipped because the reference rejects them (first: d1=1025 (was 1024): the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x1025 and 1024x512)))"
+ ],
+ "seconds": 5.86
+}

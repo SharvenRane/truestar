@@ -1,0 +1,3 @@
+mlp weights True input True compiled True compiled run to run True eager True
+transformer weights True input True compiled True compiled run to run True eager True
+resnet18 weights True input True compiled True compiled run to run True eager True

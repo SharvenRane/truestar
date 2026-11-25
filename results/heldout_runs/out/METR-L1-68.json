@@ -1,0 +1,223 @@
+{
+ "id": "METR-L1-68",
+ "set": "METR",
+ "level": 1,
+ "problem": "68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+ "ref": "results/heldout_metr/tasks/level_1/68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_68.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.29 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.47 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.53 GiB is free. Proce)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.18 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=33 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.03 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=31 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 3, 5, 5], expected input[16, 31, 64, 64, 64] to have 32 channels, but got 31)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=65 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.05 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=63 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.23 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=33, d2=65",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1.15 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 3, 5, 5], expected input[7, 7, 7, 7, 7] to have 32 channels, but got 7 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 1024.00 MiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. )",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 836.06 MiB is free. Pro)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  }
+ },
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.77,
+ "truestar_status": "ok",
+ "notes": [
+  "16 variant(s) skipped because the reference rejects them (first: example inputs: the reference rejects it (OutOfMemoryError: CUDA out of memory. Tried to allocate 2.33 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.29 GiB is free. Proce))"
+ ],
+ "seconds": 23.03
+}

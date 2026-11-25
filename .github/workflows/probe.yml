@@ -1,0 +1,37 @@
+name: probe
+
+# Manual only: runs one PyTorch only probe script from scripts/ on a clean Linux and Windows
+# machine with the torch version CI uses, so a platform or version difference can be measured.
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: "Probe script under scripts/"
+        required: true
+        default: "probe_bn_fp16_backward.py"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install torch
+        shell: bash
+        run: python -m pip install --index-url https://download.pytorch.org/whl/cpu "torch==2.14.1" "torchvision==0.29.1"
+      - name: Install truestar
+        shell: bash
+        run: python -m pip install .
+      - name: Run probe
+        shell: bash
+        run: python "scripts/${{ inputs.script }}"

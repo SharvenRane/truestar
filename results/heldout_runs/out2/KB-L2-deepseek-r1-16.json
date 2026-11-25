@@ -1,0 +1,233 @@
+{
+ "id": "KB-L2-deepseek-r1-16",
+ "set": "KB",
+ "level": 2,
+ "problem": "16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_16.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 8921088 elements beyond the derived bound; worst at [72, 0, 6, 24]: 1.99987 vs float64 2 (error 0.000491, 1.0x its bound, 6049 ulp of float32); output: bad elements only at index 72 of dim 0 (size 128); only at index 0 of dim 1 (size 64); only at index 6 of dim 2 (size 33); only at inde",
+   "ratio": 1.0458632792587492,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.6100220618990225,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5393451914546666,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=33 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 33, 16, 16] to have 32 channels, but got 33 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=31 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 31, 16, 16] to have 32 channels, but got 31 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=17 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5637289585264068,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d2=15 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.8431381989087594,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=33, d2=17",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[129, 33, 17, 17] to have 32 channels, but got 33 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[7, 7, 7, 7] to have 32 channels, but got 7 channels in)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 6 of 8921088 elements beyond the derived bound; worst at [53, 13, 1, 18]: 1.99967 vs float64 2 (error 0.0101, 1.0x its bound, 106422 ulp of float32); output: bad elements in the head of dim 3 (indices 0 to 26 of 33) (6 of 8921088, 0.0%) Policy: float32 results, float32 accumulation, TF32 con",
+   "ratio": 1.0295053580452784,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 8921088 elements beyond the derived bound; worst at [22, 18, 31, 20]: 1.9983 vs float64 2 (error 0.0243, 1.0x its bound, 309925 ulp of float32); output: bad elements only at index 22 of dim 0 (size 128); only at index 18 of dim 1 (size 64); only at index 31 of dim 2 (size 33); only at i",
+   "ratio": 1.0000942894693428,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.7295861298270699,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.3341188585979007,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 576 places where the float64 reference has none, or the other way round; output: 1 of 8921088 elements beyond the derived bound; worst at [72, 0, 6, 24]: 1.99987 vs float64 2 (error 0.000491, 1.0x its bound, 6049 ulp of float32); output: bad elements only at index 72 of di",
+   "ratio": 1.0458632792586435,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 8921088 elements beyond the derived bound; worst at [72, 0, 6, 24]: 1.99987 vs float64 2 (error 0.000491, 1.0x its bound, 6049 ulp of float32); output: bad elements only at index 72 of dim 0 (size 128); only at index 0 of dim 1 (size 64); only at index 6 of dim 2 (size 33); only at inde",
+   "ratio": 1.0458632792587492,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 8921088 elements beyond the derived bound; worst at [72, 0, 6, 24]: 1.99987 vs float64 2 (error 0.000491, 1.0x its bound, 6049 ulp of float32); output: bad elements only at index 72 of dim 0 (size 128); only at index 0 of dim 1 (size 64); only at index 6 of dim 2 (size 33); only at inde",
+   "ratio": 1.0458632792587492,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 1 of 8921088 elements beyond the derived bound; worst at [72, 0, 6, 24]: 1.99987 vs float64 2 (error 0.000491, 1.0x its bound, 6049 ulp of float32); output: bad elements only at index 72 of dim 0 (size 128); only at index 0 of dim 1 (size 64); only at index 6 of dim 2 (size 33); only at index 24 of dim 3 (size 33); on diagonal offset 18 of the last two dims (a mask edge?) (1 of 8921088, 0.0%) Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.37,
+ "truestar_status": "divergent",
+ "notes": [
+  "4 variant(s) skipped because the reference rejects them (first: d1=33 (was 32): the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 33, 16, 16] to have 32 channels, but got 33 chann))"
+ ],
+ "seconds": 10.25
+}

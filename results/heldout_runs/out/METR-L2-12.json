@@ -1,0 +1,23 @@
+{
+ "id": "METR-L2-12",
+ "set": "METR",
+ "level": 2,
+ "problem": "12_Gemm_Multiply_LeakyReLU.py",
+ "ref": "results/heldout_metr/tasks/level_2/12_Gemm_Multiply_LeakyReLU.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_2/task_12.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "load_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "error": "KernelFileError: importing /w/results/heldout_metr/best_agent_solutions/level_2/task_12.py failed: RuntimeError: Error building extension 'fused_mul_leakyrelu'",
+ "seconds": 23.44
+}

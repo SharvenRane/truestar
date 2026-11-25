@@ -1,0 +1,220 @@
+{
+ "id": "KB-L2-deepseek-r1-11",
+ "set": "KB",
+ "level": 2,
+ "problem": "11_ConvTranspose2d_BatchNorm_Tanh_MaxPool_GroupNorm.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/11_ConvTranspose2d_BatchNorm_Tanh_MaxPoo.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_11.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS205",
+   "message": "output elements were never written (the NaN the allocator was filled with shows through): output: NaN or infinity at 7957 places where the float64 reference has none, or the other way round; output: 8356008 of 8388608 elements beyond the derived bound; worst at [78, 56, 13, 20]: 2.8794e+38 vs float6",
+   "ratio": 1.8735837912145235e+41,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS205",
+   "message": "output elements were never written (the NaN the allocator was filled with shows through): output: NaN or infinity at 4227072 places where the float64 reference has none, or the other way round; output: 4210455 of 8454144 elements beyond the derived bound; worst at [70, 21, 0, 3]: 14.7074 vs float64 ",
+   "ratio": 18849.159687156236,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS205",
+   "message": "output elements were never written (the NaN the allocator was filled with shows through): output: NaN or infinity at 531 places where the float64 reference has none, or the other way round; output: 8286902 of 8323072 elements beyond the derived bound; worst at [3, 14, 17, 22]: 3.17913e+38 vs float64",
+   "ratio": 1.6822696953213143e+41,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=33 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 33, 33, 33] to have 32 channels, but got 33 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=31 (was 32)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 31, 31, 31] to have 32 channels, but got 31 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=33",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[129, 33, 33, 33] to have 32 channels, but got 33 chann)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[7, 7, 7, 7] to have 32 channels, but got 7 channels in)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8372750 of 8388608 elements beyond the derived bound; worst at [54, 29, 0, 30]: -3.68935e+19 vs float64 0.355533 (error 3.69e+19, 1197682038726398960467968.0x its bound, 162259276829213363391578010288128 ulp of float32); output: overall error is 4954483334534855131136.0x what a correct float",
+   "ratio": 1.197682038726399e+24,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 4194304 places where the float64 reference has none, or the other way round; output: 4193721 of 8388608 elements beyond the derived bound; worst at [79, 9, 8, 5]: 14.1726 vs float64 0.379075 (error 40.2, 447503.1x its bound, 243497600603 ulp of float32); output: overall er",
+   "ratio": 447503.12950631,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 4194304 places where the float64 reference has none, or the other way round; output: 4193692 of 8388608 elements beyond the derived bound; worst at [23, 38, 4, 3]: 10.5592 vs float64 -1.26757 (error 17.1, 122454.5x its bound, 237266379200800 ulp of float32); output: overal",
+   "ratio": 122454.52609896395,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8388608 of 8388608 elements beyond the derived bound; worst at [73, 38, 14, 26]: -3.68935e+19 vs float64 -1.30278 (error 3.69e+19, 2844154260783238200950784.0x its bound, 19807040628566084398385987584 ulp of float32); output: overall error is 99182633765982103928832.0x what a correct float32",
+   "ratio": 2.844154260783238e+24,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 73674 places where the float64 reference has none, or the other way round; output: 8285350 of 8388608 elements beyond the derived bound; worst at [84, 12, 1, 22]: 3.33528e+38 vs float64 2.00409 (error 3.4e+38, 170574702442858586869470194299833828769792.0x its bound, 553318",
+   "ratio": 1.7057470244285859e+41,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "fail",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8364741 of 8388608 elements beyond the derived bound; worst at [5, 9, 31, 24]: 3.68935e+19 vs float64 -0.792888 (error 3.69e+19, 46943717252184145920000.0x its bound, 649037107316853453566312041152512 ulp of float32); output: overall error is 8743779613625029754880.0x what a correct float32 ",
+   "ratio": 4.694371725218415e+22,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 2105401 places where the float64 reference has none, or the other way round; output: 6266369 of 8388608 elements beyond the derived bound; worst at [54, 49, 12, 16]: -3.218e+38 vs float64 0.622795 (error 3.4e+38, 166866775809962652945409858271967652610048.0x its bound, 464",
+   "ratio": 1.6686677580996265e+41,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "example inputs, run 2 times",
+   "kind": "repeat",
+   "truestar": "warn",
+   "code": "TS203",
+   "message": "the same inputs give different bits from run to run (a race or an order that depends on timing)"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS205",
+  "TS200",
+  "TS202",
+  "TS203"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS205",
+  "message": "output elements were never written (the NaN the allocator was filled with shows through): output: NaN or infinity at 7957 places where the float64 reference has none, or the other way round; output: 8356008 of 8388608 elements beyond the derived bound; worst at [78, 56, 13, 20]: 2.8794e+38 vs float64 1.36054 (error 3.4e+38, 187358379121452347612310000079585666924544.0x its bound, 122256164094595846839108887142708850920179573456896 ulp of float32); output: overall error is 88708949546506568618668"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 3.72,
+ "truestar_status": "divergent",
+ "notes": [
+  "4 variant(s) skipped because the reference rejects them (first: d1=33 (was 32): the reference rejects it (RuntimeError: Given transposed=1, weight of size [32, 64, 4, 4], expected input[128, 33, 33, 33] to have 32 channels, but got 33 chann))"
+ ],
+ "seconds": 42.75
+}

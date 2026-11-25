@@ -1,0 +1,64 @@
+[idle gate] GPU busy (foreign=[(25548, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[0.0, 0.0, 0.0, 0.0, 8.0]); waiting
+idle gate: waited 31.0 s, util [0.0, 0.0, 0.0]
+  det pass Hq32/8 B1 N1024 int8 det=False: runs equal, err vs float64 over the dequantized cache 3.18e-04
+  det pass Hq32/8 B1 N1024 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.38e-04
+  det pass Hq32/8 B1 N1024 fp8 det=False: runs equal, err vs float64 over the dequantized cache 2.91e-04
+  det pass Hq32/8 B1 N1024 fp8 det=True: runs equal, err vs float64 over the dequantized cache 2.91e-04
+  det pass Hq32/8 B1 N4096 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.96e-04
+  det pass Hq32/8 B1 N4096 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.23e-04
+  det pass Hq32/8 B1 N4096 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.17e-04
+  det pass Hq32/8 B1 N4096 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.38e-04
+  det pass Hq32/8 B1 N16384 int8 det=False: runs equal, err vs float64 over the dequantized cache 4.12e-04
+  det pass Hq32/8 B1 N16384 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.62e-04
+  det pass Hq32/8 B1 N16384 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.24e-04
+  det pass Hq32/8 B1 N16384 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.88e-04
+  det pass Hq32/8 B8 N1024 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.98e-04
+  det pass Hq32/8 B8 N1024 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.98e-04
+  det pass Hq32/8 B8 N1024 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.39e-04
+  det pass Hq32/8 B8 N1024 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.39e-04
+  det pass Hq32/8 B8 N4096 int8 det=False: runs equal, err vs float64 over the dequantized cache 3.69e-04
+  det pass Hq32/8 B8 N4096 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.52e-04
+  det pass Hq32/8 B8 N4096 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.43e-04
+  det pass Hq32/8 B8 N4096 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.56e-04
+  det pass Hq32/8 B8 N16384 int8 det=False: runs equal, err vs float64 over the dequantized cache 3.53e-04
+  det pass Hq32/8 B8 N16384 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.11e-04
+  det pass Hq32/8 B8 N16384 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.23e-04
+  det pass Hq32/8 B8 N16384 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.19e-04
+  det pass Hq8/8 B1 N1024 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.43e-04
+  det pass Hq8/8 B1 N1024 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.43e-04
+  det pass Hq8/8 B1 N1024 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.08e-04
+  det pass Hq8/8 B1 N1024 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.08e-04
+  det pass Hq8/8 B1 N4096 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.81e-04
+  det pass Hq8/8 B1 N4096 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.81e-04
+  det pass Hq8/8 B1 N4096 fp8 det=False: runs equal, err vs float64 over the dequantized cache 2.88e-04
+  det pass Hq8/8 B1 N4096 fp8 det=True: runs equal, err vs float64 over the dequantized cache 2.88e-04
+  det pass Hq8/8 B1 N16384 int8 det=False: runs equal, err vs float64 over the dequantized cache 3.13e-04
+  det pass Hq8/8 B1 N16384 int8 det=True: runs equal, err vs float64 over the dequantized cache 3.13e-04
+  det pass Hq8/8 B1 N16384 fp8 det=False: runs equal, err vs float64 over the dequantized cache 3.08e-04
+  det pass Hq8/8 B1 N16384 fp8 det=True: runs equal, err vs float64 over the dequantized cache 3.08e-04
+  det pass Hq8/8 B8 N1024 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.61e-04
+  det pass Hq8/8 B8 N1024 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.61e-04
+  det pass Hq8/8 B8 N1024 fp8 det=False: runs equal, err vs float64 over the dequantized cache 2.61e-04
+  det pass Hq8/8 B8 N1024 fp8 det=True: runs equal, err vs float64 over the dequantized cache 2.61e-04
+  det pass Hq8/8 B8 N4096 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.94e-04
+  det pass Hq8/8 B8 N4096 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.94e-04
+  det pass Hq8/8 B8 N4096 fp8 det=False: runs equal, err vs float64 over the dequantized cache 2.96e-04
+  det pass Hq8/8 B8 N4096 fp8 det=True: runs equal, err vs float64 over the dequantized cache 2.96e-04
+  det pass Hq8/8 B8 N16384 int8 det=False: runs equal, err vs float64 over the dequantized cache 2.66e-04
+  det pass Hq8/8 B8 N16384 int8 det=True: runs equal, err vs float64 over the dequantized cache 2.66e-04
+  det pass Hq8/8 B8 N16384 fp8 det=False: runs equal, err vs float64 over the dequantized cache 2.65e-04
+  det pass Hq8/8 B8 N16384 fp8 det=True: runs equal, err vs float64 over the dequantized cache 2.65e-04
+determinism pass: 48 cases, two runs equal in all
+gpu NVIDIA GeForce RTX 5070 Ti, SMs 70, torch 2.11.0+cu128, flashinfer import failed: ModuleNotFoundError: No module named 'flashinfer'
+Hq32 Hkv8 B1 N1024: ts 18.9us(221GB/s fp16eq, err 4.2e-04)  sdpa 107.8us(39GB/s fp16eq, err 3.2e-04)  ts_int8 5.4us(778GB/s fp16eq, err 1.4e-02)  ts_fp8 5.1us(819GB/s fp16eq, err 3.8e-02)
+Hq32 Hkv8 B1 N4096: ts 20.7us(811GB/s fp16eq, err 3.0e-04)  sdpa 614.0us(27GB/s fp16eq, err 2.7e-04)  ts_int8 11.0us(1531GB/s fp16eq, err 1.2e-02)  ts_fp8 11.4us(1476GB/s fp16eq, err 6.3e-02)
+Hq32 Hkv8 B1 N16384: ts 91.3us(735GB/s fp16eq, err 3.3e-04)  sdpa 2457.7us(27GB/s fp16eq, err 3.0e-04)  ts_int8 30.9us(2170GB/s fp16eq, err 1.2e-02)  ts_fp8 32.2us(2087GB/s fp16eq, err 4.0e-02)
+Hq32 Hkv8 B8 N1024: ts 22.8us(1469GB/s fp16eq, err 3.8e-04)  sdpa 1259.5us(27GB/s fp16eq, err 3.8e-04)  ts_int8 16.2us(2074GB/s fp16eq, err 1.1e-02)  ts_fp8 17.0us(1980GB/s fp16eq, err 3.9e-02)
+Hq32 Hkv8 B8 N4096: ts 165.6us(811GB/s fp16eq, err 4.2e-04)  sdpa 5012.1us(27GB/s fp16eq, err 4.2e-04)  ts_int8 86.3us(1556GB/s fp16eq, err 9.6e-03)  ts_fp8 99.9us(1343GB/s fp16eq, err 3.4e-02)
+Hq32 Hkv8 B8 N16384: ts 640.1us(839GB/s fp16eq, err 3.5e-04)  sdpa 19705.9us(27GB/s fp16eq, err 2.7e-04)  ts_int8 327.6us(1639GB/s fp16eq, err 1.3e-02)  ts_fp8 378.4us(1419GB/s fp16eq, err 3.9e-02)
+Hq8 Hkv8 B1 N1024: ts 19.0us(220GB/s fp16eq, err 3.8e-04)  sdpa 59.5us(70GB/s fp16eq, err 3.8e-04)  ts_int8 5.5us(758GB/s fp16eq, err 1.6e-02)  ts_fp8 5.4us(772GB/s fp16eq, err 4.9e-02)
+Hq8 Hkv8 B1 N4096: ts 23.7us(709GB/s fp16eq, err 3.1e-04)  sdpa 231.5us(72GB/s fp16eq, err 3.1e-04)  ts_int8 10.6us(1589GB/s fp16eq, err 1.0e-02)  ts_fp8 10.3us(1624GB/s fp16eq, err 3.8e-02)
+Hq8 Hkv8 B1 N16384: ts 94.1us(713GB/s fp16eq, err 4.7e-04)  sdpa 964.5us(70GB/s fp16eq, err 4.9e-04)  ts_int8 33.0us(2034GB/s fp16eq, err 1.5e-02)  ts_fp8 30.4us(2209GB/s fp16eq, err 4.1e-02)
+Hq8 Hkv8 B8 N1024: ts 22.5us(1490GB/s fp16eq, err 4.1e-04)  sdpa 60.7us(553GB/s fp16eq, err 3.9e-04)  ts_int8 16.4us(2046GB/s fp16eq, err 1.3e-02)  ts_fp8 15.4us(2184GB/s fp16eq, err 4.5e-02)
+Hq8 Hkv8 B8 N4096: ts 165.0us(814GB/s fp16eq, err 3.6e-04)  sdpa 247.8us(542GB/s fp16eq, err 3.6e-04)  ts_int8 89.1us(1507GB/s fp16eq, err 1.2e-02)  ts_fp8 87.0us(1543GB/s fp16eq, err 4.3e-02)
+Hq8 Hkv8 B8 N16384: ts 638.4us(841GB/s fp16eq, err 3.9e-04)  sdpa 973.3us(552GB/s fp16eq, err 3.8e-04)  ts_int8 338.6us(1586GB/s fp16eq, err 1.3e-02)  ts_fp8 327.9us(1637GB/s fp16eq, err 4.0e-02)

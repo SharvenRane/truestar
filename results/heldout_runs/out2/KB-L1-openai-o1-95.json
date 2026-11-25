@@ -1,0 +1,219 @@
+{
+ "id": "KB-L1-openai-o1-95",
+ "set": "KB",
+ "level": 1,
+ "problem": "95_CrossEntropyLoss.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/95_CrossEntropyLoss.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_95.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval ",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d0=4097 (was 4096)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d0=4095 (was 4096)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d1=11 (was 10)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d1=9 (was 10)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes odd d0=4097, d1=11",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS201"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS201",
+  "message": "the candidate raised where the reference runs: RuntimeError: expected scalar type Int but found Long"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.38,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 1.85
+}

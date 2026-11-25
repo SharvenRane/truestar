@@ -1,0 +1,51 @@
+gpu NVIDIA L4, SMs 58, torch 2.11.0+cu130, flashinfer 0.7.5.post1
+Hq32 Hkv8 B1 N1024: ts 25.0us(168GB/s fp16eq, err 3.8e-04)  ts_int8 37.3us(113GB/s fp16eq, err 1.3e-02)  ts_fp8 31.8us(132GB/s fp16eq, err 4.4e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq32 Hkv8 B1 N4096: ts 29.7us(564GB/s fp16eq, err 3.4e-04)  ts_int8 54.2us(310GB/s fp16eq, err 1.4e-02)  ts_fp8 51.2us(328GB/s fp16eq, err 4.5e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq32 Hkv8 B1 N16384: ts 277.6us(242GB/s fp16eq, err 3.2e-04)  ts_int8 225.7us(297GB/s fp16eq, err 1.1e-02)  ts_fp8 212.8us(315GB/s fp16eq, err 3.2e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq32 Hkv8 B8 N1024: ts 46.3us(725GB/s fp16eq, err 3.2e-04)  ts_int8 112.3us(299GB/s fp16eq, err 1.6e-02)  ts_fp8 104.8us(320GB/s fp16eq, err 5.3e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq32 Hkv8 B8 N4096: ts 527.8us(254GB/s fp16eq, err 3.6e-04)  ts_int8 573.0us(234GB/s fp16eq, err 1.4e-02)  ts_fp8 533.8us(251GB/s fp16eq, err 6.3e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq32 Hkv8 B8 N16384: ts 2053.7us(261GB/s fp16eq, err 3.6e-04)  ts_int8 2353.6us(228GB/s fp16eq, err 1.3e-02)  ts_fp8 2194.4us(245GB/s fp16eq, err 4.8e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B1 N1024: ts 24.9us(168GB/s fp16eq, err 4.5e-04)  ts_int8 36.5us(115GB/s fp16eq, err 1.4e-02)  ts_fp8 31.0us(135GB/s fp16eq, err 4.3e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B1 N4096: ts 29.7us(565GB/s fp16eq, err 4.0e-04)  ts_int8 20.0us(839GB/s fp16eq, err 1.4e-02)  ts_fp8 18.8us(890GB/s fp16eq, err 4.9e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B1 N16384: ts 277.4us(242GB/s fp16eq, err 4.0e-04)  ts_int8 74.7us(898GB/s fp16eq, err 1.2e-02)  ts_fp8 68.0us(987GB/s fp16eq, err 3.6e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B8 N1024: ts 44.5us(755GB/s fp16eq, err 2.4e-04)  ts_int8 32.6us(1029GB/s fp16eq, err 8.7e-03)  ts_fp8 30.5us(1100GB/s fp16eq, err 9.4e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B8 N4096: ts 525.4us(255GB/s fp16eq, err 3.1e-04)  ts_int8 320.7us(419GB/s fp16eq, err 1.4e-02)  ts_fp8 316.0us(425GB/s fp16eq, err 5.8e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+Hq8 Hkv8 B8 N16384: ts 2051.1us(262GB/s fp16eq, err 3.6e-04)  ts_int8 1249.5us(430GB/s fp16eq, err 1.2e-02)  ts_fp8 1240.4us(433GB/s fp16eq, err 3.4e-02)
+    fi: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_tc: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+    fi_fp8: RuntimeError: Could not find nvcc and default cuda_home='/usr/local/cuda' doesn't exist
+
+[modal_gpu] gpu=L4 exit=0

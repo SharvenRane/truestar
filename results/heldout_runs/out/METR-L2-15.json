@@ -1,0 +1,23 @@
+{
+ "id": "METR-L2-15",
+ "set": "METR",
+ "level": 2,
+ "problem": "15_ConvTranspose3d_BatchNorm_Subtract.py",
+ "ref": "results/heldout_metr/tasks/level_2/15_ConvTranspose3d_BatchNorm_Subtract.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_2/task_15.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "load_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "error": "KernelFileError: importing /w/results/heldout_metr/best_agent_solutions/level_2/task_15.py failed: RuntimeError: Error building extension 'fused_bn_mean_sub'",
+ "seconds": 22.51
+}

@@ -1,0 +1,92 @@
+{
+ "erf": {
+  "bfloat16/torch_cpu": "0393597ecba23075",
+  "bfloat16/torch_cuda": "0393597ecba23075",
+  "bfloat16/torch_f32_plus_zero": "89607fe4d3598a8a",
+  "bfloat16/triton_f32": "89607fe4d3598a8a",
+  "float16/torch_cpu": "9bdc79d64641a2d7",
+  "float16/torch_cuda": "9bdc79d64641a2d7",
+  "float16/torch_f32_plus_zero": "6275693a91b99ab3",
+  "float16/triton_f32": "6275693a91b99ab3",
+  "float32/torch_cpu": "5e22e8ae55bcc15f",
+  "float32/torch_cuda": "5e22e8ae55bcc15f",
+  "float32/torch_f32_plus_zero": "5e22e8ae55bcc15f",
+  "float32/triton_f32": "5e22e8ae55bcc15f"
+ },
+ "exp": {
+  "bfloat16/torch_cpu": "3c4c43fcea32e4be",
+  "bfloat16/torch_cuda": "3c4c43fcea32e4be",
+  "bfloat16/torch_f32_plus_zero": "7ebcb48b7268bbd5",
+  "bfloat16/triton_f32": "7ebcb48b7268bbd5",
+  "float16/torch_cpu": "608c213c696b69ed",
+  "float16/torch_cuda": "608c213c696b69ed",
+  "float16/torch_f32_plus_zero": "1d5f52bdec33f1b1",
+  "float16/triton_f32": "1d5f52bdec33f1b1",
+  "float32/torch_cpu": "09eeee1b1fc0d88c",
+  "float32/torch_cuda": "09eeee1b1fc0d88c",
+  "float32/torch_f32_plus_zero": "09eeee1b1fc0d88c",
+  "float32/triton_f32": "09eeee1b1fc0d88c"
+ },
+ "log": {
+  "bfloat16/torch_cpu": "f64b723b63f38ea2",
+  "bfloat16/torch_cuda": "f64b723b63f38ea2",
+  "bfloat16/torch_f32_plus_zero": "24d62452b0a20aff",
+  "bfloat16/triton_f32": "24d62452b0a20aff",
+  "float16/torch_cpu": "322c994520bd9cc2",
+  "float16/torch_cuda": "322c994520bd9cc2",
+  "float16/torch_f32_plus_zero": "9fdd1c10f19b54d5",
+  "float16/triton_f32": "9fdd1c10f19b54d5",
+  "float32/torch_cpu": "398dc3eae71f934e",
+  "float32/torch_cuda": "398dc3eae71f934e",
+  "float32/torch_f32_plus_zero": "398dc3eae71f934e",
+  "float32/triton_f32": "398dc3eae71f934e"
+ },
+ "machine": {
+  "cpu": "x86_64",
+  "gpu": "NVIDIA L4",
+  "os": "Linux-4.19.0-gvisor-x86_64-with-glibc2.41",
+  "torch": "2.11.0+cu130"
+ },
+ "rsqrt": {
+  "bfloat16/torch_cpu": "5b33d67ca2d5fd38",
+  "bfloat16/torch_cuda": "5b33d67ca2d5fd38",
+  "bfloat16/torch_f32_plus_zero": "3639a0d1aa1b7807",
+  "bfloat16/triton_f32": "3639a0d1aa1b7807",
+  "float16/torch_cpu": "87d0a874cbf78a0e",
+  "float16/torch_cuda": "87d0a874cbf78a0e",
+  "float16/torch_f32_plus_zero": "daffa78def023467",
+  "float16/triton_f32": "daffa78def023467",
+  "float32/torch_cpu": "9a300726fd6b8cb4",
+  "float32/torch_cuda": "9a300726fd6b8cb4",
+  "float32/torch_f32_plus_zero": "9a300726fd6b8cb4",
+  "float32/triton_f32": "9a300726fd6b8cb4"
+ },
+ "sigmoid": {
+  "bfloat16/torch_cpu": "68d3a27df0b8afcc",
+  "bfloat16/torch_cuda": "68d3a27df0b8afcc",
+  "bfloat16/torch_f32_plus_zero": "349c11c2a19cf2af",
+  "bfloat16/triton_f32": "349c11c2a19cf2af",
+  "float16/torch_cpu": "a1c114a164cf529d",
+  "float16/torch_cuda": "a1c114a164cf529d",
+  "float16/torch_f32_plus_zero": "e50761a26371685f",
+  "float16/triton_f32": "e50761a26371685f",
+  "float32/torch_cpu": "1699c7f3851fda35",
+  "float32/torch_cuda": "1699c7f3851fda35",
+  "float32/torch_f32_plus_zero": "1699c7f3851fda35",
+  "float32/triton_f32": "1699c7f3851fda35"
+ },
+ "tanh": {
+  "bfloat16/torch_cpu": "93b86a43386e0167",
+  "bfloat16/torch_cuda": "93b86a43386e0167",
+  "bfloat16/torch_f32_plus_zero": "9fef02b69abfbe46",
+  "bfloat16/triton_f32": "9fef02b69abfbe46",
+  "float16/torch_cpu": "fe29dbdff0de41fb",
+  "float16/torch_cuda": "fe29dbdff0de41fb",
+  "float16/torch_f32_plus_zero": "1c96c784c33be2fb",
+  "float16/triton_f32": "1c96c784c33be2fb",
+  "float32/torch_cpu": "887728fe6b8a42b3",
+  "float32/torch_cuda": "887728fe6b8a42b3",
+  "float32/torch_f32_plus_zero": "887728fe6b8a42b3",
+  "float32/triton_f32": "887728fe6b8a42b3"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": "METR-L1-43",
+ "set": "METR",
+ "level": 1,
+ "problem": "43_Max_Pooling_3D.py",
+ "ref": "results/heldout_metr/tasks/level_1/43_Max_Pooling_3D.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_43.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "check_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.84,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 528.00 MiB. GPU 0 has a total capacity of 22.08 GiB of which 118.06 MiB is free. Process 1 has 21.95 GiB memory in use. Process 1 has 21.95 GiB memory in use. Process 1 has 21.95 GiB memory in use. Process 1 has 21.95 GiB memory in use. Of the allocated memory 2.50 GiB is allocated by PyTorch, and 0 bytes is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/",
+ "trace": " line 214, in run_one [source excerpt removed: METR task code is not redistributed]",
+ "seconds": 9.94
+}

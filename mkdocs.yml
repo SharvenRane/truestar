@@ -1,0 +1,106 @@
+# Docs site for Truestar. Built locally with `mkdocs build --strict`; not deployed anywhere.
+# GitHub Pages: .github/workflows/docs.yml (manual dispatch only). Read the Docs: .readthedocs.yaml.
+site_name: Truestar
+site_description: "The same answer on every chip: find where an ML model's results diverge across backends."
+site_author: Sharven Rane
+site_url: https://sharvenrane.github.io/truestar/
+repo_url: https://github.com/SharvenRane/truestar
+repo_name: SharvenRane/truestar
+edit_uri: edit/main/docs/
+copyright: Copyright 2026 Sharven Rane. Apache License 2.0.
+
+docs_dir: docs
+site_dir: site
+theme:
+  name: readthedocs
+  navigation_depth: 3
+
+# Internal notes and unfiled upstream drafts stay in the repo but out of the site.
+exclude_docs: |
+  upstream/
+
+validation:
+  links:
+    # docs link to ../AGENTS.md and ../README.md, which live outside docs_dir
+    not_found: info
+    unrecognized_links: info
+  omitted_files: info
+
+nav:
+  - Home: index.md
+  - Getting started: GETTING_STARTED.md
+  - Switching to Truestar: SWITCHING.md
+  - Cookbook:
+      - Overview: cookbook/index.md
+      - Verify a model against float64: cookbook/verify_float64.md
+      - Compare two chips: cookbook/compare_chips.md
+      - Deterministic training: cookbook/deterministic_training.md
+      - Bitwise reproducible results across GPUs: cookbook/cross_gpu_bitwise.md
+      - Quantize safely: cookbook/quantize_safely.md
+      - Catch a runtime that lies: cookbook/catch_lying_runtime.md
+      - Speculative decoding equal to greedy: cookbook/speculative_decoding.md
+      - Linear attention models: cookbook/linear_attention.md
+      - Near tie diagnosis: cookbook/near_tie.md
+      - Memory planning with recompute: cookbook/memory_recompute.md
+  - FAQ: FAQ.md
+  - Commands:
+      - Compilers and runtimes as backends: BACKENDS.md
+      - Gradient check: GRAD_CHECK.md
+      - Record and diff: RECORD_DIFF.md
+      - Batch invariance: INVARIANCE.md
+      - Random numbers and training mode: RANDOM.md
+      - Port check: PORT_CHECK.md
+      - Engines and other frameworks as ports: PORT_ENGINES.md
+      - Kernel check and verified autotune: KERNEL_CHECK.md
+      - Derived tolerances: TOLERANCE.md
+      - Export and run: EXPORT.md
+      - Verified fixes: FIX.md
+      - Low precision range: RANGE.md
+      - Precision planner: PRECISION.md
+      - RL trainer and sampler pair: RL_PAIR.md
+      - Simulated devices, size sweeps, special values: DEVICES.md
+      - Parallel layouts: PARALLEL.md
+      - Training spikes and replay: SPIKES.md
+      - Cross chip fingerprint: CROSS_CHIP.md
+      - Prefix cache check: PREFIX_CHECK.md
+      - Batch invariant LLM server: SERVE.md
+      - Lean test on rounding errors: BIAS.md
+      - Summation order probe: ORDERPROBE.md
+      - Speculative decoding: SPEC_DECODE.md
+  - For AI agents: AGENT_INTERFACE.md
+  - Libraries:
+      - Native front end: FRONTEND.md
+      - Layers (truestar.nn): NN.md
+      - Optimizers and the training step: OPTIM.md
+      - Custom ops: CUSTOM_OPS.md
+      - IR: IR.md
+      - Autodiff: AUTODIFF.md
+      - vmap and forward mode: TRANSFORMS.md
+      - Interop (DLPack, safetensors): INTEROP.md
+      - Training: TRAINING.md
+      - Data loading and checkpoints: DATA.md
+      - Training numerics: TRAIN_NUMERICS.md
+      - Kernel IR: KERNEL_IR.md
+      - Compiler: COMPILER.md
+      - Profile: PROFILE.md
+      - Memory planner and recompute: MEMORY.md
+      - Quantized kernels: QUANT.md
+      - Rotations before quantizing: ROTATION.md
+      - Runtime: RUNTIME.md
+      - Diagnostics: DIAGNOSTICS.md
+      - Phone NPUs: NPU.md
+      - WebGPU: WEBGPU.md
+      - AMD GPUs (ROCm): ROCM.md
+      - Integer reference: INTREF.md
+      - Deployed artifacts: CONFORM.md
+      - llama.cpp: CONFORM_LLAMACPP.md
+      - TPU battery: TPU.md
+      - GPU serving engines: CONFORM_SERVING.md
+      - LLM decoding: LLM.md
+      - Multi head latent attention: MLA.md
+      - Quantized KV cache: KV_QUANT.md
+      - Linear attention and SSM kernels: LINEAR_ATTENTION.md
+  - Background:
+      - Design: DESIGN.md
+      - Quality bar and status log: QUALITY_BAR.md
+      - Pain research: PAIN_RESEARCH_2.md

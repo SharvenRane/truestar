@@ -1,0 +1,15 @@
+gpu NVIDIA L4, SMs 58, torch 2.11.0+cu130, flashinfer import failed: AttributeError: module 'flashinfer_jit_cache' has no attribute '__version__'
+Hq32 Hkv8 B1 N1024: ts 25.0us(168GB/s fp16eq, err 3.8e-04)  ts_int8 9.6us(436GB/s fp16eq, err 1.2e-02)  ts_fp8 9.6us(436GB/s fp16eq, err 4.3e-02)
+Hq32 Hkv8 B1 N4096: ts 28.7us(584GB/s fp16eq, err 3.4e-04)  ts_int8 20.8us(807GB/s fp16eq, err 1.4e-02)  ts_fp8 19.9us(842GB/s fp16eq, err 4.5e-02)
+Hq32 Hkv8 B1 N16384: ts 276.4us(243GB/s fp16eq, err 3.2e-04)  ts_int8 67.0us(1002GB/s fp16eq, err 1.1e-02)  ts_fp8 64.8us(1035GB/s fp16eq, err 3.2e-02)
+Hq32 Hkv8 B8 N1024: ts 44.4us(756GB/s fp16eq, err 3.2e-04)  ts_int8 33.3us(1007GB/s fp16eq, err 1.6e-02)  ts_fp8 32.3us(1040GB/s fp16eq, err 5.2e-02)
+Hq32 Hkv8 B8 N4096: ts 527.7us(254GB/s fp16eq, err 3.6e-04)  ts_int8 308.5us(435GB/s fp16eq, err 1.4e-02)  ts_fp8 305.7us(439GB/s fp16eq, err 6.3e-02)
+Hq32 Hkv8 B8 N16384: ts 2052.9us(262GB/s fp16eq, err 3.6e-04)  ts_int8 1216.3us(441GB/s fp16eq, err 1.3e-02)  ts_fp8 1170.2us(459GB/s fp16eq, err 4.8e-02)
+Hq8 Hkv8 B1 N1024: ts 25.0us(168GB/s fp16eq, err 4.5e-04)  ts_int8 8.8us(479GB/s fp16eq, err 1.4e-02)  ts_fp8 8.4us(496GB/s fp16eq, err 4.3e-02)
+Hq8 Hkv8 B1 N4096: ts 29.7us(564GB/s fp16eq, err 4.0e-04)  ts_int8 19.6us(858GB/s fp16eq, err 1.4e-02)  ts_fp8 18.2us(920GB/s fp16eq, err 4.9e-02)
+Hq8 Hkv8 B1 N16384: ts 277.0us(242GB/s fp16eq, err 4.0e-04)  ts_int8 65.3us(1028GB/s fp16eq, err 1.2e-02)  ts_fp8 61.4us(1093GB/s fp16eq, err 3.6e-02)
+Hq8 Hkv8 B8 N1024: ts 43.7us(767GB/s fp16eq, err 2.4e-04)  ts_int8 31.6us(1060GB/s fp16eq, err 8.7e-03)  ts_fp8 29.8us(1126GB/s fp16eq, err 9.4e-02)
+Hq8 Hkv8 B8 N4096: ts 524.6us(256GB/s fp16eq, err 3.1e-04)  ts_int8 316.3us(424GB/s fp16eq, err 1.4e-02)  ts_fp8 309.3us(434GB/s fp16eq, err 5.8e-02)
+Hq8 Hkv8 B8 N16384: ts 2050.3us(262GB/s fp16eq, err 3.6e-04)  ts_int8 1232.4us(436GB/s fp16eq, err 1.2e-02)  ts_fp8 1206.2us(445GB/s fp16eq, err 3.4e-02)
+
+[modal_gpu] gpu=L4 exit=0

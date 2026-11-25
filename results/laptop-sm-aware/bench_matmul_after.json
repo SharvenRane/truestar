@@ -1,0 +1,792 @@
+{
+ "dtype": "float32",
+ "tf32": false,
+ "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "torch": "2.11.0+cu128",
+ "rows": [
+  {
+   "shape": [
+    1,
+    4096,
+    4096
+   ],
+   "median_us": {
+    "truestar": 280.96160888671875,
+    "tuned": 282.5800061225891,
+    "F.linear": 188.61279487609863,
+    "matmul": 187.02720403671265,
+    "compile": 188.00640106201172
+   },
+   "min_us": {
+    "truestar": 254.76880073547363,
+    "tuned": 254.73999977111816,
+    "F.linear": 187.63519525527954,
+    "matmul": 186.7136001586914,
+    "compile": 187.49760389328003
+   },
+   "error": {
+    "truestar": 4.5403196304819853e-07,
+    "tuned": 4.5403196304819853e-07,
+    "F.linear": 1.4538883914705075e-07,
+    "compile": 2.0016129149610144e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 4
+    },
+    "tuned": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 4
+    }
+   }
+  },
+  {
+   "shape": [
+    16,
+    4096,
+    1024
+   ],
+   "median_us": {
+    "truestar": 70.80079913139343,
+    "tuned": 67.20559895038605,
+    "F.linear": 111.64320111274719,
+    "matmul": 111.61600351333618,
+    "compile": 113.06400299072266
+   },
+   "min_us": {
+    "truestar": 64.72080051898956,
+    "tuned": 65.91519713401794,
+    "F.linear": 107.74080157279968,
+    "matmul": 110.36640405654907,
+    "compile": 112.31839656829834
+   },
+   "error": {
+    "truestar": 3.2815513477233255e-07,
+    "tuned": 3.2815513477233255e-07,
+    "F.linear": 1.491489109084337e-07,
+    "compile": 1.491489109084337e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 4
+    },
+    "tuned": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 4
+    }
+   }
+  },
+  {
+   "shape": [
+    64,
+    2048,
+    1024
+   ],
+   "median_us": {
+    "truestar": 63.35359811782837,
+    "tuned": 62.220799922943115,
+    "F.linear": 54.37279939651489,
+    "matmul": 56.60960078239441,
+    "compile": 60.17119884490967
+   },
+   "min_us": {
+    "truestar": 61.639997363090515,
+    "tuned": 60.29919981956482,
+    "F.linear": 52.241602540016174,
+    "matmul": 56.221601366996765,
+    "compile": 60.13280153274536
+   },
+   "error": {
+    "truestar": 2.1136911762853425e-07,
+    "tuned": 2.1136911762853425e-07,
+    "F.linear": 3.5471998543796176e-07,
+    "compile": 3.13314744582022e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    }
+   }
+  },
+  {
+   "shape": [
+    64,
+    2048,
+    2048
+   ],
+   "median_us": {
+    "truestar": 124.67360496520996,
+    "tuned": 120.20000219345093,
+    "F.linear": 159.57679748535156,
+    "matmul": 103.53440046310425,
+    "compile": 106.44879937171936
+   },
+   "min_us": {
+    "truestar": 111.77840232849121,
+    "tuned": 114.23039436340332,
+    "F.linear": 151.74959897994995,
+    "matmul": 99.71039891242981,
+    "compile": 102.86239981651306
+   },
+   "error": {
+    "truestar": 2.5032510457785294e-07,
+    "tuned": 2.5032510457785294e-07,
+    "F.linear": 1.9649211303659844e-07,
+    "compile": 2.815648103661066e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    }
+   }
+  },
+  {
+   "shape": [
+    64,
+    1000,
+    2048
+   ],
+   "median_us": {
+    "truestar": 70.16319930553436,
+    "tuned": 69.64640021324158,
+    "F.linear": 101.00160241127014,
+    "matmul": 49.668800830841064,
+    "compile": 51.72959864139557
+   },
+   "min_us": {
+    "truestar": 66.4143979549408,
+    "tuned": 66.1903977394104,
+    "F.linear": 95.33199965953827,
+    "matmul": 47.24000096321106,
+    "compile": 48.94559979438782
+   },
+   "error": {
+    "truestar": 1.754030269413396e-07,
+    "tuned": 1.754030269413396e-07,
+    "F.linear": 7.059768620707802e-07,
+    "compile": 2.939547842352186e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    }
+   }
+  },
+  {
+   "shape": [
+    512,
+    1024,
+    256
+   ],
+   "median_us": {
+    "truestar": 70.59279978275299,
+    "tuned": 63.760000467300415,
+    "F.linear": 51.91119909286499,
+    "matmul": 42.9407998919487,
+    "compile": 53.6080002784729
+   },
+   "min_us": {
+    "truestar": 63.15360069274903,
+    "tuned": 61.61280274391174,
+    "F.linear": 51.048797369003296,
+    "matmul": 41.48479998111725,
+    "compile": 50.51119923591614
+   },
+   "error": {
+    "truestar": 4.712395894908172e-07,
+    "tuned": 4.712395894908172e-07,
+    "F.linear": 4.712395894908172e-07,
+    "compile": 4.712395894908172e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    512,
+    256,
+    1024
+   ],
+   "median_us": {
+    "truestar": 64.66879844665527,
+    "tuned": 63.48000168800354,
+    "F.linear": 102.538400888443,
+    "matmul": 55.7776004076004,
+    "compile": 59.8800003528595
+   },
+   "min_us": {
+    "truestar": 62.7128005027771,
+    "tuned": 62.18240261077881,
+    "F.linear": 100.89680552482605,
+    "matmul": 53.96319925785065,
+    "compile": 57.81279802322388
+   },
+   "error": {
+    "truestar": 1.9747850554304997e-07,
+    "tuned": 1.9747850554304997e-07,
+    "F.linear": 8.293661640238397e-07,
+    "compile": 3.011516307586665e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 8
+    }
+   }
+  },
+  {
+   "shape": [
+    1024,
+    1024,
+    1024
+   ],
+   "median_us": {
+    "truestar": 440.1911973953247,
+    "tuned": 426.44479274749756,
+    "F.linear": 400.7552146911621,
+    "matmul": 386.4832043647766,
+    "compile": 392.68479347229004
+   },
+   "min_us": {
+    "truestar": 424.6023893356323,
+    "tuned": 414.0552043914795,
+    "F.linear": 385.81600189208984,
+    "matmul": 377.0375967025757,
+    "compile": 387.70560026168823
+   },
+   "error": {
+    "truestar": 9.308307219467611e-07,
+    "tuned": 9.308307219467611e-07,
+    "F.linear": 9.308307219467611e-07,
+    "compile": 9.308307219467611e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    2048,
+    4096,
+    1024
+   ],
+   "median_us": {
+    "truestar": 3071.691131591797,
+    "tuned": 3352.113723754883,
+    "F.linear": 3285.9134674072266,
+    "matmul": 3065.3440475463867,
+    "compile": 3273.4207153320312
+   },
+   "min_us": {
+    "truestar": 2976.5119552612305,
+    "tuned": 3324.4144439697266,
+    "F.linear": 3206.911849975586,
+    "matmul": 3050.651168823242,
+    "compile": 3228.4671783447266
+   },
+   "error": {
+    "truestar": 1.0116992966686105e-06,
+    "tuned": 1.0116992966686105e-06,
+    "F.linear": 1.0116992966686105e-06,
+    "compile": 1.0116992966686105e-06
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 128,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    4096,
+    4096,
+    4096
+   ],
+   "median_us": {
+    "truestar": 24310.57891845703,
+    "tuned": 24439.552307128906,
+    "F.linear": 29001.06201171875,
+    "matmul": 19347.0458984375,
+    "compile": 19651.380920410156
+   },
+   "min_us": {
+    "truestar": 24244.122314453125,
+    "tuned": 24259.890747070312,
+    "F.linear": 28986.932373046875,
+    "matmul": 19270.347595214844,
+    "compile": 19587.686157226562
+   },
+   "error": {
+    "truestar": 2.0108157861592784e-06,
+    "tuned": 2.0108157861592784e-06,
+    "F.linear": 2.0108157861592784e-06,
+    "compile": 2.0108157861592784e-06
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    64,
+    512,
+    8192
+   ],
+   "median_us": {
+    "truestar": 146.4904010295868,
+    "tuned": 134.50720310211182,
+    "F.linear": 208.58080387115479,
+    "matmul": 87.92480230331421,
+    "compile": 96.2448000907898
+   },
+   "min_us": {
+    "truestar": 131.13919496536255,
+    "tuned": 131.35679960250854,
+    "F.linear": 199.95839595794678,
+    "matmul": 86.05279922485352,
+    "compile": 91.01439714431763
+   },
+   "error": {
+    "truestar": 4.350730679796602e-07,
+    "tuned": 4.350730679796602e-07,
+    "F.linear": 4.3769047067509247e-07,
+    "compile": 4.2621958820851416e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    }
+   }
+  },
+  {
+   "shape": [
+    16,
+    1024,
+    16384
+   ],
+   "median_us": {
+    "truestar": 318.69760751724243,
+    "tuned": 290.9872055053711,
+    "F.linear": 615.069580078125,
+    "matmul": 613.1728172302246,
+    "compile": 638.2575988769531
+   },
+   "min_us": {
+    "truestar": 283.39200019836426,
+    "tuned": 281.713604927063,
+    "F.linear": 588.8504028320312,
+    "matmul": 599.7551918029785,
+    "compile": 606.0031890869141
+   },
+   "error": {
+    "truestar": 4.5855775061424753e-07,
+    "tuned": 4.5855775061424753e-07,
+    "F.linear": 2.0358250889737433e-07,
+    "compile": 2.0358250889737433e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    },
+    "tuned": {
+     "BM": 16,
+     "BN": 128,
+     "BK": 32,
+     "GROUP": 8,
+     "num_warps": 2,
+     "num_stages": 4,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    }
+   }
+  },
+  {
+   "shape": [
+    128,
+    256,
+    8192
+   ],
+   "median_us": {
+    "truestar": 145.79839706420898,
+    "tuned": 136.53279542922974,
+    "F.linear": 153.03919911384583,
+    "matmul": 76.63039863109589,
+    "compile": 80.9984028339386
+   },
+   "min_us": {
+    "truestar": 134.90560054779053,
+    "tuned": 134.30399894714355,
+    "F.linear": 150.23040175437927,
+    "matmul": 74.06960129737854,
+    "compile": 80.05599975585938
+   },
+   "error": {
+    "truestar": 3.3890772854611536e-07,
+    "tuned": 3.3890772854611536e-07,
+    "F.linear": 9.374318465687337e-07,
+    "compile": 3.991255291718949e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    },
+    "tuned": {
+     "BM": 64,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 16
+    }
+   }
+  },
+  {
+   "shape": [
+    8192,
+    768,
+    256
+   ],
+   "median_us": {
+    "truestar": 590.0288105010986,
+    "tuned": 631.0912132263184,
+    "F.linear": 788.6864185333252,
+    "matmul": 626.585578918457,
+    "compile": 682.6000213623047
+   },
+   "min_us": {
+    "truestar": 579.9424171447754,
+    "tuned": 605.0816059112549,
+    "F.linear": 767.6928043365479,
+    "matmul": 618.291187286377,
+    "compile": 671.7967987060547
+   },
+   "error": {
+    "truestar": 5.508494639428883e-07,
+    "tuned": 5.508494639428883e-07,
+    "F.linear": 5.508494639428883e-07,
+    "compile": 5.508494639428883e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 128,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    8192,
+    1024,
+    256
+   ],
+   "median_us": {
+    "truestar": 796.721601486206,
+    "tuned": 792.8319931030273,
+    "F.linear": 1042.8400039672852,
+    "matmul": 837.4272346496582,
+    "compile": 1025.0240325927734
+   },
+   "min_us": {
+    "truestar": 770.252799987793,
+    "tuned": 778.1871795654297,
+    "F.linear": 1019.0848350524901,
+    "matmul": 818.4831619262695,
+    "compile": 999.6800422668457
+   },
+   "error": {
+    "truestar": 5.508494639428883e-07,
+    "tuned": 5.508494639428883e-07,
+    "F.linear": 5.508494639428883e-07,
+    "compile": 5.508494639428883e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 128,
+     "BN": 256,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 8,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  },
+  {
+   "shape": [
+    8192,
+    256,
+    1024
+   ],
+   "median_us": {
+    "truestar": 825.4464149475098,
+    "tuned": 855.5007934570312,
+    "F.linear": 864.6127700805664,
+    "matmul": 833.5311889648438,
+    "compile": 847.5631713867188
+   },
+   "min_us": {
+    "truestar": 799.4368076324463,
+    "tuned": 827.2895812988281,
+    "F.linear": 857.5488090515137,
+    "matmul": 811.7247581481934,
+    "compile": 826.3664245605469
+   },
+   "error": {
+    "truestar": 9.632006561903137e-07,
+    "tuned": 9.632006561903137e-07,
+    "F.linear": 9.632006561903137e-07,
+    "compile": 9.632006561903137e-07
+   },
+   "configs": {
+    "truestar": {
+     "BM": 128,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    },
+    "tuned": {
+     "BM": 128,
+     "BN": 128,
+     "BK": 16,
+     "GROUP": 8,
+     "num_warps": 4,
+     "num_stages": 3,
+     "KTAIL": true,
+     "SPLIT_K": 1
+    }
+   }
+  }
+ ]
+}

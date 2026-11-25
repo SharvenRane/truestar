@@ -1,0 +1,48 @@
+{
+ "id": "KB-L1-openai-o1-35",
+ "set": "KB",
+ "level": 1,
+ "problem": "35_GroupNorm_.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/35_GroupNorm_.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_35.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 185489 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -2.48085 vs float64 -2.48065 (error 0.000506, 5.6x its bound, 12334456 ulp of float32); output: bad elements spread over the tensor (185489 of 67108864, 0.3%). Not reordering noise. Policy: float32 results, float3",
+   "ratio": 5.598194675054407,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 196367 of 71303168 elements beyond the derived bound; worst at [1, 58, 118, 43]: -2.71736 vs float64 -2.71713 (error 0.000532, 5.7x its bound, 6389154 ulp of float32); output: bad elements spread over the tensor (196367 of 71303168, 0.3%). Not reordering noise. Policy: float32 results, float",
+   "ratio": 5.657069948678079,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 1.08,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 1.88 GiB. GPU 0 has a total capacity of 22.08 GiB of which 742.31 MiB is free. Process 1 has 21.34 GiB memory in use. Process 1 has 21.34 GiB memory in use. Of the allocated memory 12.29 GiB is allocated by PyTorch, and 2.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+ "trace": "^^^^^^^^^^^^^^^^^^^^\n  File \"/w/scripts/bench_heldout.py\", line 208, in judge\n    res, rep = orig_judge(ref_fn, cand_fn, v, device, report, base_ok, **kw)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/kernelcheck.py\", line 418, in _judge\n    rep = tol.check(out, explain=True, fn=reference, inputs=before)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 584, in check\n    return _check(self, out, explain, fn, inputs, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 884, in _check\n    reports.append(_check_one(i, o, ref, tol))\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 936, in _check_one\n    num = float(err[use].pow(2).mean().sqrt())\n                ~~~^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.88 GiB. GPU 0 has a total capacity of 22.08 GiB of which 742.31 MiB is free. Process 1 has 21.34 GiB memory in use. Process 1 has 21.34 GiB memory in use. Of the allocated memory 12.29 GiB is allocated by PyTorch, and 2.40 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 21.75
+}

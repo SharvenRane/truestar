@@ -1,0 +1,296 @@
+{
+  "env": {
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "sm_count": 26,
+    "capability": "12.0",
+    "driver_cuda": "12.8",
+    "torch": "2.11.0+cu128",
+    "cudnn": 91900,
+    "truestar": "0.1.0",
+    "python": "3.10.11",
+    "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "triton": "3.7.1"
+  },
+  "results": [
+    {
+      "case": "mlp",
+      "input_shape": [
+        4,
+        256
+      ],
+      "weights_sha256": "4c3765cb06dc3d49761ae19cc39938d7db129dccf722235dae180c5a4c96320e",
+      "input_sha256": "283ed22d2bdfbc85ec03374c106e30566f262681224583408cad838069716d00",
+      "eager_cpu": [
+        "7d6bd6ec971446746cf233ffd8a6097d5c07edaacb9a8e1fe4c97d5514318da2"
+      ],
+      "eager_cuda": [
+        "7e6834dbcdcd5d77b53fe4e550d9e331f1f280b9cb8911e8b470a21f1beef664"
+      ],
+      "eager_cuda_again": [
+        "7e6834dbcdcd5d77b53fe4e550d9e331f1f280b9cb8911e8b470a21f1beef664"
+      ],
+      "compile_and_first_call_s": 2.399,
+      "compiled_cuda": [
+        "0045ade06d6e3ca6a0c40841be77a96d8fd6f2bd6c4b5ace5c8078de850eb1db"
+      ],
+      "compiled_cuda_again": [
+        "0045ade06d6e3ca6a0c40841be77a96d8fd6f2bd6c4b5ace5c8078de850eb1db"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 5.793990590486586e-07,
+      "compiled_vs_eager_cuda_max_abs": [
+        1.1920928955078125e-07
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "transformer",
+      "input_shape": [
+        4,
+        32,
+        128
+      ],
+      "weights_sha256": "dfb2dfb18aed0c1cff59daa36a3306ebb76017363ac086ba152e083ff926220f",
+      "input_sha256": "6aa7938ea32f74cb781c0cc2799d6d8a9cdfa05b5681abfd7db2b1d87f9e1eaa",
+      "eager_cpu": [
+        "9b9b190d8d3f66a7dc5a8d60a71dc1b8ae9874e082cd7fc18fb87f3354c2ed96"
+      ],
+      "eager_cuda": [
+        "7cc508054f96042b1869d941d76acb6c1876d0bf3fa3d2b5b8e9d6366f195dfe"
+      ],
+      "eager_cuda_again": [
+        "7cc508054f96042b1869d941d76acb6c1876d0bf3fa3d2b5b8e9d6366f195dfe"
+      ],
+      "compile_and_first_call_s": 3.46,
+      "compiled_cuda": [
+        "36adb88d5d720275ba7c6a368881e29721a8b3e26542b19de9ecce19d5c29313"
+      ],
+      "compiled_cuda_again": [
+        "36adb88d5d720275ba7c6a368881e29721a8b3e26542b19de9ecce19d5c29313"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 1.8568166735366775e-07,
+      "compiled_vs_eager_cuda_max_abs": [
+        7.152557373046875e-07
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "resnet18",
+      "input_shape": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "weights_sha256": "4bfa9b20d0e84dc22bdb778c719c0d8d4d80c6beddd669b7a5f1554226aefdea",
+      "input_sha256": "7965675169132b787278ee7b44f748297ca2f0552c5fd1817a4ebb65b61ad3c0",
+      "eager_cpu": [
+        "bd92e2821dbd990aa6ac64fb3a9cc6c1f6b94de62a3f4dfad2b6e1ed5594fe4e"
+      ],
+      "eager_cuda": [
+        "3d786df3d6acf24b0f788a8299a2c1bd26baad5dc8ffadee372bcd5c222292b8"
+      ],
+      "eager_cuda_again": [
+        "3d786df3d6acf24b0f788a8299a2c1bd26baad5dc8ffadee372bcd5c222292b8"
+      ],
+      "compile_and_first_call_s": 4.173,
+      "compiled_cuda": [
+        "c83acd13165eca57c91937b4fd02d83797d91950dae8260ad5509ec432ccf205"
+      ],
+      "compiled_cuda_again": [
+        "c83acd13165eca57c91937b4fd02d83797d91950dae8260ad5509ec432ccf205"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 3.0064218229272524e-06,
+      "compiled_vs_eager_cuda_max_abs": [
+        1.0848045349121094e-05
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "mlp_float16",
+      "input_shape": [
+        4,
+        256
+      ],
+      "weights_sha256": "4c3765cb06dc3d49761ae19cc39938d7db129dccf722235dae180c5a4c96320e",
+      "input_sha256": "283ed22d2bdfbc85ec03374c106e30566f262681224583408cad838069716d00",
+      "eager_cuda": [
+        "c315c9e47332394752e2717b13cf8979c43b4f65e74141ba8704af901c0d0b85"
+      ],
+      "eager_cuda_again": [
+        "c315c9e47332394752e2717b13cf8979c43b4f65e74141ba8704af901c0d0b85"
+      ],
+      "compile_and_first_call_s": 0.82,
+      "compiled_cuda": [
+        "f349376ebc58f95948ad245b780ba82b1bea13e0f2d9b8a34f36292e3481661e"
+      ],
+      "compiled_cuda_again": [
+        "f349376ebc58f95948ad245b780ba82b1bea13e0f2d9b8a34f36292e3481661e"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.00035797381452727406,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.0001220703125
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "transformer_float16",
+      "input_shape": [
+        4,
+        32,
+        128
+      ],
+      "weights_sha256": "dfb2dfb18aed0c1cff59daa36a3306ebb76017363ac086ba152e083ff926220f",
+      "input_sha256": "6aa7938ea32f74cb781c0cc2799d6d8a9cdfa05b5681abfd7db2b1d87f9e1eaa",
+      "eager_cuda": [
+        "58958834e7ad9b976614fe38630604dd0f27a77dbcd40d416f917116dfbdebec"
+      ],
+      "eager_cuda_again": [
+        "58958834e7ad9b976614fe38630604dd0f27a77dbcd40d416f917116dfbdebec"
+      ],
+      "compile_and_first_call_s": 2.065,
+      "compiled_cuda": [
+        "42a752f13c812b67774b8bc8ae04a493ec6b28d1691fde44f28262fcbcfc97ea"
+      ],
+      "compiled_cuda_again": [
+        "42a752f13c812b67774b8bc8ae04a493ec6b28d1691fde44f28262fcbcfc97ea"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.0006268983254147409,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.00390625
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "resnet18_float16",
+      "input_shape": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "weights_sha256": "4bfa9b20d0e84dc22bdb778c719c0d8d4d80c6beddd669b7a5f1554226aefdea",
+      "input_sha256": "7965675169132b787278ee7b44f748297ca2f0552c5fd1817a4ebb65b61ad3c0",
+      "eager_cuda": [
+        "29fbaff2c116f2b1bf86d963dfc33734c4876a6051003f817f1d557ea2eb5b4f"
+      ],
+      "eager_cuda_again": [
+        "29fbaff2c116f2b1bf86d963dfc33734c4876a6051003f817f1d557ea2eb5b4f"
+      ],
+      "compile_and_first_call_s": 4.035,
+      "compiled_cuda": [
+        "29fbaff2c116f2b1bf86d963dfc33734c4876a6051003f817f1d557ea2eb5b4f"
+      ],
+      "compiled_cuda_again": [
+        "29fbaff2c116f2b1bf86d963dfc33734c4876a6051003f817f1d557ea2eb5b4f"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.0005300380615680437,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.0
+      ],
+      "compiled_equals_eager_cuda_bitwise": true,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "mlp_bfloat16",
+      "input_shape": [
+        4,
+        256
+      ],
+      "weights_sha256": "4c3765cb06dc3d49761ae19cc39938d7db129dccf722235dae180c5a4c96320e",
+      "input_sha256": "283ed22d2bdfbc85ec03374c106e30566f262681224583408cad838069716d00",
+      "eager_cuda": [
+        "8af6054949e2ba2e7f7ca743947957a45528e5e6d035f1834136a6d7e56dc0e2"
+      ],
+      "eager_cuda_again": [
+        "8af6054949e2ba2e7f7ca743947957a45528e5e6d035f1834136a6d7e56dc0e2"
+      ],
+      "compile_and_first_call_s": 0.761,
+      "compiled_cuda": [
+        "856babd8f58b07ffacdd58a5f3c3d07c2b00cbb43d4470583793596ce6e7a326"
+      ],
+      "compiled_cuda_again": [
+        "856babd8f58b07ffacdd58a5f3c3d07c2b00cbb43d4470583793596ce6e7a326"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.003273019464002134,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.0009765625
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "transformer_bfloat16",
+      "input_shape": [
+        4,
+        32,
+        128
+      ],
+      "weights_sha256": "dfb2dfb18aed0c1cff59daa36a3306ebb76017363ac086ba152e083ff926220f",
+      "input_sha256": "6aa7938ea32f74cb781c0cc2799d6d8a9cdfa05b5681abfd7db2b1d87f9e1eaa",
+      "eager_cuda": [
+        "3549c57ad98fd69e8d98ad57debb52ef7dcbc72858a0243270d32325179c25a3"
+      ],
+      "eager_cuda_again": [
+        "3549c57ad98fd69e8d98ad57debb52ef7dcbc72858a0243270d32325179c25a3"
+      ],
+      "compile_and_first_call_s": 1.906,
+      "compiled_cuda": [
+        "e4f0f94cdacb7d697c51426b9d0cbbeff126de0af696567e55a882415b94a34b"
+      ],
+      "compiled_cuda_again": [
+        "e4f0f94cdacb7d697c51426b9d0cbbeff126de0af696567e55a882415b94a34b"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.006366689615126075,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.03125
+      ],
+      "compiled_equals_eager_cuda_bitwise": false,
+      "eager_run_to_run_equal": true
+    },
+    {
+      "case": "resnet18_bfloat16",
+      "input_shape": [
+        4,
+        3,
+        64,
+        64
+      ],
+      "weights_sha256": "4bfa9b20d0e84dc22bdb778c719c0d8d4d80c6beddd669b7a5f1554226aefdea",
+      "input_sha256": "7965675169132b787278ee7b44f748297ca2f0552c5fd1817a4ebb65b61ad3c0",
+      "eager_cuda": [
+        "6bf529d338f110a10770b534a049ae7521ee480536731ade4ca70f77603eb88a"
+      ],
+      "eager_cuda_again": [
+        "6bf529d338f110a10770b534a049ae7521ee480536731ade4ca70f77603eb88a"
+      ],
+      "compile_and_first_call_s": 3.947,
+      "compiled_cuda": [
+        "6bf529d338f110a10770b534a049ae7521ee480536731ade4ca70f77603eb88a"
+      ],
+      "compiled_cuda_again": [
+        "6bf529d338f110a10770b534a049ae7521ee480536731ade4ca70f77603eb88a"
+      ],
+      "compiled_run_to_run_equal": true,
+      "compiled_max_error_vs_float64": 0.004362507133299256,
+      "compiled_vs_eager_cuda_max_abs": [
+        0.0
+      ],
+      "compiled_equals_eager_cuda_bitwise": true,
+      "eager_run_to_run_equal": true
+    }
+  ]
+}

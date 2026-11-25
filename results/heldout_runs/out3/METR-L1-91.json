@@ -1,0 +1,209 @@
+{
+ "id": "METR-L1-91",
+ "set": "METR",
+ "level": 1,
+ "problem": "91_cumsum_reverse.py",
+ "ref": "results/heldout_metr/tasks/level_1/91_cumsum_reverse.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_91.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.0169067 vs float64 0.0169051 (error 4.49e-05, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indices 45 to 100 of dim 0 (size 128); only at index 3999 of dim 1 (size 4000) (4 of 512000, 0.0%) Policy:",
+   "ratio": 3.204197522338333,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 13 of 516000 elements beyond the derived bound; worst at [76, 3999]: 0.00855255 vs float64 0.00854983 (error 3.24e-05, 8.2x its bound, 686672 ulp of float32); output: bad elements in the head of dim 0 (indices 0 to 90 of 129); only at index 3999 of dim 1 (size 4000) (13 of 516000, 0.0%) Poli",
+   "ratio": 8.160461958663616,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 5 of 508000 elements beyond the derived bound; worst at [123, 3999]: 0.030426 vs float64 0.0304212 (error 4.49e-05, 7.3x its bound, 1358496 ulp of float32); output: bad elements only at index 3999 of dim 1 (size 4000) (5 of 508000, 0.0%) Policy: float32 results, float32 accumulation, TF32 co",
+   "ratio": 7.320153088074353,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=4001 (was 4000)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.003784431592228005,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=3999 (was 4000)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.005106302144789456,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=4001",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.003851316249845163,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.05309997193852246,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 6 of 512000 elements beyond the derived bound; worst at [38, 3999]: 0.43335 vs float64 0.433443 (error 0.000931, 10.3x its bound, 714566 ulp of float32); output: bad elements only at index 3999 of dim 1 (size 4000) (6 of 512000, 0.0%) Policy: float32 results, float32 accumulation, TF32 convo",
+   "ratio": 10.340979157896523,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 329 of 512000 elements beyond the derived bound; worst at [4, 3999]: 63.5781 vs float64 63.563 (error 0.0832, 10.5x its bound, 3966 ulp of float32); output: bad elements in the tail of dim 1 (indices 3923 to 3999 of 4000) (329 of 512000, 0.1%) Policy: float32 results, float32 accumulation, T",
+   "ratio": 10.528208919338775,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.000132084 vs float64 0.000132071 (error 3.51e-07, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indices 45 to 100 of dim 0 (size 128); only at index 3999 of dim 1 (size 4000) (4 of 512000, 0.0%) Pol",
+   "ratio": 3.204197522338333,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 7133 of 512000 elements beyond the derived bound; worst at [66, 3999]: -0.00245571 vs float64 -0.00245579 (error 3.09e-06, 68.0x its bound, 537 ulp of float32); output: bad elements in the tail of dim 1 (indices 3909 to 3999 of 4000) (7133 of 512000, 1.4%) Policy: float32 results, float32 ac",
+   "ratio": 68.01973988025041,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 3999 places where the float64 reference has none, or the other way round; output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.0169067 vs float64 0.0169051 (error 4.49e-05, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indic",
+   "ratio": 3.2041975567780248,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "fail",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.0169067 vs float64 0.0169051 (error 4.49e-05, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indices 45 to 100 of dim 0 (size 128); only at index 3999 of dim 1 (size 4000) (4 of 512000, 0.0%) Policy:",
+   "ratio": 3.204197522338333,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.0169067 vs float64 0.0169051 (error 4.49e-05, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indices 45 to 100 of dim 0 (size 128); only at index 3999 of dim 1 (size 4000) (4 of 512000, 0.0%) Policy:",
+   "ratio": 3.204197522338333,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 4 of 512000 elements beyond the derived bound; worst at [69, 3999]: 0.0169067 vs float64 0.0169051 (error 4.49e-05, 3.2x its bound, 4101229 ulp of float32); output: bad elements only in indices 45 to 100 of dim 0 (size 128); only at index 3999 of dim 1 (size 4000) (4 of 512000, 0.0%) Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.76,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 5.19
+}

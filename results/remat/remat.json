@@ -1,0 +1,276 @@
+{
+ "torch": "2.11.0+cu128",
+ "gpu": "NVIDIA GeForce RTX 5070 Ti",
+ "rows": [
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "reuse, no recompute",
+   "ms": 25.01,
+   "planned_mib": 255.98,
+   "measured_mib": 256.01
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "greedy, budget 75%",
+   "recomputed": 21,
+   "offloaded": 0,
+   "recompute_work": 18874368,
+   "bitwise_equal": true,
+   "compile_s": 6.9,
+   "ms": 28.68,
+   "planned_mib": 185.59,
+   "measured_mib": 185.59,
+   "budget_peak_mib": 191.98
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut, budget 75%",
+   "recomputed": 20,
+   "offloaded": 0,
+   "recompute_work": 16777216,
+   "bitwise_equal": true,
+   "compile_s": 6.17,
+   "ms": 28.95,
+   "planned_mib": 191.98,
+   "measured_mib": 192.01,
+   "budget_peak_mib": 191.98
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "offload, budget 75%",
+   "recomputed": 0,
+   "offloaded": 8,
+   "recompute_work": 0,
+   "bitwise_equal": true,
+   "compile_s": 5.79,
+   "ms": 27.81,
+   "planned_mib": 191.98,
+   "measured_mib": 192.01,
+   "budget_peak_mib": 191.98
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut+offload, budget 75%",
+   "recomputed": 20,
+   "offloaded": 0,
+   "recompute_work": 16777216,
+   "bitwise_equal": true,
+   "compile_s": 6.28,
+   "ms": 25.6,
+   "planned_mib": 191.98,
+   "measured_mib": 192.01,
+   "budget_peak_mib": 191.98
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "greedy, budget 50%",
+   "recomputed": 68,
+   "offloaded": 0,
+   "recompute_work": 2586836998,
+   "bitwise_equal": true,
+   "compile_s": 8.3,
+   "ms": 29.11,
+   "planned_mib": 127.54,
+   "measured_mib": 127.54,
+   "budget_peak_mib": 127.99
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut, budget 50%",
+   "recomputed": 52,
+   "offloaded": 0,
+   "recompute_work": 1973420042,
+   "bitwise_equal": true,
+   "compile_s": 6.54,
+   "ms": 34.29,
+   "planned_mib": 127.98,
+   "measured_mib": 128.1,
+   "budget_peak_mib": 127.99
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "offload, budget 50%",
+   "recomputed": 0,
+   "offloaded": 25,
+   "recompute_work": 0,
+   "bitwise_equal": true,
+   "compile_s": 5.98,
+   "ms": 42.45,
+   "planned_mib": 127.59,
+   "measured_mib": 127.65,
+   "budget_peak_mib": 127.99
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut+offload, budget 50%",
+   "recomputed": 52,
+   "offloaded": 0,
+   "recompute_work": 1973420042,
+   "bitwise_equal": true,
+   "compile_s": 5.99,
+   "ms": 28.72,
+   "planned_mib": 127.98,
+   "measured_mib": 128.1,
+   "budget_peak_mib": 127.99
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "greedy, budget 35%",
+   "recomputed": 108,
+   "offloaded": 0,
+   "recompute_work": 8775008262,
+   "bitwise_equal": true,
+   "compile_s": 10.87,
+   "ms": 36.71,
+   "planned_mib": 89.51,
+   "measured_mib": 89.51,
+   "budget_peak_mib": 89.59
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut, budget 35%",
+   "recomputed": 163,
+   "offloaded": 0,
+   "recompute_work": 4936171607,
+   "bitwise_equal": true,
+   "compile_s": 7.35,
+   "ms": 30.14,
+   "planned_mib": 89.59,
+   "measured_mib": 89.59,
+   "budget_peak_mib": 89.59
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "offload, budget 35%",
+   "recomputed": 0,
+   "offloaded": 44,
+   "recompute_work": 0,
+   "bitwise_equal": true,
+   "compile_s": 5.42,
+   "ms": 36.39,
+   "planned_mib": 89.59,
+   "measured_mib": 89.59,
+   "budget_peak_mib": 89.59
+  },
+  {
+   "model": "transformer LM 6x d256, batch 16, seq 128",
+   "variant": "mincut+offload, budget 35%",
+   "recomputed": 163,
+   "offloaded": 0,
+   "recompute_work": 4936171607,
+   "bitwise_equal": true,
+   "compile_s": 7.67,
+   "ms": 29.9,
+   "planned_mib": 89.59,
+   "measured_mib": 89.59,
+   "budget_peak_mib": 89.59
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "reuse, no recompute",
+   "ms": 15.0,
+   "planned_mib": 105.43,
+   "measured_mib": 106.18
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "greedy, budget 75%",
+   "recomputed": 22,
+   "offloaded": 0,
+   "recompute_work": 9307328,
+   "bitwise_equal": true,
+   "compile_s": 7.04,
+   "ms": 16.36,
+   "planned_mib": 78.05,
+   "measured_mib": 78.92,
+   "budget_peak_mib": 79.07
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut, budget 75%",
+   "recomputed": 9,
+   "offloaded": 0,
+   "recompute_work": 6946816,
+   "bitwise_equal": true,
+   "compile_s": 5.98,
+   "ms": 16.36,
+   "planned_mib": 78.93,
+   "measured_mib": 80.03,
+   "budget_peak_mib": 79.07
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "offload, budget 75%",
+   "recomputed": 0,
+   "offloaded": 5,
+   "recompute_work": 0,
+   "bitwise_equal": true,
+   "compile_s": 8.39,
+   "ms": 16.22,
+   "planned_mib": 77.43,
+   "measured_mib": 79.05,
+   "budget_peak_mib": 79.07
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut+offload, budget 75%",
+   "recomputed": 9,
+   "offloaded": 0,
+   "recompute_work": 6946816,
+   "bitwise_equal": true,
+   "compile_s": 7.29,
+   "ms": 15.13,
+   "planned_mib": 78.93,
+   "measured_mib": 80.03,
+   "budget_peak_mib": 79.07
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "greedy, budget 50%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 118.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 74.62 MiB), over the memory budget of 96.92 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut, budget 50%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 120.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 76.62 MiB), over the memory budget of 96.92 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "offload, budget 50%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 112.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 68.62 MiB), over the memory budget of 96.92 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut+offload, budget 50%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 118.97 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 74.77 MiB), over the memory budget of 96.92 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "greedy, budget 35%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 118.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 74.62 MiB), over the memory budget of 81.10 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut, budget 35%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 120.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 76.62 MiB), over the memory budget of 81.10 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "offload, budget 35%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 112.82 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 68.62 MiB), over the memory budget of 81.10 MiB."
+  },
+  {
+   "model": "resnet18 64 px, batch 32",
+   "variant": "mincut+offload, budget 35%",
+   "error": "MemoryBudgetError",
+   "message": "[TS420] compiled program 'grad_loss_ResNet' on cuda (float32) needs 118.97 MiB at B=32 (params and inputs 44.20 MiB, peak during the call 74.77 MiB), over the memory budget of 81.10 MiB."
+  }
+ ]
+}

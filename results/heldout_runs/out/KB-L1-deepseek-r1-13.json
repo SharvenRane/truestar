@@ -1,0 +1,12 @@
+{
+ "id": "KB-L1-deepseek-r1-13",
+ "set": "KB",
+ "level": 1,
+ "problem": "13_Matmul_for_symmetric_matrices.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/13_Matmul_for_symmetric_matrices.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_13.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "timeout",
+ "seconds": 300.3
+}

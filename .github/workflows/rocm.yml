@@ -1,0 +1,44 @@
+name: rocm
+
+# Manual only, and never run so far: validates the AMD (ROCm) path on a self hosted runner that has
+# an AMD GPU and a ROCm build of torch (an AMD Developer Cloud MI300X droplet registered as a runner,
+# for example; docs/ROCM.md). GitHub hosted runners have no AMD GPU, so this job waits for a runner
+# with the labels below. The same steps run without GitHub: scripts/rocm_validate.py.
+on:
+  workflow_dispatch:
+    inputs:
+      quick:
+        description: "Only tests/test_rocm.py, test_kernel.py and the codes test"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  rocm:
+    runs-on: [self-hosted, linux, rocm]
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: ROCm torch present
+        shell: bash
+        run: |
+          python -c "import torch, sys; print(torch.__version__, torch.version.hip); sys.exit(0 if torch.version.hip and torch.cuda.is_available() else 1)"
+          rocm-smi || true
+      - name: Install truestar (torch from the image is kept)
+        shell: bash
+        run: |
+          python -m pip install --no-deps -e .
+          python -m pip install numpy pytest "numba>=0.60"
+          python -c "import torchvision" || echo "torchvision missing: install the ROCm wheel matching torch for the resnet18 fingerprint"
+      - name: Validate
+        shell: bash
+        run: |
+          if [ "${{ inputs.quick }}" = "true" ]; then Q=--quick; else Q=; fi
+          PYTHONPATH=src python scripts/rocm_validate.py --out rocm-results $Q
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rocm-results
+          path: rocm-results/

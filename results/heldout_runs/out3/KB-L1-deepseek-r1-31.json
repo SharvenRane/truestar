@@ -1,0 +1,208 @@
+{
+ "id": "KB-L1-deepseek-r1-31",
+ "set": "KB",
+ "level": 1,
+ "problem": "31_ELU.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/31_ELU.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_31.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp of float32); output: bad elements spread over the tensor (782 of 262144, 0.3%) Policy: float32 results, float32 accumulation, TF32 convoluti",
+   "ratio": 209.4735932938072,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 774 of 278528 elements beyond the derived bound; worst at [7, 2346]: -4.11272e-06 vs float64 -4.14318e-06 (error 9.19e-08, 455.5x its bound, 66989 ulp of float32); output: bad elements spread over the tensor (774 of 278528, 0.3%) Policy: float32 results, float32 accumulation, TF32 convolutio",
+   "ratio": 455.45268417436273,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 679 of 245760 elements beyond the derived bound; worst at [14, 3206]: -5.55515e-05 vs float64 -5.5609e-05 (error 9.77e-08, 460.7x its bound, 29325 ulp of float32); output: bad elements spread over the tensor (679 of 245760, 0.3%) Policy: float32 results, float32 accumulation, TF32 convolutio",
+   "ratio": 460.6795850315002,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=16385 (was 16384)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 727 of 262160 elements beyond the derived bound; worst at [7, 1986]: -3.1352e-05 vs float64 -3.14146e-05 (error 9.84e-08, 432.7x its bound, 44583 ulp of float32); output: bad elements spread over the tensor (727 of 262160, 0.3%) Policy: float32 results, float32 accumulation, TF32 convolution",
+   "ratio": 432.7057292182412,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=16383 (was 16384)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 741 of 262128 elements beyond the derived bound; worst at [15, 955]: -3.68357e-05 vs float64 -3.67943e-05 (error 9.61e-08, 260.5x its bound, 18704 ulp of float32); output: bad elements in the head of dim 1 (indices 0 to 16375 of 16383) (741 of 262128, 0.3%) Policy: float32 results, float32 a",
+   "ratio": 260.5198527223351,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=16385",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 709 of 278545 elements beyond the derived bound; worst at [9, 4331]: -1.68085e-05 vs float64 -1.68501e-05 (error 9.74e-08, 434.6x its bound, 22879 ulp of float32); output: bad elements spread over the tensor (709 of 278545, 0.3%) Policy: float32 results, float32 accumulation, TF32 convolutio",
+   "ratio": 434.57225228017813,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.22726599466582065,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 32 of 262144 elements beyond the derived bound; worst at [11, 5139]: -0.000410855 vs float64 -0.000410897 (error 8.53e-08, 21.2x its bound, 1461 ulp of float32); output: bad elements spread over the tensor (32 of 262144, 0.0%) Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 21.24431187288158,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 70101 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.19209e-07 vs float64 -1.562e-07 (error 8.73e-08, 35124.6x its bound, 2602957 ulp of float32); output: overall error is 5.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the ",
+   "ratio": 35124.577278528544,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 262144 of 262144 elements beyond the derived bound; worst at [13, 1335]: -0.00338519 vs float64 -0.00338522 (error 3.35e-08, 14.5x its bound, 144 ulp of float32); output: overall error is 18.8x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tenso",
+   "ratio": 14.488542783451273,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp of float32); output: bad elements spread over the tensor (782 of 262144, 0.3%) Policy: float32 results, float32 accumulation, TF32 convoluti",
+   "ratio": 209.47402224591713,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok",
+   "assert_close#num": "ok",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp of float32); output: bad elements spread over the tensor (782 of 262144, 0.3%) Policy: float32 results, float32 accumulation, TF32 convoluti",
+   "ratio": 209.4735932938072,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 131072 places where the float64 reference has none, or the other way round; output: 131071 of 262144 elements beyond the derived bound; worst at [7, 7094]: 2.17492 vs float64 6.22411e-05 (error 5.17, 7607718729.4x its bound, 451969982103 ulp of float32); output: overall er",
+   "ratio": 7607718729.417977,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 782 of 262144 elements beyond the derived bound; worst at [8, 10062]: -1.99676e-05 vs float64 -1.99933e-05 (error 9.36e-08, 209.5x its bound, 18376 ulp of float32); output: bad elements spread over the tensor (782 of 262144, 0.3%) Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.77,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 5.34
+}

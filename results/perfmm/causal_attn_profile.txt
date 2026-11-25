@@ -1,0 +1,16 @@
+idle gate: waited 10.5 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+npz keys ['in_0', 'in_1', 'in_2', 'ref_out']
+error against float64: truestar 2.278e-03, sdpa 2.278e-03
+FLOPs: useful causal 3.4377e+10; torch FlopCounterMode dense SDPA 6.8719e+10 (formula 4BHS^2D 6.8719e+10)
+kernel steps: [{"kernel": "attn_bf16_causal:%scaled_dot_product_attention", "config": {"BM": 64, "BN": 64, "num_warps": 4, "num_stages": 2, "LPT": true, "SPLIT": true, "KV_CHUNK": 0}, "source": "tuned"}]
+BM 64 BN 64: 528 key blocks per head of 1024 -> executed 3.5433e+10 FLOPs (1.031x the useful count)
+PTX mma.sync m16n8k16 bf16 counts (static): {"kern.ptx": {"mma_m16n8k16_bf16": 128, "entry": "kern"}}
+[idle gate] GPU busy (foreign=[(21528, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[100.0]); waiting
+idle gate: waited 31.1 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+<home>\.venvs\ml\lib\site-packages\torch\profiler\profiler.py:224: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+truestar: GPU time per call 372.8 us over 1 kernel(s) {"kern": {"launches": 1.0, "us_per_call": 372.75371999999993}} | SM clock median 2902.0 MHz | useful 92.2 TFLOPS | executed 95.1 TFLOPS
+idle gate: waited 10.5 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+sdpa_default: GPU time per call 803.8 us over 1 kernel(s) {"_Z40fmha_cutlassF_bf16_aligned_64x64_rf_sm80N22PyTorchMemEffAttention15AttentionKernelIN7cutlass10bfloat16_tENS1_4arch4Sm80ELb1ELi64ELi64ELi64ELb1ELb1EE6ParamsE": {"launches": 0.98, "us_per_call": 803.8397999999999}} | SM clock median 2895.0 MHz | useful 42.8 TFLOPS
+truestar: useful 92.2 TFLOPS = 105% of rated 87.9, 89% of the clock adjusted 104.0; executed 95.1 = 91% of it
+sdpa_default: useful 42.8 TFLOPS = 49% of rated 87.9, 41% of the clock adjusted 103.8

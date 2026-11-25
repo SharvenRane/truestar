@@ -1,0 +1,10 @@
+name = "truestar_proofs"
+version = "0.1.0"
+defaultTargets = ["TruestarProofs", "tccheck"]
+
+[[lean_lib]]
+name = "TruestarProofs"
+
+[[lean_exe]]
+name = "tccheck"
+root = "TcCheck"

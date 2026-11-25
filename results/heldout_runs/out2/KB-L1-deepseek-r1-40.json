@@ -1,0 +1,136 @@
+{
+ "id": "KB-L1-deepseek-r1-40",
+ "set": "KB",
+ "level": 1,
+ "problem": "40_LayerNorm.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level1/40_LayerNorm.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_40.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 67058412 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -4.96982 vs float64 -2.48559 (error 5.64, 24400.6x its bound, 1022566336764 ulp of float32); output: overall error is 8174.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread o",
+   "ratio": 24400.63103923125,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 71249152 of 71303168 elements beyond the derived bound; worst at [1, 58, 118, 43]: -5.43152 vs float64 -2.71634 (error 5.86, 23893.1x its bound, 255109938393 ulp of float32); output: overall error is 8172.4x what a correct float32 implementation shows (limit 2x); output: bad elements spread ",
+   "ratio": 23893.079050142693,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 62867091 of 62914560 elements beyond the derived bound; worst at [9, 59, 78, 245]: 4.23109 vs float64 2.11491 (error 5.46, 24175.0x its bound, 2940413945588 ulp of float32); output: overall error is 8171.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread o",
+   "ratio": 24175.032158627866,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=65 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 65, 256, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=63 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 63, 256, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=257 (was 256)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 64, 257, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d2=255 (was 256)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[16, 64, 255, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=65, d2=257",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[17, 65, 257, 2)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given normalized_shape=[64, 256, 256], expected input with shape [*, 64, 256, 256], but got input of size[7, 7, 7, 7])",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 67058414 of 67108864 elements beyond the derived bound; worst at [1, 61, 2, 27]: -4.96992 vs float64 -2.4856 (error 5.64, 24398.0x its bound, 1022583961200 ulp of float32); output: overall error is 8174.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread ov",
+   "ratio": 24397.98919386178,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.92,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.23 GiB is free. Process 1 has 20.80 GiB memory in use. Process 1 has 20.80 GiB memory in use. Of the allocated memory 11.62 GiB is allocated by PyTorch, and 2.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)",
+ "trace": "File \"/w/src/truestar/kernelcheck.py\", line 418, in _judge\n    rep = tol.check(out, explain=True, fn=reference, inputs=before)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 584, in check\n    return _check(self, out, explain, fn, inputs, kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 884, in _check\n    reports.append(_check_one(i, o, ref, tol))\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 921, in _check_one\n    bnd = tol.bound(i)\n          ^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 581, in bound\n    + _abs_floor(ref, self.policy))\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/src/truestar/tolerance.py\", line 601, in _abs_floor\n    fin = ref[torch.isfinite(ref)]\n          ~~~^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 22.08 GiB of which 1.23 GiB is free. Process 1 has 20.80 GiB memory in use. Process 1 has 20.80 GiB memory in use. Of the allocated memory 11.62 GiB is allocated by PyTorch, and 2.44 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+ "seconds": 49.83
+}

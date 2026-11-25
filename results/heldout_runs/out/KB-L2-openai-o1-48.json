@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-48",
+ "set": "KB",
+ "level": 2,
+ "problem": "48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_48.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "timeout",
+ "seconds": 300.5
+}

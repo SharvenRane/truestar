@@ -1,0 +1,5272 @@
+[
+ {
+  "id": "KB-L1-deepseek-r1-1",
+  "set": "KB",
+  "level": 1,
+  "problem": "1_Square_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/1_Square_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_1.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-10",
+  "set": "KB",
+  "level": 1,
+  "problem": "10_3D_tensor_matrix_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/10_3D_tensor_matrix_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_10.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-100",
+  "set": "KB",
+  "level": 1,
+  "problem": "100_HingeLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/100_HingeLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_100.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-12",
+  "set": "KB",
+  "level": 1,
+  "problem": "12_Matmul_with_diagonal_matrices_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/12_Matmul_with_diagonal_matrices_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_12.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-13",
+  "set": "KB",
+  "level": 1,
+  "problem": "13_Matmul_for_symmetric_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/13_Matmul_for_symmetric_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_13.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-14",
+  "set": "KB",
+  "level": 1,
+  "problem": "14_Matmul_for_upper_triangular_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/14_Matmul_for_upper_triangular_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_14.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-15",
+  "set": "KB",
+  "level": 1,
+  "problem": "15_Matmul_for_lower_triangular_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/15_Matmul_for_lower_triangular_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_15.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-16",
+  "set": "KB",
+  "level": 1,
+  "problem": "16_Matmul_with_transposed_A.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/16_Matmul_with_transposed_A.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_16.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-17",
+  "set": "KB",
+  "level": 1,
+  "problem": "17_Matmul_with_transposed_B.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/17_Matmul_with_transposed_B.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_17.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-18",
+  "set": "KB",
+  "level": 1,
+  "problem": "18_Matmul_with_transposed_both.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/18_Matmul_with_transposed_both.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_18.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-19",
+  "set": "KB",
+  "level": 1,
+  "problem": "19_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/19_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_19.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-2",
+  "set": "KB",
+  "level": 1,
+  "problem": "2_Standard_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/2_Standard_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_2.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-20",
+  "set": "KB",
+  "level": 1,
+  "problem": "20_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/20_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_20.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-21",
+  "set": "KB",
+  "level": 1,
+  "problem": "21_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/21_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_21.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-22",
+  "set": "KB",
+  "level": 1,
+  "problem": "22_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/22_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_22.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-23",
+  "set": "KB",
+  "level": 1,
+  "problem": "23_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/23_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_23.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-24",
+  "set": "KB",
+  "level": 1,
+  "problem": "24_LogSoftmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/24_LogSoftmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_24.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-25",
+  "set": "KB",
+  "level": 1,
+  "problem": "25_Swish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/25_Swish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_25.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-26",
+  "set": "KB",
+  "level": 1,
+  "problem": "26_GELU_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/26_GELU_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_26.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-28",
+  "set": "KB",
+  "level": 1,
+  "problem": "28_HardSigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/28_HardSigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_28.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-29",
+  "set": "KB",
+  "level": 1,
+  "problem": "29_Softplus.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/29_Softplus.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_29.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-3",
+  "set": "KB",
+  "level": 1,
+  "problem": "3_Batched_matrix_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/3_Batched_matrix_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_3.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-30",
+  "set": "KB",
+  "level": 1,
+  "problem": "30_Softsign.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/30_Softsign.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_30.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-31",
+  "set": "KB",
+  "level": 1,
+  "problem": "31_ELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/31_ELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_31.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-32",
+  "set": "KB",
+  "level": 1,
+  "problem": "32_HardTanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/32_HardTanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_32.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-33",
+  "set": "KB",
+  "level": 1,
+  "problem": "33_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/33_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_33.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-37",
+  "set": "KB",
+  "level": 1,
+  "problem": "37_FrobeniusNorm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/37_FrobeniusNorm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_37.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-38",
+  "set": "KB",
+  "level": 1,
+  "problem": "38_L1Norm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/38_L1Norm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_38.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-39",
+  "set": "KB",
+  "level": 1,
+  "problem": "39_L2Norm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/39_L2Norm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_39.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-4",
+  "set": "KB",
+  "level": 1,
+  "problem": "4_Matrix_vector_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/4_Matrix_vector_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_4.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-40",
+  "set": "KB",
+  "level": 1,
+  "problem": "40_LayerNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/40_LayerNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_40.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-41",
+  "set": "KB",
+  "level": 1,
+  "problem": "41_Max_Pooling_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/41_Max_Pooling_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_41.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-42",
+  "set": "KB",
+  "level": 1,
+  "problem": "42_Max_Pooling_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/42_Max_Pooling_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_42.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-43",
+  "set": "KB",
+  "level": 1,
+  "problem": "43_Max_Pooling_3D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/43_Max_Pooling_3D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_43.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-44",
+  "set": "KB",
+  "level": 1,
+  "problem": "44_Average_Pooling_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/44_Average_Pooling_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_44.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-45",
+  "set": "KB",
+  "level": 1,
+  "problem": "45_Average_Pooling_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/45_Average_Pooling_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_45.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-46",
+  "set": "KB",
+  "level": 1,
+  "problem": "46_Average_Pooling_3D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/46_Average_Pooling_3D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_46.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-47",
+  "set": "KB",
+  "level": 1,
+  "problem": "47_Sum_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/47_Sum_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_47.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-48",
+  "set": "KB",
+  "level": 1,
+  "problem": "48_Mean_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/48_Mean_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_48.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-49",
+  "set": "KB",
+  "level": 1,
+  "problem": "49_Max_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/49_Max_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_49.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-5",
+  "set": "KB",
+  "level": 1,
+  "problem": "5_Matrix_scalar_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/5_Matrix_scalar_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_5.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-50",
+  "set": "KB",
+  "level": 1,
+  "problem": "50_Product_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/50_Product_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_50.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-51",
+  "set": "KB",
+  "level": 1,
+  "problem": "51_Argmax_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/51_Argmax_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_51.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-52",
+  "set": "KB",
+  "level": 1,
+  "problem": "52_Argmin_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/52_Argmin_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_52.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-53",
+  "set": "KB",
+  "level": 1,
+  "problem": "53_Min_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/53_Min_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_53.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-54",
+  "set": "KB",
+  "level": 1,
+  "problem": "54_conv_standard_3D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/54_conv_standard_3D_square_input_square.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_54.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-59",
+  "set": "KB",
+  "level": 1,
+  "problem": "59_conv_standard_3D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/59_conv_standard_3D_asymmetric_input_squ.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_59.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-6",
+  "set": "KB",
+  "level": 1,
+  "problem": "6_Matmul_with_large_K_dimension_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/6_Matmul_with_large_K_dimension_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_6.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-60",
+  "set": "KB",
+  "level": 1,
+  "problem": "60_conv_standard_3D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/60_conv_standard_3D_square_input_asymmet.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_60.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-61",
+  "set": "KB",
+  "level": 1,
+  "problem": "61_conv_transposed_3D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/61_conv_transposed_3D_square_input_squar.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_61.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-62",
+  "set": "KB",
+  "level": 1,
+  "problem": "62_conv_standard_2D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/62_conv_standard_2D_square_input_asymmet.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_62.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-63",
+  "set": "KB",
+  "level": 1,
+  "problem": "63_conv_standard_2D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/63_conv_standard_2D_square_input_square.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_63.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-64",
+  "set": "KB",
+  "level": 1,
+  "problem": "64_conv_transposed_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/64_conv_transposed_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_64.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-65",
+  "set": "KB",
+  "level": 1,
+  "problem": "65_conv_transposed_2D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/65_conv_transposed_2D_square_input_asymm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_65.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-66",
+  "set": "KB",
+  "level": 1,
+  "problem": "66_conv_standard_3D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/66_conv_standard_3D_asymmetric_input_asy.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_66.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-67",
+  "set": "KB",
+  "level": 1,
+  "problem": "67_conv_standard_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/67_conv_standard_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_67.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-68",
+  "set": "KB",
+  "level": 1,
+  "problem": "68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/68_conv_transposed_3D_square_input_asymm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_68.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-7",
+  "set": "KB",
+  "level": 1,
+  "problem": "7_Matmul_with_small_K_dimension_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/7_Matmul_with_small_K_dimension_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_7.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-70",
+  "set": "KB",
+  "level": 1,
+  "problem": "70_conv_transposed_3D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/70_conv_transposed_3D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_70.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-71",
+  "set": "KB",
+  "level": 1,
+  "problem": "71_conv_transposed_2D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/71_conv_transposed_2D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_71.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-72",
+  "set": "KB",
+  "level": 1,
+  "problem": "72_conv_transposed_3D_asymmetric_input_asymmetric_kernel___strided_padded_grouped_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/72_conv_transposed_3D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_72.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-73",
+  "set": "KB",
+  "level": 1,
+  "problem": "73_conv_transposed_3D_asymmetric_input_square_kernel__strided_padded__grouped.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/73_conv_transposed_3D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_73.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-74",
+  "set": "KB",
+  "level": 1,
+  "problem": "74_conv_transposed_1D_dilated.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/74_conv_transposed_1D_dilated.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_74.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-75",
+  "set": "KB",
+  "level": 1,
+  "problem": "75_conv_transposed_2D_asymmetric_input_asymmetric_kernel_strided__grouped____padded____dilated__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/75_conv_transposed_2D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_75.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-76",
+  "set": "KB",
+  "level": 1,
+  "problem": "76_conv_standard_1D_dilated_strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/76_conv_standard_1D_dilated_strided__.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_76.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-77",
+  "set": "KB",
+  "level": 1,
+  "problem": "77_conv_transposed_3D_square_input_square_kernel___padded____dilated____strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/77_conv_transposed_3D_square_input_squar.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_77.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-78",
+  "set": "KB",
+  "level": 1,
+  "problem": "78_conv_transposed_2D_asymmetric_input_asymmetric_kernel___padded__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/78_conv_transposed_2D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_78.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-79",
+  "set": "KB",
+  "level": 1,
+  "problem": "79_conv_transposed_1D_asymmetric_input_square_kernel___padded____strided____dilated__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/79_conv_transposed_1D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_79.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-8",
+  "set": "KB",
+  "level": 1,
+  "problem": "8_Matmul_with_irregular_shapes_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/8_Matmul_with_irregular_shapes_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_8.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-80",
+  "set": "KB",
+  "level": 1,
+  "problem": "80_conv_standard_2D_square_input_asymmetric_kernel___dilated____padded__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/80_conv_standard_2D_square_input_asymmet.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_80.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-81",
+  "set": "KB",
+  "level": 1,
+  "problem": "81_conv_transposed_2D_asymmetric_input_square_kernel___dilated____padded____strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/81_conv_transposed_2D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_81.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-83",
+  "set": "KB",
+  "level": 1,
+  "problem": "83_conv_depthwise_2D_square_input_asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/83_conv_depthwise_2D_square_input_asymme.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_83.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-84",
+  "set": "KB",
+  "level": 1,
+  "problem": "84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/84_conv_depthwise_2D_asymmetric_input_sq.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_84.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-85",
+  "set": "KB",
+  "level": 1,
+  "problem": "85_conv_depthwise_2D_asymmetric_input_asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/85_conv_depthwise_2D_asymmetric_input_as.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_85.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-86",
+  "set": "KB",
+  "level": 1,
+  "problem": "86_conv_depthwise_separable_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/86_conv_depthwise_separable_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_86.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-87",
+  "set": "KB",
+  "level": 1,
+  "problem": "87_conv_pointwise_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/87_conv_pointwise_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_87.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-88",
+  "set": "KB",
+  "level": 1,
+  "problem": "88_MinGPTNewGelu.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/88_MinGPTNewGelu.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_88.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-9",
+  "set": "KB",
+  "level": 1,
+  "problem": "9_Tall_skinny_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/9_Tall_skinny_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_9.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-90",
+  "set": "KB",
+  "level": 1,
+  "problem": "90_cumprod.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/90_cumprod.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_90.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-91",
+  "set": "KB",
+  "level": 1,
+  "problem": "91_cumsum_reverse.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/91_cumsum_reverse.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_91.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-92",
+  "set": "KB",
+  "level": 1,
+  "problem": "92_cumsum_exclusive.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/92_cumsum_exclusive.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_92.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-93",
+  "set": "KB",
+  "level": 1,
+  "problem": "93_masked_cumsum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/93_masked_cumsum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_93.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-95",
+  "set": "KB",
+  "level": 1,
+  "problem": "95_CrossEntropyLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/95_CrossEntropyLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_95.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-96",
+  "set": "KB",
+  "level": 1,
+  "problem": "96_HuberLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/96_HuberLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_96.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-deepseek-r1-97",
+  "set": "KB",
+  "level": 1,
+  "problem": "97_CosineSimilarityLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/97_CosineSimilarityLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_97.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-deepseek-r1-99",
+  "set": "KB",
+  "level": 1,
+  "problem": "99_TripletMarginLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/99_TripletMarginLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/deepseek-r1/problem_99.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-1",
+  "set": "KB",
+  "level": 1,
+  "problem": "1_Square_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/1_Square_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_1.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-10",
+  "set": "KB",
+  "level": 1,
+  "problem": "10_3D_tensor_matrix_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/10_3D_tensor_matrix_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_10.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-100",
+  "set": "KB",
+  "level": 1,
+  "problem": "100_HingeLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/100_HingeLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_100.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-11",
+  "set": "KB",
+  "level": 1,
+  "problem": "11_4D_tensor_matrix_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/11_4D_tensor_matrix_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_11.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-12",
+  "set": "KB",
+  "level": 1,
+  "problem": "12_Matmul_with_diagonal_matrices_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/12_Matmul_with_diagonal_matrices_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_12.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-13",
+  "set": "KB",
+  "level": 1,
+  "problem": "13_Matmul_for_symmetric_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/13_Matmul_for_symmetric_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_13.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-14",
+  "set": "KB",
+  "level": 1,
+  "problem": "14_Matmul_for_upper_triangular_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/14_Matmul_for_upper_triangular_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_14.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-15",
+  "set": "KB",
+  "level": 1,
+  "problem": "15_Matmul_for_lower_triangular_matrices.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/15_Matmul_for_lower_triangular_matrices.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_15.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-16",
+  "set": "KB",
+  "level": 1,
+  "problem": "16_Matmul_with_transposed_A.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/16_Matmul_with_transposed_A.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_16.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-17",
+  "set": "KB",
+  "level": 1,
+  "problem": "17_Matmul_with_transposed_B.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/17_Matmul_with_transposed_B.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_17.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-18",
+  "set": "KB",
+  "level": 1,
+  "problem": "18_Matmul_with_transposed_both.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/18_Matmul_with_transposed_both.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_18.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-19",
+  "set": "KB",
+  "level": 1,
+  "problem": "19_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/19_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_19.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-2",
+  "set": "KB",
+  "level": 1,
+  "problem": "2_Standard_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/2_Standard_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_2.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-20",
+  "set": "KB",
+  "level": 1,
+  "problem": "20_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/20_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_20.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-21",
+  "set": "KB",
+  "level": 1,
+  "problem": "21_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/21_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_21.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-22",
+  "set": "KB",
+  "level": 1,
+  "problem": "22_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/22_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_22.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-23",
+  "set": "KB",
+  "level": 1,
+  "problem": "23_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/23_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_23.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-24",
+  "set": "KB",
+  "level": 1,
+  "problem": "24_LogSoftmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/24_LogSoftmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_24.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-25",
+  "set": "KB",
+  "level": 1,
+  "problem": "25_Swish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/25_Swish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_25.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-26",
+  "set": "KB",
+  "level": 1,
+  "problem": "26_GELU_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/26_GELU_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_26.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-27",
+  "set": "KB",
+  "level": 1,
+  "problem": "27_SELU_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/27_SELU_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_27.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-28",
+  "set": "KB",
+  "level": 1,
+  "problem": "28_HardSigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/28_HardSigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_28.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-29",
+  "set": "KB",
+  "level": 1,
+  "problem": "29_Softplus.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/29_Softplus.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_29.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-3",
+  "set": "KB",
+  "level": 1,
+  "problem": "3_Batched_matrix_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/3_Batched_matrix_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_3.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-30",
+  "set": "KB",
+  "level": 1,
+  "problem": "30_Softsign.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/30_Softsign.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_30.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-31",
+  "set": "KB",
+  "level": 1,
+  "problem": "31_ELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/31_ELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_31.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-32",
+  "set": "KB",
+  "level": 1,
+  "problem": "32_HardTanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/32_HardTanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_32.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-33",
+  "set": "KB",
+  "level": 1,
+  "problem": "33_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/33_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_33.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-35",
+  "set": "KB",
+  "level": 1,
+  "problem": "35_GroupNorm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/35_GroupNorm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_35.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-36",
+  "set": "KB",
+  "level": 1,
+  "problem": "36_RMSNorm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/36_RMSNorm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_36.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-37",
+  "set": "KB",
+  "level": 1,
+  "problem": "37_FrobeniusNorm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/37_FrobeniusNorm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_37.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-38",
+  "set": "KB",
+  "level": 1,
+  "problem": "38_L1Norm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/38_L1Norm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_38.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-39",
+  "set": "KB",
+  "level": 1,
+  "problem": "39_L2Norm_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/39_L2Norm_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_39.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-4",
+  "set": "KB",
+  "level": 1,
+  "problem": "4_Matrix_vector_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/4_Matrix_vector_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_4.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-40",
+  "set": "KB",
+  "level": 1,
+  "problem": "40_LayerNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/40_LayerNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_40.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-41",
+  "set": "KB",
+  "level": 1,
+  "problem": "41_Max_Pooling_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/41_Max_Pooling_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_41.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-42",
+  "set": "KB",
+  "level": 1,
+  "problem": "42_Max_Pooling_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/42_Max_Pooling_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_42.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-43",
+  "set": "KB",
+  "level": 1,
+  "problem": "43_Max_Pooling_3D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/43_Max_Pooling_3D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_43.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-44",
+  "set": "KB",
+  "level": 1,
+  "problem": "44_Average_Pooling_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/44_Average_Pooling_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_44.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-45",
+  "set": "KB",
+  "level": 1,
+  "problem": "45_Average_Pooling_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/45_Average_Pooling_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_45.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-46",
+  "set": "KB",
+  "level": 1,
+  "problem": "46_Average_Pooling_3D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/46_Average_Pooling_3D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_46.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-47",
+  "set": "KB",
+  "level": 1,
+  "problem": "47_Sum_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/47_Sum_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_47.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-48",
+  "set": "KB",
+  "level": 1,
+  "problem": "48_Mean_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/48_Mean_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_48.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-5",
+  "set": "KB",
+  "level": 1,
+  "problem": "5_Matrix_scalar_multiplication.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/5_Matrix_scalar_multiplication.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_5.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-50",
+  "set": "KB",
+  "level": 1,
+  "problem": "50_Product_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/50_Product_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_50.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-51",
+  "set": "KB",
+  "level": 1,
+  "problem": "51_Argmax_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/51_Argmax_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_51.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-52",
+  "set": "KB",
+  "level": 1,
+  "problem": "52_Argmin_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/52_Argmin_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_52.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-53",
+  "set": "KB",
+  "level": 1,
+  "problem": "53_Min_reduction_over_a_dimension.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/53_Min_reduction_over_a_dimension.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_53.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-54",
+  "set": "KB",
+  "level": 1,
+  "problem": "54_conv_standard_3D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/54_conv_standard_3D_square_input_square.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_54.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-55",
+  "set": "KB",
+  "level": 1,
+  "problem": "55_conv_standard_2D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/55_conv_standard_2D_asymmetric_input_squ.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_55.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-56",
+  "set": "KB",
+  "level": 1,
+  "problem": "56_conv_standard_2D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/56_conv_standard_2D_asymmetric_input_asy.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_56.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-57",
+  "set": "KB",
+  "level": 1,
+  "problem": "57_conv_transposed_2D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/57_conv_transposed_2D_square_input_squar.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_57.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-58",
+  "set": "KB",
+  "level": 1,
+  "problem": "58_conv_transposed_3D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/58_conv_transposed_3D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_58.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-59",
+  "set": "KB",
+  "level": 1,
+  "problem": "59_conv_standard_3D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/59_conv_standard_3D_asymmetric_input_squ.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_59.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-6",
+  "set": "KB",
+  "level": 1,
+  "problem": "6_Matmul_with_large_K_dimension_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/6_Matmul_with_large_K_dimension_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_6.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-60",
+  "set": "KB",
+  "level": 1,
+  "problem": "60_conv_standard_3D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/60_conv_standard_3D_square_input_asymmet.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_60.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-61",
+  "set": "KB",
+  "level": 1,
+  "problem": "61_conv_transposed_3D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/61_conv_transposed_3D_square_input_squar.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_61.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-63",
+  "set": "KB",
+  "level": 1,
+  "problem": "63_conv_standard_2D__square_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/63_conv_standard_2D_square_input_square.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_63.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-64",
+  "set": "KB",
+  "level": 1,
+  "problem": "64_conv_transposed_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/64_conv_transposed_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_64.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-65",
+  "set": "KB",
+  "level": 1,
+  "problem": "65_conv_transposed_2D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/65_conv_transposed_2D_square_input_asymm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_65.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-66",
+  "set": "KB",
+  "level": 1,
+  "problem": "66_conv_standard_3D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/66_conv_standard_3D_asymmetric_input_asy.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_66.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-67",
+  "set": "KB",
+  "level": 1,
+  "problem": "67_conv_standard_1D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/67_conv_standard_1D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_67.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-68",
+  "set": "KB",
+  "level": 1,
+  "problem": "68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/68_conv_transposed_3D_square_input_asymm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_68.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-69",
+  "set": "KB",
+  "level": 1,
+  "problem": "69_conv_transposed_2D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/69_conv_transposed_2D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_69.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-7",
+  "set": "KB",
+  "level": 1,
+  "problem": "7_Matmul_with_small_K_dimension_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/7_Matmul_with_small_K_dimension_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_7.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-70",
+  "set": "KB",
+  "level": 1,
+  "problem": "70_conv_transposed_3D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/70_conv_transposed_3D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_70.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-71",
+  "set": "KB",
+  "level": 1,
+  "problem": "71_conv_transposed_2D__asymmetric_input__square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/71_conv_transposed_2D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_71.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-72",
+  "set": "KB",
+  "level": 1,
+  "problem": "72_conv_transposed_3D_asymmetric_input_asymmetric_kernel___strided_padded_grouped_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/72_conv_transposed_3D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_72.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-73",
+  "set": "KB",
+  "level": 1,
+  "problem": "73_conv_transposed_3D_asymmetric_input_square_kernel__strided_padded__grouped.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/73_conv_transposed_3D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_73.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-74",
+  "set": "KB",
+  "level": 1,
+  "problem": "74_conv_transposed_1D_dilated.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/74_conv_transposed_1D_dilated.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_74.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-75",
+  "set": "KB",
+  "level": 1,
+  "problem": "75_conv_transposed_2D_asymmetric_input_asymmetric_kernel_strided__grouped____padded____dilated__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/75_conv_transposed_2D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_75.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-76",
+  "set": "KB",
+  "level": 1,
+  "problem": "76_conv_standard_1D_dilated_strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/76_conv_standard_1D_dilated_strided__.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_76.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-77",
+  "set": "KB",
+  "level": 1,
+  "problem": "77_conv_transposed_3D_square_input_square_kernel___padded____dilated____strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/77_conv_transposed_3D_square_input_squar.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_77.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-78",
+  "set": "KB",
+  "level": 1,
+  "problem": "78_conv_transposed_2D_asymmetric_input_asymmetric_kernel___padded__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/78_conv_transposed_2D_asymmetric_input_a.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_78.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-8",
+  "set": "KB",
+  "level": 1,
+  "problem": "8_Matmul_with_irregular_shapes_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/8_Matmul_with_irregular_shapes_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_8.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-81",
+  "set": "KB",
+  "level": 1,
+  "problem": "81_conv_transposed_2D_asymmetric_input_square_kernel___dilated____padded____strided__.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/81_conv_transposed_2D_asymmetric_input_s.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_81.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-82",
+  "set": "KB",
+  "level": 1,
+  "problem": "82_conv_depthwise_2D_square_input_square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/82_conv_depthwise_2D_square_input_square.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_82.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-83",
+  "set": "KB",
+  "level": 1,
+  "problem": "83_conv_depthwise_2D_square_input_asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/83_conv_depthwise_2D_square_input_asymme.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_83.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-84",
+  "set": "KB",
+  "level": 1,
+  "problem": "84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/84_conv_depthwise_2D_asymmetric_input_sq.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_84.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-85",
+  "set": "KB",
+  "level": 1,
+  "problem": "85_conv_depthwise_2D_asymmetric_input_asymmetric_kernel.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/85_conv_depthwise_2D_asymmetric_input_as.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_85.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-86",
+  "set": "KB",
+  "level": 1,
+  "problem": "86_conv_depthwise_separable_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/86_conv_depthwise_separable_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_86.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-87",
+  "set": "KB",
+  "level": 1,
+  "problem": "87_conv_pointwise_2D.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/87_conv_pointwise_2D.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_87.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-88",
+  "set": "KB",
+  "level": 1,
+  "problem": "88_MinGPTNewGelu.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/88_MinGPTNewGelu.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_88.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-89",
+  "set": "KB",
+  "level": 1,
+  "problem": "89_cumsum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/89_cumsum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_89.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-9",
+  "set": "KB",
+  "level": 1,
+  "problem": "9_Tall_skinny_matrix_multiplication_.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/9_Tall_skinny_matrix_multiplication_.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_9.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-90",
+  "set": "KB",
+  "level": 1,
+  "problem": "90_cumprod.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/90_cumprod.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_90.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-91",
+  "set": "KB",
+  "level": 1,
+  "problem": "91_cumsum_reverse.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/91_cumsum_reverse.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_91.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-92",
+  "set": "KB",
+  "level": 1,
+  "problem": "92_cumsum_exclusive.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/92_cumsum_exclusive.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_92.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-93",
+  "set": "KB",
+  "level": 1,
+  "problem": "93_masked_cumsum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/93_masked_cumsum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_93.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-94",
+  "set": "KB",
+  "level": 1,
+  "problem": "94_MSELoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/94_MSELoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_94.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-95",
+  "set": "KB",
+  "level": 1,
+  "problem": "95_CrossEntropyLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/95_CrossEntropyLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_95.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-96",
+  "set": "KB",
+  "level": 1,
+  "problem": "96_HuberLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/96_HuberLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_96.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-97",
+  "set": "KB",
+  "level": 1,
+  "problem": "97_CosineSimilarityLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/97_CosineSimilarityLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_97.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L1-openai-o1-98",
+  "set": "KB",
+  "level": 1,
+  "problem": "98_KLDivLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/98_KLDivLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_98.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L1-openai-o1-99",
+  "set": "KB",
+  "level": 1,
+  "problem": "99_TripletMarginLoss.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level1/99_TripletMarginLoss.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level1/openai-o1/problem_99.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-1",
+  "set": "KB",
+  "level": 2,
+  "problem": "1_Conv2D_ReLU_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/1_Conv2D_ReLU_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_1.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-10",
+  "set": "KB",
+  "level": 2,
+  "problem": "10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_10.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-100",
+  "set": "KB",
+  "level": 2,
+  "problem": "100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_100.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-11",
+  "set": "KB",
+  "level": 2,
+  "problem": "11_ConvTranspose2d_BatchNorm_Tanh_MaxPool_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/11_ConvTranspose2d_BatchNorm_Tanh_MaxPoo.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_11.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-12",
+  "set": "KB",
+  "level": 2,
+  "problem": "12_Gemm_Multiply_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/12_Gemm_Multiply_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_12.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-13",
+  "set": "KB",
+  "level": 2,
+  "problem": "13_ConvTranspose3d_Mean_Add_Softmax_Tanh_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/13_ConvTranspose3d_Mean_Add_Softmax_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_13.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-14",
+  "set": "KB",
+  "level": 2,
+  "problem": "14_Gemm_Divide_Sum_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/14_Gemm_Divide_Sum_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_14.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-16",
+  "set": "KB",
+  "level": 2,
+  "problem": "16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_16.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-17",
+  "set": "KB",
+  "level": 2,
+  "problem": "17_Conv2d_InstanceNorm_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/17_Conv2d_InstanceNorm_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_17.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-18",
+  "set": "KB",
+  "level": 2,
+  "problem": "18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_18.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-19",
+  "set": "KB",
+  "level": 2,
+  "problem": "19_ConvTranspose2d_GELU_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/19_ConvTranspose2d_GELU_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_19.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-2",
+  "set": "KB",
+  "level": 2,
+  "problem": "2_ConvTranspose2d_BiasAdd_Clamp_Scaling_Clamp_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/2_ConvTranspose2d_BiasAdd_Clamp_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_2.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-20",
+  "set": "KB",
+  "level": 2,
+  "problem": "20_ConvTranspose3d_Sum_ResidualAdd_Multiply_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/20_ConvTranspose3d_Sum_ResidualAdd_Multi.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_20.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-21",
+  "set": "KB",
+  "level": 2,
+  "problem": "21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_21.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-22",
+  "set": "KB",
+  "level": 2,
+  "problem": "22_Matmul_Scale_ResidualAdd_Clamp_LogSumExp_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/22_Matmul_Scale_ResidualAdd_Clamp_LogSum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_22.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-23",
+  "set": "KB",
+  "level": 2,
+  "problem": "23_Conv3d_GroupNorm_Mean.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/23_Conv3d_GroupNorm_Mean.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_23.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-24",
+  "set": "KB",
+  "level": 2,
+  "problem": "24_Conv3d_Min_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/24_Conv3d_Min_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_24.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-25",
+  "set": "KB",
+  "level": 2,
+  "problem": "25_Conv2d_Min_Tanh_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/25_Conv2d_Min_Tanh_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_25.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-26",
+  "set": "KB",
+  "level": 2,
+  "problem": "26_ConvTranspose3d_Add_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/26_ConvTranspose3d_Add_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_26.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-27",
+  "set": "KB",
+  "level": 2,
+  "problem": "27_Conv3d_HardSwish_ReLU_Softmax_Mean.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/27_Conv3d_HardSwish_ReLU_Softmax_Mean.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_27.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-28",
+  "set": "KB",
+  "level": 2,
+  "problem": "28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_28.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-29",
+  "set": "KB",
+  "level": 2,
+  "problem": "29_Matmul_Mish_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/29_Matmul_Mish_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_29.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-3",
+  "set": "KB",
+  "level": 2,
+  "problem": "3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_3.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-30",
+  "set": "KB",
+  "level": 2,
+  "problem": "30_Gemm_GroupNorm_Hardtanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/30_Gemm_GroupNorm_Hardtanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_30.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-31",
+  "set": "KB",
+  "level": 2,
+  "problem": "31_Conv2d_Min_Add_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/31_Conv2d_Min_Add_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_31.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-32",
+  "set": "KB",
+  "level": 2,
+  "problem": "32_Conv2d_Scaling_Min.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/32_Conv2d_Scaling_Min.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_32.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-33",
+  "set": "KB",
+  "level": 2,
+  "problem": "33_Gemm_Scale_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/33_Gemm_Scale_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_33.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-34",
+  "set": "KB",
+  "level": 2,
+  "problem": "34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_34.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-35",
+  "set": "KB",
+  "level": 2,
+  "problem": "35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_35.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-36",
+  "set": "KB",
+  "level": 2,
+  "problem": "36_ConvTranspose2d_Min_Sum_GELU_Add.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/36_ConvTranspose2d_Min_Sum_GELU_Add.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_36.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-37",
+  "set": "KB",
+  "level": 2,
+  "problem": "37_Matmul_Swish_Sum_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/37_Matmul_Swish_Sum_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_37.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-38",
+  "set": "KB",
+  "level": 2,
+  "problem": "38_ConvTranspose3d_AvgPool_Clamp_Softmax_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/38_ConvTranspose3d_AvgPool_Clamp_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_38.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-39",
+  "set": "KB",
+  "level": 2,
+  "problem": "39_Gemm_Scale_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/39_Gemm_Scale_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_39.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-4",
+  "set": "KB",
+  "level": 2,
+  "problem": "4_Conv2d_Mish_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/4_Conv2d_Mish_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_4.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-40",
+  "set": "KB",
+  "level": 2,
+  "problem": "40_Matmul_Scaling_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/40_Matmul_Scaling_ResidualAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_40.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-42",
+  "set": "KB",
+  "level": 2,
+  "problem": "42_ConvTranspose2d_GlobalAvgPool_BiasAdd_LogSumExp_Sum_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/42_ConvTranspose2d_GlobalAvgPool_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_42.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-43",
+  "set": "KB",
+  "level": 2,
+  "problem": "43_Conv3d_Max_LogSumExp_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/43_Conv3d_Max_LogSumExp_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_43.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-44",
+  "set": "KB",
+  "level": 2,
+  "problem": "44_ConvTranspose2d_Multiply_GlobalAvgPool_GlobalAvgPool_Mean.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/44_ConvTranspose2d_Multiply_GlobalAvgPoo.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_44.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-45",
+  "set": "KB",
+  "level": 2,
+  "problem": "45_Gemm_Sigmoid_Sum_LogSumExp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/45_Gemm_Sigmoid_Sum_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_45.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-46",
+  "set": "KB",
+  "level": 2,
+  "problem": "46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_46.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-47",
+  "set": "KB",
+  "level": 2,
+  "problem": "47_Conv3d_Mish_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/47_Conv3d_Mish_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_47.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-48",
+  "set": "KB",
+  "level": 2,
+  "problem": "48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_48.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-49",
+  "set": "KB",
+  "level": 2,
+  "problem": "49_ConvTranspose3d_Softmax_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/49_ConvTranspose3d_Softmax_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_49.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-5",
+  "set": "KB",
+  "level": 2,
+  "problem": "5_ConvTranspose2d_Subtract_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/5_ConvTranspose2d_Subtract_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_5.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-50",
+  "set": "KB",
+  "level": 2,
+  "problem": "50_ConvTranspose3d_Scaling_AvgPool_BiasAdd_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/50_ConvTranspose3d_Scaling_AvgPool_BiasA.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_50.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-51",
+  "set": "KB",
+  "level": 2,
+  "problem": "51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/51_Gemm_Subtract_GlobalAvgPool_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_51.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-52",
+  "set": "KB",
+  "level": 2,
+  "problem": "52_Conv2d_Activation_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/52_Conv2d_Activation_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_52.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-53",
+  "set": "KB",
+  "level": 2,
+  "problem": "53_Gemm_Scaling_Hardtanh_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/53_Gemm_Scaling_Hardtanh_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_53.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-54",
+  "set": "KB",
+  "level": 2,
+  "problem": "54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_54.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-55",
+  "set": "KB",
+  "level": 2,
+  "problem": "55_Matmul_MaxPool_Sum_Scale.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/55_Matmul_MaxPool_Sum_Scale.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_55.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-56",
+  "set": "KB",
+  "level": 2,
+  "problem": "56_Matmul_Sigmoid_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/56_Matmul_Sigmoid_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_56.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-57",
+  "set": "KB",
+  "level": 2,
+  "problem": "57_Conv2d_ReLU_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/57_Conv2d_ReLU_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_57.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-58",
+  "set": "KB",
+  "level": 2,
+  "problem": "58_ConvTranspose3d_LogSumExp_HardSwish_Subtract_Clamp_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/58_ConvTranspose3d_LogSumExp_HardSwish_S.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_58.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-59",
+  "set": "KB",
+  "level": 2,
+  "problem": "59_Matmul_Swish_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/59_Matmul_Swish_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_59.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-60",
+  "set": "KB",
+  "level": 2,
+  "problem": "60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_60.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-62",
+  "set": "KB",
+  "level": 2,
+  "problem": "62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_62.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-63",
+  "set": "KB",
+  "level": 2,
+  "problem": "63_Gemm_ReLU_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/63_Gemm_ReLU_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_63.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-64",
+  "set": "KB",
+  "level": 2,
+  "problem": "64_Gemm_LogSumExp_LeakyReLU_LeakyReLU_GELU_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/64_Gemm_LogSumExp_LeakyReLU_LeakyReLU_GE.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_64.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-65",
+  "set": "KB",
+  "level": 2,
+  "problem": "65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_65.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-66",
+  "set": "KB",
+  "level": 2,
+  "problem": "66_Matmul_Dropout_Mean_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/66_Matmul_Dropout_Mean_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_66.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-67",
+  "set": "KB",
+  "level": 2,
+  "problem": "67_Conv2d_GELU_GlobalAvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/67_Conv2d_GELU_GlobalAvgPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_67.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-68",
+  "set": "KB",
+  "level": 2,
+  "problem": "68_Matmul_Min_Subtract.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/68_Matmul_Min_Subtract.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_68.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-69",
+  "set": "KB",
+  "level": 2,
+  "problem": "69_Conv2d_HardSwish_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/69_Conv2d_HardSwish_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_69.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-7",
+  "set": "KB",
+  "level": 2,
+  "problem": "7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_7.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-70",
+  "set": "KB",
+  "level": 2,
+  "problem": "70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_70.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-71",
+  "set": "KB",
+  "level": 2,
+  "problem": "71_Conv2d_Divide_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/71_Conv2d_Divide_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_71.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-73",
+  "set": "KB",
+  "level": 2,
+  "problem": "73_Conv2d_BatchNorm_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/73_Conv2d_BatchNorm_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_73.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-74",
+  "set": "KB",
+  "level": 2,
+  "problem": "74_ConvTranspose3d_LeakyReLU_Multiply_LeakyReLU_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/74_ConvTranspose3d_LeakyReLU_Multiply_Le.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_74.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-75",
+  "set": "KB",
+  "level": 2,
+  "problem": "75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_75.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-76",
+  "set": "KB",
+  "level": 2,
+  "problem": "76_Gemm_Add_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/76_Gemm_Add_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_76.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-77",
+  "set": "KB",
+  "level": 2,
+  "problem": "77_ConvTranspose3d_Scale_BatchNorm_GlobalAvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/77_ConvTranspose3d_Scale_BatchNorm_Globa.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_77.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-78",
+  "set": "KB",
+  "level": 2,
+  "problem": "78_ConvTranspose3d_Max_Max_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/78_ConvTranspose3d_Max_Max_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_78.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-79",
+  "set": "KB",
+  "level": 2,
+  "problem": "79_Conv3d_Multiply_InstanceNorm_Clamp_Multiply_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/79_Conv3d_Multiply_InstanceNorm_Clamp_Mu.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_79.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-8",
+  "set": "KB",
+  "level": 2,
+  "problem": "8_Conv3d_Divide_Max_GlobalAvgPool_BiasAdd_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/8_Conv3d_Divide_Max_GlobalAvgPool_BiasAdd_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_8.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-80",
+  "set": "KB",
+  "level": 2,
+  "problem": "80_Gemm_Max_Subtract_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/80_Gemm_Max_Subtract_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_80.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-81",
+  "set": "KB",
+  "level": 2,
+  "problem": "81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_81.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-82",
+  "set": "KB",
+  "level": 2,
+  "problem": "82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_82.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-83",
+  "set": "KB",
+  "level": 2,
+  "problem": "83_Conv3d_GroupNorm_Min_Clamp_Dropout.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/83_Conv3d_GroupNorm_Min_Clamp_Dropout.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_83.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-86",
+  "set": "KB",
+  "level": 2,
+  "problem": "86_Matmul_Divide_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/86_Matmul_Divide_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_86.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-87",
+  "set": "KB",
+  "level": 2,
+  "problem": "87_Conv2d_Subtract_Subtract_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/87_Conv2d_Subtract_Subtract_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_87.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-88",
+  "set": "KB",
+  "level": 2,
+  "problem": "88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_88.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-9",
+  "set": "KB",
+  "level": 2,
+  "problem": "9_Matmul_Subtract_Multiply_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/9_Matmul_Subtract_Multiply_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_9.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-90",
+  "set": "KB",
+  "level": 2,
+  "problem": "90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_90.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-91",
+  "set": "KB",
+  "level": 2,
+  "problem": "91_ConvTranspose2d_Softmax_BiasAdd_Scaling_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/91_ConvTranspose2d_Softmax_BiasAdd_Scali.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_91.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-93",
+  "set": "KB",
+  "level": 2,
+  "problem": "93_ConvTranspose2d_Add_Min_GELU_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/93_ConvTranspose2d_Add_Min_GELU_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_93.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-95",
+  "set": "KB",
+  "level": 2,
+  "problem": "95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_95.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-96",
+  "set": "KB",
+  "level": 2,
+  "problem": "96_ConvTranspose3d_Multiply_Max_GlobalAvgPool_Clamp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/96_ConvTranspose3d_Multiply_Max_GlobalAv.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_96.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-deepseek-r1-97",
+  "set": "KB",
+  "level": 2,
+  "problem": "97_Matmul_BatchNorm_BiasAdd_Divide_Swish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/97_Matmul_BatchNorm_BiasAdd_Divide_Swish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_97.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-98",
+  "set": "KB",
+  "level": 2,
+  "problem": "98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_98.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-deepseek-r1-99",
+  "set": "KB",
+  "level": 2,
+  "problem": "99_Matmul_GELU_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/99_Matmul_GELU_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_99.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-1",
+  "set": "KB",
+  "level": 2,
+  "problem": "1_Conv2D_ReLU_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/1_Conv2D_ReLU_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_1.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-10",
+  "set": "KB",
+  "level": 2,
+  "problem": "10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_10.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-100",
+  "set": "KB",
+  "level": 2,
+  "problem": "100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_100.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-11",
+  "set": "KB",
+  "level": 2,
+  "problem": "11_ConvTranspose2d_BatchNorm_Tanh_MaxPool_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/11_ConvTranspose2d_BatchNorm_Tanh_MaxPoo.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_11.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-12",
+  "set": "KB",
+  "level": 2,
+  "problem": "12_Gemm_Multiply_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/12_Gemm_Multiply_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_12.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-14",
+  "set": "KB",
+  "level": 2,
+  "problem": "14_Gemm_Divide_Sum_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/14_Gemm_Divide_Sum_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_14.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-16",
+  "set": "KB",
+  "level": 2,
+  "problem": "16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_16.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-17",
+  "set": "KB",
+  "level": 2,
+  "problem": "17_Conv2d_InstanceNorm_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/17_Conv2d_InstanceNorm_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_17.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-18",
+  "set": "KB",
+  "level": 2,
+  "problem": "18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_18.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-2",
+  "set": "KB",
+  "level": 2,
+  "problem": "2_ConvTranspose2d_BiasAdd_Clamp_Scaling_Clamp_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/2_ConvTranspose2d_BiasAdd_Clamp_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_2.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-20",
+  "set": "KB",
+  "level": 2,
+  "problem": "20_ConvTranspose3d_Sum_ResidualAdd_Multiply_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/20_ConvTranspose3d_Sum_ResidualAdd_Multi.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_20.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-21",
+  "set": "KB",
+  "level": 2,
+  "problem": "21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_21.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-23",
+  "set": "KB",
+  "level": 2,
+  "problem": "23_Conv3d_GroupNorm_Mean.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/23_Conv3d_GroupNorm_Mean.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_23.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-24",
+  "set": "KB",
+  "level": 2,
+  "problem": "24_Conv3d_Min_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/24_Conv3d_Min_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_24.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-25",
+  "set": "KB",
+  "level": 2,
+  "problem": "25_Conv2d_Min_Tanh_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/25_Conv2d_Min_Tanh_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_25.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-26",
+  "set": "KB",
+  "level": 2,
+  "problem": "26_ConvTranspose3d_Add_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/26_ConvTranspose3d_Add_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_26.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-28",
+  "set": "KB",
+  "level": 2,
+  "problem": "28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_28.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-29",
+  "set": "KB",
+  "level": 2,
+  "problem": "29_Matmul_Mish_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/29_Matmul_Mish_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_29.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-3",
+  "set": "KB",
+  "level": 2,
+  "problem": "3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_3.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-30",
+  "set": "KB",
+  "level": 2,
+  "problem": "30_Gemm_GroupNorm_Hardtanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/30_Gemm_GroupNorm_Hardtanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_30.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-31",
+  "set": "KB",
+  "level": 2,
+  "problem": "31_Conv2d_Min_Add_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/31_Conv2d_Min_Add_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_31.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-32",
+  "set": "KB",
+  "level": 2,
+  "problem": "32_Conv2d_Scaling_Min.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/32_Conv2d_Scaling_Min.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_32.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-33",
+  "set": "KB",
+  "level": 2,
+  "problem": "33_Gemm_Scale_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/33_Gemm_Scale_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_33.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-34",
+  "set": "KB",
+  "level": 2,
+  "problem": "34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_34.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-35",
+  "set": "KB",
+  "level": 2,
+  "problem": "35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_35.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-36",
+  "set": "KB",
+  "level": 2,
+  "problem": "36_ConvTranspose2d_Min_Sum_GELU_Add.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/36_ConvTranspose2d_Min_Sum_GELU_Add.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_36.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-37",
+  "set": "KB",
+  "level": 2,
+  "problem": "37_Matmul_Swish_Sum_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/37_Matmul_Swish_Sum_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_37.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-38",
+  "set": "KB",
+  "level": 2,
+  "problem": "38_ConvTranspose3d_AvgPool_Clamp_Softmax_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/38_ConvTranspose3d_AvgPool_Clamp_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_38.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-39",
+  "set": "KB",
+  "level": 2,
+  "problem": "39_Gemm_Scale_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/39_Gemm_Scale_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_39.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-4",
+  "set": "KB",
+  "level": 2,
+  "problem": "4_Conv2d_Mish_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/4_Conv2d_Mish_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_4.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-40",
+  "set": "KB",
+  "level": 2,
+  "problem": "40_Matmul_Scaling_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/40_Matmul_Scaling_ResidualAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_40.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-41",
+  "set": "KB",
+  "level": 2,
+  "problem": "41_Gemm_BatchNorm_GELU_GroupNorm_Mean_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/41_Gemm_BatchNorm_GELU_GroupNorm_Mean_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_41.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-43",
+  "set": "KB",
+  "level": 2,
+  "problem": "43_Conv3d_Max_LogSumExp_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/43_Conv3d_Max_LogSumExp_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_43.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-44",
+  "set": "KB",
+  "level": 2,
+  "problem": "44_ConvTranspose2d_Multiply_GlobalAvgPool_GlobalAvgPool_Mean.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/44_ConvTranspose2d_Multiply_GlobalAvgPoo.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_44.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-45",
+  "set": "KB",
+  "level": 2,
+  "problem": "45_Gemm_Sigmoid_Sum_LogSumExp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/45_Gemm_Sigmoid_Sum_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_45.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-46",
+  "set": "KB",
+  "level": 2,
+  "problem": "46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_46.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-47",
+  "set": "KB",
+  "level": 2,
+  "problem": "47_Conv3d_Mish_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/47_Conv3d_Mish_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_47.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-48",
+  "set": "KB",
+  "level": 2,
+  "problem": "48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_48.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-49",
+  "set": "KB",
+  "level": 2,
+  "problem": "49_ConvTranspose3d_Softmax_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/49_ConvTranspose3d_Softmax_Sigmoid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_49.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-5",
+  "set": "KB",
+  "level": 2,
+  "problem": "5_ConvTranspose2d_Subtract_Tanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/5_ConvTranspose2d_Subtract_Tanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_5.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-51",
+  "set": "KB",
+  "level": 2,
+  "problem": "51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/51_Gemm_Subtract_GlobalAvgPool_LogSumExp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_51.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-52",
+  "set": "KB",
+  "level": 2,
+  "problem": "52_Conv2d_Activation_BatchNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/52_Conv2d_Activation_BatchNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_52.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-53",
+  "set": "KB",
+  "level": 2,
+  "problem": "53_Gemm_Scaling_Hardtanh_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/53_Gemm_Scaling_Hardtanh_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_53.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-54",
+  "set": "KB",
+  "level": 2,
+  "problem": "54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_54.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-55",
+  "set": "KB",
+  "level": 2,
+  "problem": "55_Matmul_MaxPool_Sum_Scale.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/55_Matmul_MaxPool_Sum_Scale.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_55.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-56",
+  "set": "KB",
+  "level": 2,
+  "problem": "56_Matmul_Sigmoid_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/56_Matmul_Sigmoid_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_56.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-57",
+  "set": "KB",
+  "level": 2,
+  "problem": "57_Conv2d_ReLU_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/57_Conv2d_ReLU_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_57.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-58",
+  "set": "KB",
+  "level": 2,
+  "problem": "58_ConvTranspose3d_LogSumExp_HardSwish_Subtract_Clamp_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/58_ConvTranspose3d_LogSumExp_HardSwish_S.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_58.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-59",
+  "set": "KB",
+  "level": 2,
+  "problem": "59_Matmul_Swish_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/59_Matmul_Swish_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_59.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-6",
+  "set": "KB",
+  "level": 2,
+  "problem": "6_Conv3d_Softmax_MaxPool_MaxPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/6_Conv3d_Softmax_MaxPool_MaxPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_6.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-60",
+  "set": "KB",
+  "level": 2,
+  "problem": "60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_60.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-61",
+  "set": "KB",
+  "level": 2,
+  "problem": "61_ConvTranspose3d_ReLU_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/61_ConvTranspose3d_ReLU_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_61.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-62",
+  "set": "KB",
+  "level": 2,
+  "problem": "62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_62.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-63",
+  "set": "KB",
+  "level": 2,
+  "problem": "63_Gemm_ReLU_Divide.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/63_Gemm_ReLU_Divide.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_63.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-65",
+  "set": "KB",
+  "level": 2,
+  "problem": "65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_65.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-66",
+  "set": "KB",
+  "level": 2,
+  "problem": "66_Matmul_Dropout_Mean_Softmax.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/66_Matmul_Dropout_Mean_Softmax.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_66.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-67",
+  "set": "KB",
+  "level": 2,
+  "problem": "67_Conv2d_GELU_GlobalAvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/67_Conv2d_GELU_GlobalAvgPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_67.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-68",
+  "set": "KB",
+  "level": 2,
+  "problem": "68_Matmul_Min_Subtract.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/68_Matmul_Min_Subtract.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_68.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-69",
+  "set": "KB",
+  "level": 2,
+  "problem": "69_Conv2d_HardSwish_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/69_Conv2d_HardSwish_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_69.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-7",
+  "set": "KB",
+  "level": 2,
+  "problem": "7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_7.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-70",
+  "set": "KB",
+  "level": 2,
+  "problem": "70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_70.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-71",
+  "set": "KB",
+  "level": 2,
+  "problem": "71_Conv2d_Divide_LeakyReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/71_Conv2d_Divide_LeakyReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_71.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-72",
+  "set": "KB",
+  "level": 2,
+  "problem": "72_ConvTranspose3d_BatchNorm_AvgPool_AvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/72_ConvTranspose3d_BatchNorm_AvgPool_AvgPool.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_72.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-73",
+  "set": "KB",
+  "level": 2,
+  "problem": "73_Conv2d_BatchNorm_Scaling.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/73_Conv2d_BatchNorm_Scaling.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_73.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-74",
+  "set": "KB",
+  "level": 2,
+  "problem": "74_ConvTranspose3d_LeakyReLU_Multiply_LeakyReLU_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/74_ConvTranspose3d_LeakyReLU_Multiply_Le.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_74.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-75",
+  "set": "KB",
+  "level": 2,
+  "problem": "75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_75.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval "
+ },
+ {
+  "id": "KB-L2-openai-o1-76",
+  "set": "KB",
+  "level": 2,
+  "problem": "76_Gemm_Add_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/76_Gemm_Add_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_76.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-77",
+  "set": "KB",
+  "level": 2,
+  "problem": "77_ConvTranspose3d_Scale_BatchNorm_GlobalAvgPool.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/77_ConvTranspose3d_Scale_BatchNorm_Globa.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_77.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-79",
+  "set": "KB",
+  "level": 2,
+  "problem": "79_Conv3d_Multiply_InstanceNorm_Clamp_Multiply_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/79_Conv3d_Multiply_InstanceNorm_Clamp_Mu.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_79.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-81",
+  "set": "KB",
+  "level": 2,
+  "problem": "81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_81.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-82",
+  "set": "KB",
+  "level": 2,
+  "problem": "82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_82.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-83",
+  "set": "KB",
+  "level": 2,
+  "problem": "83_Conv3d_GroupNorm_Min_Clamp_Dropout.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/83_Conv3d_GroupNorm_Min_Clamp_Dropout.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_83.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-85",
+  "set": "KB",
+  "level": 2,
+  "problem": "85_Conv2d_GroupNorm_Scale_MaxPool_Clamp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/85_Conv2d_GroupNorm_Scale_MaxPool_Clamp.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_85.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-86",
+  "set": "KB",
+  "level": 2,
+  "problem": "86_Matmul_Divide_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/86_Matmul_Divide_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_86.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-87",
+  "set": "KB",
+  "level": 2,
+  "problem": "87_Conv2d_Subtract_Subtract_Mish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/87_Conv2d_Subtract_Subtract_Mish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_87.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-88",
+  "set": "KB",
+  "level": 2,
+  "problem": "88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_88.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-9",
+  "set": "KB",
+  "level": 2,
+  "problem": "9_Matmul_Subtract_Multiply_ReLU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/9_Matmul_Subtract_Multiply_ReLU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_9.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-90",
+  "set": "KB",
+  "level": 2,
+  "problem": "90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_90.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-91",
+  "set": "KB",
+  "level": 2,
+  "problem": "91_ConvTranspose2d_Softmax_BiasAdd_Scaling_Sigmoid.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/91_ConvTranspose2d_Softmax_BiasAdd_Scali.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_91.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-92",
+  "set": "KB",
+  "level": 2,
+  "problem": "92_Conv2d_GroupNorm_Tanh_HardSwish_ResidualAdd_LogSumExp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/92_Conv2d_GroupNorm_Tanh_HardSwish_Resid.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_92.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-93",
+  "set": "KB",
+  "level": 2,
+  "problem": "93_ConvTranspose2d_Add_Min_GELU_Multiply.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/93_ConvTranspose2d_Add_Min_GELU_Multiply.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_93.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-94",
+  "set": "KB",
+  "level": 2,
+  "problem": "94_Gemm_BiasAdd_Hardtanh_Mish_GroupNorm.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/94_Gemm_BiasAdd_Hardtanh_Mish_GroupNorm.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_94.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-95",
+  "set": "KB",
+  "level": 2,
+  "problem": "95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_95.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-96",
+  "set": "KB",
+  "level": 2,
+  "problem": "96_ConvTranspose3d_Multiply_Max_GlobalAvgPool_Clamp.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/96_ConvTranspose3d_Multiply_Max_GlobalAv.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_96.json",
+  "label": "correct",
+  "label_source": "KernelBench eval (5 / 5)"
+ },
+ {
+  "id": "KB-L2-openai-o1-98",
+  "set": "KB",
+  "level": 2,
+  "problem": "98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "ref": "tests/data/heldout/kernelbench/problems/level2/98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_98.json",
+  "label": "wrong",
+  "label_source": "KernelBench eval (0 / 5)"
+ },
+ {
+  "id": "METR-L1-1",
+  "set": "METR",
+  "level": 1,
+  "problem": "1_Square_matrix_multiplication_.py",
+  "ref": "results/heldout_metr/tasks/level_1/1_Square_matrix_multiplication_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_1.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-10",
+  "set": "METR",
+  "level": 1,
+  "problem": "10_3D_tensor_matrix_multiplication.py",
+  "ref": "results/heldout_metr/tasks/level_1/10_3D_tensor_matrix_multiplication.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_10.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-100",
+  "set": "METR",
+  "level": 1,
+  "problem": "100_HingeLoss.py",
+  "ref": "results/heldout_metr/tasks/level_1/100_HingeLoss.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_100.py",
+  "label": "wrong",
+  "label_source": "named in the YAKK post"
+ },
+ {
+  "id": "METR-L1-101",
+  "set": "METR",
+  "level": 1,
+  "problem": "101_Average_Pooling_2D_ks4.py",
+  "ref": "results/heldout_metr/tasks/level_1/101_Average_Pooling_2D_ks4.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_101.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-11",
+  "set": "METR",
+  "level": 1,
+  "problem": "11_4D_tensor_matrix_multiplication.py",
+  "ref": "results/heldout_metr/tasks/level_1/11_4D_tensor_matrix_multiplication.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_11.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-13",
+  "set": "METR",
+  "level": 1,
+  "problem": "13_Matmul_for_symmetric_matrices.py",
+  "ref": "results/heldout_metr/tasks/level_1/13_Matmul_for_symmetric_matrices.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_13.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-14",
+  "set": "METR",
+  "level": 1,
+  "problem": "14_Matmul_for_upper_triangular_matrices.py",
+  "ref": "results/heldout_metr/tasks/level_1/14_Matmul_for_upper_triangular_matrices.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_14.py",
+  "label": "wrong",
+  "label_source": "named in the YAKK post"
+ },
+ {
+  "id": "METR-L1-15",
+  "set": "METR",
+  "level": 1,
+  "problem": "15_Matmul_for_lower_triangular_matrices.py",
+  "ref": "results/heldout_metr/tasks/level_1/15_Matmul_for_lower_triangular_matrices.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_15.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-16",
+  "set": "METR",
+  "level": 1,
+  "problem": "16_Matmul_with_transposed_A.py",
+  "ref": "results/heldout_metr/tasks/level_1/16_Matmul_with_transposed_A.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_16.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-17",
+  "set": "METR",
+  "level": 1,
+  "problem": "17_Matmul_with_transposed_B.py",
+  "ref": "results/heldout_metr/tasks/level_1/17_Matmul_with_transposed_B.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_17.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-18",
+  "set": "METR",
+  "level": 1,
+  "problem": "18_Matmul_with_transposed_both.py",
+  "ref": "results/heldout_metr/tasks/level_1/18_Matmul_with_transposed_both.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_18.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-19",
+  "set": "METR",
+  "level": 1,
+  "problem": "19_ReLU.py",
+  "ref": "results/heldout_metr/tasks/level_1/19_ReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_19.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-2",
+  "set": "METR",
+  "level": 1,
+  "problem": "2_Standard_matrix_multiplication_.py",
+  "ref": "results/heldout_metr/tasks/level_1/2_Standard_matrix_multiplication_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_2.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-20",
+  "set": "METR",
+  "level": 1,
+  "problem": "20_LeakyReLU.py",
+  "ref": "results/heldout_metr/tasks/level_1/20_LeakyReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_20.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-21",
+  "set": "METR",
+  "level": 1,
+  "problem": "21_Sigmoid.py",
+  "ref": "results/heldout_metr/tasks/level_1/21_Sigmoid.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_21.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-22",
+  "set": "METR",
+  "level": 1,
+  "problem": "22_Tanh.py",
+  "ref": "results/heldout_metr/tasks/level_1/22_Tanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_22.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-24",
+  "set": "METR",
+  "level": 1,
+  "problem": "24_LogSoftmax.py",
+  "ref": "results/heldout_metr/tasks/level_1/24_LogSoftmax.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_24.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-25",
+  "set": "METR",
+  "level": 1,
+  "problem": "25_Swish.py",
+  "ref": "results/heldout_metr/tasks/level_1/25_Swish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_25.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-26",
+  "set": "METR",
+  "level": 1,
+  "problem": "26_GELU_.py",
+  "ref": "results/heldout_metr/tasks/level_1/26_GELU_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_26.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-27",
+  "set": "METR",
+  "level": 1,
+  "problem": "27_SELU_.py",
+  "ref": "results/heldout_metr/tasks/level_1/27_SELU_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_27.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-28",
+  "set": "METR",
+  "level": 1,
+  "problem": "28_HardSigmoid.py",
+  "ref": "results/heldout_metr/tasks/level_1/28_HardSigmoid.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_28.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-29",
+  "set": "METR",
+  "level": 1,
+  "problem": "29_Softplus.py",
+  "ref": "results/heldout_metr/tasks/level_1/29_Softplus.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_29.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-3",
+  "set": "METR",
+  "level": 1,
+  "problem": "3_Batched_matrix_multiplication.py",
+  "ref": "results/heldout_metr/tasks/level_1/3_Batched_matrix_multiplication.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_3.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-30",
+  "set": "METR",
+  "level": 1,
+  "problem": "30_Softsign.py",
+  "ref": "results/heldout_metr/tasks/level_1/30_Softsign.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_30.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-31",
+  "set": "METR",
+  "level": 1,
+  "problem": "31_ELU.py",
+  "ref": "results/heldout_metr/tasks/level_1/31_ELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_31.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-32",
+  "set": "METR",
+  "level": 1,
+  "problem": "32_HardTanh.py",
+  "ref": "results/heldout_metr/tasks/level_1/32_HardTanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_32.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-33",
+  "set": "METR",
+  "level": 1,
+  "problem": "33_BatchNorm.py",
+  "ref": "results/heldout_metr/tasks/level_1/33_BatchNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_33.py",
+  "label": "wrong",
+  "label_source": "named in the YAKK post"
+ },
+ {
+  "id": "METR-L1-34",
+  "set": "METR",
+  "level": 1,
+  "problem": "34_InstanceNorm.py",
+  "ref": "results/heldout_metr/tasks/level_1/34_InstanceNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_34.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-35",
+  "set": "METR",
+  "level": 1,
+  "problem": "35_GroupNorm_.py",
+  "ref": "results/heldout_metr/tasks/level_1/35_GroupNorm_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_35.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-36",
+  "set": "METR",
+  "level": 1,
+  "problem": "36_RMSNorm_.py",
+  "ref": "results/heldout_metr/tasks/level_1/36_RMSNorm_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_36.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-38",
+  "set": "METR",
+  "level": 1,
+  "problem": "38_L1Norm_.py",
+  "ref": "results/heldout_metr/tasks/level_1/38_L1Norm_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_38.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-4",
+  "set": "METR",
+  "level": 1,
+  "problem": "4_Matrix_vector_multiplication_.py",
+  "ref": "results/heldout_metr/tasks/level_1/4_Matrix_vector_multiplication_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_4.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-40",
+  "set": "METR",
+  "level": 1,
+  "problem": "40_LayerNorm.py",
+  "ref": "results/heldout_metr/tasks/level_1/40_LayerNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_40.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-41",
+  "set": "METR",
+  "level": 1,
+  "problem": "41_Max_Pooling_1D.py",
+  "ref": "results/heldout_metr/tasks/level_1/41_Max_Pooling_1D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_41.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-42",
+  "set": "METR",
+  "level": 1,
+  "problem": "42_Max_Pooling_2D.py",
+  "ref": "results/heldout_metr/tasks/level_1/42_Max_Pooling_2D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_42.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-43",
+  "set": "METR",
+  "level": 1,
+  "problem": "43_Max_Pooling_3D.py",
+  "ref": "results/heldout_metr/tasks/level_1/43_Max_Pooling_3D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_43.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-44",
+  "set": "METR",
+  "level": 1,
+  "problem": "44_Average_Pooling_1D.py",
+  "ref": "results/heldout_metr/tasks/level_1/44_Average_Pooling_1D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_44.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-45",
+  "set": "METR",
+  "level": 1,
+  "problem": "45_Average_Pooling_2D.py",
+  "ref": "results/heldout_metr/tasks/level_1/45_Average_Pooling_2D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_45.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-46",
+  "set": "METR",
+  "level": 1,
+  "problem": "46_Average_Pooling_3D.py",
+  "ref": "results/heldout_metr/tasks/level_1/46_Average_Pooling_3D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_46.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-47",
+  "set": "METR",
+  "level": 1,
+  "problem": "47_Sum_reduction_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/47_Sum_reduction_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_47.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-48",
+  "set": "METR",
+  "level": 1,
+  "problem": "48_Mean_reduction_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/48_Mean_reduction_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_48.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-49",
+  "set": "METR",
+  "level": 1,
+  "problem": "49_Max_reduction_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/49_Max_reduction_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_49.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-5",
+  "set": "METR",
+  "level": 1,
+  "problem": "5_Matrix_scalar_multiplication.py",
+  "ref": "results/heldout_metr/tasks/level_1/5_Matrix_scalar_multiplication.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_5.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-51",
+  "set": "METR",
+  "level": 1,
+  "problem": "51_Argmax_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/51_Argmax_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_51.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-52",
+  "set": "METR",
+  "level": 1,
+  "problem": "52_Argmin_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/52_Argmin_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_52.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-53",
+  "set": "METR",
+  "level": 1,
+  "problem": "53_Min_reduction_over_a_dimension.py",
+  "ref": "results/heldout_metr/tasks/level_1/53_Min_reduction_over_a_dimension.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_53.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-54",
+  "set": "METR",
+  "level": 1,
+  "problem": "54_conv_standard_3D__square_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/54_conv_standard_3D__square_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_54.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-55",
+  "set": "METR",
+  "level": 1,
+  "problem": "55_conv_standard_2D__asymmetric_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/55_conv_standard_2D__asymmetric_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_55.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-56",
+  "set": "METR",
+  "level": 1,
+  "problem": "56_conv_standard_2D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/56_conv_standard_2D__asymmetric_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_56.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-57",
+  "set": "METR",
+  "level": 1,
+  "problem": "57_conv_transposed_2D__square_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/57_conv_transposed_2D__square_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_57.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-58",
+  "set": "METR",
+  "level": 1,
+  "problem": "58_conv_transposed_3D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/58_conv_transposed_3D__asymmetric_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_58.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-59",
+  "set": "METR",
+  "level": 1,
+  "problem": "59_conv_standard_3D__asymmetric_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/59_conv_standard_3D__asymmetric_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_59.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-6",
+  "set": "METR",
+  "level": 1,
+  "problem": "6_Matmul_with_large_K_dimension_.py",
+  "ref": "results/heldout_metr/tasks/level_1/6_Matmul_with_large_K_dimension_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_6.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-60",
+  "set": "METR",
+  "level": 1,
+  "problem": "60_conv_standard_3D__square_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/60_conv_standard_3D__square_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_60.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-61",
+  "set": "METR",
+  "level": 1,
+  "problem": "61_conv_transposed_3D__square_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/61_conv_transposed_3D__square_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_61.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-62",
+  "set": "METR",
+  "level": 1,
+  "problem": "62_conv_standard_2D__square_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/62_conv_standard_2D__square_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_62.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-63",
+  "set": "METR",
+  "level": 1,
+  "problem": "63_conv_standard_2D__square_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/63_conv_standard_2D__square_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_63.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-64",
+  "set": "METR",
+  "level": 1,
+  "problem": "64_conv_transposed_1D.py",
+  "ref": "results/heldout_metr/tasks/level_1/64_conv_transposed_1D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_64.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-65",
+  "set": "METR",
+  "level": 1,
+  "problem": "65_conv_transposed_2D__square_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/65_conv_transposed_2D__square_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_65.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-66",
+  "set": "METR",
+  "level": 1,
+  "problem": "66_conv_standard_3D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/66_conv_standard_3D__asymmetric_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_66.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-67",
+  "set": "METR",
+  "level": 1,
+  "problem": "67_conv_standard_1D.py",
+  "ref": "results/heldout_metr/tasks/level_1/67_conv_standard_1D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_67.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-68",
+  "set": "METR",
+  "level": 1,
+  "problem": "68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/68_conv_transposed_3D__square_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_68.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-69",
+  "set": "METR",
+  "level": 1,
+  "problem": "69_conv_transposed_2D__asymmetric_input__asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/69_conv_transposed_2D__asymmetric_input__asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_69.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-7",
+  "set": "METR",
+  "level": 1,
+  "problem": "7_Matmul_with_small_K_dimension_.py",
+  "ref": "results/heldout_metr/tasks/level_1/7_Matmul_with_small_K_dimension_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_7.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-70",
+  "set": "METR",
+  "level": 1,
+  "problem": "70_conv_transposed_3D__asymmetric_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/70_conv_transposed_3D__asymmetric_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_70.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-71",
+  "set": "METR",
+  "level": 1,
+  "problem": "71_conv_transposed_2D__asymmetric_input__square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/71_conv_transposed_2D__asymmetric_input__square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_71.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-72",
+  "set": "METR",
+  "level": 1,
+  "problem": "72_conv_transposed_3D_asymmetric_input_asymmetric_kernel___strided_padded_grouped_.py",
+  "ref": "results/heldout_metr/tasks/level_1/72_conv_transposed_3D_asymmetric_input_asymmetric_kernel___strided_padded_grouped_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_72.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-73",
+  "set": "METR",
+  "level": 1,
+  "problem": "73_conv_transposed_3D_asymmetric_input_square_kernel__strided_padded__grouped.py",
+  "ref": "results/heldout_metr/tasks/level_1/73_conv_transposed_3D_asymmetric_input_square_kernel__strided_padded__grouped.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_73.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-74",
+  "set": "METR",
+  "level": 1,
+  "problem": "74_conv_transposed_1D_dilated.py",
+  "ref": "results/heldout_metr/tasks/level_1/74_conv_transposed_1D_dilated.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_74.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-75",
+  "set": "METR",
+  "level": 1,
+  "problem": "75_conv_transposed_2D_asymmetric_input_asymmetric_kernel_strided__grouped____padded____dilated__.py",
+  "ref": "results/heldout_metr/tasks/level_1/75_conv_transposed_2D_asymmetric_input_asymmetric_kernel_strided__grouped____padded____dilated__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_75.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-76",
+  "set": "METR",
+  "level": 1,
+  "problem": "76_conv_standard_1D_dilated_strided__.py",
+  "ref": "results/heldout_metr/tasks/level_1/76_conv_standard_1D_dilated_strided__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_76.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-78",
+  "set": "METR",
+  "level": 1,
+  "problem": "78_conv_transposed_2D_asymmetric_input_asymmetric_kernel___padded__.py",
+  "ref": "results/heldout_metr/tasks/level_1/78_conv_transposed_2D_asymmetric_input_asymmetric_kernel___padded__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_78.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-79",
+  "set": "METR",
+  "level": 1,
+  "problem": "79_conv_transposed_1D_asymmetric_input_square_kernel___padded____strided____dilated__.py",
+  "ref": "results/heldout_metr/tasks/level_1/79_conv_transposed_1D_asymmetric_input_square_kernel___padded____strided____dilated__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_79.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-80",
+  "set": "METR",
+  "level": 1,
+  "problem": "80_conv_standard_2D_square_input_asymmetric_kernel___dilated____padded__.py",
+  "ref": "results/heldout_metr/tasks/level_1/80_conv_standard_2D_square_input_asymmetric_kernel___dilated____padded__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_80.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-81",
+  "set": "METR",
+  "level": 1,
+  "problem": "81_conv_transposed_2D_asymmetric_input_square_kernel___dilated____padded____strided__.py",
+  "ref": "results/heldout_metr/tasks/level_1/81_conv_transposed_2D_asymmetric_input_square_kernel___dilated____padded____strided__.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_81.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-82",
+  "set": "METR",
+  "level": 1,
+  "problem": "82_conv_depthwise_2D_square_input_square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/82_conv_depthwise_2D_square_input_square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_82.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-83",
+  "set": "METR",
+  "level": 1,
+  "problem": "83_conv_depthwise_2D_square_input_asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/83_conv_depthwise_2D_square_input_asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_83.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-84",
+  "set": "METR",
+  "level": 1,
+  "problem": "84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/84_conv_depthwise_2D_asymmetric_input_square_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_84.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-85",
+  "set": "METR",
+  "level": 1,
+  "problem": "85_conv_depthwise_2D_asymmetric_input_asymmetric_kernel.py",
+  "ref": "results/heldout_metr/tasks/level_1/85_conv_depthwise_2D_asymmetric_input_asymmetric_kernel.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_85.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-86",
+  "set": "METR",
+  "level": 1,
+  "problem": "86_conv_depthwise_separable_2D.py",
+  "ref": "results/heldout_metr/tasks/level_1/86_conv_depthwise_separable_2D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_86.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-87",
+  "set": "METR",
+  "level": 1,
+  "problem": "87_conv_pointwise_2D.py",
+  "ref": "results/heldout_metr/tasks/level_1/87_conv_pointwise_2D.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_87.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-88",
+  "set": "METR",
+  "level": 1,
+  "problem": "88_MinGPTNewGelu.py",
+  "ref": "results/heldout_metr/tasks/level_1/88_MinGPTNewGelu.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_88.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-89",
+  "set": "METR",
+  "level": 1,
+  "problem": "89_cumsum.py",
+  "ref": "results/heldout_metr/tasks/level_1/89_cumsum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_89.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-9",
+  "set": "METR",
+  "level": 1,
+  "problem": "9_Tall_skinny_matrix_multiplication_.py",
+  "ref": "results/heldout_metr/tasks/level_1/9_Tall_skinny_matrix_multiplication_.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_9.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-91",
+  "set": "METR",
+  "level": 1,
+  "problem": "91_cumsum_reverse.py",
+  "ref": "results/heldout_metr/tasks/level_1/91_cumsum_reverse.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_91.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-92",
+  "set": "METR",
+  "level": 1,
+  "problem": "92_cumsum_exclusive.py",
+  "ref": "results/heldout_metr/tasks/level_1/92_cumsum_exclusive.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_92.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-93",
+  "set": "METR",
+  "level": 1,
+  "problem": "93_masked_cumsum.py",
+  "ref": "results/heldout_metr/tasks/level_1/93_masked_cumsum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_93.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-94",
+  "set": "METR",
+  "level": 1,
+  "problem": "94_MSELoss.py",
+  "ref": "results/heldout_metr/tasks/level_1/94_MSELoss.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_94.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-96",
+  "set": "METR",
+  "level": 1,
+  "problem": "96_HuberLoss.py",
+  "ref": "results/heldout_metr/tasks/level_1/96_HuberLoss.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_96.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-98",
+  "set": "METR",
+  "level": 1,
+  "problem": "98_KLDivLoss.py",
+  "ref": "results/heldout_metr/tasks/level_1/98_KLDivLoss.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_98.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L1-99",
+  "set": "METR",
+  "level": 1,
+  "problem": "99_TripletMarginLoss.py",
+  "ref": "results/heldout_metr/tasks/level_1/99_TripletMarginLoss.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_1/task_99.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-1",
+  "set": "METR",
+  "level": 2,
+  "problem": "1_Conv2D_ReLU_BiasAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/1_Conv2D_ReLU_BiasAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_1.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-10",
+  "set": "METR",
+  "level": 2,
+  "problem": "10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/10_ConvTranspose2d_MaxPool_Hardtanh_Mean_Tanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_10.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-100",
+  "set": "METR",
+  "level": 2,
+  "problem": "100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "ref": "results/heldout_metr/tasks/level_2/100_ConvTranspose3d_Clamp_Min_Divide.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_100.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-11",
+  "set": "METR",
+  "level": 2,
+  "problem": "11_ConvTranspose2d_BatchNorm_Tanh_MaxPool_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/11_ConvTranspose2d_BatchNorm_Tanh_MaxPool_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_11.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-12",
+  "set": "METR",
+  "level": 2,
+  "problem": "12_Gemm_Multiply_LeakyReLU.py",
+  "ref": "results/heldout_metr/tasks/level_2/12_Gemm_Multiply_LeakyReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_12.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-14",
+  "set": "METR",
+  "level": 2,
+  "problem": "14_Gemm_Divide_Sum_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/14_Gemm_Divide_Sum_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_14.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-15",
+  "set": "METR",
+  "level": 2,
+  "problem": "15_ConvTranspose3d_BatchNorm_Subtract.py",
+  "ref": "results/heldout_metr/tasks/level_2/15_ConvTranspose3d_BatchNorm_Subtract.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_15.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-16",
+  "set": "METR",
+  "level": 2,
+  "problem": "16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/16_ConvTranspose2d_Mish_Add_Hardtanh_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_16.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-17",
+  "set": "METR",
+  "level": 2,
+  "problem": "17_Conv2d_InstanceNorm_Divide.py",
+  "ref": "results/heldout_metr/tasks/level_2/17_Conv2d_InstanceNorm_Divide.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_17.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-18",
+  "set": "METR",
+  "level": 2,
+  "problem": "18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "ref": "results/heldout_metr/tasks/level_2/18_Matmul_Sum_Max_AvgPool_LogSumExp_LogSumExp.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_18.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-19",
+  "set": "METR",
+  "level": 2,
+  "problem": "19_ConvTranspose2d_GELU_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/19_ConvTranspose2d_GELU_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_19.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-2",
+  "set": "METR",
+  "level": 2,
+  "problem": "2_ConvTranspose2d_BiasAdd_Clamp_Scaling_Clamp_Divide.py",
+  "ref": "results/heldout_metr/tasks/level_2/2_ConvTranspose2d_BiasAdd_Clamp_Scaling_Clamp_Divide.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_2.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-20",
+  "set": "METR",
+  "level": 2,
+  "problem": "20_ConvTranspose3d_Sum_ResidualAdd_Multiply_ResidualAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/20_ConvTranspose3d_Sum_ResidualAdd_Multiply_ResidualAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_20.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-21",
+  "set": "METR",
+  "level": 2,
+  "problem": "21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/21_Conv2d_Add_Scale_Sigmoid_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_21.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-22",
+  "set": "METR",
+  "level": 2,
+  "problem": "22_Matmul_Scale_ResidualAdd_Clamp_LogSumExp_Mish.py",
+  "ref": "results/heldout_metr/tasks/level_2/22_Matmul_Scale_ResidualAdd_Clamp_LogSumExp_Mish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_22.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-24",
+  "set": "METR",
+  "level": 2,
+  "problem": "24_Conv3d_Min_Softmax.py",
+  "ref": "results/heldout_metr/tasks/level_2/24_Conv3d_Min_Softmax.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_24.py",
+  "label": "wrong",
+  "label_source": "named in the YAKK post"
+ },
+ {
+  "id": "METR-L2-25",
+  "set": "METR",
+  "level": 2,
+  "problem": "25_Conv2d_Min_Tanh_Tanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/25_Conv2d_Min_Tanh_Tanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_25.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-26",
+  "set": "METR",
+  "level": 2,
+  "problem": "26_ConvTranspose3d_Add_HardSwish.py",
+  "ref": "results/heldout_metr/tasks/level_2/26_ConvTranspose3d_Add_HardSwish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_26.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-28",
+  "set": "METR",
+  "level": 2,
+  "problem": "28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "ref": "results/heldout_metr/tasks/level_2/28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_28.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-29",
+  "set": "METR",
+  "level": 2,
+  "problem": "29_Matmul_Mish_Mish.py",
+  "ref": "results/heldout_metr/tasks/level_2/29_Matmul_Mish_Mish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_29.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-3",
+  "set": "METR",
+  "level": 2,
+  "problem": "3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/3_ConvTranspose3d_Sum_LayerNorm_AvgPool_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_3.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-30",
+  "set": "METR",
+  "level": 2,
+  "problem": "30_Gemm_GroupNorm_Hardtanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/30_Gemm_GroupNorm_Hardtanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_30.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-31",
+  "set": "METR",
+  "level": 2,
+  "problem": "31_Conv2d_Min_Add_Multiply.py",
+  "ref": "results/heldout_metr/tasks/level_2/31_Conv2d_Min_Add_Multiply.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_31.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-32",
+  "set": "METR",
+  "level": 2,
+  "problem": "32_Conv2d_Scaling_Min.py",
+  "ref": "results/heldout_metr/tasks/level_2/32_Conv2d_Scaling_Min.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_32.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-33",
+  "set": "METR",
+  "level": 2,
+  "problem": "33_Gemm_Scale_BatchNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/33_Gemm_Scale_BatchNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_33.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-34",
+  "set": "METR",
+  "level": 2,
+  "problem": "34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/34_ConvTranspose3d_LayerNorm_GELU_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_34.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-35",
+  "set": "METR",
+  "level": 2,
+  "problem": "35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "ref": "results/heldout_metr/tasks/level_2/35_Conv2d_Subtract_HardSwish_MaxPool_Mish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_35.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-37",
+  "set": "METR",
+  "level": 2,
+  "problem": "37_Matmul_Swish_Sum_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/37_Matmul_Swish_Sum_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_37.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-39",
+  "set": "METR",
+  "level": 2,
+  "problem": "39_Gemm_Scale_BatchNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/39_Gemm_Scale_BatchNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_39.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-4",
+  "set": "METR",
+  "level": 2,
+  "problem": "4_Conv2d_Mish_Mish.py",
+  "ref": "results/heldout_metr/tasks/level_2/4_Conv2d_Mish_Mish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_4.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-40",
+  "set": "METR",
+  "level": 2,
+  "problem": "40_Matmul_Scaling_ResidualAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/40_Matmul_Scaling_ResidualAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_40.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-42",
+  "set": "METR",
+  "level": 2,
+  "problem": "42_ConvTranspose2d_GlobalAvgPool_BiasAdd_LogSumExp_Sum_Multiply.py",
+  "ref": "results/heldout_metr/tasks/level_2/42_ConvTranspose2d_GlobalAvgPool_BiasAdd_LogSumExp_Sum_Multiply.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_42.py",
+  "label": "wrong",
+  "label_source": "named in the YAKK post"
+ },
+ {
+  "id": "METR-L2-43",
+  "set": "METR",
+  "level": 2,
+  "problem": "43_Conv3d_Max_LogSumExp_ReLU.py",
+  "ref": "results/heldout_metr/tasks/level_2/43_Conv3d_Max_LogSumExp_ReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_43.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-46",
+  "set": "METR",
+  "level": 2,
+  "problem": "46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "ref": "results/heldout_metr/tasks/level_2/46_Conv2d_Subtract_Tanh_Subtract_AvgPool.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_46.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-47",
+  "set": "METR",
+  "level": 2,
+  "problem": "47_Conv3d_Mish_Tanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/47_Conv3d_Mish_Tanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_47.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-48",
+  "set": "METR",
+  "level": 2,
+  "problem": "48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "ref": "results/heldout_metr/tasks/level_2/48_Conv3d_Scaling_Tanh_Multiply_Sigmoid.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_48.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-5",
+  "set": "METR",
+  "level": 2,
+  "problem": "5_ConvTranspose2d_Subtract_Tanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/5_ConvTranspose2d_Subtract_Tanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_5.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-50",
+  "set": "METR",
+  "level": 2,
+  "problem": "50_ConvTranspose3d_Scaling_AvgPool_BiasAdd_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/50_ConvTranspose3d_Scaling_AvgPool_BiasAdd_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_50.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-51",
+  "set": "METR",
+  "level": 2,
+  "problem": "51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_51.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-52",
+  "set": "METR",
+  "level": 2,
+  "problem": "52_Conv2d_Activation_BatchNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/52_Conv2d_Activation_BatchNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_52.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-53",
+  "set": "METR",
+  "level": 2,
+  "problem": "53_Gemm_Scaling_Hardtanh_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/53_Gemm_Scaling_Hardtanh_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_53.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-54",
+  "set": "METR",
+  "level": 2,
+  "problem": "54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/54_Conv2d_Multiply_LeakyReLU_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_54.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-55",
+  "set": "METR",
+  "level": 2,
+  "problem": "55_Matmul_MaxPool_Sum_Scale.py",
+  "ref": "results/heldout_metr/tasks/level_2/55_Matmul_MaxPool_Sum_Scale.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_55.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-56",
+  "set": "METR",
+  "level": 2,
+  "problem": "56_Matmul_Sigmoid_Sum.py",
+  "ref": "results/heldout_metr/tasks/level_2/56_Matmul_Sigmoid_Sum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_56.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-57",
+  "set": "METR",
+  "level": 2,
+  "problem": "57_Conv2d_ReLU_HardSwish.py",
+  "ref": "results/heldout_metr/tasks/level_2/57_Conv2d_ReLU_HardSwish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_57.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-59",
+  "set": "METR",
+  "level": 2,
+  "problem": "59_Matmul_Swish_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/59_Matmul_Swish_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_59.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-6",
+  "set": "METR",
+  "level": 2,
+  "problem": "6_Conv3d_Softmax_MaxPool_MaxPool.py",
+  "ref": "results/heldout_metr/tasks/level_2/6_Conv3d_Softmax_MaxPool_MaxPool.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_6.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-60",
+  "set": "METR",
+  "level": 2,
+  "problem": "60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "ref": "results/heldout_metr/tasks/level_2/60_ConvTranspose3d_Swish_GroupNorm_HardSwish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_60.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-61",
+  "set": "METR",
+  "level": 2,
+  "problem": "61_ConvTranspose3d_ReLU_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/61_ConvTranspose3d_ReLU_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_61.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-62",
+  "set": "METR",
+  "level": 2,
+  "problem": "62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "ref": "results/heldout_metr/tasks/level_2/62_Matmul_GroupNorm_LeakyReLU_Sum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_62.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-63",
+  "set": "METR",
+  "level": 2,
+  "problem": "63_Gemm_ReLU_Divide.py",
+  "ref": "results/heldout_metr/tasks/level_2/63_Gemm_ReLU_Divide.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_63.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-64",
+  "set": "METR",
+  "level": 2,
+  "problem": "64_Gemm_LogSumExp_LeakyReLU_LeakyReLU_GELU_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/64_Gemm_LogSumExp_LeakyReLU_LeakyReLU_GELU_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_64.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-65",
+  "set": "METR",
+  "level": 2,
+  "problem": "65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "ref": "results/heldout_metr/tasks/level_2/65_Conv2d_AvgPool_Sigmoid_Sum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_65.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-67",
+  "set": "METR",
+  "level": 2,
+  "problem": "67_Conv2d_GELU_GlobalAvgPool.py",
+  "ref": "results/heldout_metr/tasks/level_2/67_Conv2d_GELU_GlobalAvgPool.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_67.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-68",
+  "set": "METR",
+  "level": 2,
+  "problem": "68_Matmul_Min_Subtract.py",
+  "ref": "results/heldout_metr/tasks/level_2/68_Matmul_Min_Subtract.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_68.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-69",
+  "set": "METR",
+  "level": 2,
+  "problem": "69_Conv2d_HardSwish_ReLU.py",
+  "ref": "results/heldout_metr/tasks/level_2/69_Conv2d_HardSwish_ReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_69.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-7",
+  "set": "METR",
+  "level": 2,
+  "problem": "7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/7_Conv3d_ReLU_LeakyReLU_GELU_Sigmoid_BiasAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_7.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-70",
+  "set": "METR",
+  "level": 2,
+  "problem": "70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/70_Gemm_Sigmoid_Scaling_ResidualAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_70.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-71",
+  "set": "METR",
+  "level": 2,
+  "problem": "71_Conv2d_Divide_LeakyReLU.py",
+  "ref": "results/heldout_metr/tasks/level_2/71_Conv2d_Divide_LeakyReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_71.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-72",
+  "set": "METR",
+  "level": 2,
+  "problem": "72_ConvTranspose3d_BatchNorm_AvgPool_AvgPool.py",
+  "ref": "results/heldout_metr/tasks/level_2/72_ConvTranspose3d_BatchNorm_AvgPool_AvgPool.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_72.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-73",
+  "set": "METR",
+  "level": 2,
+  "problem": "73_Conv2d_BatchNorm_Scaling.py",
+  "ref": "results/heldout_metr/tasks/level_2/73_Conv2d_BatchNorm_Scaling.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_73.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-74",
+  "set": "METR",
+  "level": 2,
+  "problem": "74_ConvTranspose3d_LeakyReLU_Multiply_LeakyReLU_Max.py",
+  "ref": "results/heldout_metr/tasks/level_2/74_ConvTranspose3d_LeakyReLU_Multiply_LeakyReLU_Max.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_74.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-75",
+  "set": "METR",
+  "level": 2,
+  "problem": "75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "ref": "results/heldout_metr/tasks/level_2/75_Gemm_GroupNorm_Min_BiasAdd.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_75.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-76",
+  "set": "METR",
+  "level": 2,
+  "problem": "76_Gemm_Add_ReLU.py",
+  "ref": "results/heldout_metr/tasks/level_2/76_Gemm_Add_ReLU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_76.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-78",
+  "set": "METR",
+  "level": 2,
+  "problem": "78_ConvTranspose3d_Max_Max_Sum.py",
+  "ref": "results/heldout_metr/tasks/level_2/78_ConvTranspose3d_Max_Max_Sum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_78.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-79",
+  "set": "METR",
+  "level": 2,
+  "problem": "79_Conv3d_Multiply_InstanceNorm_Clamp_Multiply_Max.py",
+  "ref": "results/heldout_metr/tasks/level_2/79_Conv3d_Multiply_InstanceNorm_Clamp_Multiply_Max.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_79.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-8",
+  "set": "METR",
+  "level": 2,
+  "problem": "8_Conv3d_Divide_Max_GlobalAvgPool_BiasAdd_Sum.py",
+  "ref": "results/heldout_metr/tasks/level_2/8_Conv3d_Divide_Max_GlobalAvgPool_BiasAdd_Sum.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_8.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-81",
+  "set": "METR",
+  "level": 2,
+  "problem": "81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "ref": "results/heldout_metr/tasks/level_2/81_Gemm_Swish_Divide_Clamp_Tanh_Clamp.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_81.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-82",
+  "set": "METR",
+  "level": 2,
+  "problem": "82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "ref": "results/heldout_metr/tasks/level_2/82_Conv2d_Tanh_Scaling_BiasAdd_Max.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_82.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-85",
+  "set": "METR",
+  "level": 2,
+  "problem": "85_Conv2d_GroupNorm_Scale_MaxPool_Clamp.py",
+  "ref": "results/heldout_metr/tasks/level_2/85_Conv2d_GroupNorm_Scale_MaxPool_Clamp.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_85.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-86",
+  "set": "METR",
+  "level": 2,
+  "problem": "86_Matmul_Divide_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/86_Matmul_Divide_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_86.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-87",
+  "set": "METR",
+  "level": 2,
+  "problem": "87_Conv2d_Subtract_Subtract_Mish.py",
+  "ref": "results/heldout_metr/tasks/level_2/87_Conv2d_Subtract_Subtract_Mish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_87.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-88",
+  "set": "METR",
+  "level": 2,
+  "problem": "88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "ref": "results/heldout_metr/tasks/level_2/88_Gemm_GroupNorm_Swish_Multiply_Swish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_88.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-90",
+  "set": "METR",
+  "level": 2,
+  "problem": "90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "ref": "results/heldout_metr/tasks/level_2/90_Conv3d_LeakyReLU_Sum_Clamp_GELU.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_90.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-92",
+  "set": "METR",
+  "level": 2,
+  "problem": "92_Conv2d_GroupNorm_Tanh_HardSwish_ResidualAdd_LogSumExp.py",
+  "ref": "results/heldout_metr/tasks/level_2/92_Conv2d_GroupNorm_Tanh_HardSwish_ResidualAdd_LogSumExp.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_92.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-94",
+  "set": "METR",
+  "level": 2,
+  "problem": "94_Gemm_BiasAdd_Hardtanh_Mish_GroupNorm.py",
+  "ref": "results/heldout_metr/tasks/level_2/94_Gemm_BiasAdd_Hardtanh_Mish_GroupNorm.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_94.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-95",
+  "set": "METR",
+  "level": 2,
+  "problem": "95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "ref": "results/heldout_metr/tasks/level_2/95_Matmul_Add_Swish_Tanh_GELU_Hardtanh.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_95.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-97",
+  "set": "METR",
+  "level": 2,
+  "problem": "97_Matmul_BatchNorm_BiasAdd_Divide_Swish.py",
+  "ref": "results/heldout_metr/tasks/level_2/97_Matmul_BatchNorm_BiasAdd_Divide_Swish.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_97.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-98",
+  "set": "METR",
+  "level": 2,
+  "problem": "98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "ref": "results/heldout_metr/tasks/level_2/98_Matmul_AvgPool_GELU_Scale_Max.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_98.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ },
+ {
+  "id": "METR-L2-99",
+  "set": "METR",
+  "level": 2,
+  "problem": "99_Matmul_GELU_Softmax.py",
+  "ref": "results/heldout_metr/tasks/level_2/99_Matmul_GELU_Softmax.py",
+  "cand": "results/heldout_metr/best_agent_solutions/level_2/task_99.py",
+  "label": "correct",
+  "label_source": "passed METR's check"
+ }
+]

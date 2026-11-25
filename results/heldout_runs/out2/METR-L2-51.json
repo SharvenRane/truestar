@@ -1,0 +1,23 @@
+{
+ "id": "METR-L2-51",
+ "set": "METR",
+ "level": 2,
+ "problem": "51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+ "ref": "results/heldout_metr/tasks/level_2/51_Gemm_Subtract_GlobalAvgPool_LogSumExp_GELU_ResidualAdd.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_2/task_51.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "load_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "error": "AcceleratorError: CUDA error: out of memory [source excerpt removed: METR task code is not redistributed]",
+ "seconds": 0.72
+}

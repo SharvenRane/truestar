@@ -1,0 +1,10916 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "sms": 26,
+ "dtype": "float16",
+ "tf32": false,
+ "rows": [
+  {
+   "shape": [
+    1,
+    4096,
+    4096
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 66.40639901161194
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 66.75679981708527
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 66.89760088920593
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 67.70960092544556
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 67.74560213088989
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 68.03439855575562
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 68.29279959201813
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 68.85760128498077
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 68.91759932041168
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 69.02640163898468
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 73.65120053291321
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 74.37280118465424
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 74.68720078468323
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 75.2232015132904
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 75.78400075435638
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 86.57919764518738
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 87.2048020362854
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 87.51199841499329
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 87.64640092849731
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 88.0128026008606
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 88.93120288848877
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 89.03679847717285
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 89.15519714355469
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 89.44799900054932
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 89.46560025215149
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 90.34240245819092
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 90.46720266342163
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 90.98399877548218
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 91.26240015029907
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 92.46240258216858
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 94.0559983253479
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 95.08960247039795
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 98.26319813728333
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 99.51199889183044
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 113.50079774856567
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 146.22399806976318
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 150.3440022468567
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 154.84479665756226
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 159.15759801864624
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 168.60960125923157
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 172.8696048259735
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 173.8592028617859
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 177.2047996520996
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 219.75040435791016
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 219.75040435791016
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    4,
+    2048,
+    2048
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 32,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 10.047199949622154
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 10.868799686431885
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 10.889600217342377
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 11.105599999427795
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 11.188799887895584
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 11.791999638080597
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 12.135999649763107
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 12.9488006234169
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 14.829599857330322
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 15.679199993610382
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.696000307798386
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 16.916000097990036
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 17.287999391555786
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 17.563199996948242
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 20.94399929046631
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 21.475200355052948
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 21.49839997291565
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 21.71040028333664
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 22.13200032711029
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 22.64080047607422
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 23.30479994416237
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 23.35039973258972
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 23.3584001660347
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 23.96080046892166
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 24.09680038690567
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 24.528799951076508
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 24.795199930667877
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 25.301599502563477
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 26.41119956970215
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 26.625600457191467
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 28.224000334739685
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 28.89600098133087
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 28.932800889015198
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 30.054399371147156
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 30.244800448417664
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 45.344001054763794
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 46.28559947013855
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 47.69439995288849
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 48.95759969949722
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 54.05600070953369
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 55.19999861717224
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 55.73279857635498
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 55.73279857635498
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 58.979201316833496
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 60.75519919395447
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    16,
+    4096,
+    1024
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 11.09120026230812
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 11.443199962377548
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 12.084800004959106
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 12.316799908876419
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 13.382400572299957
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 14.042400568723679
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 14.09280002117157
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.380799770355225
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 17.340800166130066
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 17.528000473976135
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 17.531199753284454
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 21.014399826526642
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 21.456800401210785
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 21.583999693393707
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 21.62560001015663
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 21.89920023083687
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 22.18480035662651
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 22.61039987206459
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 22.939999401569366
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 23.104000091552734
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 23.126400262117386
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 23.261599987745285
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 23.957599699497223
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 23.980800062417984
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 24.28559958934784
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 24.436800181865692
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 24.65759962797165
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 25.47280043363571
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 26.024000346660614
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 27.992001175880432
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 28.987199068069458
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 29.123198986053467
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.71680027246475
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 33.615998923778534
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 35.51040142774582
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 45.45280039310455
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 46.456800401210785
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 47.92720079421997
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 49.269600212574005
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 53.55679988861084
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 54.62559759616852
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 57.50560164451599
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 57.59199857711792
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 69.4023996591568
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 70.02000212669373
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    32,
+    4096,
+    4096
+   ],
+   "default": {
+    "BM": 32,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 65.63439965248108
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 80.02879917621613
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 83.52720141410828
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 89.13919925689697
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 89.42559957504272
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 90.11840224266052
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 94.37280297279358
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 94.56480145454407
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 99.05120134353638
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 100.00640153884888
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 103.47520112991333
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 103.86160016059875
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 104.5248031616211
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 104.86079454421997
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 105.44639825820923
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 105.73279857635498
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 106.3975989818573
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 107.98560380935669
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 108.67199897766113
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 110.40000319480896
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 110.69839596748352
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 111.17039918899536
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 111.2775981426239
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 111.62319779396057
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 112.50799894332886
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 113.68079781532288
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 115.23439884185791
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 115.60239791870117
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 116.8175995349884
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 119.05199885368347
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 120.8400011062622
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 124.09039735794067
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 128.00639867782593
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 131.496000289917
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 150.01599788665771
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 177.36639976501465
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 181.29199743270874
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 185.7848048210144
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 187.7232015132904
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 191.30560159683228
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 196.11440300941467
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 214.2184019088745
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 222.95520305633545
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 232.45279788970947
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 243.42799186706543
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    64,
+    2048,
+    1024
+   ],
+   "default": {
+    "BM": 32,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 14.124800264835358
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.294399857521057
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.643200278282164
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.260799765586853
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 16.486400365829468
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 16.492800414562225
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 16.74799993634224
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 16.80160015821457
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.927999258041382
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 17.238399386405945
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.347199469804764
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.550399899482727
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 18.65679994225502
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 18.701600283384323
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 19.42239999771118
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 19.7952002286911
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 20.13919949531555
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 20.231999456882477
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 20.27200013399124
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 20.403200387954712
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 20.584000647068024
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 21.355199813842773
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 23.075200617313385
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 24.30960014462471
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 24.43839982151985
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 24.560000002384186
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 28.71840000152588
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 30.136001110076904
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 30.31199872493744
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 30.460798740386963
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 31.436800956726074
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 31.967999041080475
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 32.23839998245239
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 32.74000138044357
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.898400723934174
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 33.37839990854263
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 34.69119966030121
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 34.79520082473755
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.81919914484024
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 34.92079973220825
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 38.29599916934967
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 44.969600439071655
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 45.99439948797226
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 47.44960069656372
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 48.37760031223297
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    64,
+    2048,
+    2048
+   ],
+   "default": {
+    "BM": 32,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 25.333599746227264
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 25.71440041065216
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 26.206399500370026
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 26.652801036834717
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 26.795199513435364
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 26.85439884662628
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 26.924799382686615
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 27.81279981136322
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 29.132801294326782
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 30.924800038337708
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 31.26399964094162
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 31.417599320411682
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 31.66880011558533
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 32.02719986438751
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 32.16799944639206
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 33.055199682712555
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 33.109599351882935
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 33.66159945726395
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 34.97360050678253
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 35.24479866027832
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 35.40160059928894
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 36.17439866065979
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 36.27040088176727
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 36.35039925575256
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 37.4783992767334
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 38.278400897979736
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 39.55200016498566
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 40.8936008810997
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 41.89840108156204
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 45.24240046739578
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 45.91360092163086
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 46.95520102977753
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 46.959999203681946
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 50.412797927856445
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 50.83199739456177
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 51.83359980583191
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 52.28480100631714
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 59.07119810581207
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 61.48400008678436
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 62.705600261688225
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 62.84080147743225
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 64.01119828224182
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 64.10560011863708
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 65.88640213012695
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 66.61919951438904
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    64,
+    1000,
+    2048
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 15.94479978084564
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.385599970817566
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.576799750328064
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 16.837599873542786
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 16.971200704574585
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.108000069856644
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 17.14880019426346
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.504000663757324
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.510400712490082
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.54399985074997
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 17.688000202178955
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 17.83040016889572
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 17.91040003299713
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 17.950400710105896
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 18.23199987411499
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 18.583999574184418
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 19.121600687503815
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.13280040025711
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.166399538517
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.260799884796143
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 19.26400065422058
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 19.991999864578247
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 20.046399533748627
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 20.588800311088562
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 20.761600136756897
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 21.70880064368248
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 22.151999920606613
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 22.444000095129013
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 22.733599692583084
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 23.56959953904152
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 23.626400530338287
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 24.162400513887405
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 28.492799401283264
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 30.801600217819214
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.01519995927811
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.04719978570938
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 34.168800711631775
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 34.37280058860779
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 34.6791997551918
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 36.77840083837509
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 37.04639971256256
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 39.54559862613678
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 39.97600078582764
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 52.58479714393616
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 52.71679759025574
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    256,
+    4096,
+    1024
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 82.42239952087402
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 82.54320025444031
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 83.82720053195953
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 89.10719752311707
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 89.63119983673096
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 92.55040287971497
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 93.69120001792908
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 94.58879828453064
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 98.01120162010193
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 98.23359847068787
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 100.19840002059937
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 102.36240029335022
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 104.6895980834961
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 104.83520030975342
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 112.51039505004883
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 113.0623996257782
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 117.20479726791382
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 120.59040069580078
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 121.00800275802612
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 126.21999979019166
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 159.18079614639282
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 159.49599742889404
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 162.30639815330505
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 180.88319897651672
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 181.28080368041992
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 184.0831995010376
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 201.39439702033997
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 206.91920518875122
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 208.11439752578735
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 213.77359628677368
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 213.7895941734314
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 225.74560642242432
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 229.16159629821777
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 266.58880710601807
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 349.6984004974365
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 350.81039667129517
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 387.1680021286011
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 412.91680335998535
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 415.06240367889404
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 419.29759979248047
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 479.3344020843506
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 484.8639965057373
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 509.28640365600586
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 581.0688018798828
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 586.2912178039551
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    512,
+    1024,
+    256
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 10.478399693965912
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 11.001600325107574
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 11.139199882745743
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 12.883999943733215
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 15.532799810171127
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 16.45359992980957
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 16.766399890184402
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 17.713600397109985
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 17.825600504875183
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 18.592000007629395
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 20.826400071382523
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 20.96720039844513
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 21.880799531936646
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 23.0055995285511
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 23.11920002102852
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 23.91039952635765
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 24.461600184440613
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 25.143998861312866
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 25.50159990787506
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 26.929599046707153
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 30.099201202392578
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 30.448800325393677
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 31.941598653793335
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 32.19679892063141
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 32.98079967498779
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 37.803199887275696
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 39.01279866695404
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 39.15199935436249
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 43.57599914073944
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 44.72079873085022
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 44.82559859752655
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 48.80400002002716
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 49.114400148391724
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 53.28480005264282
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 72.13840186595917
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 75.75039863586426
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 131.18079900741577
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 133.01759958267212
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 133.68639945983887
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 135.04480123519897
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 136.1199975013733
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 137.42079734802246
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 142.73120164871216
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 146.70560359954834
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 151.24800205230713
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    512,
+    256,
+    1024
+   ],
+   "default": {
+    "BM": 32,
+    "BN": 64,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 13.496800512075424
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.052799880504608
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.15200063586235
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 15.333599597215652
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.644000470638277
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 15.752000361680986
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 15.833600610494614
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 15.969599783420563
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 15.992800146341322
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.196000576019287
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 16.366399824619293
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 16.4792001247406
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.337599396705627
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 17.347200214862823
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 17.78559982776642
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 18.966400623321533
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.26880031824112
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 19.380800426006317
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.633600115776062
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 19.673599302768707
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 19.806399941444397
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 20.09119987487793
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 21.006399393081665
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 21.398399770259857
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 21.798399835824966
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 22.686399519443512
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 22.895999997854233
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 23.75359982252121
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 24.97040033340454
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 25.306399166584015
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 27.351999282836914
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 27.60320007801056
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 27.908799052238464
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 28.839999437332153
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 29.80479896068573
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 30.136799812316895
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 30.23200035095215
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 30.371201038360596
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 31.091201305389404
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.24800080060959
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 36.83280050754547
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 37.563200294971466
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 37.84160017967224
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 44.00720000267029
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 44.49840039014816
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    1024,
+    1024,
+    1024
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 71.00560069084167
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 74.81519877910614
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 75.72799921035767
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 76.00719928741455
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 86.84880137443542
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 88.06560039520264
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 88.91680240631104
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 91.16640090942383
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 92.4807995557785
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 94.51519846916199
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 95.97280025482178
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 96.03039920330048
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 97.5928008556366
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 99.29440021514893
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 104.37999963760376
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 104.46000099182129
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 112.52399682998657
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 119.87040042877197
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 120.64319849014282
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 125.12959837913512
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 134.35519933700562
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 141.10560417175293
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 151.66079998016357
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 170.32639980316162
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 173.76800179481506
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 187.19680309295654
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 189.30400013923645
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 192.93439984321594
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 194.00559663772583
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 195.45519948005676
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 202.67280340194702
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 205.19680976867676
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 206.10079765319824
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 248.06718826293945
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 329.0711998939514
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 333.03520679473877
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 446.9735860824585
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 448.035192489624
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 449.0216016769409
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 464.84642028808594
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 465.9696102142334
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 471.0415840148926
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 472.16639518737793
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 562.7888202667236
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 586.6000175476074
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    2048,
+    4096,
+    1024
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 635.1871967315674
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 679.5072078704834
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 686.4912033081055
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 687.718391418457
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 700.2624034881592
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 708.6592197418213
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 874.3439674377441
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 978.9471626281738
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 992.8704261779785
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1098.4992027282715
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1124.3040084838867
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1125.119972229004
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1154.2048454284668
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1246.1055755615234
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 1317.2240257263184
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1323.366355895996
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1333.5040092468262
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1337.8031730651855
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1368.729591369629
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 1384.449577331543
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1445.0688362121582
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 1446.399974822998
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1657.6528549194336
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1774.849510192871
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1780.891227722168
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1882.3200225830078
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 1932.646369934082
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1941.3551330566406
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 2079.3392181396484
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 2126.3391494750977
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 2179.534339904785
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 2240.2063369750977
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 2251.059150695801
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 2397.800064086914
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 3213.467025756836
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 3334.859085083008
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3336.1438751220703
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3376.3839721679688
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3397.0672607421875
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3425.177764892578
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3538.328170776367
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 3623.7838745117188
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3876.45263671875
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 4822.9888916015625
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 5017.548751831055
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    64,
+    512,
+    8192
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 32,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 28.176000714302063
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 28.77120077610016
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 29.329600930213928
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 30.04480004310608
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 30.844798684120178
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 31.51040077209473
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.3743999004364
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.77200013399124
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 32.9695999622345
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 33.10240060091019
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 33.265599608421326
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 33.4199994802475
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 33.66959989070892
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 33.77760052680969
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 33.80879908800125
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 34.07839983701706
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.29439961910248
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.301599860191345
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.437599778175354
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 34.726400673389435
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 34.89679992198944
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 35.0271999835968
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 36.051999032497406
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 36.49760037660599
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 37.033599615097046
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 37.6815989613533
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 39.35360014438629
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 39.52159881591797
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 40.63040018081665
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 44.3664014339447
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 55.49439787864685
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 56.92639946937561
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 59.622400999069214
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 59.73600149154663
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 60.548800230026245
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 60.88799834251404
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 61.16799712181091
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 63.41279745101929
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 64.90240097045898
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 65.28319716453552
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 105.01919984817505
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 111.36799454689026
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 114.52000141143799
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 215.0831937789917
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 215.08638858795166
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    16,
+    1024,
+    16384
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 32,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 74.49119985103607
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 74.77999925613403
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 76.42560005187988
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 76.5639990568161
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 78.39120030403137
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 78.42479944229126
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 79.67759966850281
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 79.9815982580185
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 81.1024010181427
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 82.5007975101471
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 85.03680229187012
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 92.467200756073
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 94.3615972995758
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 94.46399807929993
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 95.08640170097351
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 95.36160230636597
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 99.75440204143524
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 99.99359846115112
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 102.16799974441528
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 104.13039922714233
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 104.30560111999512
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 104.48479652404785
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 105.36479949951172
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 105.96479773521423
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 106.30559921264648
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 108.28080177307129
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 120.22879719734192
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 121.27839922904968
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 122.03519940376282
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 123.50159883499146
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 126.39679908752441
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 128.3519983291626
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 136.08959913253784
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 140.8560037612915
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 161.8511974811554
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 166.57519936561584
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 176.1896014213562
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 183.0951988697052
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 210.43200492858887
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 217.82081127166748
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 223.1503963470459
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 223.9840030670166
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 230.05599975585938
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 428.2367944717407
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 428.39040756225586
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    128,
+    256,
+    8192
+   ],
+   "default": {
+    "BM": 16,
+    "BN": 32,
+    "BK": 128,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 27.47359871864319
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 28.32159996032715
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 29.017600417137146
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 29.692798852920532
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 30.10079860687256
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 31.172800064086914
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.07600116729736
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.31759965419769
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 32.53360092639923
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 33.374398946762085
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 33.402399718761444
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 33.42159986495972
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 33.57439935207367
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 33.65040123462677
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 33.85440111160278
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 33.90879929065704
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.24320071935654
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 34.27120000123978
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 34.30880010128021
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 34.33279991149902
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 34.60479974746704
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 35.12159883975983
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 36.16959899663925
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 36.25040054321289
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 37.696000933647156
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 37.87519931793213
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 38.8047993183136
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 39.347198605537415
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 39.67039883136749
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 39.67359960079193
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 40.34560024738312
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 43.82559955120087
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 47.81680107116699
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 48.72079938650131
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 59.487998485565186
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 60.34560203552246
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 60.681599378585815
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 61.94720268249512
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 63.51040005683899
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 64.6448016166687
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 104.89919781684875
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 113.2807970046997
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 116.44399762153625
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 214.91520404815674
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 214.9712085723877
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    8192,
+    768,
+    256
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 128.8911998271942
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 133.8367998600006
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 134.0831995010376
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 136.15520000457764
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 152.02879905700684
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 157.05280303955078
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 200.92400312423706
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 280.3823947906494
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 300.59518814086914
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 332.3391914367676
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 335.63119173049927
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 342.084002494812
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 357.72480964660645
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 379.5400023460388
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 388.8144016265869
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 465.08400440216064
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 562.7903938293457
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 602.1120071411133
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 625.2543926239014
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 626.9951820373535
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 627.1008014678955
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 642.0527935028076
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 645.0208187103271
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 660.6336116790771
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 768.2047843933105
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 911.3056182861328
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 940.2895927429199
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1219.0735816955566
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1219.5343971252441
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 1222.8591918945312
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1237.6079559326172
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1238.9391899108887
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1264.742374420166
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1350.915241241455
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1537.384033203125
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1557.1439743041992
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2274.203109741211
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2334.6736907958984
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 2418.6912536621094
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2420.5312728881836
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2433.6816787719727
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2434.1007232666016
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2443.0591583251953
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 2826.139259338379
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3065.444755554199
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    8192,
+    1024,
+    256
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 197.19680547714233
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 200.70559978485107
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 203.24560403823853
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 205.10079860687256
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 207.33120441436768
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 219.85440254211426
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 291.46080017089844
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 403.3536195755005
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 411.901593208313
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 477.4247884750366
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 490.2912139892578
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 492.2351837158203
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 516.2496089935303
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 524.0335941314697
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 555.3152084350586
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 630.6816101074219
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 757.144021987915
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 804.7120094299316
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 826.471996307373
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 845.5183982849121
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 855.2975654602051
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 856.3199996948242
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 862.6720428466797
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 874.4447708129883
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1032.9119682312012
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1231.764793395996
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 1260.1840019226074
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1547.7264404296875
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1555.406379699707
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1566.6687965393066
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1628.2608032226562
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 1643.4160232543945
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1653.2480239868164
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 1773.1071472167969
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 2037.7599716186526
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 2175.5407333374023
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3030.116844177246
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3046.449661254883
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 3049.985694885254
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3064.7279739379883
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3073.841667175293
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3089.816093444824
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3342.9519653320312
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3876.5567779541016
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 3981.8721771240234
+    }
+   ],
+   "failed": []
+  },
+  {
+   "shape": [
+    8192,
+    256,
+    1024
+   ],
+   "default": {
+    "BM": 64,
+    "BN": 64,
+    "BK": 64,
+    "GROUP": 8,
+    "num_warps": 4,
+    "num_stages": 3,
+    "KTAIL": true,
+    "SPLIT_K": 1
+   },
+   "n_configs": 45,
+   "results": [
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 159.14080142974854
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 163.10080289840698
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 166.12079739570618
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 168.68080496788025
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 170.28800249099731
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 1
+     },
+     "us": 172.37039804458618
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 207.041597366333
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 210.88320016860962
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 221.47520780563354
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 221.6488003730774
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 222.77759313583374
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 2
+     },
+     "us": 226.2239933013916
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 239.95920419692993
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 281.329607963562
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 286.66720390319824
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 290.55519104003906
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 299.00879859924316
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 4
+     },
+     "us": 300.83041191101074
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 304.9823999404907
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 306.6175937652588
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 314.7264003753662
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 1
+     },
+     "us": 334.1312050819397
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 369.00240182876587
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 394.18240785598755
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 434.5151901245117
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 438.1136178970337
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 2
+     },
+     "us": 441.97838306427
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 458.36799144744873
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 472.55680561065674
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 8
+     },
+     "us": 472.83360958099365
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 493.5271978378296
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 4
+     },
+     "us": 495.8735942840576
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 498.52240085601807
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 570.8799839019775
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 750.1311779022217
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 8
+     },
+     "us": 773.4272003173828
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 841.0127639770508
+    },
+    {
+     "config": {
+      "BM": 128,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": false,
+      "SPLIT_K": 16
+     },
+     "us": 844.7999954223633
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 4,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 859.2911720275879
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 128,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 875.9792327880859
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 64,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 880.3839683532715
+    },
+    {
+     "config": {
+      "BM": 64,
+      "BN": 64,
+      "BK": 32,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 5,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 898.2527732849121
+    },
+    {
+     "config": {
+      "BM": 32,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 949.0943908691406
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 64,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 1163.7264251708984
+    },
+    {
+     "config": {
+      "BM": 16,
+      "BN": 32,
+      "BK": 128,
+      "GROUP": 8,
+      "num_warps": 4,
+      "num_stages": 3,
+      "KTAIL": true,
+      "SPLIT_K": 16
+     },
+     "us": 1219.0719604492188
+    }
+   ],
+   "failed": []
+  }
+ ]
+}

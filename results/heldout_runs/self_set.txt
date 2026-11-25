@@ -1,0 +1,57 @@
+mm_blocked_fp32                cpu  correct passed: 3/3  3/3  3/3  0/3  -
+mm_blocked_fp16                cpu  correct passed: 3/3  3/3  0/3  3/3  -
+mm_blocked_bf16                cpu  correct passed: 3/3  3/3  0/3  3/3  -
+mm_split_k_fp32                cpu  correct passed: 3/3  3/3  3/3  0/3  -
+mm_split_k_fp16                cpu  correct passed: 3/3  3/3  0/3  2/3  -
+mm_fp16_accumulation           cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_bf16_accumulation           cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_column_tail_fp16            cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200,TS202  [example inputs]
+mm_column_tail_even_shape      cpu  WRONG   passed: 0/3  3/3  0/3  0/3  TS200  [d2=257 (was 256)]
+mm_k_tail_fp32                 cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_scale_1e-5_fp32             cpu  WRONG   passed: 0/3  3/3  3/3  0/3  TS200  [example inputs]
+mm_scale_1e-3_fp16             cpu  WRONG   passed: 2/3  3/3  0/3  0/3  TS200
+mm_tf32_fp32                   cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_contiguity_fp32             cpu  WRONG   passed: 0/3  3/3  3/3  3/3  TS204  [non contiguous inputs: transposed storage]
+softmax_online_fp16            cpu  correct passed: 3/3  3/3  3/3  3/3  -
+softmax_online_fp32            cpu  correct passed: 3/3  3/3  3/3  3/3  -
+softmax_no_max_fp32            cpu  WRONG   passed: 0/3  3/3  3/3  3/3  TS200  [large offset (x + 64 rms)]
+softmax_tail_fp16              cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+attn_causal_fp16               cpu  correct passed: 3/3  3/3  0/3  0/3  -
+attn_causal_bf16               cpu  correct passed: 3/3  3/3  0/3  0/3  -
+attn_mask_edge_fp16            cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+attn_scale_fp16                cpu  WRONG   passed: 0/3  3/3  0/3  0/3  TS200  [example inputs]
+ln_two_pass_fp32               cpu  correct passed: 3/3  3/3  3/3  3/3  -
+ln_welford_fp16                cpu  correct passed: 3/3  3/3  0/3  3/3  -
+ln_welford_offset_fp32         cpu  correct passed: 3/3  3/3  3/3  0/3  -
+ln_one_pass_offset_fp32        cpu  WRONG   passed: 0/3  1/3  0/3  0/3  TS200  [example inputs]
+ln_eps_fp32                    cpu  WRONG   passed: 0/3  3/3  0/3  0/3  TS200  [example inputs]
+ln_eps_small_var_fp16          cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+rowsum_sequential_fp32         cpu  correct passed: 3/3  3/3  3/3  3/3  -
+rowsum_blocks_fp16             cpu  correct passed: 3/3  3/3  2/3  3/3  -
+rowsum_racy_fp32               cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200,TS203,TS204  [example inputs]
+rowsum_tail_fp32               cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+gelu_fp32_internal_fp16        cpu  correct passed: 3/3  3/3  3/3  3/3  -
+gelu_torch_fp32                cpu  correct passed: 3/3  3/3  3/3  3/3  -
+silu_torch_fp32                cpu  correct passed: 3/3  3/3  3/3  3/3  -
+gelu_tanh_fp32                 cpu  WRONG   passed: 0/3  3/3  0/3  0/3  TS200  [example inputs]
+gelu_last_element_fp16         cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+silu_unfused_fp16              cpu  correct passed: 3/3  3/3  0/3  3/3  -
+silu_unfused_bf16              cpu  correct passed: 3/3  3/3  0/3  3/3  -
+mm_row_tiles_fp16              cpu  correct passed: 3/3  3/3  0/3  3/3  -
+mm_last_row_tile_half_acc_fp16 cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_last_row_tile_scale_fp16    cpu  WRONG   passed: 0/3  3/3  0/3  0/3  TS200  [example inputs]
+ln_two_pass_fp16               cpu  correct passed: 3/3  3/3  0/3  3/3  -
+ln_last_channel_no_bias_fp16   cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_row_tiles_bf16              cpu  correct passed: 3/3  3/3  0/3  3/3  -
+mm_last_row_tile_half_acc_bf16 cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+mm_last_row_tile_scale_bf16    cpu  WRONG   passed: 3/3  0/3  0/3  3/3  -
+ln_two_pass_bf16               cpu  correct passed: 3/3  3/3  0/3  3/3  -
+ln_last_channel_no_bias_bf16   cpu  WRONG   passed: 0/3  0/3  0/3  0/3  TS200  [example inputs]
+
+49 kernels x 3 draws: 69 correct runs, 78 wrong runs
+checker                false fail     false pass
+truestar kernel         0.0% (  0)     6.4% (  5)
+allclose 1e-2           0.0% (  0)    35.9% ( 28)
+allclose 1e-4          53.6% ( 37)    11.5% (  9)
+torch default          23.2% ( 16)    11.5% (  9)
+truestar kernel seconds per kernel: median 0.28, max 6.35

@@ -1,0 +1,56 @@
+{
+ "error": 0.0022775920687679928,
+ "error_sdpa": 0.0022775920687679928,
+ "useful_flops": 34376515584,
+ "dense_torch_flops": 68719476736,
+ "executed_flops": 35433480192,
+ "kernels": [
+  {
+   "kernel": "attn_bf16_causal:%scaled_dot_product_attention",
+   "config": {
+    "BM": 64,
+    "BN": 64,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true,
+    "KV_CHUNK": 0
+   },
+   "source": "tuned"
+  }
+ ],
+ "ptx_mma": {
+  "kern.ptx": {
+   "mma_m16n8k16_bf16": 128,
+   "entry": "kern"
+  }
+ },
+ "results": {
+  "truestar": {
+   "kernels": {
+    "kern": {
+     "launches": 1.0,
+     "us_per_call": 372.75371999999993
+    }
+   },
+   "gpu_us_per_call": 372.75371999999993,
+   "sm_mhz_median": 2902.0,
+   "useful_tflops": 92.22313216351002,
+   "executed_tflops": 95.05868966780534,
+   "clock_adjusted_peak": 104.03172920065253
+  },
+  "sdpa_default": {
+   "kernels": {
+    "_Z40fmha_cutlassF_bf16_aligned_64x64_rf_sm80N22PyTorchMemEffAttention15AttentionKernelIN7cutlass10bfloat16_tENS1_4arch4Sm80ELb1ELi64ELi64ELi64ELb1ELb1EE6ParamsE": {
+     "launches": 0.98,
+     "us_per_call": 803.8397999999999
+    }
+   },
+   "gpu_us_per_call": 803.8397999999999,
+   "sm_mhz_median": 2895.0,
+   "useful_tflops": 42.76538134090899,
+   "executed_tflops": null,
+   "clock_adjusted_peak": 103.78079119086462
+  }
+ }
+}

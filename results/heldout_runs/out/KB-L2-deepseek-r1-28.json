@@ -1,0 +1,208 @@
+{
+ "id": "KB-L2-deepseek-r1-28",
+ "set": "KB",
+ "level": 2,
+ "problem": "28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/28_BMM_InstanceNorm_Sum_ResidualAdd_Multiply.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/deepseek-r1/problem_28.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [127, 36]: 0.934604 vs float64 -0.527892 (error 9.3, 490653.5x its bound, 22693097563 ulp of float32); output: overall error is 547830.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the te",
+   "ratio": 490653.5306311734,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: The size of tensor a (128) must match the size of tensor b (129) at non-singleton dimension 1)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: The size of tensor a (128) must match the size of tensor b (127) at non-singleton dimension 1)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=65 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x65 and 64x128))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=63 (was 64)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (128x63 and 64x128))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes odd d0=129, d1=65",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (129x65 and 64x128))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: mat1 and mat2 shapes cannot be multiplied (7x7 and 64x128))",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [127, 36]: 0.934604 vs float64 -0.65989 (error 9.82, 531711.7x its bound, 24351008747 ulp of float32); output: overall error is 546140.7x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the te",
+   "ratio": 531711.7411953273,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [94, 54]: 1.81197 vs float64 6.13026 (error 10.5, 383629.6x its bound, 51236703287 ulp of float32); output: overall error is 468163.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tenso",
+   "ratio": 383629.61671416217,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [36, 80]: 2.07446 vs float64 -0.242269 (error 7.8, 2118677.8x its bound, 822024848878 ulp of float32); output: overall error is 2347795.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the t",
+   "ratio": 2118677.7515565455,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [36, 80]: 2.07446 vs float64 -0.323239 (error 7.3, 2322225.7x its bound, 26041726896 ulp of float32); output: overall error is 2258214.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the te",
+   "ratio": 2322225.6783977235,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 128 places where the float64 reference has none, or the other way round; output: 16256 of 16384 elements beyond the derived bound; worst at [127, 36]: 0.934604 vs float64 -0.527892 (error 9.3, 490653.5x its bound, 22693097563 ulp of float32); output: overall error is 54692",
+   "ratio": 490653.5455502168,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [127, 36]: 0.934604 vs float64 -0.527892 (error 9.3, 490653.5x its bound, 22693097563 ulp of float32); output: overall error is 547830.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the te",
+   "ratio": 490653.5306311734,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 8192 places where the float64 reference has none, or the other way round; output: 8192 of 16384 elements beyond the derived bound; worst at [5, 50]: 5.26852 vs float64 6.05357e-05 (error 18.8, 1212422738.7x its bound, 1448184125511 ulp of float32); output: overall error is",
+   "ratio": 1212422738.7301178,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 16384 of 16384 elements beyond the derived bound; worst at [127, 36]: 0.934604 vs float64 -0.527892 (error 9.3, 490653.5x its bound, 22693097563 ulp of float32); output: overall error is 547830.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (16384 of 16384, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 3.0,
+ "truestar_status": "divergent",
+ "notes": [
+  "6 variant(s) skipped because the reference rejects them (first: d0=129 (was 128): the reference rejects it (RuntimeError: The size of tensor a (128) must match the size of tensor b (129) at non-singleton dimension 1))"
+ ],
+ "seconds": 5.7
+}

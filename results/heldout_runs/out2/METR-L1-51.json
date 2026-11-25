@@ -1,0 +1,214 @@
+{
+ "id": "METR-L1-51",
+ "set": "METR",
+ "level": 1,
+ "problem": "51_Argmax_over_a_dimension.py",
+ "ref": "results/heldout_metr/tasks/level_1/51_Argmax_over_a_dimension.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_51.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d1=257 (was 256)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d1=255 (was 256)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=257",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: integer or boolean values differ Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Input must be contiguous",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Input must be contiguous",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS201",
+  "TS200"
+ ],
+ "first_failure": {
+  "name": "d0=17 (was 16)",
+  "code": "TS201",
+  "message": "the candidate raised where the reference runs: AssertionError: This optimized code only supports shape=(16, 256, 256)"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.68,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 4.81
+}

@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-52",
+ "set": "KB",
+ "level": 2,
+ "problem": "52_Conv2d_Activation_BatchNorm.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/52_Conv2d_Activation_BatchNorm.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_52.json",
+ "label": "correct",
+ "label_source": "KernelBench eval (5 / 5)",
+ "status": "timeout",
+ "seconds": 300.5
+}

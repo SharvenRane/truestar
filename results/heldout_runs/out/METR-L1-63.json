@@ -1,0 +1,81 @@
+{
+ "id": "METR-L1-63",
+ "set": "METR",
+ "level": 1,
+ "problem": "63_conv_standard_2D__square_input__square_kernel.py",
+ "ref": "results/heldout_metr/tasks/level_1/63_conv_standard_2D__square_input__square_kernel.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_63.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0006778106082081967,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0008512216983465972,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.6463194024406443,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d1=4 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3, 3], expected input[16, 4, 256, 256] to have 3 channels, but got 4 channels ins)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  },
+  {
+   "name": "d1=2 (was 3)",
+   "kind": "shape",
+   "truestar": "skip",
+   "code": "",
+   "message": "the reference rejects it (RuntimeError: Given groups=1, weight of size [64, 3, 3, 3], expected input[16, 2, 256, 256] to have 3 channels, but got 2 channels ins)",
+   "ratio": null,
+   "assert_close": "skip",
+   "allclose_1e-2": "skip",
+   "allclose_1e-4": "skip"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.18,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 510.00 MiB. GPU 0 has a total capacity of 22.08 GiB of which 408.06 MiB is free. Process 1 has 21.67 GiB memory in use. Process 1 has 21.67 GiB memory in use. Process 1 has 21.67 GiB memory in use. Process 1 has 21.67 GiB memory in use. Of the allocated memory 9.21 GiB is allocated by PyTorch, and 633.40 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/not",
+ "trace": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [source excerpt removed: METR task code is not redistributed]",
+ "seconds": 18.79
+}

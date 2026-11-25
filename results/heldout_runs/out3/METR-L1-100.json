@@ -1,0 +1,170 @@
+{
+ "id": "METR-L1-100",
+ "set": "METR",
+ "level": 1,
+ "problem": "100_HingeLoss.py",
+ "ref": "results/heldout_metr/tasks/level_1/100_HingeLoss.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_100.py",
+ "label": "wrong",
+ "label_source": "named in the YAKK post",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 1 elements beyond the derived bound; worst at []: 1.10572 vs float64 1.09786 (error 0.00786, 145.7x its bound, 65958 ulp of float32); output: overall error is 1150.5x what a correct float32 implementation shows (limit 2x). Not reordering noise. Policy: float32 results, float32 accumulat",
+   "ratio": 145.684455729183,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=129 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: CompilationError: at 3:14: [source excerpt removed: METR task code is not redistributed]",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d0=127 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: CompilationError: at 3:14: [source excerpt removed: METR task code is not redistributed]",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes odd d0=129",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: CompilationError: at 3:14: [source excerpt removed: METR task code is not redistributed]",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes small d0=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: CompilationError: at 3:14: [source excerpt removed: METR task code is not redistributed]",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 1 elements beyond the derived bound; worst at []: 12.7673 vs float64 12.5074 (error 0.26, 419.2x its bound, 272502 ulp of float32); output: overall error is 3328.0x what a correct float32 implementation shows (limit 2x). Not reordering noise. Policy: float32 results, float32 accumulatio",
+   "ratio": 419.2003164980398,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 1 elements beyond the derived bound; worst at []: 36.4637 vs float64 36.4549 (error 0.00879, 4.9x its bound, 2305 ulp of float32); output: overall error is 38.8x what a correct float32 implementation shows (limit 2x). Not reordering noise. Policy: float32 results, float32 accumulation, ",
+   "ratio": 4.90749135270593,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 1 of 1 elements beyond the derived bound; worst at []: 1.00017 vs float64 1.00003 (error 0.000138, 2.8x its bound, 1154 ulp of float32); output: overall error is 22.0x what a correct float32 implementation shows (limit 2x). Not reordering noise. Policy: float32 results, float32 accumulation,",
+   "ratio": 2.795586679597261,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.00042934580944348563,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "warn",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 1 places where the float64 reference has none, or the other way round. Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "ok",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS201",
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 1 of 1 elements beyond the derived bound; worst at []: 1.10572 vs float64 1.09786 (error 0.00786, 145.7x its bound, 65958 ulp of float32); output: overall error is 1150.5x what a correct float32 implementation shows (limit 2x). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.35,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 5.96
+}

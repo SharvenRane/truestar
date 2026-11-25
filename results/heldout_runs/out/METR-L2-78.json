@@ -1,0 +1,37 @@
+{
+ "id": "METR-L2-78",
+ "set": "METR",
+ "level": 2,
+ "problem": "78_ConvTranspose3d_Max_Max_Sum.py",
+ "ref": "results/heldout_metr/tasks/level_2/78_ConvTranspose3d_Max_Max_Sum.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_2/task_78.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "check_error",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 131 of 8000 elements beyond the derived bound; worst at [10, 0, 3, 0, 4]: 7.625 vs float64 7.62804 (error 0.00538, 2.6x its bound, 7881 ulp of float32); output: bad elements spread over the tensor (131 of 8000, 1.6%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 ",
+   "ratio": 2.6139737735464044,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.57,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 272.00 MiB. GPU 0 has a total capacity of 22.08 GiB of which 148.06 MiB is free. Process 1 has 21.92 GiB memory in use. Process 1 has 21.92 GiB memory in use. Process 1 has 21.92 GiB memory in use. Process 1 has 21.92 GiB memory in use. Of the allocated memory 1.54 GiB is allocated by PyTorch, and 170.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/not",
+ "trace": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [source excerpt removed: METR task code is not redistributed]",
+ "seconds": 5.98
+}

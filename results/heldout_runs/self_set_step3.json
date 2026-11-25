@@ -1,0 +1,1193 @@
+{
+ "summary": {
+  "truestar kernel": {
+   "false_fail": 0.0,
+   "false_pass": 0.0641025641025641,
+   "false_fail_count": 0,
+   "false_pass_count": 5
+  },
+  "allclose 1e-2": {
+   "false_fail": 0.0,
+   "false_pass": 0.358974358974359,
+   "false_fail_count": 0,
+   "false_pass_count": 28
+  },
+  "allclose 1e-4": {
+   "false_fail": 0.5362318840579711,
+   "false_pass": 0.11538461538461539,
+   "false_fail_count": 37,
+   "false_pass_count": 9
+  },
+  "torch default": {
+   "false_fail": 0.2318840579710145,
+   "false_pass": 0.11538461538461539,
+   "false_fail_count": 16,
+   "false_pass_count": 9
+  },
+  "truestar --lean": {
+   "false_fail": 0.0,
+   "false_pass": 0.0,
+   "false_fail_count": 0,
+   "false_pass_count": 0
+  }
+ },
+ "rows": [
+  {
+   "case": "mm_blocked_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 0,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_blocked_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_blocked_bf16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_split_k_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 0,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_split_k_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 2,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_fp16_accumulation",
+   "device": "cpu",
+   "correct": false,
+   "bug": "float16 accumulation",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 1944 of 19200 elements beyond the derived bound; worst at [64, 167]: 0.0683594 vs float64 0.0117947 (error 0.313, 90.0x its bound, 7414 ulp of float16); output: bad elements spread over the tensor (1944 of 19200, 10.1%). Not reordering noise. The error is consistent with float16 accumulation (the policy accumulates in float32). Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 7414.0412673950195,
+    "worst_ratio": 90.0485142698694,
+    "location": "spread over the tensor (1944 of 19200, 10.1%)",
+    "seconds": 0.0327
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_bf16_accumulation",
+   "device": "cpu",
+   "correct": false,
+   "bug": "bfloat16 accumulation",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 1965 of 19200 elements beyond the derived bound; worst at [64, 167]: 0.914062 vs float64 0.00514423 (error 2.41, 1049.4x its bound, 29783 ulp of bfloat16); output: bad elements spread over the tensor (1965 of 19200, 10.2%). Not reordering noise. The error is consistent with bfloat16 accumulation (the policy accumulates in float32). Policy: bfloat16 results, float32 accumulation.",
+    "worst_ulps": 29783.433837890625,
+    "worst_ratio": 1049.4296522507957,
+    "location": "spread over the tensor (1965 of 19200, 10.2%)",
+    "seconds": 0.0305
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_column_tail_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last column tile not written",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200",
+    "TS202"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 768 of 19200 elements beyond the derived bound; worst at [91, 199]: 0 vs float64 -30.9907 (error 103, 464.7x its bound, 2047 ulp of float16); output: overall error is 194.5x what a correct float16 implementation shows (limit 2x); output: bad elements in the tail of dim 1 (indices 192 to 199 of 200) (768 of 19200, 4.0%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 2047.3704510475072,
+    "worst_ratio": 464.7074831016529,
+    "location": "in the tail of dim 1 (indices 192 to 199 of 200) (768 of 19200, 4.0%)",
+    "seconds": 0.025
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_column_tail_even_shape",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last column tile not written (only at shapes that do not divide 64)",
+   "needs": [
+    "shape"
+   ],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "d2=257 (was 256)",
+    "kind": "shape",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 64 of 16448 elements beyond the derived bound; worst at [36, 256]: 0 vs float64 22.9782 (error 78, 368.7x its bound, 2044 ulp of float16); output: overall error is 58.4x what a correct float16 implementation shows (limit 2x); output: bad elements only at index 256 of dim 1 (size 257) (64 of 16448, 0.4%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 2044.4306061416864,
+    "worst_ratio": 368.6623424691781,
+    "location": "only at index 256 of dim 1 (size 257) (64 of 16448, 0.4%)",
+    "seconds": 0.0233
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_k_tail_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "ragged K tail dropped",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 19200 of 19200 elements beyond the derived bound; worst at [81, 156]: -8.33986 vs float64 -22.4498 (error 29.7, 85438.2x its bound, 7496396010 ulp of float32); output: overall error is 78648.0x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (19200 of 19200, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 7496396010.207043,
+    "worst_ratio": 85438.21612161197,
+    "location": "spread over the tensor (19200 of 19200, 100.0%)",
+    "seconds": 0.0292
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_scale_1e-5_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "constant off by 1e-5 relative",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 657 of 19200 elements beyond the derived bound; worst at [63, 22]: 44.9335 vs float64 44.933 (error 0.00129, 2.8x its bound, 7522 ulp of float32); output: overall error is 3.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (657 of 19200, 3.4%). Not reordering noise. The error is consistent with TF32 matmuls or convolutions (the policy says IEEE float32). Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 7521.537229537964,
+    "worst_ratio": 2.847173340179197,
+    "location": "spread over the tensor (657 of 19200, 3.4%)",
+    "seconds": 0.0252
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_scale_1e-3_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "constant off by 1e-3 relative (two float16 ulps)",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 2,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS1300",
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS1300",
+    "message": "within the derived tolerance, but the errors lean one way: output 0: errors lean away from zero, mean 0.00063 per element over 19200 elements (effect floor 3.1e-05), t 226 with 96 groups (dims (0,)), p 1.3e-131 < 1e-06",
+    "worst_ulps": 3.032264232635498,
+    "worst_ratio": 0.8082177393970102,
+    "location": "",
+    "seconds": 0.0138
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_tf32_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "TF32 operands under an IEEE float32 policy",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 18199 of 19200 elements beyond the derived bound; worst at [63, 174]: -1.85589 vs float64 -1.8157 (error 0.041, 128.6x its bound, 10928905 ulp of float32); output: overall error is 115.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (18199 of 19200, 94.8%). Not reordering noise. The error is consistent with TF32 matmuls or convolutions (the policy says IEEE float32). Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 10928904.537229538,
+    "worst_ratio": 128.63069565964153,
+    "location": "spread over the tensor (18199 of 19200, 94.8%)",
+    "seconds": 0.0284
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_contiguity_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "assumes contiguous operands (only wrong on strided inputs)",
+   "needs": [
+    "strided"
+   ],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS204"
+   ],
+   "first_failure": {
+    "name": "non contiguous inputs: transposed storage",
+    "kind": "stride",
+    "status": "divergent",
+    "code": "TS204",
+    "message": "wrong on non contiguous inputs while contiguous inputs are right: output: 19199 of 19200 elements beyond the derived bound; worst at [54, 87]: 36.2906 vs float64 -26.1761 (error 190, 532877.8x its bound, 75705039638 ulp of float32); output: overall error is 559405.4x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (19199 of 19200, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 75705039637.79295,
+    "worst_ratio": 532877.8396324707,
+    "location": "spread over the tensor (19199 of 19200, 100.0%)",
+    "seconds": 0.0356
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "softmax_online_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "softmax_online_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "softmax_no_max_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "no max subtraction (overflows only on large logits)",
+   "needs": [
+    "large"
+   ],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "large offset (x + 64 rms)",
+    "kind": "family",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: NaN or infinity at 64000 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (64000 of 64000, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 0.0,
+    "worst_ratio": 0.0,
+    "location": "spread over the tensor (64000 of 64000, 100.0%)",
+    "seconds": 0.0267
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "softmax_tail_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last partial block left out of the sum",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 21430 of 64000 elements beyond the derived bound; worst at [21, 19]: 0.000213623 vs float64 0.000140701 (error 0.167, 76.5x its bound, 1061 ulp of float16); output: overall error is 31.4x what a correct float16 implementation shows (limit 2x); output: bad elements in the head of dim 0 (indices 0 to 62 of 64) (21430 of 64000, 33.5%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 1061.1031616544537,
+    "worst_ratio": 76.52247293583649,
+    "location": "in the head of dim 0 (indices 0 to 62 of 64) (21430 of 64000, 33.5%)",
+    "seconds": 0.0251
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "attn_causal_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "attn_causal_bf16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "attn_mask_edge_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "causal mask edge off by one in the last query block",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 3628 of 24576 elements beyond the derived bound; worst at [0, 0, 135, 63]: 0.139526 vs float64 0.0542951 (error 0.119, 56.9x its bound, 186867 ulp of float16); output: overall error is 6.0x what a correct float16 implementation shows (limit 2x); output: bad elements only in indices 128 to 190 of dim 2 (size 192) (3628 of 24576, 14.8%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 186866.68918157424,
+    "worst_ratio": 56.91720922701555,
+    "location": "only in indices 128 to 190 of dim 2 (size 192) (3628 of 24576, 14.8%)",
+    "seconds": 0.0867
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "attn_scale_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "scale 1/sqrt(d+1)",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 371 of 24576 elements beyond the derived bound; worst at [0, 1, 74, 43]: -0.150024 vs float64 -0.154321 (error 0.0133, 2.2x its bound, 26159 ulp of float16); output: overall error is 2.3x what a correct float16 implementation shows (limit 2x); output: bad elements spread over the tensor (371 of 24576, 1.5%). Not reordering noise. The error is consistent with float16 accumulation (the policy accumulates in float32). Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 26159.12661657689,
+    "worst_ratio": 2.1558049382285853,
+    "location": "spread over the tensor (371 of 24576, 1.5%)",
+    "seconds": 0.0983
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "ln_two_pass_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "ln_welford_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "ln_welford_offset_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 0,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "ln_one_pass_offset_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "one pass variance (cancellation with a large mean)",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 1,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 15553 of 49152 elements beyond the derived bound; worst at [29, 579]: 1.83223 vs float64 1.8518 (error 0.0537, 21.2x its bound, 284890246 ulp of float32); output: overall error is 11.1x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (15553 of 49152, 31.6%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 284890246.364624,
+    "worst_ratio": 21.200356755433315,
+    "location": "spread over the tensor (15553 of 49152, 31.6%)",
+    "seconds": 0.022
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "ln_eps_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "epsilon 1e-3 instead of 1e-5",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 48121 of 49152 elements beyond the derived bound; worst at [45, 209]: -2.41045 vs float64 -2.41154 (error 0.00235, 315.7x its bound, 39864241 ulp of float32); output: overall error is 254.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (48121 of 49152, 97.9%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 39864240.51347351,
+    "worst_ratio": 315.7356818398105,
+    "location": "spread over the tensor (48121 of 49152, 97.9%)",
+    "seconds": 0.027
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "ln_eps_small_var_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "epsilon 1e-3 instead of 1e-5 (rows with small variance)",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 48851 of 49152 elements beyond the derived bound; worst at [61, 629]: 0.0299835 vs float64 0.000254078 (error 0.714, 1885.7x its bound, 414028 ulp of float16); output: overall error is 61.8x what a correct float16 implementation shows (limit 2x); output: bad elements spread over the tensor (48851 of 49152, 99.4%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 414027.50620612083,
+    "worst_ratio": 1885.7016118697945,
+    "location": "spread over the tensor (48851 of 49152, 99.4%)",
+    "seconds": 0.0247
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "rowsum_sequential_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "rowsum_blocks_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 2,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "rowsum_racy_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "racy reduction loses a block partial now and then",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200",
+    "TS203",
+    "TS204"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 4 of 128 elements beyond the derived bound; worst at [29]: -2.59813 vs float64 -6.50819 (error 7.11, 5048.1x its bound, 8199991 ulp of float32); output: overall error is 3565.9x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (4 of 128, 3.1%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 8199991.303466797,
+    "worst_ratio": 5048.0972465712375,
+    "location": "spread over the tensor (4 of 128, 3.1%)",
+    "seconds": 0.0119
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "rowsum_tail_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last partial block not summed",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 128 of 128 elements beyond the derived bound; worst at [46]: -60.4181 vs float64 -45.0007 (error 15.4, 15864.2x its bound, 173589698 ulp of float32); output: overall error is 23499.6x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (128 of 128, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 173589697.8317871,
+    "worst_ratio": 15864.217981372238,
+    "location": "spread over the tensor (128 of 128, 100.0%)",
+    "seconds": 0.0133
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "gelu_fp32_internal_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "gelu_torch_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "silu_torch_fp32",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 3,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "gelu_tanh_fp32",
+   "device": "cpu",
+   "correct": false,
+   "bug": "tanh approximation instead of erf",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 3731 of 4191 elements beyond the derived bound; worst at [13, 118]: -0.0157206 vs float64 -0.0161546 (error 0.000473, 209.1x its bound, 16363117 ulp of float32); output: overall error is 241.2x what a correct float32 implementation shows (limit 2x); output: bad elements spread over the tensor (3731 of 4191, 89.0%). Not reordering noise. Policy: float32 results, float32 accumulation.",
+    "worst_ulps": 16363117.126788385,
+    "worst_ratio": 209.09430688902924,
+    "location": "spread over the tensor (3731 of 4191, 89.0%)",
+    "seconds": 0.0066
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "gelu_last_element_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last element of a ragged launch never written",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 1 of 4191 elements beyond the derived bound; worst at [32, 126]: 0 vs float64 2.72583 (error 2.73, 39.5x its bound, 1396 ulp of float16); output: overall error is 6.2x what a correct float16 implementation shows (limit 2x); output: bad elements only at index 32 of dim 0 (size 33); only at index 126 of dim 1 (size 127); on diagonal offset 94 of the last two dims (a mask edge?) (1 of 4191, 0.0%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 1395.625082567254,
+    "worst_ratio": 39.487194199200715,
+    "location": "only at index 32 of dim 0 (size 33); only at index 126 of dim 1 (size 127); on diagonal offset 94 of the last two dims (a mask edge?) (1 of 4191, 0.0%)",
+    "seconds": 0.005
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "silu_unfused_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "silu_unfused_bf16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_row_tiles_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_last_row_tile_half_acc_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last tile of 1024 rows accumulates in fp16",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 4720 of 262144 elements beyond the derived bound; worst at [3864, 13]: 0.0537109 vs float64 0.0170506 (error 0.213, 129.0x its bound, 27585 ulp of float16); output: bad elements in the tail of dim 0 (indices 3072 to 4095 of 4096) (4720 of 262144, 1.8%) The error is consistent with float16 accumulation (the policy accumulates in float32). Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 27585.41748046875,
+    "worst_ratio": 128.98863364375683,
+    "location": "in the tail of dim 0 (indices 3072 to 4095 of 4096) (4720 of 262144, 1.8%)",
+    "seconds": 0.2018
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_last_row_tile_scale_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last tile of 1024 rows scaled by 1 + 2^-7",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 65094 of 262144 elements beyond the derived bound; worst at [3609, 48]: -22.4219 vs float64 -22.2497 (error 0.806, 4.9x its bound, 28 ulp of float16); output: overall error is 3.8x what a correct float16 implementation shows (limit 2x); output: bad elements in the tail of dim 0 (indices 3072 to 4095 of 4096) (65094 of 262144, 24.8%). Not reordering noise. The error is consistent with float16 accumulation (the policy accumulates in float32). Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 27.799072265625,
+    "worst_ratio": 4.908523522235673,
+    "location": "in the tail of dim 0 (indices 3072 to 4095 of 4096) (65094 of 262144, 24.8%)",
+    "seconds": 0.2627
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "ln_two_pass_fp16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "ln_last_channel_no_bias_fp16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "one channel (the last) stored without its bias",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 1024 of 786432 elements beyond the derived bound; worst at [119, 767]: -0.0811768 vs float64 -0.000421215 (error 0.0815, 8973.4x its bound, 338713 ulp of float16); output: bad elements only at index 767 of dim 1 (size 768) (1024 of 786432, 0.1%). Not reordering noise. Policy: float16 results, float32 accumulation.",
+    "worst_ulps": 338713.29771377635,
+    "worst_ratio": 8973.410271640269,
+    "location": "only at index 767 of dim 1 (size 768) (1024 of 786432, 0.1%)",
+    "seconds": 0.3032
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_row_tiles_bf16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "mm_last_row_tile_half_acc_bf16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last tile of 1024 rows accumulates in bf16",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 4758 of 262144 elements beyond the derived bound; worst at [3233, 25]: -0.296875 vs float64 0.0121047 (error 1.29, 371.7x its bound, 65346 ulp of bfloat16); output: bad elements in the tail of dim 0 (indices 3072 to 4095 of 4096) (4758 of 262144, 1.8%) The error is consistent with bfloat16 accumulation (the policy accumulates in float32). Policy: bfloat16 results, float32 accumulation.",
+    "worst_ulps": 65345.875,
+    "worst_ratio": 371.7112759289626,
+    "location": "in the tail of dim 0 (indices 3072 to 4095 of 4096) (4758 of 262144, 1.8%)",
+    "seconds": 0.2041
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "mm_last_row_tile_scale_bf16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "last tile of 1024 rows scaled by 1 + 2^-7",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS1300"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS1300",
+    "message": "within the derived tolerance, but the errors lean one way: output 0: errors lean away from zero, mean 0.00123 per element over 262144 elements (effect floor 0.00025), t 272 with 64 groups (dims (1,)), p 1.8e-98 < 1e-06",
+    "worst_ulps": 103.25,
+    "worst_ratio": 0.8486339496889259,
+    "location": "",
+    "seconds": 0.1121
+   },
+   "blamed_op": null
+  },
+  {
+   "case": "ln_two_pass_bf16",
+   "device": "cpu",
+   "correct": true,
+   "bug": "",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 3,
+    "allclose 1e-2": 3,
+    "allclose 1e-4": 0,
+    "torch default": 3,
+    "truestar --lean": 3
+   },
+   "codes": [],
+   "first_failure": null,
+   "blamed_op": null
+  },
+  {
+   "case": "ln_last_channel_no_bias_bf16",
+   "device": "cpu",
+   "correct": false,
+   "bug": "one channel (the last) stored without its bias",
+   "needs": [],
+   "passed": {
+    "truestar kernel": 0,
+    "allclose 1e-2": 0,
+    "allclose 1e-4": 0,
+    "torch default": 0,
+    "truestar --lean": 0
+   },
+   "codes": [
+    "TS200"
+   ],
+   "first_failure": {
+    "name": "example inputs",
+    "kind": "base",
+    "status": "divergent",
+    "code": "TS200",
+    "message": "output: 606 of 786432 elements beyond the derived bound; worst at [119, 767]: -0.081543 vs float64 -0.000881562 (error 0.088, 1266.6x its bound, 21145 ulp of bfloat16); output: bad elements only at index 767 of dim 1 (size 768) (606 of 786432, 0.1%) The error is consistent with bfloat16 accumulation (the policy accumulates in float32). Policy: bfloat16 results, float32 accumulation.",
+    "worst_ulps": 21144.90375865705,
+    "worst_ratio": 1266.6047751817405,
+    "location": "only at index 767 of dim 1 (size 768) (606 of 786432, 0.1%)",
+    "seconds": 0.389
+   },
+   "blamed_op": null
+  }
+ ],
+ "median_seconds": 0.3518153999975766,
+ "max_seconds": 6.321633999999904
+}

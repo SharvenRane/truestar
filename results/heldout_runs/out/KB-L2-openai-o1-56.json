@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-56",
+ "set": "KB",
+ "level": 2,
+ "problem": "56_Matmul_Sigmoid_Sum.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/56_Matmul_Sigmoid_Sum.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_56.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "timeout",
+ "seconds": 300.1
+}

@@ -1,0 +1,2250 @@
+[
+ {
+  "case": "tel",
+  "prec": "fp32",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:efficient": {
+    "first_call_s": 0.0010772999994514976,
+    "rel_err_vs_f64": 1.4147190215603747e-07,
+    "median_ms": 0.6831839978694916,
+    "min_ms": 0.6659839749336243,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0015156000008573756,
+    "rel_err_vs_f64": 1.4079762216104586e-07,
+    "median_ms": 0.7392480075359344,
+    "min_ms": 0.7297279834747314,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 13.211465000000317,
+    "rel_err_vs_f64": 1.4147190215603747e-07,
+    "median_ms": 0.6690559983253479,
+    "min_ms": 0.6635199785232544,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 0.11702929999955813,
+    "rel_err_vs_f64": 1.4147190215603747e-07,
+    "median_ms": 0.6826879978179932,
+    "min_ms": 0.6784319877624512,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 1.1510512000022572,
+    "rel_err_vs_f64": 1.413285927848822e-07,
+    "median_ms": 0.7788319885730743,
+    "min_ms": 0.7725759744644165,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.007043900001008296,
+    "rel_err_vs_f64": 1.413285927848822e-07,
+    "median_ms": 0.7934080064296722,
+    "min_ms": 0.7891520261764526,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 17.479642800000875,
+  "truestar_report": {
+   "kernel": 7,
+   "library": 0,
+   "fallback": 0,
+   "layout": 21
+  },
+  "truestar_steps": [
+   "contraction",
+   "attention",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2932.0,
+    "median": 2932.0,
+    "max": 2940.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 106.19,
+    "median": 161.91,
+    "max": 161.91
+   },
+   "util_pct": {
+    "min": 12.0,
+    "median": 95.0,
+    "max": 95.0
+   },
+   "mem_used_mib": {
+    "min": 8448.0,
+    "median": 8448.0,
+    "max": 8488.0
+   }
+  },
+  "best_eager": "eager:efficient"
+ },
+ {
+  "case": "tel",
+  "prec": "tf32",
+  "flags": {
+   "matmul.allow_tf32": true,
+   "cudnn.allow_tf32": true,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:efficient": {
+    "first_call_s": 0.0008411999988311436,
+    "rel_err_vs_f64": 9.199474780039478e-05,
+    "median_ms": 0.48403200507164,
+    "min_ms": 0.4795199930667877,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.001315099998464575,
+    "rel_err_vs_f64": 9.302665864242345e-05,
+    "median_ms": 0.48788800835609436,
+    "min_ms": 0.4836159944534302,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 0.7550850000006903,
+    "rel_err_vs_f64": 9.199474780039478e-05,
+    "median_ms": 0.4819520115852356,
+    "min_ms": 0.4792959988117218,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 0.10702130000208854,
+    "rel_err_vs_f64": 9.199474780039478e-05,
+    "median_ms": 0.4983679950237274,
+    "min_ms": 0.4941120147705078,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 1.7154482000005373,
+    "rel_err_vs_f64": 0.0003327354798739417,
+    "median_ms": 0.3993600010871887,
+    "min_ms": 0.39580801129341125,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.005709299999580253,
+    "rel_err_vs_f64": 0.0003327354798739417,
+    "median_ms": 0.4184640049934387,
+    "min_ms": 0.416159987449646,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 5.4729110000007495,
+  "truestar_report": {
+   "kernel": 7,
+   "library": 0,
+   "fallback": 0,
+   "layout": 21
+  },
+  "truestar_steps": [
+   "contraction",
+   "attention",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2962.0,
+    "median": 2962.0,
+    "max": 2962.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 95.86,
+    "median": 95.86,
+    "max": 95.86
+   },
+   "util_pct": {
+    "min": 13.0,
+    "median": 13.0,
+    "max": 13.0
+   },
+   "mem_used_mib": {
+    "min": 8622.0,
+    "median": 8622.0,
+    "max": 8622.0
+   }
+  },
+  "best_eager": "eager:efficient"
+ },
+ {
+  "case": "tel",
+  "prec": "bf16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:efficient": {
+    "first_call_s": 0.0006880999972054269,
+    "rel_err_vs_f64": 0.003785616368855614,
+    "median_ms": 0.3126400113105774,
+    "min_ms": 0.3076480031013489,
+    "n": 100
+   },
+   "eager:cudnn": {
+    "first_call_s": 0.00043430000005173497,
+    "rel_err_vs_f64": 0.0037856094847916327,
+    "median_ms": 0.3165760040283203,
+    "min_ms": 0.3113279938697815,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0004636000012396835,
+    "rel_err_vs_f64": 0.0037850029973340803,
+    "median_ms": 0.34750398993492126,
+    "min_ms": 0.3431040048599243,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 0.7441814999983762,
+    "rel_err_vs_f64": 0.003785616368855614,
+    "median_ms": 0.311584010720253,
+    "min_ms": 0.30857598781585693,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 0.12513469999976223,
+    "rel_err_vs_f64": 0.003785616368855614,
+    "median_ms": 0.31246399879455566,
+    "min_ms": 0.30985599756240845,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 1.8286541999987094,
+    "rel_err_vs_f64": 0.003371919423180219,
+    "median_ms": 0.22668799757957458,
+    "min_ms": 0.2215680032968521,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.004327299997385126,
+    "rel_err_vs_f64": 0.003371919423180219,
+    "median_ms": 0.2313919961452484,
+    "min_ms": 0.22867199778556824,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 5.551922599999671,
+  "truestar_report": {
+   "kernel": 7,
+   "library": 0,
+   "fallback": 0,
+   "layout": 21
+  },
+  "truestar_steps": [
+   "contraction",
+   "attention",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2947.0,
+    "median": 2947.0,
+    "max": 2947.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 94.73,
+    "median": 94.73,
+    "max": 94.73
+   },
+   "util_pct": {
+    "min": 12.0,
+    "median": 12.0,
+    "max": 12.0
+   },
+   "mem_used_mib": {
+    "min": 8456.0,
+    "median": 8456.0,
+    "max": 8456.0
+   }
+  },
+  "best_eager": "eager:efficient"
+ },
+ {
+  "case": "tel",
+  "prec": "fp16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:efficient": {
+    "first_call_s": 0.0007159999986470211,
+    "rel_err_vs_f64": 0.00047688003999882755,
+    "median_ms": 0.255280002951622,
+    "min_ms": 0.24924799799919128,
+    "n": 100
+   },
+   "eager:cudnn": {
+    "first_call_s": 0.0004395000032673124,
+    "rel_err_vs_f64": 0.0004768510105604494,
+    "median_ms": 0.2574079930782318,
+    "min_ms": 0.25465598702430725,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.00048299999980372377,
+    "rel_err_vs_f64": 0.0004768166835324487,
+    "median_ms": 0.29017600417137146,
+    "min_ms": 0.28803199529647827,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.1335044999977981,
+    "rel_err_vs_f64": 0.00047688003999882755,
+    "median_ms": 0.2553600072860718,
+    "min_ms": 0.25113600492477417,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 0.1408683999979985,
+    "rel_err_vs_f64": 0.00047688003999882755,
+    "median_ms": 0.2574079930782318,
+    "min_ms": 0.25462400913238525,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 2.81814089999898,
+    "rel_err_vs_f64": 0.0004216467448234507,
+    "median_ms": 0.3648959994316101,
+    "min_ms": 0.2231999933719635,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.003961800000979565,
+    "rel_err_vs_f64": 0.0004216467448234507,
+    "median_ms": 0.23283199965953827,
+    "min_ms": 0.22934399545192719,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 6.913272000001598,
+  "truestar_report": {
+   "kernel": 7,
+   "library": 0,
+   "fallback": 0,
+   "layout": 21
+  },
+  "truestar_steps": [
+   "contraction",
+   "attention",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2947.0,
+    "median": 2947.0,
+    "max": 2947.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 75.68,
+    "median": 87.61000000000001,
+    "max": 99.54
+   },
+   "util_pct": {
+    "min": 31.0,
+    "median": 53.0,
+    "max": 75.0
+   },
+   "mem_used_mib": {
+    "min": 8456.0,
+    "median": 8456.0,
+    "max": 8456.0
+   }
+  },
+  "best_eager": "eager:efficient"
+ },
+ {
+  "case": "prefill",
+  "prec": "fp32",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.003141599998343736,
+    "rel_err_vs_f64": 2.1691007910685656e-07,
+    "median_ms": 0.9235199987888336,
+    "min_ms": 0.8531839847564697,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 3.8588516999989224,
+    "rel_err_vs_f64": 2.16886125317138e-07,
+    "median_ms": 0.6698240041732788,
+    "min_ms": 0.6639040112495422,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 28.785225300001912,
+    "rel_err_vs_f64": 2.1681852095879774e-07,
+    "median_ms": 0.6375359892845154,
+    "min_ms": 0.6332160234451294,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 7.663669199999276,
+    "rel_err_vs_f64": 3.0632238688843426e-07,
+    "median_ms": 1.0677440166473389,
+    "min_ms": 0.9867519736289978,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.008067800001299474,
+    "rel_err_vs_f64": 3.0632238688843426e-07,
+    "median_ms": 0.86080002784729,
+    "min_ms": 0.8565120100975037,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 43.321956100000534,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 0,
+   "fallback": 0,
+   "layout": 18
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2572.0,
+    "median": 2572.0,
+    "max": 2572.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 48.4,
+    "median": 48.4,
+    "max": 48.4
+   },
+   "util_pct": {
+    "min": 0.0,
+    "median": 0.0,
+    "max": 0.0
+   },
+   "mem_used_mib": {
+    "min": 9152.0,
+    "median": 9152.0,
+    "max": 9152.0
+   }
+  },
+  "best_eager": "eager:math"
+ },
+ {
+  "case": "prefill",
+  "prec": "tf32",
+  "flags": {
+   "matmul.allow_tf32": true,
+   "cudnn.allow_tf32": true,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.0028996000000915956,
+    "rel_err_vs_f64": 0.0001954878573135711,
+    "median_ms": 0.7320320010185242,
+    "min_ms": 0.5852800011634827,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.9397586999984924,
+    "rel_err_vs_f64": 0.00019568423497899994,
+    "median_ms": 0.4139519929885864,
+    "min_ms": 0.4096960127353668,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 24.387671299999056,
+    "rel_err_vs_f64": 0.0008875998222218608,
+    "median_ms": 0.37745600938796997,
+    "min_ms": 0.3731200098991394,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 3.2235435000002326,
+    "rel_err_vs_f64": 0.0009067508638298394,
+    "median_ms": 0.6025920212268829,
+    "min_ms": 0.4113599956035614,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.010339100001147017,
+    "rel_err_vs_f64": 0.0009067508638298394,
+    "median_ms": 0.4020639955997467,
+    "min_ms": 0.3978559970855713,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 32.98313280000002,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 0,
+   "fallback": 0,
+   "layout": 18
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2962.0,
+    "median": 2962.0,
+    "max": 2962.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 74.0,
+    "median": 74.0,
+    "max": 74.0
+   },
+   "util_pct": {
+    "min": 16.0,
+    "median": 16.0,
+    "max": 16.0
+   },
+   "mem_used_mib": {
+    "min": 14726.0,
+    "median": 14726.0,
+    "max": 14726.0
+   }
+  },
+  "best_eager": "eager:math"
+ },
+ {
+  "case": "prefill",
+  "prec": "bf16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.002082000002701534,
+    "rel_err_vs_f64": 0.004181206834484215,
+    "median_ms": 0.5588800013065338,
+    "min_ms": 0.37836799025535583,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0021897000005992595,
+    "rel_err_vs_f64": 0.00417266574211793,
+    "median_ms": 0.8040960133075714,
+    "min_ms": 0.6690239906311035,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.170509799998399,
+    "rel_err_vs_f64": 0.0032438394453202695,
+    "median_ms": 0.31387200951576233,
+    "min_ms": 0.3076480031013489,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 4.237886300001264,
+    "rel_err_vs_f64": 0.0031319729896171953,
+    "median_ms": 0.24236799776554108,
+    "min_ms": 0.2396479994058609,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 3.554492700000992,
+    "rel_err_vs_f64": 0.003572219911469793,
+    "median_ms": 0.7014720141887665,
+    "min_ms": 0.39449599385261536,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.011642700002994388,
+    "rel_err_vs_f64": 0.003572219911469793,
+    "median_ms": 0.2319359928369522,
+    "min_ms": 0.23030400276184082,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 13.352259700001014,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 0,
+   "fallback": 0,
+   "layout": 18
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2677.0,
+    "median": 2677.0,
+    "max": 2677.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 52.68,
+    "median": 52.68,
+    "max": 52.68
+   },
+   "util_pct": {
+    "min": 10.0,
+    "median": 10.0,
+    "max": 10.0
+   },
+   "mem_used_mib": {
+    "min": 11257.0,
+    "median": 11257.0,
+    "max": 11257.0
+   }
+  },
+  "best_eager": "eager:cudnn"
+ },
+ {
+  "case": "prefill",
+  "prec": "fp16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0017886999994516373,
+    "rel_err_vs_f64": 0.0005261940779059044,
+    "median_ms": 0.4604000002145767,
+    "min_ms": 0.3007679879665375,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.002113800001097843,
+    "rel_err_vs_f64": 0.0005265339680848836,
+    "median_ms": 0.7529120147228241,
+    "min_ms": 0.5902079939842224,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 4.303547799998341,
+    "rel_err_vs_f64": 0.000406289640797122,
+    "median_ms": 0.2847039997577667,
+    "min_ms": 0.2778559923171997,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 20.88060630000109,
+    "rel_err_vs_f64": 0.00039181110211917276,
+    "median_ms": 0.2428639978170395,
+    "min_ms": 0.23984000086784363,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 4.089261499997519,
+    "rel_err_vs_f64": 0.0004485499982650302,
+    "median_ms": 0.5447520017623901,
+    "min_ms": 0.24579200148582458,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.006520099999761442,
+    "rel_err_vs_f64": 0.0004485499982650302,
+    "median_ms": 0.23395200073719025,
+    "min_ms": 0.2313919961452484,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 33.66984909999883,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 0,
+   "fallback": 0,
+   "layout": 18
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2947.0,
+    "median": 2947.0,
+    "max": 2947.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 68.26,
+    "median": 68.26,
+    "max": 68.26
+   },
+   "util_pct": {
+    "min": 19.0,
+    "median": 19.0,
+    "max": 19.0
+   },
+   "mem_used_mib": {
+    "min": 11381.0,
+    "median": 11381.0,
+    "max": 11381.0
+   }
+  },
+  "best_eager": "eager:cudnn"
+ },
+ {
+  "case": "decode1",
+  "prec": "fp32",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.0022013999987393618,
+    "rel_err_vs_f64": 1.48507179538175e-07,
+    "median_ms": 0.9132159948348999,
+    "min_ms": 0.40329599380493164,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0008146999971359037,
+    "rel_err_vs_f64": 1.4758386127471002e-07,
+    "median_ms": 0.9610400199890137,
+    "min_ms": 0.7337599992752075,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.0614040000000386,
+    "rel_err_vs_f64": 1.5547473183611367e-07,
+    "median_ms": 0.3850400000810623,
+    "min_ms": 0.14336000382900238,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 5.569498699998803,
+    "rel_err_vs_f64": 8.101993723868654e-08,
+    "median_ms": 0.16657600551843643,
+    "min_ms": 0.10000000149011612,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 3.147503100000904,
+    "rel_err_vs_f64": 2.1302735372414438e-07,
+    "median_ms": 1.5562399625778198,
+    "min_ms": 1.1894079446792603,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.009715200001664925,
+    "rel_err_vs_f64": 2.1302735372414438e-07,
+    "median_ms": 0.2996319979429245,
+    "min_ms": 0.22137600183486938,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 13.264842200002022,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2332.0,
+    "median": 2880.0,
+    "max": 2880.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 54.99,
+    "median": 71.63,
+    "max": 71.63
+   },
+   "util_pct": {
+    "min": 31.0,
+    "median": 31.0,
+    "max": 34.0
+   },
+   "mem_used_mib": {
+    "min": 11223.0,
+    "median": 11223.0,
+    "max": 11239.0
+   }
+  },
+  "best_eager": "eager:math"
+ },
+ {
+  "case": "decode1",
+  "prec": "tf32",
+  "flags": {
+   "matmul.allow_tf32": true,
+   "cudnn.allow_tf32": true,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.0018706000009842683,
+    "rel_err_vs_f64": 1.48507179538175e-07,
+    "median_ms": 0.8071199953556061,
+    "min_ms": 0.5407360196113586,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0009294000010413583,
+    "rel_err_vs_f64": 1.4758386127471002e-07,
+    "median_ms": 0.8150559961795807,
+    "min_ms": 0.6181120276451111,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 2.0169288000033703,
+    "rel_err_vs_f64": 1.5547473183611367e-07,
+    "median_ms": 0.21822399646043777,
+    "min_ms": 0.15011200308799744,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 1.0142788000011933,
+    "rel_err_vs_f64": 8.101993723868654e-08,
+    "median_ms": 0.13705600053071976,
+    "min_ms": 0.10412800312042236,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 2.4351791000008234,
+    "rel_err_vs_f64": 0.0006722752738218685,
+    "median_ms": 1.2563360333442688,
+    "min_ms": 0.940447986125946,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.006970999998884508,
+    "rel_err_vs_f64": 0.0006722752738218685,
+    "median_ms": 0.24211199581623077,
+    "min_ms": 0.19510400295257568,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 10.056485500001145,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 1672.0,
+    "median": 1822.0,
+    "max": 1972.0
+   },
+   "mem_mhz": {
+    "min": 7001.0,
+    "median": 10401.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 51.21,
+    "median": 53.235,
+    "max": 55.26
+   },
+   "util_pct": {
+    "min": 1.0,
+    "median": 25.5,
+    "max": 50.0
+   },
+   "mem_used_mib": {
+    "min": 11229.0,
+    "median": 11248.0,
+    "max": 11267.0
+   }
+  },
+  "best_eager": "eager:math"
+ },
+ {
+  "case": "decode1",
+  "prec": "bf16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0014097999992372934,
+    "rel_err_vs_f64": 0.004770998170148399,
+    "median_ms": 0.544975996017456,
+    "min_ms": 0.3246400058269501,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0014436999990721233,
+    "rel_err_vs_f64": 0.004865446843501867,
+    "median_ms": 0.7310239970684052,
+    "min_ms": 0.40092799067497253,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.0009623000005376525,
+    "rel_err_vs_f64": 0.004687892557952368,
+    "median_ms": 0.563071995973587,
+    "min_ms": 0.3792639970779419,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0009874999996100087,
+    "rel_err_vs_f64": 0.004865446843501867,
+    "median_ms": 0.7133120000362396,
+    "min_ms": 0.5219200253486633,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 4.725490799999534,
+    "rel_err_vs_f64": 0.0032473919679635566,
+    "median_ms": 0.1844160035252571,
+    "min_ms": 0.11993599683046341,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 19.47107159999723,
+    "rel_err_vs_f64": 0.00275129435315103,
+    "median_ms": 0.10580800101161003,
+    "min_ms": 0.08163200318813324,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 1.5235204999989946,
+    "rel_err_vs_f64": 0.003473797981306644,
+    "median_ms": 1.060912013053894,
+    "min_ms": 0.6556800007820129,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.006930100000317907,
+    "rel_err_vs_f64": 0.003473797981306644,
+    "median_ms": 0.18699199706315994,
+    "min_ms": 0.14822399616241455,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 29.538327800000843,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 540.0,
+    "median": 540.0,
+    "max": 2070.0
+   },
+   "mem_mhz": {
+    "min": 7001.0,
+    "median": 7001.0,
+    "max": 7001.0
+   },
+   "power_w": {
+    "min": 34.81,
+    "median": 34.81,
+    "max": 52.41
+   },
+   "util_pct": {
+    "min": 0.0,
+    "median": 0.0,
+    "max": 49.0
+   },
+   "mem_used_mib": {
+    "min": 10758.0,
+    "median": 10758.0,
+    "max": 10758.0
+   }
+  },
+  "best_eager": "eager:cudnn"
+ },
+ {
+  "case": "decode1",
+  "prec": "fp16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0013347999993129633,
+    "rel_err_vs_f64": 0.0005627828142170145,
+    "median_ms": 0.5700959861278534,
+    "min_ms": 0.4262399971485138,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0012824000004911795,
+    "rel_err_vs_f64": 0.0005737062149868281,
+    "median_ms": 0.7496320009231567,
+    "min_ms": 0.5979840159416199,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.0018603999997139908,
+    "rel_err_vs_f64": 0.0005717363691574195,
+    "median_ms": 0.6897279918193817,
+    "min_ms": 0.5718079805374146,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0010537000016483944,
+    "rel_err_vs_f64": 0.0005737062149868281,
+    "median_ms": 0.8945280015468597,
+    "min_ms": 0.6833599805831909,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 4.150079800001549,
+    "rel_err_vs_f64": 0.00041480466032730874,
+    "median_ms": 0.27164798974990845,
+    "min_ms": 0.12012799829244614,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 15.772308100000373,
+    "rel_err_vs_f64": 0.00033806908491359116,
+    "median_ms": 0.2205439954996109,
+    "min_ms": 0.07513599842786789,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 3.003925299999537,
+    "rel_err_vs_f64": 0.0004553717326027479,
+    "median_ms": 0.9712800085544586,
+    "min_ms": 0.5887359976768494,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.005871500001376262,
+    "rel_err_vs_f64": 0.0004553717326027479,
+    "median_ms": 0.2815999984741211,
+    "min_ms": 0.24271999299526215,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 26.709321099999215,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2962.0,
+    "median": 2962.0,
+    "max": 2962.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 65.81,
+    "median": 67.87,
+    "max": 67.87
+   },
+   "util_pct": {
+    "min": 15.0,
+    "median": 20.0,
+    "max": 20.0
+   },
+   "mem_used_mib": {
+    "min": 10367.0,
+    "median": 10367.0,
+    "max": 10367.0
+   }
+  },
+  "best_eager": "eager:cudnn"
+ },
+ {
+  "case": "decode8",
+  "prec": "fp32",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.0025663000014901627,
+    "rel_err_vs_f64": 1.0441034434639155e-07,
+    "median_ms": 0.8577440083026886,
+    "min_ms": 0.746720016002655,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0008992000002763234,
+    "rel_err_vs_f64": 1.0754046707500861e-07,
+    "median_ms": 0.8346399962902069,
+    "min_ms": 0.7071040272712708,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 3.9391629999990982,
+    "rel_err_vs_f64": 1.0674352305278316e-07,
+    "median_ms": 0.37649600207805634,
+    "min_ms": 0.3672640025615692,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 17.69892719999916,
+    "rel_err_vs_f64": 1.0469039337638343e-07,
+    "median_ms": 0.2253279983997345,
+    "min_ms": 0.1919039934873581,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 1.1292586000017764,
+    "rel_err_vs_f64": 2.4589170899879403e-07,
+    "median_ms": 1.4382399916648865,
+    "min_ms": 1.2576639652252197,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.006956100001843879,
+    "rel_err_vs_f64": 2.4589170899879403e-07,
+    "median_ms": 0.33931200206279755,
+    "min_ms": 0.3179199993610382,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 25.699055700002646,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2512.0,
+    "median": 2684.5,
+    "max": 2857.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 59.46,
+    "median": 67.69500000000001,
+    "max": 75.93
+   },
+   "util_pct": {
+    "min": 0.0,
+    "median": 26.0,
+    "max": 52.0
+   },
+   "mem_used_mib": {
+    "min": 11261.0,
+    "median": 11261.0,
+    "max": 11261.0
+   }
+  },
+  "best_eager": "eager:math:sliced"
+ },
+ {
+  "case": "decode8",
+  "prec": "tf32",
+  "flags": {
+   "matmul.allow_tf32": true,
+   "cudnn.allow_tf32": true,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.002680599998711841,
+    "rel_err_vs_f64": 0.0001849680218652388,
+    "median_ms": 0.7104000151157379,
+    "min_ms": 0.5583360195159912,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0009355999973195139,
+    "rel_err_vs_f64": 0.00018494798449934072,
+    "median_ms": 0.6587519943714142,
+    "min_ms": 0.4684799909591675,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.9766333999978087,
+    "rel_err_vs_f64": 0.00018493210488059795,
+    "median_ms": 0.36740799248218536,
+    "min_ms": 0.342303991317749,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 16.95414260000325,
+    "rel_err_vs_f64": 0.0008394955802341685,
+    "median_ms": 0.15716800093650818,
+    "min_ms": 0.13740800321102142,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.4820268000003125,
+    "rel_err_vs_f64": 0.000856681849232024,
+    "median_ms": 0.9072160124778748,
+    "min_ms": 0.5908160209655762,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.004528299999947194,
+    "rel_err_vs_f64": 0.000856681849232024,
+    "median_ms": 0.23846399784088135,
+    "min_ms": 0.20259200036525726,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 22.94904630000019,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2947.0,
+    "median": 2954.5,
+    "max": 2962.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 80.05,
+    "median": 91.175,
+    "max": 102.3
+   },
+   "util_pct": {
+    "min": 42.0,
+    "median": 51.0,
+    "max": 60.0
+   },
+   "mem_used_mib": {
+    "min": 11507.0,
+    "median": 11507.0,
+    "max": 11507.0
+   }
+  },
+  "best_eager": "eager:math:sliced"
+ },
+ {
+  "case": "decode8",
+  "prec": "bf16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.001063100000465056,
+    "rel_err_vs_f64": 0.004128647734504911,
+    "median_ms": 0.6812960207462311,
+    "min_ms": 0.34329599142074585,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0022398000000976026,
+    "rel_err_vs_f64": 0.004147765516976892,
+    "median_ms": 0.7635360062122345,
+    "min_ms": 0.6192640066146851,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.0006566000010934658,
+    "rel_err_vs_f64": 0.004167849873388473,
+    "median_ms": 0.5965760052204132,
+    "min_ms": 0.4030719995498657,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0007987999997567385,
+    "rel_err_vs_f64": 0.004147765516976892,
+    "median_ms": 0.7773120105266571,
+    "min_ms": 0.4750080108642578,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 0.8635448000022734,
+    "rel_err_vs_f64": 0.0031902533500583912,
+    "median_ms": 0.27481600642204285,
+    "min_ms": 0.27241599559783936,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 4.90228130000105,
+    "rel_err_vs_f64": 0.0030802273500761096,
+    "median_ms": 0.122079998254776,
+    "min_ms": 0.09334400296211243,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.47496509999837144,
+    "rel_err_vs_f64": 0.003542358681280024,
+    "median_ms": 1.0185760259628296,
+    "min_ms": 0.9467520117759705,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.005715700001019286,
+    "rel_err_vs_f64": 0.003542358681280024,
+    "median_ms": 0.20803199708461761,
+    "min_ms": 0.20041599869728088,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 9.496368599997368,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2640.0,
+    "median": 2745.0,
+    "max": 2745.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 58.94,
+    "median": 67.09,
+    "max": 67.09
+   },
+   "util_pct": {
+    "min": 1.0,
+    "median": 52.0,
+    "max": 52.0
+   },
+   "mem_used_mib": {
+    "min": 11061.0,
+    "median": 11061.0,
+    "max": 11061.0
+   }
+  },
+  "best_eager": "eager:cudnn:sliced"
+ },
+ {
+  "case": "decode8",
+  "prec": "fp16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0011311000016576145,
+    "rel_err_vs_f64": 0.0005141724808908794,
+    "median_ms": 0.6819359958171844,
+    "min_ms": 0.32576000690460205,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.00211699999999837,
+    "rel_err_vs_f64": 0.0005179514277264749,
+    "median_ms": 0.8786399960517883,
+    "min_ms": 0.5703679919242859,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.0007358999973803293,
+    "rel_err_vs_f64": 0.0005147017014845276,
+    "median_ms": 0.48206399381160736,
+    "min_ms": 0.3861440122127533,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0006916999991517514,
+    "rel_err_vs_f64": 0.0005171236900694099,
+    "median_ms": 0.7591840028762817,
+    "min_ms": 0.5043200254440308,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 4.557503399999405,
+    "rel_err_vs_f64": 0.00039706974200179513,
+    "median_ms": 0.2791679948568344,
+    "min_ms": 0.26451200246810913,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 18.683836000000156,
+    "rel_err_vs_f64": 0.00038003679858242826,
+    "median_ms": 0.1363999992609024,
+    "min_ms": 0.09455999732017517,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.4870684999987134,
+    "rel_err_vs_f64": 0.0004363556537770055,
+    "median_ms": 1.1380320191383362,
+    "min_ms": 0.657535970211029,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.004510800001298776,
+    "rel_err_vs_f64": 0.0004363556537770055,
+    "median_ms": 0.2284800037741661,
+    "min_ms": 0.17452800273895264,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 27.059813900003064,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 1440.0,
+    "median": 1800.0,
+    "max": 1800.0
+   },
+   "mem_mhz": {
+    "min": 7001.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 46.28,
+    "median": 57.97,
+    "max": 57.97
+   },
+   "util_pct": {
+    "min": 5.0,
+    "median": 66.0,
+    "max": 66.0
+   },
+   "mem_used_mib": {
+    "min": 2530.0,
+    "median": 2530.0,
+    "max": 2530.0
+   }
+  },
+  "best_eager": "eager:cudnn:sliced"
+ },
+ {
+  "case": "decode32",
+  "prec": "fp32",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.005426100000477163,
+    "rel_err_vs_f64": 1.3557860077273967e-07,
+    "median_ms": 1.6019039750099182,
+    "min_ms": 1.4448319673538208,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0011129999984405003,
+    "rel_err_vs_f64": 1.3557860077273967e-07,
+    "median_ms": 1.0293599963188171,
+    "min_ms": 0.9146559834480286,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 3.764763999999559,
+    "rel_err_vs_f64": 1.3544205755104448e-07,
+    "median_ms": 1.2608960270881653,
+    "min_ms": 1.2250239849090576,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 22.65367949999927,
+    "rel_err_vs_f64": 1.3436910797693492e-07,
+    "median_ms": 0.27905599772930145,
+    "min_ms": 0.26444798707962036,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 4.69195270000273,
+    "rel_err_vs_f64": 1.6160990801445484e-07,
+    "median_ms": 1.2330400347709656,
+    "min_ms": 0.9691839814186096,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.007409699999698205,
+    "rel_err_vs_f64": 1.6160990801445484e-07,
+    "median_ms": 0.5583039820194244,
+    "min_ms": 0.5296639800071716,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 33.66721719999987,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2587.0,
+    "median": 2587.0,
+    "max": 2587.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 52.85,
+    "median": 61.32,
+    "max": 61.32
+   },
+   "util_pct": {
+    "min": 0.0,
+    "median": 69.0,
+    "max": 69.0
+   },
+   "mem_used_mib": {
+    "min": 4360.0,
+    "median": 4360.0,
+    "max": 4603.0
+   }
+  },
+  "best_eager": "eager:math:sliced"
+ },
+ {
+  "case": "decode32",
+  "prec": "tf32",
+  "flags": {
+   "matmul.allow_tf32": true,
+   "cudnn.allow_tf32": true,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:math": {
+    "first_call_s": 0.006597199997486314,
+    "rel_err_vs_f64": 0.00018518666804864976,
+    "median_ms": 3.1308480501174927,
+    "min_ms": 1.423359990119934,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.005924999997660052,
+    "rel_err_vs_f64": 0.00018518666804864976,
+    "median_ms": 1.6751999855041504,
+    "min_ms": 0.9216319918632507,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 1.7505373999993026,
+    "rel_err_vs_f64": 0.00018501790235912852,
+    "median_ms": 1.4289920330047607,
+    "min_ms": 1.1960320472717285,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 20.28859360000206,
+    "rel_err_vs_f64": 0.0008274152955610762,
+    "median_ms": 0.23075200617313385,
+    "min_ms": 0.22323200106620789,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.8627156000002287,
+    "rel_err_vs_f64": 0.000613127853815441,
+    "median_ms": 2.1426079273223877,
+    "min_ms": 0.4203520119190216,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.012757400003465591,
+    "rel_err_vs_f64": 0.000613127853815441,
+    "median_ms": 0.4559039920568466,
+    "min_ms": 0.32182401418685913,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 26.467003400000976,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2947.0,
+    "median": 2947.0,
+    "max": 2955.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 89.91,
+    "median": 98.31,
+    "max": 105.8
+   },
+   "util_pct": {
+    "min": 92.0,
+    "median": 95.0,
+    "max": 96.0
+   },
+   "mem_used_mib": {
+    "min": 4256.0,
+    "median": 4256.0,
+    "max": 4901.0
+   }
+  },
+  "best_eager": "eager:math:sliced"
+ },
+ {
+  "case": "decode32",
+  "prec": "bf16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0017262000001210254,
+    "rel_err_vs_f64": 0.004105521865254888,
+    "median_ms": 0.6392800211906433,
+    "min_ms": 0.31376001238822937,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.0052055000014661346,
+    "rel_err_vs_f64": 0.004082282330830904,
+    "median_ms": 1.7545599937438965,
+    "min_ms": 1.6335359811782837,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.001180999999633059,
+    "rel_err_vs_f64": 0.004105521865254888,
+    "median_ms": 0.5929119884967804,
+    "min_ms": 0.44787201285362244,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0014607000011892524,
+    "rel_err_vs_f64": 0.004082282330830904,
+    "median_ms": 1.0798559784889221,
+    "min_ms": 0.974943995475769,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 0.9873593999982404,
+    "rel_err_vs_f64": 0.0032199639654873127,
+    "median_ms": 1.0895999670028687,
+    "min_ms": 1.057088017463684,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 2.513116699999955,
+    "rel_err_vs_f64": 0.0030524401434936822,
+    "median_ms": 0.1334719955921173,
+    "min_ms": 0.1292160004377365,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.746124500001315,
+    "rel_err_vs_f64": 0.003534606710969173,
+    "median_ms": 1.082480013370514,
+    "min_ms": 0.6790400147438049,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.006241299997782335,
+    "rel_err_vs_f64": 0.003534606710969173,
+    "median_ms": 0.2767999917268753,
+    "min_ms": 0.23820799589157104,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 8.115005100000417,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2640.0,
+    "median": 2733.5,
+    "max": 2827.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 58.58,
+    "median": 70.89,
+    "max": 83.2
+   },
+   "util_pct": {
+    "min": 1.0,
+    "median": 35.5,
+    "max": 70.0
+   },
+   "mem_used_mib": {
+    "min": 3394.0,
+    "median": 3396.0,
+    "max": 3396.0
+   }
+  },
+  "best_eager": "eager:cudnn:sliced"
+ },
+ {
+  "case": "decode32",
+  "prec": "fp16",
+  "flags": {
+   "matmul.allow_tf32": false,
+   "cudnn.allow_tf32": false,
+   "fp16_reduced_precision_reduction": true,
+   "bf16_reduced_precision_reduction": true
+  },
+  "torch": "2.11.0+cu128",
+  "tools": {
+   "eager:cudnn": {
+    "first_call_s": 0.0015153000022110064,
+    "rel_err_vs_f64": 0.0005173285714939132,
+    "median_ms": 0.856112003326416,
+    "min_ms": 0.3677760064601898,
+    "n": 100
+   },
+   "eager:math": {
+    "first_call_s": 0.005444700000225566,
+    "rel_err_vs_f64": 0.0005172581517243231,
+    "median_ms": 1.8563199639320374,
+    "min_ms": 1.6284480094909668,
+    "n": 100
+   },
+   "eager:cudnn:sliced": {
+    "first_call_s": 0.0008376999976462685,
+    "rel_err_vs_f64": 0.0005176760776576572,
+    "median_ms": 0.813071995973587,
+    "min_ms": 0.46720001101493835,
+    "n": 100
+   },
+   "eager:math:sliced": {
+    "first_call_s": 0.0012014999992970843,
+    "rel_err_vs_f64": 0.0005172581517243231,
+    "median_ms": 1.1907840371131897,
+    "min_ms": 1.0089600086212158,
+    "n": 100
+   },
+   "compile:default": {
+    "first_call_s": 4.232155599998805,
+    "rel_err_vs_f64": 0.0004063618084192448,
+    "median_ms": 1.1454559564590454,
+    "min_ms": 1.044800043106079,
+    "n": 100
+   },
+   "compile:max-autotune": {
+    "first_call_s": 28.3821663000017,
+    "rel_err_vs_f64": 0.0003866640198855465,
+    "median_ms": 0.1432960033416748,
+    "min_ms": 0.13148799538612366,
+    "n": 100
+   },
+   "truestar": {
+    "first_call_s": 0.7164257999975234,
+    "rel_err_vs_f64": 0.0004420388879462205,
+    "median_ms": 1.3789439797401428,
+    "min_ms": 0.7700799703598022,
+    "n": 100
+   },
+   "truestar:graphs": {
+    "first_call_s": 0.008043299996643327,
+    "rel_err_vs_f64": 0.0004420388879462205,
+    "median_ms": 0.28351999819278717,
+    "min_ms": 0.249439999461174,
+    "n": 100
+   }
+  },
+  "triton": "3.7.1",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "build_s": 36.73658230000001,
+  "truestar_report": {
+   "kernel": 16,
+   "library": 2,
+   "fallback": 0,
+   "layout": 19
+  },
+  "truestar_steps": [
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction",
+   "tile",
+   "tile",
+   "tile",
+   "tile",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "tile",
+   "contraction",
+   "contraction",
+   "contraction"
+  ],
+  "clocks": {
+   "sm_mhz": {
+    "min": 2587.0,
+    "median": 2647.0,
+    "max": 2947.0
+   },
+   "mem_mhz": {
+    "min": 13801.0,
+    "median": 13801.0,
+    "max": 13801.0
+   },
+   "power_w": {
+    "min": 57.31,
+    "median": 61.68,
+    "max": 95.71
+   },
+   "util_pct": {
+    "min": 1.0,
+    "median": 49.0,
+    "max": 54.0
+   },
+   "mem_used_mib": {
+    "min": 3566.0,
+    "median": 3568.0,
+    "max": 3568.0
+   }
+  },
+  "best_eager": "eager:cudnn:sliced"
+ }
+]

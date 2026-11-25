@@ -1,0 +1,294 @@
+[modal_multigpu] starting app
+✓ Initialized. View run at 
+https://modal.com/apps/sharvenrane/main/ap-AU1IyO45XPJgtMRweXT7A5
+✓ Created objects.
+├── ✓ Uploaded <repo>\pyproject.toml
+├── ✓ Uploaded <repo>\examples
+├── ✓ Uploaded <repo>\scripts
+├── ✓ Uploaded <repo>\tests
+├── ✓ Uploaded <repo>\src
+└── ✓ Created Function main.<locals>.run.
+[modal_multigpu] app running, calling the function
+Stopping app - local entrypoint completed.
+[modal-client] 2026-11-25T00:01:16-0600 Timed out waiting for final app logs.
+✓ App completed. View run at 
+https://modal.com/apps/sharvenrane/main/ap-AU1IyO45XPJgtMRweXT7A5
+[dp_scaling] world 1 done in 7s exit [0]
+[dp_scaling] world 2 done in 10s exit [0, 0]
+[dp_scaling] world 4 done in 12s exit [0, 0, 0, 0]
+{
+ "bucket_mb": 25,
+ "warm": 1,
+ "timed": 2,
+ "world1": {
+  "world": 1,
+  "gpu": "NVIDIA A10G",
+  "torch": "2.11.0+cu130",
+  "small": {
+   "params": 13122816,
+   "global_tokens": 4096,
+   "arms": {
+    "single": {
+     "ms": 37.727252999999905,
+     "host_ms": 22.96056249999978,
+     "buckets": null
+    }
+   }
+  },
+  "tp_small": {
+   "ts_native": 39.476063500000436,
+   "ts_fixed": null,
+   "ts_fixed_gather": null,
+   "shape": {
+    "tokens": 4096,
+    "d": 2048,
+    "ff": 8192
+   }
+  },
+  "errors": {},
+  "seconds": 6.749259431999999
+ },
+ "world2": {
+  "world": 2,
+  "gpu": "NVIDIA A10G",
+  "torch": "2.11.0+cu130",
+  "small": {
+   "params": 13122816,
+   "global_tokens": 4096,
+   "arms": {
+    "ts_native": {
+     "ms": 37.421217000002116,
+     "host_ms": 24.097940999999068,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ts_fixed": {
+     "ms": 40.25114450000089,
+     "host_ms": 23.849990499998697,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ts_fixed_gather": {
+     "ms": 40.670228499999794,
+     "host_ms": 22.537403999997707,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ddp": {
+     "ms": 35.65196600000142,
+     "host_ms": 23.01621350000005,
+     "buckets": null,
+     "replicas_bitwise": true
+    },
+    "fsdp": {
+     "ms": 45.098583499999734,
+     "host_ms": 36.90402650000024,
+     "buckets": null
+    }
+   },
+   "ts_fixed_run_to_run_bitwise": true,
+   "breakdown": {
+    "compute_ms": 23.177432000000664,
+    "compute_host_ms": 20.664581000000126,
+    "comm_native_scatter_ms": 14.12290700000085,
+    "comm_fixed_scatter_ms": 18.007971999999484,
+    "comm_fixed_gather_ms": 18.793772999998737,
+    "grad_mb": 50.0595703125,
+    "ring_bus_gb_s_native": 3.716746417716752,
+    "ts_native_overlap": -0.008559002760592722,
+    "ts_fixed_overlap": 0.05188032833454449,
+    "ts_fixed_gather_overlap": 0.06922380620430468
+   }
+  },
+  "tp_small": {
+   "ts_native": 37.23287800000108,
+   "ts_fixed": 41.108407499999444,
+   "ts_fixed_gather": 43.230270499998724,
+   "torch_tp": 37.737283500000274,
+   "shape": {
+    "tokens": 4096,
+    "d": 2048,
+    "ff": 8192
+   }
+  },
+  "errors": {},
+  "seconds": 10.432822700000001
+ },
+ "world4": {
+  "world": 4,
+  "gpu": "NVIDIA A10G",
+  "torch": "2.11.0+cu130",
+  "small": {
+   "params": 13122816,
+   "global_tokens": 4096,
+   "arms": {
+    "ts_native": {
+     "ms": 40.95380449999908,
+     "host_ms": 25.57016049999916,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ts_fixed": {
+     "ms": 41.804506500000116,
+     "host_ms": 24.364680999999777,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ts_fixed_gather": {
+     "ms": 58.07918699999881,
+     "host_ms": 24.055999499998038,
+     "buckets": 2,
+     "replicas_bitwise": true
+    },
+    "ddp": {
+     "ms": 35.48122250000141,
+     "host_ms": 24.358060499999112,
+     "buckets": null,
+     "replicas_bitwise": true
+    },
+    "fsdp": {
+     "ms": 39.339197000000325,
+     "host_ms": 36.80617550000065,
+     "buckets": null
+    }
+   },
+   "ts_fixed_run_to_run_bitwise": true,
+   "breakdown": {
+    "compute_ms": 23.445643000002292,
+    "compute_host_ms": 21.865700499999363,
+    "comm_native_scatter_ms": 15.684729500000216,
+    "comm_fixed_scatter_ms": 22.515623000000318,
+    "comm_fixed_gather_ms": 40.745384999999246,
+    "grad_mb": 50.0595703125,
+    "ring_bus_gb_s_native": 5.019971558961148,
+    "ts_native_overlap": -0.1162552404870321,
+    "ts_fixed_overlap": 0.18461667705141604,
+    "ts_fixed_gather_overlap": 0.1500008160434081
+   }
+  },
+  "tp_small": {
+   "ts_native": 30.552321999998355,
+   "ts_fixed": 39.01795950000064,
+   "ts_fixed_gather": 64.0944849999947,
+   "torch_tp": 31.101468000002797,
+   "shape": {
+    "tokens": 4096,
+    "d": 2048,
+    "ff": 8192
+   }
+  },
+  "errors": {},
+  "seconds": 12.009678150000003
+ },
+ "verify": {
+  "ranks": [
+   "rank 0 on modal cuda:0 (NVIDIA A10G, nccl)",
+   "rank 1 on modal cuda:1 (NVIDIA A10G, nccl)",
+   "rank 2 on modal cuda:2 (NVIDIA A10G, nccl)",
+   "rank 3 on modal cuda:3 (NVIDIA A10G, nccl)"
+  ],
+  "size": "l4",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "nccl": "(2, 28, 9)",
+  "dp": [
+   {
+    "ga": 1,
+    "order": "fixed",
+    "overlap": true,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": true,
+    "worst_param_rel_vs_same_tree": 0.0,
+    "worst_param_rel_vs_whole_batch_single_gpu": 4.436628387338715e-06,
+    "step1_grad_rel_vs_whole_batch": 2.1697091767691745e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 1,
+    "order": "fixed",
+    "overlap": false,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": true,
+    "worst_param_rel_vs_same_tree": 0.0,
+    "worst_param_rel_vs_whole_batch_single_gpu": 4.436628387338715e-06,
+    "step1_grad_rel_vs_whole_batch": 2.1697091767691745e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 1,
+    "order": "native",
+    "overlap": true,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": false,
+    "worst_param_rel_vs_same_tree": 2.5843104367595515e-07,
+    "worst_param_rel_vs_whole_batch_single_gpu": 4.49711251349072e-06,
+    "step1_grad_rel_vs_whole_batch": 2.1697091767691745e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 1,
+    "order": "native",
+    "overlap": false,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": false,
+    "worst_param_rel_vs_same_tree": 2.5843104367595515e-07,
+    "worst_param_rel_vs_whole_batch_single_gpu": 4.49711251349072e-06,
+    "step1_grad_rel_vs_whole_batch": 2.1697091767691745e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 2,
+    "order": "fixed",
+    "overlap": true,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": true,
+    "worst_param_rel_vs_same_tree": 0.0,
+    "worst_param_rel_vs_whole_batch_single_gpu": 7.3941519076470286e-06,
+    "step1_grad_rel_vs_whole_batch": 2.531327254473581e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 2,
+    "order": "fixed",
+    "overlap": false,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": true,
+    "worst_param_rel_vs_same_tree": 0.0,
+    "worst_param_rel_vs_whole_batch_single_gpu": 7.3941519076470286e-06,
+    "step1_grad_rel_vs_whole_batch": 2.531327254473581e-07,
+    "loss_rel_vs_whole": 9.66424574089442e-08
+   },
+   {
+    "ga": 2,
+    "order": "native",
+    "overlap": true,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": false,
+    "worst_param_rel_vs_same_tree": 2.3093836887255748e-07,
+    "worst_param_rel_vs_whole_batch_single_gpu": 7.352912689384539e-06,
+    "step1_grad_rel_vs_whole_batch": 2.531327254473581e-07,
+    "loss_rel_vs_whole": 0.0
+   },
+   {
+    "ga": 2,
+    "order": "native",
+    "overlap": false,
+    "buckets": 31,
+    "bitwise_vs_same_tree_single_gpu": false,
+    "worst_param_rel_vs_same_tree": 2.3093836887255748e-07,
+    "worst_param_rel_vs_whole_batch_single_gpu": 7.352912689384539e-06,
+    "step1_grad_rel_vs_whole_batch": 2.531327254473581e-07,
+    "loss_rel_vs_whole": 0.0
+   }
+  ],
+  "dp_run_to_run_bitwise": true,
+  "dp_replicas_bitwise": true,
+  "seconds": {
+   "dp": 7.883575029999996
+  },
+  "errors": {}
+ },
+ "verify_seconds": 18.236230535999994
+}
+
+[modal_multigpu] gpu=A10G:4 exit=0

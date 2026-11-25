@@ -1,0 +1,55 @@
+[idle gate] GPU busy (foreign=[(30264, 'n-3.10.20-windows-x86_64-none\\python.exe'), (40924, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[98.0]); waiting
+[idle gate] GPU busy (foreign=[(30264, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[99.0]); waiting
+[idle gate] GPU busy (foreign=[(30264, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[100.0]); waiting
+[idle gate] GPU busy (foreign=[(30264, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[98.0]); waiting
+[idle gate] GPU busy (foreign=[(30264, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[100.0]); waiting
+idle gate: waited 343.8 s, util [0.0, 0.0, 0.0]
+gpu NVIDIA GeForce RTX 5070 Ti, SMs 70
+1x4096x4096 F.linear 82.2  det_nk 112.1 (0.73x)  det_kn 82.8 (0.99x)  lin_det 108.5 (0.76x)  def_nk 112.1 (0.73x)  lin_def 108.7 (0.76x) | err F.linear 1.7e-07 det_nk 1.3e-06 det_kn 1.3e-06 lin_det 1.3e-06 def_nk 1.3e-06 lin_def 1.3e-06 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[], util=[12.0]); waiting
+idle gate: waited 8.3 s, util [0.0, 0.0, 0.0]
+16x4096x1024 F.linear 38.9  det_nk 29.2 (1.33x)  det_kn 14.5 (2.68x)  lin_det 29.2 (1.33x)  def_nk 29.1 (1.34x)  lin_def 29.2 (1.33x) | err F.linear 1.3e-07 det_nk 7.9e-07 det_kn 7.9e-07 lin_det 7.9e-07 def_nk 7.9e-07 lin_def 7.9e-07 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[], util=[0.0, 0.0, 0.0]); waiting
+idle gate: waited 18.8 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[idle gate] GPU busy (foreign=[(40560, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 21.0]); waiting
+idle gate: waited 14.6 s, util [0.0, 0.0, 0.0]
+64x2048x1024 F.linear 39.3  det_nk 38.1 (1.03x)  det_kn 26.5 (1.48x)  lin_det 38.4 (1.02x)  def_nk 26.8 (1.47x)  lin_def 26.6 (1.48x) | err F.linear 6.8e-07 det_nk 9.6e-07 det_kn 9.6e-07 lin_det 9.6e-07 def_nk 3.5e-07 lin_def 3.5e-07 | layout bits same | cfg {'True': {'BM': 32, 'BN': 64, 'BK': 32, 'GROUP': 8, 'num_warps': 2, 'num_stages': 4, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 4}}
+64x2048x2048 F.linear 68.6  det_nk 74.6 (0.92x)  det_kn 51.5 (1.33x)  lin_det 75.2 (0.91x)  def_nk 45.6 (1.50x)  lin_def 45.6 (1.51x) | err F.linear 7.0e-07 det_nk 1.7e-06 det_kn 1.7e-06 lin_det 1.7e-06 def_nk 2.8e-07 lin_def 2.8e-07 | layout bits same | cfg {'True': {'BM': 32, 'BN': 64, 'BK': 32, 'GROUP': 8, 'num_warps': 2, 'num_stages': 4, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 8}}
+64x1000x2048 F.linear 39.9  det_nk 56.3 (0.71x)  det_kn 34.2 (1.17x)  lin_det 56.9 (0.70x)  def_nk 28.9 (1.38x)  lin_def 28.2 (1.42x) | err F.linear 5.9e-07 det_nk 1.1e-06 det_kn 1.1e-06 lin_det 1.1e-06 def_nk 2.4e-07 lin_def 2.4e-07 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 8}}
+512x1024x256 F.linear 18.4  det_nk 22.6 (0.82x)  det_kn 13.6 (1.35x)  lin_det 22.4 (0.82x)  def_nk 22.6 (0.82x)  lin_def 22.4 (0.82x) | err F.linear 4.2e-07 det_nk 4.2e-07 det_kn 4.2e-07 lin_det 4.2e-07 def_nk 4.2e-07 lin_def 4.2e-07 | layout bits same | cfg {'True': {'BM': 128, 'BN': 64, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 64, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[], util=[0.0, 3.0, 1.0]); waiting
+idle gate: waited 11.4 s, util [0.0, 0.0, 0.0]
+512x256x1024 F.linear 26.7  det_nk 38.2 (0.70x)  det_kn 26.8 (1.00x)  lin_det 38.5 (0.69x)  def_nk 26.9 (0.99x)  lin_def 26.7 (1.00x) | err F.linear 5.9e-07 det_nk 8.5e-07 det_kn 8.5e-07 lin_det 8.5e-07 def_nk 3.2e-07 lin_def 3.2e-07 | layout bits same | cfg {'True': {'BM': 32, 'BN': 64, 'BK': 32, 'GROUP': 8, 'num_warps': 2, 'num_stages': 4, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 4}}
+1024x1024x1024 F.linear 92.4  det_nk 131.4 (0.70x)  det_kn 91.4 (1.01x)  lin_det 128.4 (0.72x)  def_nk 126.9 (0.73x)  lin_def 127.8 (0.72x) | err F.linear 5.3e-07 det_nk 8.8e-07 det_kn 8.8e-07 lin_det 8.8e-07 def_nk 5.3e-07 lin_def 5.3e-07 | layout bits same | cfg {'True': {'BM': 128, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 2}}
+[idle gate] GPU busy (foreign=[], util=[97.0]); waiting
+idle gate: waited 8.3 s, util [1.0, 0.0, 0.0]
+2048x4096x1024 F.linear 837.2  det_nk 865.5 (0.97x)  det_kn 628.2 (1.33x)  lin_det 866.8 (0.97x)  def_nk 865.3 (0.97x)  lin_def 866.6 (0.97x) | err F.linear 1.2e-06 det_nk 1.2e-06 det_kn 1.2e-06 lin_det 1.2e-06 def_nk 1.2e-06 lin_def 1.2e-06 | layout bits same | cfg {'True': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[91.0]); waiting
+idle gate: waited 15.6 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+idle gate: waited 10.5 s, util [0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+idle gate: waited 10.5 s, util [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0]
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[0.0, 6.0]); waiting
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[100.0]); waiting
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[98.0]); waiting
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[99.0]); waiting
+[idle gate] GPU busy (foreign=[(15056, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[98.0]); waiting
+idle gate: waited 369.3 s, util [0.0, 0.0, 0.0]
+[idle gate] GPU busy (foreign=[], util=[0.0, 0.0, 0.0]); waiting
+idle gate: waited 22.6 s, util [0.0, 0.0, 0.0]
+4096x4096x4096 F.linear 5367.4  det_nk 6786.6 (0.79x)  det_kn 5128.0 (1.05x)  lin_det 6619.5 (0.81x)  def_nk 6820.9 (0.79x)  lin_def 6630.2 (0.81x) | err F.linear 2.2e-06 det_nk 2.2e-06 det_kn 2.2e-06 lin_det 2.2e-06 def_nk 2.2e-06 lin_def 2.2e-06 | layout bits same | cfg {'True': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[], util=[7.0, 0.0, 100.0]); waiting
+idle gate: waited 23.9 s, util [0.0, 0.0, 0.0]
+[idle gate] GPU busy (foreign=[(15960, 'n-3.10.20-windows-x86_64-none\\python.exe')], util=[0.0, 0.0, 0.0, 0.0, 0.0, 97.0]); waiting
+idle gate: waited 13.5 s, util [0.0, 0.0, 0.0]
+64x512x8192 F.linear 66.4  det_nk 218.8 (0.30x)  det_kn 99.2 (0.67x)  lin_det 213.3 (0.31x)  def_nk 53.1 (1.25x)  lin_def 53.2 (1.25x) | err F.linear 4.4e-07 det_nk 2.9e-06 det_kn 2.9e-06 lin_det 2.9e-06 def_nk 3.1e-07 lin_def 3.1e-07 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 16}}
+[idle gate] GPU busy (foreign=[], util=[36.0]); waiting
+idle gate: waited 18.5 s, util [0.0, 0.0, 0.0]
+16x1024x16384 F.linear 160.3  det_nk 436.1 (0.37x)  det_kn 197.0 (0.81x)  lin_det 425.4 (0.38x)  def_nk 111.6 (1.44x)  lin_def 110.3 (1.45x) | err F.linear 1.6e-07 det_nk 3.6e-06 det_kn 3.6e-06 lin_det 3.6e-06 def_nk 1.1e-06 lin_def 1.1e-06 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 4}}
+[idle gate] GPU busy (foreign=[], util=[0.0, 0.0, 0.0]); waiting
+idle gate: waited 31.9 s, util [0.0, 0.0, 0.0]
+128x256x8192 F.linear 91.8  det_nk 218.8 (0.42x)  det_kn 99.1 (0.93x)  lin_det 213.4 (0.43x)  def_nk 53.5 (1.72x)  lin_def 53.1 (1.73x) | err F.linear 8.6e-07 det_nk 1.8e-06 det_kn 1.8e-06 lin_det 1.8e-06 def_nk 3.0e-07 lin_def 3.0e-07 | layout bits same | cfg {'True': {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 16}}
+8192x768x256 F.linear 156.3  det_nk 174.7 (0.89x)  det_kn 131.1 (1.19x)  lin_det 175.3 (0.89x)  def_nk 174.8 (0.89x)  lin_def 175.0 (0.89x) | err F.linear 5.5e-07 det_nk 5.5e-07 det_kn 5.5e-07 lin_det 5.5e-07 def_nk 5.5e-07 lin_def 5.5e-07 | layout bits same | cfg {'True': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+[idle gate] GPU busy (foreign=[], util=[18.0]); waiting
+idle gate: waited 8.3 s, util [0.0, 0.0, 0.0]
+8192x1024x256 F.linear 219.1  det_nk 228.5 (0.96x)  det_kn 172.7 (1.27x)  lin_det 231.6 (0.95x)  def_nk 230.8 (0.95x)  lin_def 231.5 (0.95x) | err F.linear 5.5e-07 det_nk 5.5e-07 det_kn 5.5e-07 lin_det 5.5e-07 def_nk 5.5e-07 lin_def 5.5e-07 | layout bits same | cfg {'True': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}
+8192x256x1024 F.linear 174.0  det_nk 218.2 (0.80x)  det_kn 157.0 (1.11x)  lin_det 217.1 (0.80x)  def_nk 218.0 (0.80x)  lin_def 217.0 (0.80x) | err F.linear 1.1e-06 det_nk 1.1e-06 det_kn 1.1e-06 lin_det 1.1e-06 def_nk 1.1e-06 lin_def 1.1e-06 | layout bits same | cfg {'True': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}, 'False': {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_warps': 8, 'num_stages': 3, 'KTAIL': True, 'SPLIT_K': 1}}

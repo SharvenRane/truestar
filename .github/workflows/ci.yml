@@ -1,0 +1,181 @@
+name: ci
+
+# Proves pain P11 (docs/QUALITY_BAR.md): a fresh venv with only CPU torch, then the built wheel,
+# then `truestar check` works. macOS runs only on manual dispatch with the input below, because
+# macOS minutes are limited on the free plan.
+# Nightly plus manual, not on every push: the free plan has limited Actions minutes and main is
+# merged into many times a day.
+on:
+  schedule:
+    - cron: "17 8 * * *"
+  workflow_dispatch:
+    inputs:
+      macos:
+        description: "Also run on macos-15 (uses limited macOS minutes)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Both exist on the CPU index for cp310 and cp312 on Linux x86_64, Windows and macOS arm64.
+  TORCH_VERSION: "2.14.1"
+  TORCHVISION_VERSION: "0.29.1"
+  TORCH_INDEX: https://download.pytorch.org/whl/cpu
+  PIP_DISABLE_PIP_VERSION_CHECK: "1"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build sdist and wheel
+        run: |
+          python -m pip install build
+          python -m build
+          ls -l dist
+      - name: Inspect the wheel
+        run: |
+          python - <<'PY'
+          import glob, os, sys, zipfile
+          whl = glob.glob("dist/*.whl")[0]
+          names = zipfile.ZipFile(whl).namelist()
+          want = sorted(os.path.relpath(d, "src").replace(os.sep, "/")
+                        for d, _, files in os.walk("src/truestar") if "__init__.py" in files
+                        and "__pycache__" not in d)
+          have = sorted({n.rsplit("/", 1)[0] for n in names if n.endswith("/__init__.py")})
+          print("packages:", have)
+          bad = [n for n in names if n.startswith(("tests/", "examples/", "scripts/", "docs/"))
+                 or n.endswith((".pyc", ".json", ".pt", ".log")) or "truestar_repro" in n]
+          meta = zipfile.ZipFile(whl).read(next(n for n in names if n.endswith("METADATA"))).decode()
+          eps = zipfile.ZipFile(whl).read(next(n for n in names if n.endswith("entry_points.txt"))).decode()
+          size = os.path.getsize(whl)
+          sdist = glob.glob("dist/*.tar.gz")[0]
+          print(f"wheel {whl} {size} bytes, {len(names)} files; sdist {os.path.getsize(sdist)} bytes")
+          errors = []
+          if want != have: errors.append(f"packages missing from wheel: {sorted(set(want) - set(have))}")
+          if bad: errors.append(f"unexpected files in wheel: {bad}")
+          if "Description-Content-Type: text/markdown" not in meta: errors.append("readme not in metadata")
+          if "truestar = truestar.cli:main" not in eps: errors.append("console script missing")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(f"wheel: {os.path.basename(whl)} {size} bytes, {len(names)} files\n\n"
+                      f"sdist: {os.path.basename(sdist)} {os.path.getsize(sdist)} bytes\n\n")
+          if errors:
+              sys.exit("\n".join(errors))
+          PY
+      - name: Wheel built from the sdist has the same files
+        run: |
+          python -m pip wheel --no-deps -w from-sdist dist/*.tar.gz
+          python - <<'PY'
+          import glob, zipfile
+          a = sorted(n for n in zipfile.ZipFile(glob.glob("dist/*.whl")[0]).namelist() if not n.endswith("RECORD"))
+          b = sorted(n for n in zipfile.ZipFile(glob.glob("from-sdist/*.whl")[0]).namelist() if not n.endswith("RECORD"))
+          assert a == b, set(a) ^ set(b)
+          print("sdist and wheel agree:", len(a), "files")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  install:
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        os: ${{ fromJSON(inputs.macos && '["ubuntu-latest","windows-latest","macos-15"]' || '["ubuntu-latest","windows-latest"]') }}
+        python: ["3.10", "3.12"]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: |
+            pyproject.toml
+            .github/workflows/ci.yml
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Fresh venv
+        run: |
+          V="$RUNNER_TEMP/fresh"
+          python -m venv "$V"
+          if [ -x "$V/Scripts/python.exe" ]; then BIN="$V/Scripts"; else BIN="$V/bin"; fi
+          echo "$BIN" >> "$GITHUB_PATH"
+          echo "VPY=$BIN/python" >> "$GITHUB_ENV"
+          "$BIN/python" -m pip install --upgrade pip
+          "$BIN/python" -m pip list
+      - name: Install CPU torch
+        run: |
+          t0=$(python -c "import time; print(time.time())")
+          "$VPY" -m pip install --index-url "$TORCH_INDEX" "torch==$TORCH_VERSION"
+          python -c "import time; print(f'TORCH_INSTALL_S={time.time() - $t0:.1f}')" | tee -a "$GITHUB_ENV"
+      - name: Install the truestar wheel
+        run: |
+          t0=$(python -c "import time; print(time.time())")
+          "$VPY" -m pip install dist/*.whl
+          python -c "import time; print(f'TRUESTAR_INSTALL_S={time.time() - $t0:.1f}')" | tee -a "$GITHUB_ENV"
+          "$VPY" -m pip list
+      - name: CLI from the installed wheel
+        working-directory: ${{ runner.temp }}
+        run: |
+          set -o pipefail
+          "$VPY" -c "import truestar, torch; print(truestar.__file__, torch.__version__)"
+          "$VPY" -c "import truestar, sys; sys.exit(0 if 'site-packages' in truestar.__file__ else 'not the installed wheel')"
+          truestar --help
+          truestar backends | tee backends.json
+          "$VPY" -c "import json; b = json.load(open('backends.json')); print('backends ok:', b)"
+          truestar codes > codes.json
+          "$VPY" -c "import json; c = json.load(open('codes.json')); print('codes ok, bytes:', len(json.dumps(c)))"
+          t0=$(python -c "import time; print(time.time())")
+          rc=0
+          truestar check "$GITHUB_WORKSPACE/examples/cpu_check.py" --format agent > check.json || rc=$?
+          python -c "import time; print(f'CHECK_S={time.time() - $t0:.1f}')" | tee -a "$GITHUB_ENV"
+          cat check.json
+          echo "exit code: $rc"
+          test "$rc" -eq 0
+          "$VPY" - <<'PY'
+          import json
+          d = json.load(open("check.json"))
+          assert d["schema_version"] == 1, d.get("schema_version")
+          assert d["status"] == "ok" and d["exit_code"] == 0, (d["status"], d["exit_code"])
+          print("agent JSON ok:", d["status"], [b["name"] for b in d["backends"]])
+          PY
+      - name: Test dependencies
+        run: |
+          "$VPY" -m pip install --index-url "$TORCH_INDEX" "torch==$TORCH_VERSION" "torchvision==$TORCHVISION_VERSION"
+          "$VPY" -m pip install pytest "numba>=0.60"
+      - name: CPU test suite against the installed wheel
+        run: |
+          "$VPY" -m pytest -q -p no:cacheprovider -rs --junitxml="$RUNNER_TEMP/junit.xml" tests
+      - name: Record numbers
+        if: always()
+        run: |
+          python - <<'PY'
+          import os, xml.etree.ElementTree as ET
+          p = os.path.join(os.environ["RUNNER_TEMP"], "junit.xml")
+          counts = "no junit file"
+          if os.path.exists(p):
+              r = ET.parse(p).getroot()
+              s = r if r.tag == "testsuite" else r.find("testsuite")
+              t, f, e, k = (int(s.get(x, 0)) for x in ("tests", "failures", "errors", "skipped"))
+              counts = f"{t - f - e - k} passed, {f} failed, {e} errors, {k} skipped"
+          line = (f"| ${{ matrix.os }} | ${{ matrix.python }} | torch {os.environ.get('TORCH_INSTALL_S', '?')} s "
+                  f"| truestar {os.environ.get('TRUESTAR_INSTALL_S', '?')} s | check {os.environ.get('CHECK_S', '?')} s | {counts} |")
+          print(line)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write("| os | python | torch install | wheel install | check | tests |\n|---|---|---|---|---|---|\n" + line + "\n")
+          PY

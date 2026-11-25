@@ -1,0 +1,241 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5070 Ti",
+ "torch": "2.11.0+cu128",
+ "kernels": [
+  {
+   "kernel": "rowsum",
+   "shape": [
+    4096,
+    1024
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 44.51,
+    "us_tuned_deterministic": 41.42,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 60.02,
+    "us_tuned_deterministic": 60.51,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.348,
+   "slowdown_tuned_deterministic": 1.461
+  },
+  {
+   "kernel": "rowsum",
+   "shape": [
+    1024,
+    4096
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 37.73,
+    "us_tuned_deterministic": 39.76,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 61.23,
+    "us_tuned_deterministic": 61.81,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.623,
+   "slowdown_tuned_deterministic": 1.555
+  },
+  {
+   "kernel": "rowsum",
+   "shape": [
+    64,
+    65536
+   ],
+   "loop_shape": "tile_looped",
+   "plain": {
+    "us_default_config": 58.64,
+    "us_tuned_deterministic": 59.23,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 116.56,
+    "us_tuned_deterministic": 75.31,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.988,
+   "slowdown_tuned_deterministic": 1.271
+  },
+  {
+   "kernel": "softmax",
+   "shape": [
+    4096,
+    1024
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 46.9,
+    "us_tuned_deterministic": 49.22,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 81.18,
+    "us_tuned_deterministic": 69.73,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.731,
+   "slowdown_tuned_deterministic": 1.417
+  },
+  {
+   "kernel": "softmax",
+   "shape": [
+    1024,
+    4096
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 65.89,
+    "us_tuned_deterministic": 51.14,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 78.45,
+    "us_tuned_deterministic": 78.38,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.191,
+   "slowdown_tuned_deterministic": 1.533
+  },
+  {
+   "kernel": "softmax",
+   "shape": [
+    64,
+    65536
+   ],
+   "loop_shape": "tile_looped",
+   "plain": {
+    "us_default_config": 108.8,
+    "us_tuned_deterministic": 119.3,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 188.43,
+    "us_tuned_deterministic": 96.45,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 1.732,
+   "slowdown_tuned_deterministic": 0.808
+  },
+  {
+   "kernel": "layernorm",
+   "shape": [
+    4096,
+    1024
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 59.12,
+    "us_tuned_deterministic": 70.26,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 118.27,
+    "us_tuned_deterministic": 63.06,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 2.001,
+   "slowdown_tuned_deterministic": 0.898
+  },
+  {
+   "kernel": "layernorm",
+   "shape": [
+    1024,
+    4096
+   ],
+   "loop_shape": "tile_single",
+   "plain": {
+    "us_default_config": 54.0,
+    "us_tuned_deterministic": 42.13,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 116.46,
+    "us_tuned_deterministic": 120.99,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 2.157,
+   "slowdown_tuned_deterministic": 2.872
+  },
+  {
+   "kernel": "layernorm",
+   "shape": [
+    64,
+    65536
+   ],
+   "loop_shape": "tile_looped",
+   "plain": {
+    "us_default_config": 96.06,
+    "us_tuned_deterministic": 87.18,
+    "bits_equal_over_configs": false,
+    "configs": 3
+   },
+   "order_free": {
+    "us_default_config": 242.45,
+    "us_tuned_deterministic": 137.22,
+    "bits_equal_over_configs": true,
+    "configs": 3
+   },
+   "slowdown_default": 2.524,
+   "slowdown_tuned_deterministic": 1.574
+  }
+ ],
+ "whole_sum": [
+  {
+   "n": 1048576,
+   "us_torch_sum": 33.63,
+   "us_order_free_sum_cuda": 72.82,
+   "us_order_free_sum_torch_ops": 1345.1,
+   "bits_equal_over_5_block_and_program_counts": true,
+   "bits_equal_after_permutation": true,
+   "torch_sum_bits_equal_after_permutation": true
+  },
+  {
+   "n": 16777215,
+   "us_torch_sum": 89.15,
+   "us_order_free_sum_cuda": 190.29,
+   "us_order_free_sum_torch_ops": 28942.45,
+   "bits_equal_over_5_block_and_program_counts": true,
+   "bits_equal_after_permutation": true,
+   "torch_sum_bits_equal_after_permutation": false
+  }
+ ],
+ "accuracy": {
+  "gaussian": {
+   "plain_cuda_sum_err_over_sum_abs": 8.094384100401387e-09,
+   "osum_err_over_sum_abs": 2.2058495202386728e-09,
+   "osum_within_proven_bound": true
+  },
+  "wide_exponents": {
+   "plain_cuda_sum_err_over_sum_abs": 2.5210836413985166e-08,
+   "osum_err_over_sum_abs": 8.09763137504808e-09,
+   "osum_within_proven_bound": true
+  },
+  "cancelling": {
+   "plain_cuda_sum_err_over_sum_abs": 4.263427626869699e-09,
+   "osum_err_over_sum_abs": 5.0458679090559864e-15,
+   "osum_within_proven_bound": true
+  }
+ }
+}

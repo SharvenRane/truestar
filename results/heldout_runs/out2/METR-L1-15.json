@@ -1,0 +1,187 @@
+{
+ "id": "METR-L1-15",
+ "set": "METR",
+ "level": 1,
+ "problem": "15_Matmul_for_lower_triangular_matrices.py",
+ "ref": "results/heldout_metr/tasks/level_1/15_Matmul_for_lower_triangular_matrices.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_15.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5024296532693577,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=4097 (was 4096)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8390656 of 16785409 elements beyond the derived bound; worst at [1898, 2816]: -177.421 vs float64 0 (error 177, 2910689581.0x its bound, 2976625152 ulp of float32); output: overall error is 260975.5x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of ",
+   "ratio": 2910689580.978656,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "d0=4095 (was 4096)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8382465 of 16769025 elements beyond the derived bound; worst at [916, 2784]: -168.47 vs float64 0 (error 168, 2763903538.1x its bound, 2826462976 ulp of float32); output: overall error is 261146.5x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of di",
+   "ratio": 2763903538.144662,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes odd d0=4097",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8390656 of 16785409 elements beyond the derived bound; worst at [12, 1312]: -172.725 vs float64 0 (error 173, 2833717681.1x its bound, 2897843456 ulp of float32); output: overall error is 260887.6x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of di",
+   "ratio": 2833717681.145282,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "all sizes small d0=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 21 of 49 elements beyond the derived bound; worst at [2, 5]: 2.68245 vs float64 0 (error 2.68, 44957552.1x its bound, 45004048 ulp of float32); output: overall error is 1403567.7x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of dim 0 (indices 0 to ",
+   "ratio": 44957552.14404388,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.4745986120465831,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8386560 of 16777216 elements beyond the derived bound; worst at [0, 363]: 9864.45 vs float64 0 (error 9.86e+03, 61727536500.4x its bound, 165497962496 ulp of float32); output: overall error is 190958.2x what a correct float32 implementation shows (limit 2x); output: bad elements in the head ",
+   "ratio": 61727536500.43271,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5024296532693577,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 8386560 of 16777216 elements beyond the derived bound; worst at [0, 363]: -0.0448562 vs float64 0 (error 0.0449, 752556.7x its bound, 752562 ulp of float32); output: overall error is 153691.9x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of dim 0 (",
+   "ratio": 752556.7478299642,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "warn",
+   "code": "TS202",
+   "message": "output: NaN or infinity at 2047 places where the float64 reference has none, or the other way round; output: bad elements only at index 2048 of dim 0 (size 4096); in the tail of dim 1 (indices 2049 to 4095 of 4096) (2047 of 16777216, 0.0%). Not reordering noise. Policy: float32 results, float32 accu",
+   "ratio": 0.502429653295839,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "assert_close#num": "fail",
+   "allclose_1e-2#num": "fail",
+   "allclose_1e-4#num": "fail"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5024296532693577,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.5024296532693577,
+   "assert_close": "fail",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "pass",
+   "assert_close": "reject",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "reject"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS202"
+ ],
+ "first_failure": {
+  "name": "d0=4097 (was 4096)",
+  "code": "TS200",
+  "message": "output: 8390656 of 16785409 elements beyond the derived bound; worst at [1898, 2816]: -177.421 vs float64 0 (error 177, 2910689581.0x its bound, 2976625152 ulp of float32); output: overall error is 260975.5x what a correct float32 implementation shows (limit 2x); output: bad elements in the head of dim 0 (indices 0 to 4095 of 4097); in the tail of dim 1 (indices 1 to 4096 of 4097) (8390656 of 16785409, 50.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions"
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.49,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 161.52
+}

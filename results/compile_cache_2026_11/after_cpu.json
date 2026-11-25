@@ -1,0 +1,498 @@
+[
+ {
+  "workload": "mlp",
+  "cold": {
+   "workload": "mlp",
+   "device": "cpu",
+   "import_torch_s": 1.2927023000011104,
+   "import_truestar_s": 0.3651689000034821,
+   "export_s": 1.1362679000012577,
+   "first_compile_s": 0.3352457000000868,
+   "first_first_call_s": 1.3308164000045508,
+   "first_first_result_s": 1.6660621000046376,
+   "first_verify_s": 0.05447270000149729,
+   "first_cache": {
+    "verify": "stored",
+    "key": "8cf0ebab7a429fc132988fdf2a5217d258c85f10"
+   },
+   "first_out_sha256": "2f0cbd01ac259847b69cf096a6f636054108ea687f6b485e65e51374b525df4e",
+   "process_to_first_result_s": 4.554590699997789,
+   "tune_s": 0.0,
+   "again_compile_s": 0.0019178000002284534,
+   "again_first_call_s": 0.03117270000075223,
+   "again_first_result_s": 0.03309050000098068,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "8cf0ebab7a429fc132988fdf2a5217d258c85f10"
+   },
+   "again_out_sha256": "2f0cbd01ac259847b69cf096a6f636054108ea687f6b485e65e51374b525df4e",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_vp5mk988",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 33514130,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 13,
+      "bytes": 33513178
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 952
+     }
+    }
+   },
+   "wall_s": 5.242875500000082
+  },
+  "warm": {
+   "workload": "mlp",
+   "device": "cpu",
+   "import_torch_s": 1.2039337000023806,
+   "import_truestar_s": 0.3536718000032124,
+   "export_s": 1.039988299999095,
+   "first_compile_s": 0.2829176000013831,
+   "first_first_call_s": 0.5006709000008414,
+   "first_first_result_s": 0.7835885000022245,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "8cf0ebab7a429fc132988fdf2a5217d258c85f10"
+   },
+   "first_out_sha256": "2f0cbd01ac259847b69cf096a6f636054108ea687f6b485e65e51374b525df4e",
+   "process_to_first_result_s": 3.4028542000014568,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_vp5mk988",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 33515428,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 14,
+      "bytes": 33514476
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 952
+     }
+    }
+   },
+   "wall_s": 4.007004799997958
+  },
+  "warm_tsx": {
+   "workload": "mlp",
+   "device": "cpu",
+   "import_torch_s": 1.21756440000172,
+   "import_truestar_s": 0.3328782999960822,
+   "export_s": 0.0529573999956483,
+   "first_compile_s": 0.26236429999698885,
+   "first_first_call_s": 0.44411480000417214,
+   "first_first_result_s": 0.706479100001161,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "8cf0ebab7a429fc132988fdf2a5217d258c85f10"
+   },
+   "first_out_sha256": "2f0cbd01ac259847b69cf096a6f636054108ea687f6b485e65e51374b525df4e",
+   "process_to_first_result_s": 2.331444499999634,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_mlp_vp5mk988",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 33516359,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 15,
+      "bytes": 33515407
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 952
+     }
+    }
+   },
+   "wall_s": 2.7908621999958996
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "encoder",
+  "cold": {
+   "workload": "encoder",
+   "device": "cpu",
+   "import_torch_s": 1.2829109999947832,
+   "import_truestar_s": 0.3357486000022618,
+   "export_s": 1.075735899998108,
+   "first_compile_s": 0.3628469000032055,
+   "first_first_call_s": 5.559091099996294,
+   "first_first_result_s": 5.9219379999995,
+   "first_verify_s": 0.2715841000172077,
+   "first_cache": {
+    "verify": "stored",
+    "key": "88c15fa1e2ddfe1ed41a8ae72eb8e17a3036791e"
+   },
+   "first_out_sha256": "6033cb605c38e01e6daf85be1a43101ca920bd2a23a0495d99ce884d037d2e7f",
+   "process_to_first_result_s": 8.62945480000053,
+   "tune_s": 0.0,
+   "again_compile_s": 0.006117700002505444,
+   "again_first_call_s": 0.06623609999951441,
+   "again_first_result_s": 0.07235380000201985,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "88c15fa1e2ddfe1ed41a8ae72eb8e17a3036791e"
+   },
+   "again_out_sha256": "6033cb605c38e01e6daf85be1a43101ca920bd2a23a0495d99ce884d037d2e7f",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_f5x8sudu",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 3705519,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 34,
+      "bytes": 3703618
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1901
+     }
+    }
+   },
+   "wall_s": 9.469586300001538
+  },
+  "warm": {
+   "workload": "encoder",
+   "device": "cpu",
+   "import_torch_s": 1.3015522999994573,
+   "import_truestar_s": 0.3734502000006614,
+   "export_s": 1.1236681999944267,
+   "first_compile_s": 0.3095086000030278,
+   "first_first_call_s": 0.6957713000010699,
+   "first_first_result_s": 1.0052799000040977,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "88c15fa1e2ddfe1ed41a8ae72eb8e17a3036791e"
+   },
+   "first_out_sha256": "6033cb605c38e01e6daf85be1a43101ca920bd2a23a0495d99ce884d037d2e7f",
+   "process_to_first_result_s": 3.8091542000038316,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_f5x8sudu",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 3706816,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 35,
+      "bytes": 3704915
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1901
+     }
+    }
+   },
+   "wall_s": 4.477118499999051
+  },
+  "warm_tsx": {
+   "workload": "encoder",
+   "device": "cpu",
+   "import_torch_s": 1.2989642000029562,
+   "import_truestar_s": 0.3829014000002644,
+   "export_s": 0.01078379999671597,
+   "first_compile_s": 0.30285360000561923,
+   "first_first_call_s": 0.5907231999954092,
+   "first_first_result_s": 0.8935768000010285,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "88c15fa1e2ddfe1ed41a8ae72eb8e17a3036791e"
+   },
+   "first_out_sha256": "6033cb605c38e01e6daf85be1a43101ca920bd2a23a0495d99ce884d037d2e7f",
+   "process_to_first_result_s": 2.5918015999995987,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_encoder_f5x8sudu",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 3707755,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 36,
+      "bytes": 3705854
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 1901
+     }
+    }
+   },
+   "wall_s": 3.109045999997761
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "resnet18",
+  "cold": {
+   "workload": "resnet18",
+   "device": "cpu",
+   "import_torch_s": 1.3597191000008024,
+   "import_truestar_s": 0.38292830000136746,
+   "export_s": 0.656925900002534,
+   "first_compile_s": 0.41467719999491237,
+   "first_first_call_s": 38.27624189999915,
+   "first_first_result_s": 38.69091909999406,
+   "first_verify_s": 25.424716000001354,
+   "first_cache": {
+    "verify": "stored",
+    "key": "48fc0683a2a7eda2b8aefe3718216aeae7a7f431"
+   },
+   "first_out_sha256": "f38fb4e92ff1c1ffea1b4bca5bea21baace7b55dfc7c8d8eeccf5832eecaf753",
+   "process_to_first_result_s": 42.11946950000129,
+   "tune_s": 0.0,
+   "again_compile_s": 0.03621240000211401,
+   "again_first_call_s": 2.031092199998966,
+   "again_first_result_s": 2.06730460000108,
+   "again_verify_s": 0.0,
+   "again_cache": {
+    "verify": "hit",
+    "key": "48fc0683a2a7eda2b8aefe3718216aeae7a7f431"
+   },
+   "again_out_sha256": "f38fb4e92ff1c1ffea1b4bca5bea21baace7b55dfc7c8d8eeccf5832eecaf753",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_azm0djhi",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 48066655,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 73,
+      "bytes": 48061487
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 5168
+     }
+    }
+   },
+   "wall_s": 44.99040909999894
+  },
+  "warm": {
+   "workload": "resnet18",
+   "device": "cpu",
+   "import_torch_s": 1.2097364000001107,
+   "import_truestar_s": 0.3265175000051386,
+   "export_s": 0.6109522999977344,
+   "first_compile_s": 0.3501694000005955,
+   "first_first_call_s": 3.12859120000212,
+   "first_first_result_s": 3.4787606000027154,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "48fc0683a2a7eda2b8aefe3718216aeae7a7f431"
+   },
+   "first_out_sha256": "f38fb4e92ff1c1ffea1b4bca5bea21baace7b55dfc7c8d8eeccf5832eecaf753",
+   "process_to_first_result_s": 6.44634579999547,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_azm0djhi",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 48067955,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 74,
+      "bytes": 48062787
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 5168
+     }
+    }
+   },
+   "wall_s": 7.164794299998903
+  },
+  "warm_tsx": {
+   "workload": "resnet18",
+   "device": "cpu",
+   "import_torch_s": 1.2529364000001806,
+   "import_truestar_s": 0.3616653999997652,
+   "export_s": 0.07617719999689143,
+   "first_compile_s": 0.3835027999957674,
+   "first_first_call_s": 2.466113200003747,
+   "first_first_result_s": 2.8496159999995143,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "48fc0683a2a7eda2b8aefe3718216aeae7a7f431"
+   },
+   "first_out_sha256": "f38fb4e92ff1c1ffea1b4bca5bea21baace7b55dfc7c8d8eeccf5832eecaf753",
+   "process_to_first_result_s": 5.3701998999968055,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_resnet18_azm0djhi",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 48068894,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 75,
+      "bytes": 48063726
+     },
+     "programs": {
+      "count": 1,
+      "bytes": 5168
+     }
+    }
+   },
+   "wall_s": 5.985497100002249
+  },
+  "bitwise_equal": true
+ },
+ {
+  "workload": "decode",
+  "cold": {
+   "workload": "decode",
+   "device": "cpu",
+   "import_torch_s": 1.321533800000907,
+   "import_truestar_s": 0.41965979999804404,
+   "export_s": 1.172445100004552,
+   "first_compile_s": 0.38169850000122096,
+   "first_first_call_s": 5.448217899996962,
+   "first_first_result_s": 5.829916399998183,
+   "first_verify_s": 0.029513799978303723,
+   "first_cache": {
+    "verify": "stored",
+    "key": "f7d9067ab2fe353edc01af859c7d2eca7cd87198"
+   },
+   "first_out_sha256": "56e24e4ccf0c0ea2a77ef9d5818fc9174993a0253e862fddc1570cb362085dad",
+   "process_to_first_result_s": 8.77781920000416,
+   "tune_s": 0.0,
+   "again_compile_s": 0.009492099998169579,
+   "again_first_call_s": 0.01919179999822518,
+   "again_first_result_s": 0.028683899996394757,
+   "again_verify_s": 0.010393199998361524,
+   "again_cache": {
+    "verify": "stored",
+    "key": "547be69e999c57823a9610e965c20a6262cb345e"
+   },
+   "again_out_sha256": "56e24e4ccf0c0ea2a77ef9d5818fc9174993a0253e862fddc1570cb362085dad",
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_b9drh2ue",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 12013557,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 53,
+      "bytes": 12008390
+     },
+     "programs": {
+      "count": 2,
+      "bytes": 5167
+     }
+    }
+   },
+   "wall_s": 9.527850800004671
+  },
+  "warm": {
+   "workload": "decode",
+   "device": "cpu",
+   "import_torch_s": 1.2062713999985135,
+   "import_truestar_s": 0.33512879999761935,
+   "export_s": 1.0659677000003285,
+   "first_compile_s": 0.30915559999994,
+   "first_first_call_s": 0.751692700003332,
+   "first_first_result_s": 1.060848300003272,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "f7d9067ab2fe353edc01af859c7d2eca7cd87198"
+   },
+   "first_out_sha256": "56e24e4ccf0c0ea2a77ef9d5818fc9174993a0253e862fddc1570cb362085dad",
+   "process_to_first_result_s": 3.6780991000050562,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_b9drh2ue",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 12014880,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 54,
+      "bytes": 12009713
+     },
+     "programs": {
+      "count": 2,
+      "bytes": 5167
+     }
+    }
+   },
+   "wall_s": 4.319940599998517
+  },
+  "warm_tsx": {
+   "workload": "decode",
+   "device": "cpu",
+   "import_torch_s": 1.2300628000011784,
+   "import_truestar_s": 0.32344649999868125,
+   "export_s": 0.023285800001758616,
+   "first_compile_s": 0.28640330000052927,
+   "first_first_call_s": 0.5891936000043643,
+   "first_first_result_s": 0.8755969000048935,
+   "first_verify_s": 0.0,
+   "first_cache": {
+    "verify": "hit",
+    "key": "f7d9067ab2fe353edc01af859c7d2eca7cd87198"
+   },
+   "first_out_sha256": "56e24e4ccf0c0ea2a77ef9d5818fc9174993a0253e862fddc1570cb362085dad",
+   "process_to_first_result_s": 2.4620939000014914,
+   "tune_s": 0.0,
+   "cache_info": {
+    "dir": "<tmp>\\tscc_decode_b9drh2ue",
+    "enabled": true,
+    "triton_cache_dir": null,
+    "bytes": 12015816,
+    "max_bytes": 4294967296,
+    "format": 1,
+    "entries": {
+     "kernel sources": {
+      "count": 55,
+      "bytes": 12010649
+     },
+     "programs": {
+      "count": 2,
+      "bytes": 5167
+     }
+    }
+   },
+   "wall_s": 2.9361234000025433
+  },
+  "bitwise_equal": true
+ }
+]

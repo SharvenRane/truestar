@@ -1,0 +1,476 @@
+{
+ "check_cuda": {
+  "executor": "cuda",
+  "invariant": true,
+  "rows": [
+   {
+    "scenario": "alone",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "alone",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   }
+  ],
+  "codes": [
+   "TS1400",
+   "TS1408"
+  ],
+  "float64": {
+   "ok": true,
+   "tokens_equal": true,
+   "first_difference": null,
+   "tie_gap": null,
+   "float32_logprob_max_error": 6.730021973044842e-06,
+   "reference_vs_no_cache_tokens_equal": true,
+   "reference_vs_no_cache_logprob_error": 9.547918011776346e-15,
+   "tokens": 24
+  }
+ },
+ "check_cuda_not_deterministic": {
+  "executor": "cuda",
+  "invariant": false,
+  "rows": [
+   {
+    "scenario": "alone",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "alone",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "sampled",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "sampled",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "sampled",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   }
+  ],
+  "codes": [
+   "TS1401"
+  ]
+ },
+ "check_cuda_batch_width": {
+  "executor": "cuda",
+  "invariant": false,
+  "rows": [
+   {
+    "scenario": "alone",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "alone",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched with 7 others",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "prefix cache on",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "chunked prefill (5 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 0,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "greedy",
+    "bitwise": false,
+    "first_difference": 0,
+    "cached_tokens": 16,
+    "tokens": 24
+   },
+   {
+    "scenario": "batched, prefix cache, chunked (3 tokens)",
+    "request": "sampled",
+    "bitwise": true,
+    "first_difference": null,
+    "cached_tokens": 16,
+    "tokens": 24
+   }
+  ],
+  "codes": [
+   "TS1401"
+  ]
+ },
+ "cuda_vs_cpu": [
+  {
+   "request": "greedy",
+   "tokens_equal": true,
+   "logprobs_bitwise": false,
+   "logprob_max_diff": 5.233762893741556e-06
+  },
+  {
+   "request": "sampled",
+   "tokens_equal": true,
+   "logprobs_bitwise": false,
+   "logprob_max_diff": 4.362554575365607e-06
+  }
+ ],
+ "bench_float64": {
+  "tokens_equal": true,
+  "first_difference": null,
+  "logprob_max_error": 3.108524396600032e-05
+ },
+ "throughput": [
+  {
+   "batch": 1,
+   "method": "truestar serve (compiled cuda, deterministic)",
+   "seconds": 0.8680196280000132,
+   "tokens_per_s": 73.73105162087306,
+   "ms_per_step": 13.562806687500206,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 1,
+   "method": "truestar serve scheduler, eager PyTorch step",
+   "seconds": 0.4420791450000081,
+   "tokens_per_s": 144.77045733518784,
+   "ms_per_step": 6.907486640625127,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 1,
+   "method": "eager PyTorch generate (static batch, dense cache)",
+   "seconds": 0.3565795009999988,
+   "tokens_per_s": 179.48311616488638,
+   "ms_per_step": 5.571554703124981,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 1,
+   "method": "Hugging Face generate (sdpa)",
+   "seconds": 0.4478366499999993,
+   "tokens_per_s": 142.90925050462062,
+   "ms_per_step": 6.997447656249989,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 8,
+   "method": "truestar serve (compiled cuda, deterministic)",
+   "seconds": 1.036166081999994,
+   "tokens_per_s": 494.129279942984,
+   "ms_per_step": 16.190095031249907,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 8,
+   "method": "truestar serve scheduler, eager PyTorch step",
+   "seconds": 0.5341064219999794,
+   "tokens_per_s": 958.6104546034081,
+   "ms_per_step": 8.345412843749678,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 8,
+   "method": "eager PyTorch generate (static batch, dense cache)",
+   "seconds": 0.37580770899998583,
+   "tokens_per_s": 1362.398875112004,
+   "ms_per_step": 5.871995453124779,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 8,
+   "method": "Hugging Face generate (sdpa)",
+   "seconds": 0.49851357200000734,
+   "tokens_per_s": 1027.0532815102424,
+   "ms_per_step": 7.789274562500115,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 32,
+   "method": "truestar serve (compiled cuda, deterministic)",
+   "seconds": 1.2582287080000185,
+   "tokens_per_s": 1627.68500430684,
+   "ms_per_step": 19.06407133333361,
+   "request0_bitwise_vs_alone": true,
+   "request0_tokens_vs_alone": true,
+   "steps": 66
+  },
+  {
+   "batch": 32,
+   "method": "truestar serve scheduler, eager PyTorch step",
+   "seconds": 0.7803473429999883,
+   "tokens_per_s": 2624.47231783556,
+   "ms_per_step": 11.823444590908915,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 66
+  },
+  {
+   "batch": 32,
+   "method": "eager PyTorch generate (static batch, dense cache)",
+   "seconds": 0.3640057049999825,
+   "tokens_per_s": 5626.285445169323,
+   "ms_per_step": 5.687589140624727,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  },
+  {
+   "batch": 32,
+   "method": "Hugging Face generate (sdpa)",
+   "seconds": 0.47220898499998043,
+   "tokens_per_s": 4337.062751993347,
+   "ms_per_step": 7.378265390624694,
+   "request0_bitwise_vs_alone": false,
+   "request0_tokens_vs_alone": true,
+   "steps": 64
+  }
+ ],
+ "env": {
+  "torch": "2.11.0+cu130",
+  "gpu": "NVIDIA L4",
+  "prompt": 32,
+  "new": 64,
+  "rounds": 3
+ }
+}

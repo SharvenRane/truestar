@@ -1,0 +1,235 @@
+{
+ "id": "METR-L1-44",
+ "set": "METR",
+ "level": 1,
+ "problem": "44_Average_Pooling_1D.py",
+ "ref": "results/heldout_metr/tasks/level_1/44_Average_Pooling_1D.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_44.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "done",
+ "variants": [
+  {
+   "name": "example inputs",
+   "kind": "base",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -7.12126e-05 vs float64 -7.12415e-05 (error 1.64e-07, 140.4x its bound, 3968 ulp of float32); output: bad elements in the head of dim 2 (indices 0 to 62 of 64) (121 of 32768, 0.4%) Policy: float32 results, float32 accumula",
+   "ratio": 140.36330410779934,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=17 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 126 of 34816 elements beyond the derived bound; worst at [15, 28, 34]: -1.55419e-05 vs float64 -1.5527e-05 (error 1.64e-07, 236.1x its bound, 8192 ulp of float32); output: bad elements spread over the tensor (126 of 34816, 0.4%) Policy: float32 results, float32 accumulation, TF32 convolution",
+   "ratio": 236.0711057537722,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d0=15 (was 16)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 118 of 30720 elements beyond the derived bound; worst at [11, 24, 11]: 8.24183e-05 vs float64 8.24034e-05 (error 1.79e-07, 118.3x its bound, 2048 ulp of float32); output: bad elements spread over the tensor (118 of 30720, 0.4%) Policy: float32 results, float32 accumulation, TF32 convolutions",
+   "ratio": 118.31619442822283,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=33 (was 32)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 137 of 33792 elements beyond the derived bound; worst at [0, 25, 22]: 2.39909e-06 vs float64 2.41399e-06 (error 1.49e-07, 453.3x its bound, 65536 ulp of float32); output: bad elements spread over the tensor (137 of 33792, 0.4%) Policy: float32 results, float32 accumulation, TF32 convolutions",
+   "ratio": 453.3325453491827,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d1=31 (was 32)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 131 of 31744 elements beyond the derived bound; worst at [12, 24, 57]: -9.08673e-05 vs float64 -9.08573e-05 (error 1.64e-07, 55.9x its bound, 1376 ulp of float32); output: bad elements spread over the tensor (131 of 31744, 0.4%) Policy: float32 results, float32 accumulation, TF32 convolution",
+   "ratio": 55.89302653690491,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "d2=129 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Expected input T_in 128, got 129",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "d2=127 (was 128)",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Expected input T_in 128, got 127",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes odd d0=17, d1=33, d2=129",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Expected input T_in 128, got 129",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "all sizes small d0=7, d1=7, d2=7",
+   "kind": "shape",
+   "truestar": "fail",
+   "code": "TS201",
+   "message": "the candidate raised where the reference runs: AssertionError: Expected input T_in 128, got 7",
+   "ratio": null,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail",
+   "baseline_note": "candidate raised"
+  },
+  {
+   "name": "large values (max |x| = 100)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 125 of 32768 elements beyond the derived bound; worst at [3, 21, 8]: -0.000403613 vs float64 -0.000403494 (error 3.58e-06, 77.2x its bound, 4096 ulp of float32); output: bad elements in the tail of dim 2 (indices 1 to 63 of 64) (125 of 32768, 0.4%) Policy: float32 results, float32 accumulati",
+   "ratio": 77.17646758061005,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "large offset (x + 64 rms)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.09815946168274887,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "small values (x / 128)",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -5.56349e-07 vs float64 -5.56574e-07 (error 1.28e-09, 140.4x its bound, 3968 ulp of float32); output: bad elements in the head of dim 2 (indices 0 to 62 of 64) (121 of 32768, 0.4%) Policy: float32 results, float32 accumula",
+   "ratio": 140.36330410779934,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "constant tensor (ties)",
+   "kind": "family",
+   "truestar": "ok",
+   "code": "",
+   "message": "",
+   "ratio": 0.0,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok"
+  },
+  {
+   "name": "NaN in one element",
+   "kind": "family",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -7.12126e-05 vs float64 -7.12415e-05 (error 1.64e-07, 140.4x its bound, 3968 ulp of float32); output: bad elements in the head of dim 2 (indices 0 to 62 of 64) (121 of 32768, 0.4%) Policy: float32 results, float32 accumula",
+   "ratio": 140.36333569063265,
+   "assert_close": "ok",
+   "allclose_1e-2": "ok",
+   "allclose_1e-4": "ok",
+   "assert_close#num": "ok",
+   "allclose_1e-2#num": "ok",
+   "allclose_1e-4#num": "ok"
+  },
+  {
+   "name": "non contiguous inputs: transposed storage",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: 32768 of 32768 elements beyond the derived bound; worst at [8, 13, 43]: -1.09658 vs float64 0.000267207 (error 3.05, 1993217116.8x its bound, 43989143216 ulp of float32); output: overall error is 3666192.3x what a correct float32 implementation shows (limit 2x); output: bad elements spread o",
+   "ratio": 1993217116.8499262,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  },
+  {
+   "name": "non contiguous inputs: sliced storage (step 2)",
+   "kind": "stride",
+   "truestar": "fail",
+   "code": "TS200",
+   "message": "output: NaN or infinity at 32768 places where the float64 reference has none, or the other way round; output: bad elements spread over the tensor (32768 of 32768, 100.0%). Not reordering noise. Policy: float32 results, float32 accumulation, TF32 convolutions.",
+   "ratio": 0.0,
+   "assert_close": "fail",
+   "allclose_1e-2": "fail",
+   "allclose_1e-4": "fail"
+  }
+ ],
+ "verdicts": {
+  "example": {
+   "truestar": "reject",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "task": {
+   "truestar": "reject",
+   "assert_close": "pass",
+   "allclose_1e-2": "pass",
+   "allclose_1e-4": "pass"
+  },
+  "all": {
+   "truestar": "reject",
+   "assert_close": "reject",
+   "allclose_1e-2": "reject",
+   "allclose_1e-4": "reject"
+  }
+ },
+ "codes": [
+  "TS200",
+  "TS201"
+ ],
+ "first_failure": {
+  "name": "example inputs",
+  "code": "TS200",
+  "message": "output: 121 of 32768 elements beyond the derived bound; worst at [15, 22, 9]: -7.12126e-05 vs float64 -7.12415e-05 (error 1.64e-07, 140.4x its bound, 3968 ulp of float32); output: bad elements in the head of dim 2 (indices 0 to 62 of 64) (121 of 32768, 0.4%) Policy: float32 results, float32 accumulation, TF32 convolutions."
+ },
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.45,
+ "truestar_status": "divergent",
+ "notes": [],
+ "seconds": 6.0
+}

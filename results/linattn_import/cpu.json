@@ -1,0 +1,90 @@
+{
+ "meta": {
+  "transformers": "5.24.0",
+  "torch": "2.11.0+cu128",
+  "gpu": null,
+  "tf32": false
+ },
+ "rows": {
+  "mamba2": {
+   "before": "refused TS942",
+   "layers_lowered": 2,
+   "fp64_max_rel_err": 6.387027068423956e-16,
+   "grad_max_rel_err": 5.382418171413858e-16,
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cpu",
+    "eager_ms": 4.70570000106818,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 5.693821735116555e-07,
+    "truestar_ms": 11.93960000455263,
+    "speedup": 0.39412543127691657
+   }
+  },
+  "falcon_h1": {
+   "before": "refused TS942",
+   "layers_lowered": 2,
+   "fp64_max_rel_err": 4.1390934820868175e-16,
+   "grad_max_rel_err": 1.9478348113502436e-16,
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cpu",
+    "eager_ms": 408.9979999989737,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 3.400593213082463e-07,
+    "truestar_ms": 165.05624999990687,
+    "speedup": 2.4779310083635395
+   }
+  },
+  "qwen3_5": {
+   "before": "refused TS941",
+   "layers_lowered": 1,
+   "fp64_max_rel_err": 3.1038180109634607e-16,
+   "grad_max_rel_err": 4.653808872523985e-16,
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cpu",
+    "eager_ms": 4.783850003150292,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 3.5666952888559514e-07,
+    "truestar_ms": 18.3614999987185,
+    "speedup": 0.2605369933548005
+   }
+  },
+  "bamba": {
+   "before": "refused TS942",
+   "layers_lowered": 1,
+   "fp64_max_rel_err": 4.285629466201686e-16,
+   "grad_max_rel_err": 3.43101676798013e-16,
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cpu",
+    "eager_ms": 4.598200001055375,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 2.713898450669298e-07,
+    "truestar_ms": 18.116949999239296,
+    "speedup": 0.25380651827423745
+   }
+  },
+  "zamba2": {
+   "before": "refused TS942",
+   "layers_lowered": 2,
+   "fp64_max_rel_err": 4.556029624879474e-16,
+   "grad_max_rel_err": 3.2761088872569663e-16,
+   "speed": {
+    "seq": 256,
+    "batch": 4,
+    "device": "cpu",
+    "eager_ms": 6.8922500031476375,
+    "fallbacks": 0,
+    "rel_err_vs_eager_fp32": 3.343498013092871e-07,
+    "truestar_ms": 21.179750001465436,
+    "speedup": 0.32541696680417664
+   }
+  }
+ }
+}

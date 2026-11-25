@@ -1,0 +1,32 @@
+{
+ "part": "machines",
+ "torch": "2.11.0+cu128",
+ "rows": [
+  {
+   "part": "machines",
+   "leaf": "block",
+   "compared": 128,
+   "differing": 107,
+   "first": [
+    "rank 0 loss",
+    "rank 0 output",
+    "rank 0 gradient inp.weight",
+    "rank 0 gradient inp.bias",
+    "rank 0 gradient blocks.0.norm1.weight"
+   ],
+   "ranks": [
+    {
+     "cpu": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+     "host": "laptop",
+     "torch": "2.11.0+cu128"
+    },
+    {
+     "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+     "host": "desktop",
+     "torch": "2.11.0+cu128"
+    }
+   ],
+   "one_device_on": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD"
+  }
+ ]
+}

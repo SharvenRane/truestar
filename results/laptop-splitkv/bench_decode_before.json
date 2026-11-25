@@ -1,0 +1,727 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "sms": 26,
+ "torch": "2.11.0+cu128",
+ "rows": [
+  {
+   "dtype": "float16",
+   "B": 1,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 60.736000537872314
+   },
+   "min_us": {
+    "truestar": 46.879999339580536
+   },
+   "error": {
+    "truestar": 0.00027411882478363696
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 1,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 47.648001462221146
+   },
+   "min_us": {
+    "truestar": 46.52800038456917
+   },
+   "error": {
+    "truestar": 0.00041597554663107646
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 1,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 94.62399780750275
+   },
+   "min_us": {
+    "truestar": 89.79199826717377
+   },
+   "error": {
+    "truestar": 0.0003875002582728231
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 1,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 181.66400492191315
+   },
+   "min_us": {
+    "truestar": 177.15199291706085
+   },
+   "error": {
+    "truestar": 0.00029949716131644834
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 1,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 357.37600922584534
+   },
+   "min_us": {
+    "truestar": 352.83198952674866
+   },
+   "error": {
+    "truestar": 0.00032603310649644105
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 8,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 58.52799862623215
+   },
+   "min_us": {
+    "truestar": 57.37600103020668
+   },
+   "error": {
+    "truestar": 0.0003249288346607936
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 8,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 111.455999314785
+   },
+   "min_us": {
+    "truestar": 108.67200046777725
+   },
+   "error": {
+    "truestar": 0.000326112433673995
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 8,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 302.2080063819885
+   },
+   "min_us": {
+    "truestar": 296.3840067386627
+   },
+   "error": {
+    "truestar": 0.0004149249452832648
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 8,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 538.9440059661865
+   },
+   "min_us": {
+    "truestar": 498.52800369262695
+   },
+   "error": {
+    "truestar": 0.00037391198379656677
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 8,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 1196.7040300369263
+   },
+   "min_us": {
+    "truestar": 991.9679760932922
+   },
+   "error": {
+    "truestar": 0.0003623310400202096
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 32,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 251.13600492477417
+   },
+   "min_us": {
+    "truestar": 245.1840043067932
+   },
+   "error": {
+    "truestar": 0.00038091418319844474
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 32,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 402.8159976005554
+   },
+   "min_us": {
+    "truestar": 383.39200615882874
+   },
+   "error": {
+    "truestar": 0.0002526699974091575
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 32,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 968.6400294303894
+   },
+   "min_us": {
+    "truestar": 960.640013217926
+   },
+   "error": {
+    "truestar": 0.0003670924852839979
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 32,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 1924.2240190505981
+   },
+   "min_us": {
+    "truestar": 1911.520004272461
+   },
+   "error": {
+    "truestar": 0.0004246483827834821
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "float16",
+   "B": 32,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 3660.0639820098877
+   },
+   "min_us": {
+    "truestar": 3124.5760917663574
+   },
+   "error": {
+    "truestar": 0.00040182023761732545
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 1,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 48.608001321554184
+   },
+   "min_us": {
+    "truestar": 45.471999794244766
+   },
+   "error": {
+    "truestar": 0.003179989871043206
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 1,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 49.60000142455101
+   },
+   "min_us": {
+    "truestar": 46.911999583244324
+   },
+   "error": {
+    "truestar": 0.002152512712522974
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 1,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 91.0400003194809
+   },
+   "min_us": {
+    "truestar": 90.30400216579437
+   },
+   "error": {
+    "truestar": 0.0029346828923194892
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 1,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 182.40000307559967
+   },
+   "min_us": {
+    "truestar": 177.59999632835388
+   },
+   "error": {
+    "truestar": 0.003108397697056536
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 1,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 358.5599958896637
+   },
+   "min_us": {
+    "truestar": 353.2800078392029
+   },
+   "error": {
+    "truestar": 0.0026390206432308364
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 8,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 58.97599831223488
+   },
+   "min_us": {
+    "truestar": 58.240000158548355
+   },
+   "error": {
+    "truestar": 0.0038096653005598867
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 8,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 114.27199840545654
+   },
+   "min_us": {
+    "truestar": 111.04000359773636
+   },
+   "error": {
+    "truestar": 0.003104279293709744
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 8,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 306.40000104904175
+   },
+   "min_us": {
+    "truestar": 301.7280101776123
+   },
+   "error": {
+    "truestar": 0.0028080799626764236
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 8,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 605.3760051727295
+   },
+   "min_us": {
+    "truestar": 596.671998500824
+   },
+   "error": {
+    "truestar": 0.0027668130967676095
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 8,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 1197.759985923767
+   },
+   "min_us": {
+    "truestar": 1179.0080070495605
+   },
+   "error": {
+    "truestar": 0.0024856450583032267
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 32,
+   "N": 512,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 251.26400589942932
+   },
+   "min_us": {
+    "truestar": 245.1840043067932
+   },
+   "error": {
+    "truestar": 0.0033180078153478725
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 32,
+   "N": 1024,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 488.864004611969
+   },
+   "min_us": {
+    "truestar": 482.7199876308441
+   },
+   "error": {
+    "truestar": 0.0020465828027495282
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 32,
+   "N": 2048,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 969.3760275840759
+   },
+   "min_us": {
+    "truestar": 812.3840093612671
+   },
+   "error": {
+    "truestar": 0.0033125645193178626
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 32,
+   "N": 4096,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 1924.448013305664
+   },
+   "min_us": {
+    "truestar": 1917.2799587249756
+   },
+   "error": {
+    "truestar": 0.0034649299931503777
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  },
+  {
+   "dtype": "bfloat16",
+   "B": 32,
+   "N": 8192,
+   "H": 8,
+   "D": 128,
+   "median_us": {
+    "truestar": 3334.2080116271973
+   },
+   "min_us": {
+    "truestar": 3223.7439155578613
+   },
+   "error": {
+    "truestar": 0.0026051708267465913
+   },
+   "truestar_config": {
+    "BM": 64,
+    "BN": 32,
+    "num_warps": 4,
+    "num_stages": 2,
+    "LPT": true,
+    "SPLIT": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+64x512x8192: ts_det 290.9  ts 122.3  F.linear 62.0  matmul 59.3  det/F.linear 4.70  det/matmul 4.91  ts/best 2.06  err det 2.2e-06 ts 3.2e-07 cublas 2.7e-07  cfg det {'BM': 64, 'BN': 16, 'BK': 32, 'GROUP': 8, 'num_warps': 2, 'num_
+128x256x8192: ts_det 284.5  ts 121.2  F.linear 61.9  matmul 59.6  det/F.linear 4.60  det/matmul 4.77  ts/best 2.03  err det 2.2e-06 ts 3.1e-07 cublas 1.9e-07  cfg det {'BM': 64, 'BN': 16, 'BK': 32, 'GROUP': 8, 'num_warps': 2, 'num
+64x1000x2048: ts_det 127.6  ts 65.4  F.linear 40.9  matmul 38.4  det/F.linear 3.12  det/matmul 3.32  ts/best 1.71  err det 1.2e-06 ts 2.7e-07 cublas 2.1e-07  cfg det {'BM': 64, 'BN': 16, 'BK': 32, 'GROUP': 8, 'num_warps': 1, 'num_
+1x4096x4096: ts_det 312.2  ts 313.5  F.linear 262.7  matmul 264.9  det/F.linear 1.19  det/matmul 1.18  ts/best 1.19  err det 1.3e-06 ts 1.3e-06 cublas 1.6e-07  cfg det {'BM': 16, 'BN': 32, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'nu
+16x1024x16384: ts_det 441.1  ts 355.4  F.linear 320.6  matmul 320.0  det/F.linear 1.38  det/matmul 1.38  ts/best 1.11  err det 3.1e-06 ts 9.3e-07 cublas 3.3e-07  cfg det {'BM': 16, 'BN': 32, 'BK': 64, 'GROUP': 8, 'num_warps': 2, '
+64x2048x2048: ts_det 165.9  ts 110.8  F.linear 79.2  matmul 62.5  det/F.linear 2.09  det/matmul 2.65  ts/best 1.77  err det 1.7e-06 ts 3.0e-07 cublas 5.5e-07  cfg det {'BM': 64, 'BN': 16, 'BK': 32, 'GROUP': 8, 'num_warps': 1, 'num
+1024x1024x1024: ts_det 355.9  ts 326.6  F.linear 256.5  matmul 269.3  det/F.linear 1.39  det/matmul 1.32  ts/best 1.27  err det 9.2e-07 ts 9.2e-07 cublas 4.4e-07  cfg det {'BM': 256, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 8
+4096x4096x4096: ts_det 16894.5  ts 16697.4  F.linear 16352.3  matmul 14673.1  det/F.linear 1.03  det/matmul 1.15  ts/best 1.14  err det 2.0e-06 ts 2.0e-06 cublas 6.7e-07  cfg det {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_w
+[modal_gpu] gpu=L4 exit=0
+64x512x8192: ts_det 153.6  ts 123.9  F.linear 61.7  matmul 57.6  det/F.linear 2.49  det/matmul 2.67  ts/best 2.15  err det 3.2e-07 ts 3.2e-07 cublas 2.7e-07  cfg det {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num
+128x256x8192: ts_det 149.8  ts 122.2  F.linear 60.3  matmul 56.7  det/F.linear 2.48  det/matmul 2.64  ts/best 2.15  err det 3.1e-07 ts 3.1e-07 cublas 1.9e-07  cfg det {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'nu
+64x1000x2048: ts_det 82.6  ts 67.4  F.linear 40.5  matmul 37.8  det/F.linear 2.04  det/matmul 2.19  ts/best 1.78  err det 4.0e-07 ts 2.7e-07 cublas 2.1e-07  cfg det {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'num_
+1x4096x4096: ts_det 313.0  ts 306.5  F.linear 262.5  matmul 264.8  det/F.linear 1.19  det/matmul 1.18  ts/best 1.17  err det 3.3e-07 ts 1.3e-06 cublas 1.6e-07  cfg det {'BM': 16, 'BN': 32, 'BK': 64, 'GROUP': 8, 'num_warps': 2, 'nu
+16x1024x16384: ts_det 378.0  ts 341.9  F.linear 319.8  matmul 318.2  det/F.linear 1.18  det/matmul 1.19  ts/best 1.07  err det 2.8e-07 ts 9.3e-07 cublas 3.3e-07  cfg det {'BM': 16, 'BN': 64, 'BK': 64, 'GROUP': 8, 'num_warps': 2, '
+64x2048x2048: ts_det 144.5  ts 103.8  F.linear 78.0  matmul 60.7  det/F.linear 1.85  det/matmul 2.38  ts/best 1.71  err det 5.0e-07 ts 3.0e-07 cublas 5.5e-07  cfg det {'BM': 64, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 4, 'nu
+1024x1024x1024: ts_det 344.4  ts 311.0  F.linear 241.1  matmul 254.1  det/F.linear 1.43  det/matmul 1.36  ts/best 1.29  err det 9.2e-07 ts 9.2e-07 cublas 4.4e-07  cfg det {'BM': 256, 'BN': 128, 'BK': 16, 'GROUP': 8, 'num_warps': 8
+4096x4096x4096: ts_det 18976.8  ts 16491.5  F.linear 16103.0  matmul 14606.5  det/F.linear 1.18  det/matmul 1.30  ts/best 1.13  err det 4.0e-07 ts 2.0e-06 cublas 6.7e-07  cfg det {'BM': 128, 'BN': 256, 'BK': 16, 'GROUP': 8, 'num_w
+[modal_gpu] gpu=L4 exit=0

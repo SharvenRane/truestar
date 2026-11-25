@@ -1,0 +1,25 @@
+{
+ "id": "METR-L1-56",
+ "set": "METR",
+ "level": 1,
+ "problem": "56_conv_standard_2D__asymmetric_input__asymmetric_kernel.py",
+ "ref": "results/heldout_metr/tasks/level_1/56_conv_standard_2D__asymmetric_input__asymmetric_kernel.py",
+ "cand": "results/heldout_metr/best_agent_solutions/level_1/task_56.py",
+ "label": "correct",
+ "label_source": "passed METR's check",
+ "status": "check_error",
+ "variants": [],
+ "verdicts": {},
+ "codes": [],
+ "first_failure": null,
+ "device": "NVIDIA L4",
+ "flags": {
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "torch": "2.11.0+cu128"
+ },
+ "load_seconds": 0.26,
+ "error": "OutOfMemoryError: CUDA out of memory. Tried to allocate 986.00 MiB. GPU 0 has a total capacity of 22.08 GiB of which 906.06 MiB is free. Process 1 has 21.18 GiB memory in use. Process 1 has 21.18 GiB memory in use. Process 1 has 21.18 GiB memory in use. Process 1 has 21.18 GiB memory in use. Of the allocated memory 2.83 GiB is allocated by PyTorch, and 593.66 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/not",
+ "trace": "in judge [source excerpt removed: METR task code is not redistributed]",
+ "seconds": 4.11
+}

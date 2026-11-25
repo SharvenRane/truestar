@@ -1,0 +1,55 @@
+name: backends
+
+# Manual only: macOS minutes are limited on the free plan.
+on:
+  workflow_dispatch:
+    inputs:
+      torch:
+        description: "torch version (2.15+ refuses the runners' paravirtual GPU, see pytorch#202529)"
+        default: "2.14.1"
+
+jobs:
+  mps:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-26]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install "torch==${{ inputs.torch }}" torchvision pytest
+          python -c "import torch, torchvision; print(torch.__version__, torchvision.__version__)"
+      - name: Probe MPS
+        run: |
+          python - <<'PY'
+          import platform, torch
+          print(platform.platform(), "torch", torch.__version__)
+          print("mps built", torch.backends.mps.is_built(), "available", torch.backends.mps.is_available())
+          x = torch.ones(4, device="mps") * 2
+          print("tensor op ok:", x.cpu().tolist())
+          PY
+      - name: Tests on MPS
+        env:
+          PYTHONPATH: src
+          TRUESTAR_TEST_BACKEND: mps
+        run: python -m pytest -q -p no:cacheprovider
+        continue-on-error: true
+      - name: Model zoo on CPU and MPS
+        run: python scripts/zoo_check.py --backends cpu,mps --json zoo-${{ matrix.os }}.json --repro-dir repro-${{ matrix.os }}
+      - name: Linear probe on MPS
+        run: python scripts/mps_linear_probe.py --device mps --json probe-${{ matrix.os }}.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: zoo-${{ matrix.os }}
+          path: |
+            zoo-${{ matrix.os }}.json
+            probe-${{ matrix.os }}.json
+            repro-${{ matrix.os }}

@@ -1,0 +1,12 @@
+{
+ "id": "KB-L2-openai-o1-55",
+ "set": "KB",
+ "level": 2,
+ "problem": "55_Matmul_MaxPool_Sum_Scale.py",
+ "ref": "tests/data/heldout/kernelbench/problems/level2/55_Matmul_MaxPool_Sum_Scale.py",
+ "cand_json": "tests/data/heldout/kernelbench/samples/level2/openai-o1/problem_55.json",
+ "label": "wrong",
+ "label_source": "KernelBench eval (0 / 5)",
+ "status": "timeout",
+ "seconds": 300.1
+}
