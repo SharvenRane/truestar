@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Truestar: the same answer on every chip. Verified against float64. Fast." src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/banner.png" width="100%">
+  <img alt="Truestar" src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/banner.png" width="100%">
 </p>
 
 <p align="center">
