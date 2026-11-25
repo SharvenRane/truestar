@@ -52,7 +52,8 @@ jobs:
           have = sorted({n.rsplit("/", 1)[0] for n in names if n.endswith("/__init__.py")})
           print("packages:", have)
           bad = [n for n in names if n.startswith(("tests/", "examples/", "scripts/", "docs/"))
-                 or n.endswith((".pyc", ".json", ".pt", ".log")) or "truestar_repro" in n]
+                 or (n.endswith(".json") and "/data/" not in n)
+                 or n.endswith((".pyc", ".pt", ".log")) or "truestar_repro" in n]
           meta = zipfile.ZipFile(whl).read(next(n for n in names if n.endswith("METADATA"))).decode()
           eps = zipfile.ZipFile(whl).read(next(n for n in names if n.endswith("entry_points.txt"))).decode()
           size = os.path.getsize(whl)

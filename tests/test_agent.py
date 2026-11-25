@@ -115,7 +115,7 @@ def test_codes_are_stable_and_documented():
                 "TS021": "usage_error"}
     for c, s in expected.items():
         assert codes.slug(c) == s
-    doc = open(os.path.join(SRC, "..", "docs", "AGENT_INTERFACE.md"), encoding="utf-8").read()
+    doc = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "docs", "AGENT_INTERFACE.md"), encoding="utf-8").read()
     for c in codes.CODES:
         assert c in doc, f"{c} missing from docs/AGENT_INTERFACE.md"
     with pytest.raises(ValueError):

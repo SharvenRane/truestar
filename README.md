@@ -1,6 +1,35 @@
-# Truestar
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/logo-dark.png">
+    <img alt="Truestar" src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/logo-light.png" width="180">
+  </picture>
+</p>
 
-Every backend, checked against float64.
+<h1 align="center">Truestar</h1>
+
+<p align="center"><b>The same answer on every chip. Verified against float64. Fast.</b></p>
+
+<p align="center">
+  <a href="https://pypi.org/project/truestar/"><img alt="PyPI" src="https://img.shields.io/pypi/v/truestar?color=F2B544&label=pypi"></a>
+  <a href="https://pypi.org/project/truestar/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/truestar?color=0B1B3A"></a>
+  <a href="https://github.com/SharvenRane/truestar/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-22D3EE"></a>
+  <a href="https://github.com/SharvenRane/truestar/actions/workflows/install-check.yml"><img alt="Install check" src="https://github.com/SharvenRane/truestar/actions/workflows/install-check.yml/badge.svg"></a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> &middot;
+  <a href="#what-it-finds">What it finds</a> &middot;
+  <a href="docs/index.md">Docs</a> &middot;
+  <a href="CHANGELOG.md">Changelog</a>
+</p>
+
+| | |
+|---|---|
+| **Cross chip checks** | Runs your unmodified model on every backend on the machine and compares each with a float64 reference; names the module and op where answers diverge |
+| **Bitwise reproducible** | Float32 results identical across NVIDIA generations; half precision identical too with portable tensor cores |
+| **Proved, not just tested** | Core numerics theorems machine checked in Lean 4; error bounds cross checked against FPTaylor |
+| **Catches what others miss** | Held out kernel sets: 3.6% false alarms with fewer misses than `assert_close` or `allclose` |
+
 
 Truestar tells you when PyTorch gives a different answer on another backend, names the module and
 the ATen op where it starts, and writes a repro script that runs on stock PyTorch. It runs your
