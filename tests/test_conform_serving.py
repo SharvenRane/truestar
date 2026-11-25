@@ -11,6 +11,8 @@ import os
 import pytest
 import torch
 
+pytest.importorskip("safetensors")
+
 from truestar.cli import main
 from truestar.conform import serving_battery as B
 from truestar.conform.serving import ServingBundleError, check, to_text

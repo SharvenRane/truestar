@@ -6,6 +6,15 @@ All notable changes are listed here. Versions follow semantic versioning
 
 ## Unreleased
 
+## 0.1.1 (2026-11-25)
+
+- `truestar conform serving` now says which package it needs: it requires `safetensors`, available as
+  the new `serving` extra (`pip install "truestar[serving]"`). 0.1.0 failed with a bare import error.
+- Tests that need optional packages (transformers, safetensors, ai-edge-litert, flatbuffers) skip when
+  those are absent, so the suite passes on a plain install.
+- README: new header and badges.
+
+
 * Lean 4 proofs under proofs/ of the exact tensor core window, fixed order determinism and the
   digit split, with a generator for the constants they use and a test that checks the generated
   constants match the code (skipped without lake).

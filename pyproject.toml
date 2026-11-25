@@ -55,6 +55,7 @@ cpu-kernels = ["numba>=0.60"]
 # Truestar writes its protobuf itself. ExecuTorch must match the installed torch (1.2 for torch 2.11).
 onnx = ["onnx>=1.15", "onnxruntime>=1.17"]
 litert = ["ai-edge-litert>=1.2"]
+serving = ["safetensors>=0.4"]
 executorch = ["executorch"]
 
 [project.scripts]

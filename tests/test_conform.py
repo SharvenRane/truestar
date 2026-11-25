@@ -216,6 +216,7 @@ class _Int8Mlp(torch.nn.Module):
 
 def _int8_mlp(rows=4, dims=(8, 6, 3), seed=0):
     """(model, example, .tflite bytes, layers): a tiny full integer file with per channel int8 weights."""
+    pytest.importorskip("ai_edge_litert")
     from truestar.conform.tflite_build import build_int8_mlp
 
     rng = np.random.default_rng(seed)

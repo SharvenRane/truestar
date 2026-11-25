@@ -123,7 +123,10 @@ def prompts(spec: ServeSpec) -> List[List[int]]:
 
 def write_model_dir(spec: ServeSpec, path: str) -> str:
     """A Hugging Face style LlamaForCausalLM directory (config.json, model.safetensors)."""
-    from safetensors.torch import save_file
+    try:
+        from safetensors.torch import save_file
+    except ImportError as e:
+        raise ImportError("truestar conform serving needs the safetensors package: pip install \"truestar[serving]\"") from e
 
     cfg = spec.config()
     os.makedirs(path, exist_ok=True)

@@ -38,7 +38,10 @@ class BgeEmbed(nn.Module):
 
 
 def bge_small_like(outliers: bool = True, seed: int = 0, layers: int = 12, vocab: int = 1000):
-    from transformers import BertConfig, BertModel
+    import pytest
+
+    _tf = pytest.importorskip("transformers")
+    BertConfig, BertModel = _tf.BertConfig, _tf.BertModel
 
     torch.manual_seed(seed)
     cfg = BertConfig(vocab_size=vocab, hidden_size=384, num_hidden_layers=layers, num_attention_heads=12,
@@ -254,7 +257,10 @@ def resnet_calibrated(name: str = "resnet50", seed: int = 0, size: int = 96):
 
 
 def bert_base(seed: int = 0, layers: int = 12, vocab: int = 1000):
-    from transformers import BertConfig, BertModel
+    import pytest
+
+    _tf = pytest.importorskip("transformers")
+    BertConfig, BertModel = _tf.BertConfig, _tf.BertModel
 
     torch.manual_seed(seed)
     cfg = BertConfig(vocab_size=vocab, hidden_size=768, num_hidden_layers=layers, num_attention_heads=12,

@@ -81,8 +81,11 @@ Run: ``PYTHONPATH=src python examples/m.py``
 def test_skip_table_entries_point_at_real_text():
     c = load()
     items = c.collect()
+    shipped = {it["rel"] for it in items}
     for path, needle, category, reason in c.SKIP:
         assert reason and category, (path, needle)
+        if path not in shipped:          # a doc kept out of the public repo
+            continue
         assert any(it["rel"] == path and needle in it["text"] for it in items), (path, needle)
 
 
