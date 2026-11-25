@@ -1,18 +1,11 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/logo-dark.png">
-    <img alt="Truestar" src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/logo-light.png" width="180">
-  </picture>
+  <img alt="Truestar: the same answer on every chip. Verified against float64. Fast." src="https://raw.githubusercontent.com/SharvenRane/truestar/main/docs/assets/banner.png" width="100%">
 </p>
 
-<h1 align="center">Truestar</h1>
-
-<p align="center"><b>The same answer on every chip. Verified against float64. Fast.</b></p>
-
 <p align="center">
-  <a href="https://pypi.org/project/truestar/"><img alt="PyPI" src="https://img.shields.io/pypi/v/truestar?color=F2B544&label=pypi"></a>
-  <a href="https://pypi.org/project/truestar/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/truestar?color=0B1B3A"></a>
-  <a href="https://github.com/SharvenRane/truestar/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-22D3EE"></a>
+  <a href="https://pypi.org/project/truestar/"><img alt="PyPI" src="https://img.shields.io/pypi/v/truestar?color=8A8F98&label=pypi&style=flat-square"></a>
+  <a href="https://pypi.org/project/truestar/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/truestar?color=2B2F36&style=flat-square"></a>
+  <a href="https://github.com/SharvenRane/truestar/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-Apache%202.0-5A5F68?style=flat-square"></a>
   <a href="https://github.com/SharvenRane/truestar/actions/workflows/install-check.yml"><img alt="Install check" src="https://github.com/SharvenRane/truestar/actions/workflows/install-check.yml/badge.svg"></a>
 </p>
 
