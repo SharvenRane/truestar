@@ -49,7 +49,7 @@ class Block(nn.Module):
     def forward(self, x):
         x = x + self.attn(self.norm1(x))
         g, u = self.gate_up(self.norm2(x)).chunk(2, dim=-1)
-        return x + self.down(F.silu(g) * u)
+        return x + self.down(F.silu(g.contiguous()) * u)
 
 
 class Model(nn.Module):

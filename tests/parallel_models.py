@@ -43,7 +43,7 @@ class SwiGLU(nn.Module):
 
     def forward(self, x):
         g, u = self.gate_up(x).chunk(2, dim=-1)
-        return self.down(self.act(g) * u)
+        return self.down(self.act(g.contiguous()) * u)
 
 
 class Block(nn.Module):

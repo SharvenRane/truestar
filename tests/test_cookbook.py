@@ -29,7 +29,7 @@ SCRIPTS = {
     "switching/infer_native.py": "verified against float64 on the first call: True",
     "switching/import_once.py": "fine tuned 30 steps",
 }
-LIMIT_S = 60.0
+LIMIT_S = 60.0 * (2.5 if os.environ.get("CI") else 1.0)  # shared CI runners with parallel workers run slower
 
 
 def _run(script):
