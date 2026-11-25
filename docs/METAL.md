@@ -213,7 +213,7 @@ tokens took 6.58 ms and at 32 tokens 1.09 ms. torch 2.15.0 gives the same times 
 | 1 query, 64 keys (decode), H 8 | 0.42 | 0.20 | n/a (rows chosen) | 0.28 | 0.29 |
 
 Errors 1.8e-7 to 5.7e-7 for every Truestar row. The SIMD group shape is 2.2x to 2.5x faster than
-rows on long sequences and still 3.9x slower than MPS SDPA at 512 tokens. A query tile variant with
+rows on long sequences and still 2.7x slower than MPS SDPA at 512 tokens (1.82 ms against 0.68 ms in the table above). A query tile variant with
 plain multiply adds was measured no faster than rows and is not included; nor are, from the second
 round, direct device loads of key and value blocks (3.06 ms at 512 tokens) and a one pass form with
 per element rescaling of the output (2.30 ms), both slower than the staged two pass kernel.

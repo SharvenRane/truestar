@@ -22,7 +22,7 @@
 |---|---|
 | **Cross chip checks** | Runs your unmodified model on every backend on the machine and compares each with a float64 reference; names the module and op where answers diverge |
 | **Bitwise reproducible** | Float32 results identical across NVIDIA generations; half precision identical too with portable tensor cores |
-| **Proved, not just tested** | Core numerics theorems machine checked in Lean 4; error bounds cross checked against FPTaylor |
+| **Proved, not just tested** | Core numerics theorems machine checked in Lean 4, with the open parts listed in [PROOFS](docs/PROOFS.md); error bounds cross checked against FPTaylor |
 | **Catches what others miss** | Held out kernel sets: 3.6% false alarms with fewer misses than `assert_close` or `allclose` |
 
 
@@ -131,7 +131,7 @@ and are raised to 10 times the error a correct CPU float32 run shows on the same
 is larger. Inside the first module over its threshold, ATen ops are traced on both sides and the
 first op over its own threshold is named.
 
-## Same compiled answer on two GPU architectures
+## Same compiled answer across GPU architectures
 
 `truestar fingerprint` hashes the raw output bytes of small float32 models for Truestar's compiled
 executor, eager PyTorch and `torch.compile`. The claim, scoped to what was measured
@@ -144,6 +144,10 @@ executor, eager PyTorch and `torch.compile`. The claim, scoped to what was measu
 > TransformerEncoderLayer and a two layer Llama style decode step, at batch sizes 1, 7, 64 and 256
 > (12 of 12 rows), and identical run to run on each GPU. Eager PyTorch and `torch.compile` differed
 > between the two GPUs in every one of those 12 rows.
+
+A second run the same day found every float32 fingerprint row bitwise equal on an A10G, L4, L40S,
+H100 and an RTX 5060 laptop as well; half precision and TF32 rows split by architecture there
+([docs/PORTABLE_TC.md](docs/PORTABLE_TC.md)).
 
 It does not hold, or has not been run, for: float16, bfloat16 and TF32; resnet18 (its convolutions
 are cuDNN calls); a different Triton version (Triton 3.6.0 on the same T4 changed the transformer

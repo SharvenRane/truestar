@@ -90,7 +90,7 @@ arithmetic.
 
 ## Limits
 
-* Speedup is 1.4x to 2.9x measured, far from the vendor claims for FP64 emulation on data center
+* Speedup is 1.4x to 2.7x measured, far from the vendor claims for FP64 emulation on data center
   parts (up to 83x on B300 in arXiv 2609.37693): consumer int8 throughput, 7 bit digits (int8) and a
   float32 matmul for the bound all cost; no FP8 or FP4 digits yet.
 * Two operands with one contracted letter only; batches loop in Python.

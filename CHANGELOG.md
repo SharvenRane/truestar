@@ -148,9 +148,9 @@ All notable changes are listed here. Versions follow semantic versioning
   flipping at near ties is SUSPECT with code TS185 and next action `accept_near_tie`, instead of a
   false TS180.
 
-## 0.1.0 (release candidate, not published)
+## 0.1.0 (2026-11-25)
 
-First release candidate. Built 2026-11-23 to 2026-11-24.
+First public release, on PyPI 2026-11-25. Built 2026-11-23 to 2026-11-24.
 
 ### Commands
 

@@ -4,10 +4,11 @@ Truestar's exactness and determinism claims rest on a few small theorems. They a
 in Lean 4 (no `sorry`; the axioms used are Lean's standard `propext`, `Classical.choice` and
 `Quot.sound`, no `native_decide`).
 
-* `proofs/lean/`: Lean core only (no mathlib). T1, T2, T3, T6, T8, T9, the instantiation at the
+* `proofs/lean/`: Lean core only (no mathlib). T1, T2, T3, T6, T8 (uniqueness half only), T9, the instantiation at the
   Python constants, and the cross check executable.
 * `proofs/lean-analysis/`: needs real numbers, so it uses mathlib (pinned to commit
-  `fc4f59e577feb1a4956671bc04ac18aaaf8cd842`, the `v4.36.0` tag). T4 and T7.
+  `fc4f59e577feb1a4956671bc04ac18aaaf8cd842`, the `v4.36.0` tag). T4 and T7 (T7 in real arithmetic; its
+  rounding bound is not done). T5 is not done.
 
 Both pin `leanprover/lean4:v4.36.0`.
 
